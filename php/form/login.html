@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>表单的应用</title>
+    <meta http-equiv="content-type" content="text/html,charset=utf-8">
+</head>
+<body>
+<table border="1" width="500" align="center">
+    <form name="frm" action="../html8/demo.html" method="get"
+          target="_blank" title="这是表单" enctype="multipart/form-data">
+        <caption>表单的应用</caption>
+        <tr>
+            <th><label for="user" accesskey="u">文本域</label>(<u>u</u>)</th>
+            <td>
+                <input id="user" type="text" name="username" size="20" maxlength="10"
+                       value="username">
+            </td>
+        </tr>
+        <tr>
+            <th>密码域</th>
+            <td>
+                <input type="password" name="pass" size="25" value="hello">
+            </td>
+        </tr>
+        <tr>
+            <th>复选框</th>
+            <td>
+                玩游戏<input type="checkbox" checked name="del[]">
+                看电影<input type="checkbox" name="del[]">
+                旅游<input type="checkbox" checked name="del[]">
+                看书<input type="checkbox" name="del[]">
+                写字<input type="checkbox" name="del[]">
+
+            </td>
+        </tr>
+        <tr>
+            <th>单选框1</th>
+            <td>
+                <input type="radio" name="sex" checked>男
+                <input type="radio" name="sex">女
+                <input type="radio" name="sex">保密
+            </td>
+        </tr>
+        <tr>
+            <th>单选框2</th>
+            <td>
+                <input type="radio" name="sex1">男
+                <input type="radio" name="sex1" checked>女
+                <input type="radio" name="sex1">保密
+            </td>
+        </tr>
+        <tr>
+            <th>上传文件</th>
+            <td>
+                <input type="file" name="picture">
+            </td>
+        </tr>
+        <tr>
+            <th><label for="gn" accesskey="s">下拉列表</label>(<u>s</u>)</th>
+            <td>
+                <select id="gn" name="gn">
+                    <option value="0">--请选择--</option>
+                    <option value="1">11111111</option>
+                    <option value="2">22222222</option>
+                    <option>333333</option>
+                    <option>44444444</option>
+                    <option selected>555555555</option>
+                    <option>666666</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>列表</th>
+            <td>
+                <select name="gn1" size="5">
+                    <option value="0">--请选择--</option>
+                    <option value="1">11111111</option>
+                    <option value="2">22222222</option>
+                    <option>333333</option>
+                    <option selected>44444444</option>
+                    <option>555555555</option>
+                    <option>666666</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>多选列表</th>
+            <td>
+                <select name="gn2" size="5" multiple>
+                    <option value="0">--请选择--</option>
+                    <option value="1">11111111</option>
+                    <option value="2">22222222</option>
+                    <option>333333</option>
+                    <option>44444444</option>
+                    <option>555555555</option>
+                    <option>666666</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>多行文本域</th>
+            <td>
+                <textarea cols="40" rows="6" name="message">在这里输入你的信息</textarea>
+            </td>
+        </tr>
+        <input type="hidden" name="id" value="100">
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" name="sub" value="提交">
+                <input type="image" src="dl.gif">
+                <input type="reset">
+                <input type="button" value="清空" onclick="document.frm.username.value=''">
+            </td>
+        </tr>
+    </form>
+</table>
+<a href="" title="this is a link">aaaaaa</a><br>
+<b title="this is a tab">bbbbbbbbbbbb</b><br>
+</body>
+</html>
