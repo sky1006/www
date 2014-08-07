@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>样式规则的优先级</title>
+    <style>
+        div {
+            color: red;
+            font-size: 2cm;
+        }
+
+        .one {
+            color: green;
+            font-size: 5cm;
+        }
+
+        #two {
+            color: blue;
+            font-size: 1cm;
+        }
+
+        #hello .three {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+<div id="hello">
+    <div class="one  three" id="two">
+        aaaaaaaaaaaaaaa
+    </div>
+</div>
+</body>
+</html>

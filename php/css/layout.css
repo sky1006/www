@@ -1,0 +1,13 @@
+/* 这里直接写入css即可 */
+
+p {
+    color: green;
+    font-size: 4cm;
+    border: 2px solid blue;
+    background-color: red;
+}
+
+b {
+    color: rosybrown;
+    font-size: 5cm;
+}
