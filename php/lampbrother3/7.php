@@ -54,12 +54,17 @@ var_dump($var); //object
 echo "<br>";
 
 echo "以下输出两种特殊类型：<br>";
-$var = mysql_connect("localhost", "root", "");
+$link = mysql_connect("localhost", "root", "");
 
-var_dump($var); //resource
+var_dump($link); //resource
 echo "<br>";
+if ($link) {
+    echo "这个变量是真值";
+} else {
+    echo "这个变量是假值";
+}
 
-$var = null;
+$link = null;
 
-var_dump($var); //null
+var_dump($link); //null
 echo "<br>";
