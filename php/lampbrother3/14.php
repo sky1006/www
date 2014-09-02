@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ALL & ~E_NOTICE);
 /**
  * Created by PhpStorm.
  * User: Administrator
@@ -68,3 +69,51 @@ $html .= "<h1>这是标题</h1>";
 $html .= '</body>';
 $html .= '</html>';
 echo $html . "<br>";
+
+/*
+ * 比较运算符号   >   <   ==  >=  <=  !=  !==    ===
+ * 1、比较后的结果是一个boolean值，用在if和while等语句中    4>3  true
+ * === 全等于；两边值相等并且类型相等返回true
+ * == 等于；两边操作数相同返回true
+ */
+$a3 = "007";
+$b3 = 7;
+var_dump($a3 == $b3);
+var_dump($a3 === $b3);
+
+/*
+ * 逻辑运算符号   &&  ||  !
+ * 特性：短路
+ */
+var_dump(true && false && true);
+$year = 2016;
+if (($year % 4 == 0 && $year % 100 != 0) || $year % 400 == 0) {
+    echo "这个年{$year} 是闰年" . "<br>";
+} else {
+    echo "是平年" . "<br>";
+}
+
+$link = mysql_connect('localhost', 'root', '');
+if (!$link) {
+    die('Could not connect: ' . mysql_error());
+}
+echo 'Connected successfully' . "<br>";
+mysql_close($link);
+// die("输出并退出程序！");
+echo "11111111" . "<br>";
+/*
+ * 位运算符   &   |   ^   ~   >>  <<
+ * 按位运算
+ *  & -- 两个操作都为1，结果为1，否则为0； 有0出0
+ *  | -- 两个操作都为0，结果为0，否则为1； 有1出1
+ *  ^ 异或 -- 同为0，异为1；
+ */
+var_dump(12 & 13);
+var_dump('A' & 'a');
+$a4 = 3;
+$b4 = 5;
+if ($a4 > 5 & $b4++ < 100) { // 不短路
+
+}
+echo $b4 . "<br>";
+var_dump(0 | 0);
