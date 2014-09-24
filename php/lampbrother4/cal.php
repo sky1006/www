@@ -14,21 +14,23 @@ if (isset($_POST['sub'])) {
     if ($_POST['num1'] == "") {
         $bz = false;
         $errormess .= "第一个数不能为空<br>";
+    } else {
+        if (!is_numeric($_POST['num1'])) {
+            $bz = false;
+            $errormess .= "第一个不是数字不能计算<br>";
+        }
     }
 
     if ($_POST['num2'] == "") {
         $bz = false;
         $errormess .= "第二个数不能为空<br>";
+    } else {
+        if (!is_numeric($_POST['num2'])) {
+            $bz = false;
+            $errormess .= "第二个不是数字不能计算<br>";
+        }
     }
 
-    if (!is_numeric($_POST['num1'])) {
-        $bz = false;
-        $errormess .= "第一个不是数字不能计算<br>";
-    }
-    if (!is_numeric($_POST['num2'])) {
-        $bz = false;
-        $errormess .= "第二个不是数字不能计算<br>";
-    }
 
     if ($bz) {
         // 计算后的结果
@@ -68,19 +70,19 @@ echo '<br>';
         <caption><h1>简单计算器</h1></caption>
         <tr>
             <td>
-                <input type="text" size="5" name="num1" value=""/><br>
+                <input type="text" size="5" name="num1" value="<?php echo $_POST['num1'] ?>"/><br>
             </td>
             <td>
                 <select name="ysf">
-                    <option value="+"> +</option>
-                    <option value="-"> -</option>
-                    <option value="*"> *</option>
-                    <option value="/"> /</option>
-                    <option value="%"> %</option>
+                    <option <?php if ($_POST['ysf'] == "+") echo "selected" ?> value="+"> +</option>
+                    <option <?php if ($_POST['ysf'] == "-") echo "selected" ?> value="-"> -</option>
+                    <option <?php echo $_POST['ysf'] == "*" ? "selected" : "" ?> value="*"> *</option>
+                    <option <?php if ($_POST['ysf'] == "/") echo "selected" ?> value="/"> /</option>
+                    <option <?php if ($_POST['ysf'] == "%") echo "selected" ?> value="%"> %</option>
                 </select>
             </td>
             <td>
-                <input type="text" size="5" name="num2" value=""/><br>
+                <input type="text" size="5" name="num2" value="<?php echo $_POST['num2'] ?>"/><br>
             </td>
 
             <td>
