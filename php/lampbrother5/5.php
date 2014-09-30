@@ -42,3 +42,23 @@ function test($n)
 }
 
 test(10);
+
+function fordir2($dirname)
+{
+//打开目录资源
+    $dir = opendir($dirname);
+//echo readdir($dir).'<br>';
+    readdir($dir);
+    readdir($dir);
+    while ($file = readdir($dir)) {
+        $file = $dirname . "/" . $file;
+        if (is_dir($file)) {
+            echo "目录：{$file}<br>";
+
+            fordir2($file);
+        } else {
+            echo "文件：{$file}<br>";
+        }
+    }
+}
+    fordir2($dirname);
