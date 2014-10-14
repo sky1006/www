@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>关联选择器</title>
+    <style>
+        div #one .two p {
+            color: red;
+            font-size: 4cm;
+        }
+
+        div h1 {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div id="one">
+        <div class="two">
+            <p>wwwwwwwwwwwwww</p>
+        </div>
+
+    </div>
+</div>
+
+<div>
+    <div id="one">
+        <div class="two">
+            <h1>ooooooooooo</h1>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

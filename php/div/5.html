@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DIV+CSS网页标准化布局</title>
+    <style>
+
+        a:hover {
+            position: relative;
+            left: 1px;
+            top: 1px;
+
+        }
+
+        #dis {
+            overflow: scroll;
+            width: 80px;
+            height: 50px;
+        }
+
+        #main {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            width: 100px;
+            height: 100px;
+            background: red;
+            z-index: -100;
+        }
+    </style>
+</head>
+<body>
+<div id="dis">
+    <a href="#">aaaaaaaaaaaaaaaaaaa</a><br>
+    <a href="#">aaaaaaaaaaaaaaaaaaa</a><br>
+    <a href="#">aaaaaaaaaaaaaaaaaaa</a><br>
+    <a href="#">aaaaaaaaaaaaaaaaaaa</a><br>
+    <a href="#">aaaaaaaaaaaaaaaaaaa</a><br>
+</div>
+ggggggggggggggggggggggg
+<div id="main">
+    bbbbbbbbbbb
+</div>
+</body>
+</html>
