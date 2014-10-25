@@ -25,12 +25,26 @@ class BoyFriend
     var $sex = "男";
     var $height = "170cm";
     var $eye = "big";
+
 //标记行为--函数（成员方法）
-    function doFan($rou,$cai) {
+    function doFan($rou, $cai)
+    {
         return "做饭功能<br>";
     }
-    function doJw() {
+
+    function doJw()
+    {
         return "做家务功能<br>";
     }
 
-} 
+}
+
+$bf1 = new BoyFriend();
+$bf1 -> name= "张三";
+$bf2 = new BoyFriend();
+$bf2->name= "李四";
+echo $bf1->sex . '<br>';
+echo $bf2->height.'<br>';
+echo $bf1->name . '<br>';
+
+echo $bf1->doFan("牛肉","土豆");
