@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2d4c02d3-5570-4c67-977f-ab75d7b04ee5" name="默认的" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lampbrother7/2.php" afterPath="$PROJECT_DIR$/lampbrother7/2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lampbrother7/boyFriend.php" afterPath="$PROJECT_DIR$/lampbrother7/boyFriend.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="php.iws" />
@@ -36,19 +35,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="boyFriend.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="boyFriend.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lampbrother7/boyFriend.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="3" selection-start="518" selection-end="518" vertical-scroll-proportion="0.50140846" vertical-offset="411" max-vertical-offset="1615">
+            <state line="31" column="3" selection-start="518" selection-end="518" vertical-scroll-proportion="23.964285" vertical-offset="1260" max-vertical-offset="1615">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="2.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lampbrother7/2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="3" selection-start="94" selection-end="94" vertical-scroll-proportion="-4.071429" vertical-offset="0" max-vertical-offset="247">
+            <state line="69" column="16" selection-start="1184" selection-end="1184" vertical-scroll-proportion="3.6929576" vertical-offset="0" max-vertical-offset="1444">
               <folding />
             </state>
           </provider>
@@ -121,15 +120,15 @@
         <option value="$PROJECT_DIR$/lampbrother6/6.php" />
         <option value="$PROJECT_DIR$/lampbrother6/7.php" />
         <option value="$PROJECT_DIR$/lampbrother7/1.php" />
-        <option value="$PROJECT_DIR$/lampbrother7/2.php" />
         <option value="$PROJECT_DIR$/lampbrother7/boyFriend.php" />
+        <option value="$PROJECT_DIR$/lampbrother7/2.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="491" />
-    <option name="y" value="67" />
+    <option name="x" value="625" />
+    <option name="y" value="137" />
     <option name="width" value="784" />
     <option name="height" value="667" />
   </component>
@@ -461,7 +460,11 @@
       <created>1414230943213</created>
       <updated>1414230943213</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Revert &quot;1&quot;&#10;&#10;This reverts commit 8ceeb2ed78f91d1db80f6a36c8e56d4baa99cc62.&#10;&#10;Conflicts:&#10;&#9;php/.idea/vcs.xml&#10;&#9;php/.idea/workspace.xml&#10;&#9;php/two/1.html&#10;">
+      <created>1415786655819</created>
+      <updated>1415786655819</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -485,7 +488,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="491" y="67" width="784" height="667" extended-state="0" />
+    <frame x="625" y="137" width="784" height="667" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -783,13 +786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lampbrother7/2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="3" selection-start="94" selection-end="94" vertical-scroll-proportion="-4.071429" vertical-offset="0" max-vertical-offset="247">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lampbrother7/1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="24" selection-start="177" selection-end="177" vertical-scroll-proportion="-6.107143" vertical-offset="0" max-vertical-offset="285">
@@ -799,7 +795,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lampbrother7/boyFriend.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="3" selection-start="518" selection-end="518" vertical-scroll-proportion="0.50140846" vertical-offset="411" max-vertical-offset="1615">
+        <state line="31" column="3" selection-start="518" selection-end="518" vertical-scroll-proportion="23.964285" vertical-offset="1260" max-vertical-offset="1615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lampbrother7/2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="16" selection-start="1184" selection-end="1184" vertical-scroll-proportion="3.6929576" vertical-offset="0" max-vertical-offset="1444">
           <folding />
         </state>
       </provider>
