@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: Administrator
@@ -23,38 +24,52 @@
  * 权限问题：
  *      子类只能大于或等于父类的权限，不能小于
  */
-class Person {
-    public  $name;
+class Person
+{
+    public $name;
     protected $age;
     protected $sex;
 
-    function __construct($name,$age,$sex) {
-        $this->name=$name;
-        $this->age=$age;
-        $this->sex=$sex;
+    function __construct($name, $age, $sex)
+    {
+        $this->name = $name;
+        $this->age = $age;
+        $this->sex = $sex;
     }
-    function say(){
+
+    function say()
+    {
         echo "我的名字是：{$this->name} ，我的年龄是：{$this->age} ，我的性别是：{$this->sex} 。<br>";
     }
-    function eat() {
+
+    function eat()
+    {
         echo "11111111<br>";
     }
-    function  run() {
+
+    function  run()
+    {
 
     }
 }
-class Student extends Person {
+
+class Student extends Person
+{
     var $school;
 
-    function __construct($name,$age,$sex,$school) {
-        parent::__construct($name,$age,$sex);
-        $this->school=$school;
+    function __construct($name, $age, $sex, $school)
+    {
+        parent::__construct($name, $age, $sex);
+        $this->school = $school;
     }
 
-    function study() {
+    function study()
+    {
 
     }
-    function say(){
+
+    function say()
+    {
         //Person::say();
         parent::say();
         //echo "我的名字是：{$this->name} ，我的年龄是：{$this->age} ，我的性别是：{$this->sex} 。<br>";
@@ -62,10 +77,13 @@ class Student extends Person {
     }
 }
 
-class Teacher extends Student {
+class Teacher extends Student
+{
     var $gz;
-      function jiao() {
-          echo "我的名字是：{$this->name} ，我的年龄是：{$this->age} ，我的性别是：{$this->sex} 。<br>";
+
+    function jiao()
+    {
+        echo "我的名字是：{$this->name} ，我的年龄是：{$this->age} ，我的性别是：{$this->sex} 。<br>";
     }
 
 }
@@ -75,5 +93,20 @@ class Teacher extends Student {
  $t->jiao();
 echo $t->name;*/
 
-$s = new Student("燕子",29,"女","英国佬");
+$s = new Student("燕子", 29, "女", "英国佬");
 $s->say();
+
+$p = new Person("yanzi", 29, "nv");
+
+if ($p instanceof Person) { //instanceof 用于检测当前对象实例是否属于某一个类的类型
+    echo "这个\$p是Person类的对象";
+} else {
+    echo "对象不属于这个类";
+}
+
+/*
+ * 在PHP中final不定义常量，所以就不会使用，也不能使用final来修饰成员属性
+ * 1、final可以修饰类  ---- 这个类不能去扩展，不能有子类（不让别人去扩展，这个类是最终的类）
+ * 2、final可以修饰方法 --- 这个方法就不能在子类中覆盖（不让子类去改这个方法，或扩展这个方法的功能时，
+ *                          这个方法也就是最终的方法）
+ */
