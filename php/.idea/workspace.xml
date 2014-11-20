@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d4c02d3-5570-4c67-977f-ab75d7b04ee5" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lampbrother7/4.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lampbrother7/5.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lampbrother7/toString.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lampbrother7/3.php" afterPath="$PROJECT_DIR$/lampbrother7/3.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -27,11 +28,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="2.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lampbrother7/2.php">
+      <file leaf-file-name="4.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lampbrother7/4.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="17" selection-start="2364" selection-end="2364" vertical-scroll-proportion="-37.857143" vertical-offset="1163" max-vertical-offset="2451">
+            <state line="21" column="17" selection-start="442" selection-end="442" vertical-scroll-proportion="14.25" vertical-offset="798" max-vertical-offset="1292">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="toString.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lampbrother7/toString.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="82" column="3" selection-start="1842" selection-end="1842" vertical-scroll-proportion="0.35774648" vertical-offset="1431" max-vertical-offset="1862">
+              <folding>
+                <element signature="e#6#481#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -39,16 +51,7 @@
       <file leaf-file-name="3.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lampbrother7/3.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="1" selection-start="536" selection-end="959" vertical-scroll-proportion="-9.964286" vertical-offset="728" max-vertical-offset="2223">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="4.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lampbrother7/4.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="37" selection-start="954" selection-end="954" vertical-scroll-proportion="2.3380282" vertical-offset="44" max-vertical-offset="1292">
+            <state line="83" column="19" selection-start="1467" selection-end="1467" vertical-scroll-proportion="-8.964286" vertical-offset="1326" max-vertical-offset="2679">
               <folding />
             </state>
           </provider>
@@ -72,8 +75,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/div/11.html" />
-        <option value="$PROJECT_DIR$/div/12.html" />
         <option value="$PROJECT_DIR$/div/demo.html" />
         <option value="$PROJECT_DIR$/div/css/layout.css" />
         <option value="$PROJECT_DIR$/div/divcss.html" />
@@ -121,15 +122,17 @@
         <option value="$PROJECT_DIR$/lampbrother7/1.php" />
         <option value="$PROJECT_DIR$/lampbrother7/boyFriend.php" />
         <option value="$PROJECT_DIR$/lampbrother7/2.php" />
-        <option value="$PROJECT_DIR$/lampbrother7/3.php" />
         <option value="$PROJECT_DIR$/lampbrother7/4.php" />
+        <option value="$PROJECT_DIR$/lampbrother7/5.php" />
+        <option value="$PROJECT_DIR$/lampbrother7/3.php" />
+        <option value="$PROJECT_DIR$/lampbrother7/toString.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="573" />
-    <option name="y" value="14" />
+    <option name="x" value="521" />
+    <option name="y" value="37" />
     <option name="width" value="784" />
     <option name="height" value="667" />
   </component>
@@ -180,6 +183,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lampbrother7" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -459,7 +476,11 @@
       <created>1416217289953</created>
       <updated>1416217289954</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Revert &quot;1&quot;&#10;&#10;This reverts commit 8ceeb2ed78f91d1db80f6a36c8e56d4baa99cc62.&#10;&#10;Conflicts:&#10;&#9;php/.idea/vcs.xml&#10;&#9;php/.idea/workspace.xml&#10;&#9;php/two/1.html&#10;">
+      <created>1416391209280</created>
+      <updated>1416391209280</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -483,7 +504,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="573" y="14" width="784" height="667" extended-state="0" />
+    <frame x="521" y="37" width="784" height="667" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="更改" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22669104" sideWeight="0.49591282" order="7" side_tool="false" content_ui="tabs" />
@@ -533,16 +554,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/div/divcss.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="25" selection-start="305" selection-end="305" vertical-scroll-proportion="0.6800895" vertical-offset="0" max-vertical-offset="2451" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/div/css/layout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="1" selection-start="1902" selection-end="1902" vertical-scroll-proportion="0.32421052" vertical-offset="2202" max-vertical-offset="3648" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/div/demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="59" selection-start="1655" selection-end="1655" vertical-scroll-proportion="1.6017897" vertical-offset="253" max-vertical-offset="2185" />
@@ -779,22 +790,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lampbrother7/2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="17" selection-start="2364" selection-end="2364" vertical-scroll-proportion="-37.857143" vertical-offset="1163" max-vertical-offset="2451">
+        <state line="117" column="17" selection-start="2364" selection-end="2364" vertical-scroll-proportion="2.9859154" vertical-offset="1163" max-vertical-offset="2451">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lampbrother7/3.php">
+    <entry file="file://$PROJECT_DIR$/lampbrother7/5.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="1" selection-start="536" selection-end="959" vertical-scroll-proportion="-9.964286" vertical-offset="728" max-vertical-offset="2223">
+        <state line="42" column="0" selection-start="714" selection-end="714" vertical-scroll-proportion="0.63858694" vertical-offset="563" max-vertical-offset="931">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lampbrother7/4.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="37" selection-start="954" selection-end="954" vertical-scroll-proportion="2.3380282" vertical-offset="44" max-vertical-offset="1292">
+        <state line="21" column="17" selection-start="442" selection-end="442" vertical-scroll-proportion="14.25" vertical-offset="798" max-vertical-offset="1292">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lampbrother7/3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="19" selection-start="1467" selection-end="1467" vertical-scroll-proportion="-8.964286" vertical-offset="1326" max-vertical-offset="2679">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lampbrother7/toString.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="3" selection-start="1842" selection-end="1842" vertical-scroll-proportion="0.35774648" vertical-offset="1431" max-vertical-offset="1862">
+          <folding>
+            <element signature="e#6#481#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

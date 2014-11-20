@@ -110,3 +110,27 @@ if ($p instanceof Person) { //instanceof 用于检测当前对象实例是否属
  * 2、final可以修饰方法 --- 这个方法就不能在子类中覆盖（不让子类去改这个方法，或扩展这个方法的功能时，
  *                          这个方法也就是最终的方法）
  */
+
+
+/*
+ * define("常量名","值")
+ *  类里面不能用define定义常量
+ *const 修饰的成员属性为常量，只能修饰成员属性
+ *      1、常量建议使用大写，不能使用$
+ *      2、常量一定要在声明时就给好初值
+ *      3、常量的访问方式和static的访问方式相同，但只能读
+ *          1、在类外部使用    类名::常量名
+ *          2、在类的内部     self::常量名
+ *
+ * final  类和方法
+ * static  属性和方法
+ */
+class Demo {
+    const SEX = "nan";
+    static function say() {
+        echo "<br>我的性别是:".self::SEX."<br>";
+    }
+}
+
+echo Demo::SEX;
+Demo::say();
