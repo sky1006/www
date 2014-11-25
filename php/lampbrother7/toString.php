@@ -69,6 +69,9 @@ class Person {
         $this->age=12;
         $this->name="老徐";
     }
+    static function __set_state($arr) {
+        $p = new Person("李四",29,"女");
+    }
 
 }
 
@@ -118,7 +121,11 @@ $p->www("wwwww");
  *      1、将对象在网络中传输
  *      2、将对象持久保存
  *
+ *
  */
 
 echo "<br>-------------------------------<br>";
 
+/*
+ * 1、eval()函数 --- 检查并执行PHP代码
+ */
