@@ -13,20 +13,26 @@ interface USB
 {
     const WIDTH = 12;
     const HEIGHT = 3;
+
     function load();
+
     function run();
+
     function stop();
 }
 
-class Computer {
-    function useUSB(USB $usb) {
-        $usb ->load();
+class Computer
+{
+    function useUSB(USB $usb)
+    {
+        $usb->load();
         $usb->run();
         $usb->stop();
     }
 }
 
-class Mouse implements USB {
+class Mouse implements USB
+{
 
     function load()
     {
@@ -44,7 +50,8 @@ class Mouse implements USB {
     }
 }
 
-class KeyPress implements USB {
+class KeyPress implements USB
+{
 
     function load()
     {
@@ -62,15 +69,17 @@ class KeyPress implements USB {
     }
 }
 
-class Worker {
-    function work() {
+class Worker
+{
+    function work()
+    {
         $c = new Computer();
-        $m =new Mouse();
-        $k =new KeyPress();
+        $m = new Mouse();
+        $k = new KeyPress();
         $c->useUSB($k);
         echo '---------<br>';
         $c->useUSB($m);
-}
+    }
 }
 
 $w = new Worker();
