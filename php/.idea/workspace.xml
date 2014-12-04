@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d4c02d3-5570-4c67-977f-ab75d7b04ee5" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lamp9/1.php" />
+    <list default="true" id="2d4c02d3-5570-4c67-977f-ab75d7b04ee5" name="默认的" comment="Revert &quot;1&quot;&#10;&#10;This reverts commit 8ceeb2ed78f91d1db80f6a36c8e56d4baa99cc62.&#10;&#10;Conflicts:&#10;&#9;php/.idea/vcs.xml&#10;&#9;php/.idea/workspace.xml&#10;&#9;php/two/1.html&#10;正则表达式">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lamp9/1.php" afterPath="$PROJECT_DIR$/lamp9/1.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="php.iws" />
@@ -29,7 +29,7 @@
       <file leaf-file-name="1.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lamp9/1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="15" selection-start="1530" selection-end="1530" vertical-scroll-proportion="0.7492958" vertical-offset="836" max-vertical-offset="1273">
+            <state line="57" column="16" selection-start="1506" selection-end="1506" vertical-scroll-proportion="0.6422535" vertical-offset="855" max-vertical-offset="1311">
               <folding />
             </state>
           </provider>
@@ -528,7 +528,11 @@
       <created>1417674165900</created>
       <updated>1417674165900</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Revert &quot;1&quot;&#10;&#10;This reverts commit 8ceeb2ed78f91d1db80f6a36c8e56d4baa99cc62.&#10;&#10;Conflicts:&#10;&#9;php/.idea/vcs.xml&#10;&#9;php/.idea/workspace.xml&#10;&#9;php/two/1.html&#10;正则表达式">
+      <created>1417687329177</created>
+      <updated>1417687329177</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -594,7 +598,10 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Revert &quot;1&quot;&#10;&#10;This reverts commit 8ceeb2ed78f91d1db80f6a36c8e56d4baa99cc62.&#10;&#10;Conflicts:&#10;&#9;php/.idea/vcs.xml&#10;&#9;php/.idea/workspace.xml&#10;&#9;php/two/1.html&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;1&quot;&#10;&#10;This reverts commit 8ceeb2ed78f91d1db80f6a36c8e56d4baa99cc62.&#10;&#10;Conflicts:&#10;&#9;php/.idea/vcs.xml&#10;&#9;php/.idea/workspace.xml&#10;&#9;php/two/1.html&#10;" />
+    <MESSAGE value="Revert &quot;1&quot;&#10;&#10;This reverts commit 8ceeb2ed78f91d1db80f6a36c8e56d4baa99cc62.&#10;&#10;Conflicts:&#10;&#9;php/.idea/vcs.xml&#10;&#9;php/.idea/workspace.xml&#10;&#9;php/two/1.html&#10;正则表达式" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;1&quot;&#10;&#10;This reverts commit 8ceeb2ed78f91d1db80f6a36c8e56d4baa99cc62.&#10;&#10;Conflicts:&#10;&#9;php/.idea/vcs.xml&#10;&#9;php/.idea/workspace.xml&#10;&#9;php/two/1.html&#10;正则表达式" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -878,7 +885,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lamp9/1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="15" selection-start="1530" selection-end="1530" vertical-scroll-proportion="0.7492958" vertical-offset="836" max-vertical-offset="1273">
+        <state line="57" column="16" selection-start="1506" selection-end="1506" vertical-scroll-proportion="0.6422535" vertical-offset="855" max-vertical-offset="1311">
           <folding />
         </state>
       </provider>

@@ -55,6 +55,7 @@ echo preg($reg, $str1) . '<br>';
  *
  *  3、自定义原子表
  *      [13579]   [^a-zA-Z]
+ *  4、点（.）能代表所有的
  */
 $s = "This is test<br>";
 $reg1 = "/\w/";
