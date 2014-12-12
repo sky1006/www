@@ -1,3 +1,10 @@
+<form action="" method="post">
+    username:<input type="text" name="username" value=""/><br>
+    email:<input type="text" name="email" value=""/><br>
+    url:<input type="text" name="url" value=""/><br>
+
+    <input type="submit" name="dosubmit" value="submit"><br>
+</form>
 <?php
 /**
  * Created by PhpStorm.
@@ -14,6 +21,11 @@
  *      strstr  strpos  substr
  * 正则匹配查找：
  *      preg_match()    preg_match_all()    preg_grep()
+ *
+ * 分割：
+ *      explode()   implode()   -- join()
+ * 正则表达式
+ *      preg_split()
  */
 $str = "This 5 is 8 a 9 test!";
 if (strstr($str, "test")) {
@@ -93,13 +105,44 @@ echo '--------------------------------------------------------<br>';
 $arr = array("abc1", "he llo2", "world", "ni hao");
 $content = preg_grep('/\s/', $arr);
 print_r($content);
+echo '<br><br><br>';
 
-?>
+echo '-----------------------------<b>分割</b>-------------------------<br>';
+$s1 = "this is a test,
+hello world,
+ni hao.";
+print_r(explode(" ", $s1));
+echo '<br><br><br>';
+print_r(preg_split('/[.,!? ]/', $s1));
+echo '<br><br><br>';
 
-<form action="" method="post">
-    username:<input type="text" name="username" value=""/><br>
-    email:<input type="text" name="email" value=""/><br>
-    url:<input type="text" name="url" value=""/><br>
+/*
+ * 替换
+ *      字符串处理：str_replace()
+ *      正则表达式：preg_replace()
+ */
+$s2 = "http://www.gjla.com/php/demo.php";
+$num = 0;
+$newstr = str_replace("php", "java", $s2, $num);
+echo $s2 . '<br>';
+echo $newstr . '<br>';
+echo "替换的次数为：{$num}<br>";
 
-    <input type="submit" name="dosubmit" value="submit"><br>
-</form>
+//非法关键字：正常  强哥  妹子
+$s3 = "这是一句正常的妹子句子，但里面强哥有些不能显示的文字";
+$num1 = 0;
+$ns = str_replace(array("正常", "强哥", "妹子"), "**", $s3, $num1);
+$ns2 = str_replace(array("正常", "强哥", "妹子"), array("很正常", "帅哥", "漂亮"), $s3, $num1);
+echo $s3 . '<br>';
+echo $ns . '<br>';
+echo $ns2 . '<br>';
+echo "替换的次数为：{$num1}<br>";
+echo '--------------------------------------------------------<br>';
+
+$s4 = "看了这个，对<b>搜房</b>这家公司也是醉了。<font color='red'> 莫天全应该能看到吧</font>? 股价跌得
+厉害也别整天上电视了，赶紧改善一下工作条件比啥都强。<u>我对互联网公司用慢速网络</u>我对互联网公司用慢速网络和烂电脑表示严重反感。";
+$html = "/\<[\/\!]*?[^\<\>]*?\>/is";
+$ns3 = preg_replace($html, "", $s4, 4, $count);
+echo $s4 . '<br>';
+echo $ns3 . '<br>';
+echo "替换的次数为：{$count}<br>";
