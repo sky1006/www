@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d4c02d3-5570-4c67-977f-ab75d7b04ee5" name="默认的" comment="Revert &quot;1&quot;&#10;&#10;This reverts commit 8ceeb2ed78f91d1db80f6a36c8e56d4baa99cc62.&#10;&#10;Conflicts:&#10;&#9;php/.idea/vcs.xml&#10;&#9;php/.idea/workspace.xml&#10;&#9;php/two/1.html&#10;正则表达式">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lamp9/4.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lamp9/5.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lamp9/3.php" afterPath="$PROJECT_DIR$/lamp9/3.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -26,30 +28,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="1.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lamp9/1.php">
+      <file leaf-file-name="3.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lamp9/3.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="1" selection-start="844" selection-end="844" vertical-scroll-proportion="39.357143" vertical-offset="1710" max-vertical-offset="2318">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lamp9/2.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="92" selection-start="444" selection-end="527" vertical-scroll-proportion="-3.9285715" vertical-offset="289" max-vertical-offset="988">
+            <state line="120" column="25" selection-start="3199" selection-end="3210" vertical-scroll-proportion="-2.857143" vertical-offset="2200" max-vertical-offset="3629">
               <folding>
-                <element signature="e#6#156#0" expanded="true" />
+                <marker date="1418631097694" expanded="true" signature="4756:4819" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="3.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lamp9/3.php">
+      <file leaf-file-name="4.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lamp9/4.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="147" column="27" selection-start="4069" selection-end="4069" vertical-scroll-proportion="0.6253521" vertical-offset="2571" max-vertical-offset="2926">
+            <state line="16" column="10" selection-start="307" selection-end="307" vertical-scroll-proportion="-10.857142" vertical-offset="0" max-vertical-offset="456">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="5.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lamp9/5.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="0" selection-start="807" selection-end="807" vertical-scroll-proportion="0.40046838" vertical-offset="456" max-vertical-offset="931">
               <folding />
             </state>
           </provider>
@@ -73,8 +75,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/lampbrother4/6.php" />
-        <option value="$PROJECT_DIR$/lampbrother5/demo.html" />
         <option value="$PROJECT_DIR$/lampbrother5/1.php" />
         <option value="$PROJECT_DIR$/html3/demo.html" />
         <option value="$PROJECT_DIR$/lampbrother5/2.php" />
@@ -124,15 +124,17 @@
         <option value="$PROJECT_DIR$/lamp9/1.php" />
         <option value="$PROJECT_DIR$/lamp9/2.php" />
         <option value="$PROJECT_DIR$/lamp9/3.php" />
+        <option value="$PROJECT_DIR$/lamp9/4.php" />
+        <option value="$PROJECT_DIR$/lamp9/5.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="569" />
-    <option name="y" value="19" />
-    <option name="width" value="784" />
-    <option name="height" value="667" />
+    <option name="x" value="-4" />
+    <option name="y" value="-4" />
+    <option name="width" value="1374" />
+    <option name="height" value="724" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -565,7 +567,11 @@
       <created>1418116891755</created>
       <updated>1418116891755</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Revert &quot;1&quot;&#10;&#10;This reverts commit 8ceeb2ed78f91d1db80f6a36c8e56d4baa99cc62.&#10;&#10;Conflicts:&#10;&#9;php/.idea/vcs.xml&#10;&#9;php/.idea/workspace.xml&#10;&#9;php/two/1.html&#10;正则表达式">
+      <created>1418378633753</created>
+      <updated>1418378633753</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -589,31 +595,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="569" y="19" width="784" height="667" extended-state="0" />
+    <frame x="-4" y="-4" width="1374" height="724" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="更改" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22669104" sideWeight="0.4945504" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="更改" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20462047" sideWeight="0.4939577" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32853717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24931881" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32853717" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23297003" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12915407" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24931881" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22669104" sideWeight="0.5054496" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20462047" sideWeight="0.505287" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32853717" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -642,16 +648,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lamp5/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="19" selection-start="1163" selection-end="1163" vertical-scroll-proportion="2.374214" vertical-offset="328" max-vertical-offset="1672" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lamp5/1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="15" selection-start="1664" selection-end="1664" vertical-scroll-proportion="-38.0" vertical-offset="513" max-vertical-offset="1824" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html3/demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="4" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.24918033" vertical-offset="798" max-vertical-offset="2185" />
@@ -859,18 +855,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lamp8string/2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="23" selection-start="158" selection-end="158" vertical-scroll-proportion="-0.4646739" vertical-offset="342" max-vertical-offset="722">
-          <folding />
-        </state>
+        <state line="9" column="23" selection-start="158" selection-end="158" vertical-scroll-proportion="-0.4646739" vertical-offset="342" max-vertical-offset="722" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lamp8string/1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="946" selection-end="946" vertical-scroll-proportion="0.4646739" vertical-offset="741" max-vertical-offset="1121">
-          <folding>
-            <element signature="e#6#339#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="48" column="0" selection-start="946" selection-end="946" vertical-scroll-proportion="0.4646739" vertical-offset="741" max-vertical-offset="1121" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lamp8string/4.php">
@@ -880,11 +870,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lamp8string/3.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="892" selection-end="976" vertical-scroll-proportion="0.41304347" vertical-offset="627" max-vertical-offset="1311">
-          <folding>
-            <element signature="e#6#110#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="41" column="0" selection-start="892" selection-end="976" vertical-scroll-proportion="0.41304347" vertical-offset="627" max-vertical-offset="1311" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lamp8string/5.php">
@@ -898,23 +884,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lamp9/2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="92" selection-start="444" selection-end="527" vertical-scroll-proportion="-3.9285715" vertical-offset="289" max-vertical-offset="988">
-          <folding>
-            <element signature="e#6#156#0" expanded="true" />
-          </folding>
+        <state line="21" column="92" selection-start="444" selection-end="527" vertical-scroll-proportion="0.30812326" vertical-offset="118" max-vertical-offset="817">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lamp9/1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="1" selection-start="844" selection-end="844" vertical-scroll-proportion="39.357143" vertical-offset="1710" max-vertical-offset="2318">
+        <state line="32" column="1" selection-start="844" selection-end="844" vertical-scroll-proportion="-3.0868347" vertical-offset="1710" max-vertical-offset="2318">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lamp9/4.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="10" selection-start="307" selection-end="307" vertical-scroll-proportion="-10.857142" vertical-offset="0" max-vertical-offset="456">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lamp9/3.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="27" selection-start="4069" selection-end="4069" vertical-scroll-proportion="0.6253521" vertical-offset="2571" max-vertical-offset="2926">
+        <state line="120" column="25" selection-start="3199" selection-end="3210" vertical-scroll-proportion="-2.857143" vertical-offset="2200" max-vertical-offset="3629">
+          <folding>
+            <marker date="1418631097694" expanded="true" signature="4756:4819" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lamp9/5.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="807" selection-end="807" vertical-scroll-proportion="0.40046838" vertical-offset="456" max-vertical-offset="931">
           <folding />
         </state>
       </provider>

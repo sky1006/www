@@ -139,10 +139,50 @@ echo $ns2 . '<br>';
 echo "替换的次数为：{$num1}<br>";
 echo '--------------------------------------------------------<br>';
 
-$s4 = "看了这个，对<b>搜房</b>这家公司也是醉了。<font color='red'> 莫天全应该能看到吧</font>? 股价跌得
-厉害也别整天上电视了，赶紧改善一下工作条件比啥都强。<u>我对互联网公司用慢速网络</u>我对互联网公司用慢速网络和烂电脑表示严重反感。";
+$s4 = "看了123这个http://www.baidu.com ，对<b>搜房</b>这家公司也是醉了。<font color='red'> 莫天全应该能看到吧</font>? 股价跌得
+厉害也http://www.gjla.com 别整天上电视了，赶紧改善一下工作条件比啥都强。<u>我对互联网 http://www.google.com 公司用慢速网络</u>我对互联网公司用慢速网络和烂电脑表示严重反感。";
 $html = "/\<[\/\!]*?[^\<\>]*?\>/is";
 $ns3 = preg_replace($html, "", $s4, 4, $count);
 echo $s4 . '<br>';
 echo $ns3 . '<br>';
-echo "替换的次数为：{$count}<br>";
+echo "替换的次数为：{$count}<br><br><br>";
+
+$url = "/(https?|ftps?):\/\/(www|mail|bbs|ftp)\.(.*?)\.(net|com|org|cn)([\w-\.\/\=\?\&\%]*)?/";
+$ns4 = preg_replace($url, "*****", $s4);
+echo $s4 . '<br>';
+echo $ns4 . '<br><br>';
+
+$ns5 = preg_replace($url, '<a href="\1://\2.\3.\4">\1://\2.\3.\4</a>', $s4);
+//$ns5 = preg_replace($url,'<a href="">$1://$2.$3.$4</a>',$s4);
+echo $ns5 . '<br>';
+
+/*
+ * strtoupper();
+ */
+$url2 = '/(https?|ftps?):\/\/(www|mail|bbs|ftp)\.(.*?)\.(net|com|org|cn)([\w-\.\/\=\?\&\%]*)?/';
+$ns6 = preg_replace_callback($url2,
+    function ($matches) {
+        //    echo $matches[0].'<br>';
+        return "<a href='$matches[0]'>" . strtoupper($matches[0]) . "</a>";
+    }, $s4);
+echo $ns6 . '<br>';
+
+$reg = array('/(https?|ftps?):\/\/(www|mail|bbs|ftp)\.(.*?)\.(net|com|org|cn)([\w-\.\/\=\?\&\%]*)?/e',
+    '/\<[\/\!]*?[^\<\>]*?\>/is',
+    '/\d/'
+);
+
+function matches($matches)
+{
+    return "<a href='$matches[0]'>" . strtoupper($matches[0]) . "</a>";
+}
+
+$rep = array(
+    '"<a href=\'$1://$2.$3.$4\'>".strtoupper("$1://$2.$3.$4")."</a>"',
+    '',
+    '@'
+);
+
+$ns7 = preg_replace($reg, $rep, $s4);
+echo $s4 . '<br>';
+echo $ns7 . '<br>';
