@@ -4,6 +4,7 @@
  * User: Administrator
  * Date: 14-12-16
  * Time: 下午5:07
+ * 去掉文件名中包含的空格
  */
 $mydir = "E:\\2014-09-05";
 //$mydir = "/alidata1/backup/2014-09-05";
@@ -31,9 +32,6 @@ function getfile($filedir)
 //            $f3 = $filedir.'/'.$filename;
 //            echo $f1.'<br>';
 //            echo $filename.'<br>';
-
-//            echo   `cd $filedir;mv $f1  $filename` ;
-            //          echo ` ren $filedir\$f1 $filename`;
             rename("$filedir\\$f1", "$filedir\\$filename");
         }
 
@@ -42,3 +40,8 @@ function getfile($filedir)
 }
 
 getfile($mydir);
+?>
+
+
+
+
