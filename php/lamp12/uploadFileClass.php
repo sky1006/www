@@ -207,6 +207,7 @@ class uploadFileClass
         if ($this->israndname) {
             $this->setOption('newFileName', $this->proRandName());
         } else {
+//            echo mb_detect_encoding($this->originName);
             $this->setOption('newFileName', $this->originName);
         }
     }
@@ -262,8 +263,7 @@ class uploadFileClass
         if (!$this->errorNum) {
             $path = rtrim($this->path, '/') . '/';
             $path .= $this->newFileName;
-            // $path=iconv("gb2312","UTF-8",$path);
-            if (@move_uploaded_file($this->tmpFileName, $path)) {
+            if (@move_uploaded_file($this->tmpFileName, iconv("UTF-8", "gb2312", $path))) {
                 return true;
             } else {
                 $this->setOption('errorNum', -3);
