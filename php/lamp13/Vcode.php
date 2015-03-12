@@ -15,7 +15,7 @@ class Vcode
     private $img;       //图像的资源
 
     //构造方法，三个参数
-    function __construct($width, $height, $num)
+    function __construct($width = 80, $height = 20, $num = 4)
     {
         $this->width = $width;
         $this->height = $height;
@@ -36,9 +36,9 @@ class Vcode
         //创建背景（颜色，大小，边框）
         $this->createback();
         //画字（大小，字体颜色）
-
+        $this->outstring();
         //干扰元素（点，线条）
-
+        $this->setdisturbcolor();
         //输出图像
         $this->printimg();
     }
@@ -61,13 +61,29 @@ class Vcode
     //画字
     private function outstring()
     {
-
+        for ($i = 0; $i < $this->num; $i++) {
+            $color = imagecolorallocate($this->img, rand(0, 128), rand(0, 128), rand(0, 128));
+            $fontsize = rand(3, 5);    //字体大小
+            $x = 3 + ($this->width / $this->num) * $i;    //水平位置
+            $y = rand(0, imagefontheight($fontsize) - 3);
+            //画出每个字符
+            imagestring($this->img, $fontsize, $x, $y, $this->code{$i}, $color);
+        }
     }
 
     //设置干扰元素
     private function setdisturbcolor()
     {
-
+        //加上点数
+        for ($i = 0; $i < 100; $i++) {
+            $color = imagecolorallocate($this->img, rand(0, 255), rand(0, 255), rand(0, 255));
+            imagesetpixel($this->img, rand(1, $this->width - 2), rand(1, $this->height - 2), $color);
+        }
+        //加线条
+        for ($i = 0; $i < 10; $i++) {
+            $color = imagecolorallocate($this->img, rand(0, 255), rand(0, 128), rand(0, 255));
+            imagearc($this->img, rand(-10, $this->width + 10), rand(-10, $this->height + 10), rand(30, 300), rand(30, 300), 55, 44, $color);
+        }
     }
 
     //输出图像
