@@ -6,7 +6,7 @@
  * Time: 16:39
  */
 //print_r(glob("./*.php"));
-foreach (glob("../lamp10/*.php") as $filename) {
+foreach (glob("../lamp10_Error/*.php") as $filename) {
     echo $filename . '<br>';
 }
 echo "*********************.<br>";
