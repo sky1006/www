@@ -2,77 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf9e248a-5536-4981-a038-7e48806426f9" name="Default" comment="1">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp14_DB/Page.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp14_DB/demo1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp14_DB/demo2.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp14_DB/demo3.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp14_DB/fenye.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp10\1.php" afterPath="$PROJECT_DIR$/php/lamp10_Error/1.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp10\abnormal.php" afterPath="$PROJECT_DIR$/php/lamp10_Error/abnormal.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp10\userDefineAbnormal.php" afterPath="$PROJECT_DIR$/php/lamp10_Error/userDefineAbnormal.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp10\writeErrorLog.php" afterPath="$PROJECT_DIR$/php/lamp10_Error/writeErrorLog.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp11\1.php" afterPath="$PROJECT_DIR$/php/lamp11_date/1.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp12\1.php" afterPath="$PROJECT_DIR$/php/lamp12_File/1.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp12\2.php" afterPath="$PROJECT_DIR$/php/lamp12_File/2.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp12\a.jpg" afterPath="$PROJECT_DIR$/php/lamp12_File/a.jpg" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp12\baidu.txt" afterPath="$PROJECT_DIR$/php/lamp12_File/baidu.txt" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp12\baseFileFun.php" afterPath="$PROJECT_DIR$/php/lamp12_File/baseFileFun.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp12\countSize.php" afterPath="$PROJECT_DIR$/php/lamp12_File/countSize.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp12\down.html" afterPath="$PROJECT_DIR$/php/lamp12_File/down.html" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp12\downFile.php" afterPath="$PROJECT_DIR$/php/lamp12_File/downFile.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp12\flock.php" afterPath="$PROJECT_DIR$/php/lamp12_File/flock.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp12\message.txt" afterPath="$PROJECT_DIR$/php/lamp12_File/message.txt" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp12\messageBoard.php" afterPath="$PROJECT_DIR$/php/lamp12_File/messageBoard.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp12\new.txt" afterPath="$PROJECT_DIR$/php/lamp12_File/new.txt" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp12\openCloseFile.php" afterPath="$PROJECT_DIR$/php/lamp12_File/openCloseFile.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp12\parseDirectory.php" afterPath="$PROJECT_DIR$/php/lamp12_File/parseDirectory.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp12\traversalDirectory.php" afterPath="$PROJECT_DIR$/php/lamp12_File/traversalDirectory.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp12\upform.html" afterPath="$PROJECT_DIR$/php/lamp12_File/upform.html" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp12\upform2.html" afterPath="$PROJECT_DIR$/php/lamp12_File/upform2.html" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp12\upform3.html" afterPath="$PROJECT_DIR$/php/lamp12_File/upform3.html" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp12\upload.php" afterPath="$PROJECT_DIR$/php/lamp12_File/upload.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp12\uploadFile1.php" afterPath="$PROJECT_DIR$/php/lamp12_File/uploadFile1.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp12\uploadFile2.php" afterPath="$PROJECT_DIR$/php/lamp12_File/uploadFile2.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp12\uploadFileClass.php" afterPath="$PROJECT_DIR$/php/lamp12_File/uploadFileClass.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp12\uploads\LOGO图层.png" afterPath="$PROJECT_DIR$/php/lamp12_File/uploads/LOGO图层.png" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp12\yanzi.txt" afterPath="$PROJECT_DIR$/php/lamp12_File/yanzi.txt" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp12\yanzi\20150310173853_151.jpg" afterPath="$PROJECT_DIR$/php/lamp12_File/yanzi/20150310173853_151.jpg" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp12\yanzi\yan.txt" afterPath="$PROJECT_DIR$/php/lamp12_File/yanzi/yan.txt" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\1992.gif" afterPath="$PROJECT_DIR$/php/lamp13_GD/1992.gif" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\SIMLI.TTF" afterPath="$PROJECT_DIR$/php/lamp13_GD/SIMLI.TTF" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\Vcode.php" afterPath="$PROJECT_DIR$/php/lamp13_GD/Vcode.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\clock.html" afterPath="$PROJECT_DIR$/php/lamp13_GD/clock.html" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\clock.php" afterPath="$PROJECT_DIR$/php/lamp13_GD/clock.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\code.php" afterPath="$PROJECT_DIR$/php/lamp13_GD/code.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\cut.php" afterPath="$PROJECT_DIR$/php/lamp13_GD/cut.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\cut_1992.gif" afterPath="$PROJECT_DIR$/php/lamp13_GD/cut_1992.gif" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\cut_mall.png" afterPath="$PROJECT_DIR$/php/lamp13_GD/cut_mall.png" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\demo.html" afterPath="$PROJECT_DIR$/php/lamp13_GD/demo.html" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\demo.php" afterPath="$PROJECT_DIR$/php/lamp13_GD/demo.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\fute.png" afterPath="$PROJECT_DIR$/php/lamp13_GD/fute.png" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\handleMap.php" afterPath="$PROJECT_DIR$/php/lamp13_GD/handleMap.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\image.class.php" afterPath="$PROJECT_DIR$/php/lamp13_GD/image.class.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\images\059.jpg" afterPath="$PROJECT_DIR$/php/lamp13_GD/images/059.jpg" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\images\cu_cx.png" afterPath="$PROJECT_DIR$/php/lamp13_GD/images/cu_cx.png" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\images\cx.png" afterPath="$PROJECT_DIR$/php/lamp13_GD/images/cx.png" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\images\dx.jpg" afterPath="$PROJECT_DIR$/php/lamp13_GD/images/dx.jpg" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\images\map.gif" afterPath="$PROJECT_DIR$/php/lamp13_GD/images/map.gif" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\images\php.gif" afterPath="$PROJECT_DIR$/php/lamp13_GD/images/php.gif" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\images\spin_059.jpg" afterPath="$PROJECT_DIR$/php/lamp13_GD/images/spin_059.jpg" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\images\spin_90059.jpg" afterPath="$PROJECT_DIR$/php/lamp13_GD/images/spin_90059.jpg" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\images\turn_x059.jpg" afterPath="$PROJECT_DIR$/php/lamp13_GD/images/turn_x059.jpg" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\images\turn_y059.jpg" afterPath="$PROJECT_DIR$/php/lamp13_GD/images/turn_y059.jpg" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\mall.png" afterPath="$PROJECT_DIR$/php/lamp13_GD/mall.png" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\map.php" afterPath="$PROJECT_DIR$/php/lamp13_GD/map.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\only.jpg" afterPath="$PROJECT_DIR$/php/lamp13_GD/only.jpg" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\reg.php" afterPath="$PROJECT_DIR$/php/lamp13_GD/reg.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\spin.php" afterPath="$PROJECT_DIR$/php/lamp13_GD/spin.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\waterMap_only.jpg" afterPath="$PROJECT_DIR$/php/lamp13_GD/waterMap_only.jpg" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\waterMark.php" afterPath="$PROJECT_DIR$/php/lamp13_GD/waterMark.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\water_1992.gif" afterPath="$PROJECT_DIR$/php/lamp13_GD/water_1992.gif" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\water_mall.png" afterPath="$PROJECT_DIR$/php/lamp13_GD/water_mall.png" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp13\zoom.php" afterPath="$PROJECT_DIR$/php/lamp13_GD/zoom.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp9\1.php" afterPath="$PROJECT_DIR$/php/lamp9_Regx/1.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp9\2.php" afterPath="$PROJECT_DIR$/php/lamp9_Regx/2.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp9\3.php" afterPath="$PROJECT_DIR$/php/lamp9_Regx/3.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp9\4.php" afterPath="$PROJECT_DIR$/php/lamp9_Regx/4.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\php\lamp9\5.php" afterPath="$PROJECT_DIR$/php/lamp9_Regx/5.php" />
     </list>
     <ignored path="one.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -97,11 +32,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="image.class.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/php/lamp13_GD/image.class.php">
+      <file leaf-file-name="Page.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/lamp14_DB/Page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="15.229358" vertical-offset="0" max-vertical-offset="10360">
-              <caret line="136" column="26" selection-start-line="136" selection-start-column="26" selection-end-line="136" selection-end-column="26" />
+            <state vertical-scroll-proportion="1.1620795" vertical-offset="0" max-vertical-offset="760">
+              <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+              <folding>
+                <element signature="e#6#97#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fenye.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/lamp14_DB/fenye.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.8965516" vertical-offset="0" max-vertical-offset="320">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -167,6 +114,12 @@
         <option value="$PROJECT_DIR$/php/lamp13/spin.php" />
         <option value="$PROJECT_DIR$/php/lamp13/image.class.php" />
         <option value="$PROJECT_DIR$/php/lamp13/demo.php" />
+        <option value="$PROJECT_DIR$/php/lamp14_DB/demo1.php" />
+        <option value="$PROJECT_DIR$/php/lamp14_DB/demo2.php" />
+        <option value="$PROJECT_DIR$/php/lamp14_DB/demo3.php" />
+        <option value="$PROJECT_DIR$/php/lamp14_DB/page.php" />
+        <option value="$PROJECT_DIR$/php/lamp14_DB/Page.php" />
+        <option value="$PROJECT_DIR$/php/lamp14_DB/fenye.php" />
       </list>
     </option>
   </component>
@@ -258,6 +211,28 @@
               <option name="myItemId" value="lnmphp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lamp14_DB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lnmphp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lnmphp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -278,6 +253,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wamp\www\php\lamp14_DB" />
       <recent name="D:\wamp\www\php\lamp13" />
       <recent name="D:\wamp\www\php\lamp12" />
       <recent name="D:\wamp\www\php\lamp12\yanzi" />
@@ -379,7 +355,13 @@
       <option name="project" value="LOCAL" />
       <updated>1426154548472</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="1">
+      <created>1426226459615</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1426226459615</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -418,7 +400,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928944" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.398017" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.398017" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24929178" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -463,41 +445,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php/lamp10_Error/userDefineAbnormal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2760">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp10_Error/1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp10_Error/1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="228">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/two/1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="912">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/two/1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="437">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitattributes">
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
         <state />
@@ -508,38 +455,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp10_Error/1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34749034" vertical-offset="260" max-vertical-offset="840">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="24" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp10_Error/writeErrorLog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0" vertical-offset="0" max-vertical-offset="640">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/Core_c.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4673077" vertical-offset="3957" max-vertical-offset="8160">
           <caret line="194" column="20" selection-start-line="194" selection-start-column="20" selection-end-line="194" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp10_Error/userDefineAbnormal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.7476099" vertical-offset="0" max-vertical-offset="2800">
-          <caret line="96" column="5" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp10_Error/abnormal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6061186" vertical-offset="0" max-vertical-offset="1120">
-          <caret line="41" column="38" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -870,16 +790,96 @@
         <state vertical-scroll-proportion="0.76516634" vertical-offset="69" max-vertical-offset="580">
           <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
           <folding>
-            <element signature="e#6#94#0#PHP" expanded="true" />
+            <element signature="e#6#94#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp10_Error/1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.039138943" vertical-offset="0" max-vertical-offset="840">
+          <caret line="1" column="37" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp10_Error/abnormal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.93933463" vertical-offset="480" max-vertical-offset="1280">
+          <caret line="41" column="38" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp10_Error/userDefineAbnormal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.5318274" vertical-offset="0" max-vertical-offset="3040">
+          <caret line="79" column="31" selection-start-line="79" selection-start-column="31" selection-end-line="79" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp10_Error/writeErrorLog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4520548" vertical-offset="269" max-vertical-offset="780">
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/lamp13_GD/image.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="15.229358" vertical-offset="0" max-vertical-offset="10360">
-          <caret line="136" column="26" selection-start-line="136" selection-start-column="26" selection-end-line="136" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.86105675" vertical-offset="0" max-vertical-offset="7160">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp14_DB/demo1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.275862" vertical-offset="120" max-vertical-offset="960">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          <folding>
+            <marker date="1426231622081" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp14_DB/demo3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25636008" vertical-offset="1169" max-vertical-offset="1740">
+          <caret line="61" column="23" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
+          <folding>
+            <marker date="1426236389473" expanded="true" signature="-1:-1" placeholder="select id,us..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp14_DB/demo2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0567515" vertical-offset="460" max-vertical-offset="1400">
+          <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+          <folding>
+            <marker date="1426235891908" expanded="true" signature="-1:-1" placeholder="select * fro..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp14_DB/fenye.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.8965516" vertical-offset="0" max-vertical-offset="320">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp14_DB/Page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1620795" vertical-offset="0" max-vertical-offset="760">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+          <folding>
+            <element signature="e#6#97#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
