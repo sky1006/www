@@ -6,5 +6,5 @@
  * Time: 17:19
  */
 include "Page.php";
-$page = new Page(888, 9);
-echo $page->fpage();
+$page = new Page(98, 10);
+echo $page->fpage(2, 3, 4, 5, 6);
