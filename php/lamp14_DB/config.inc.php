@@ -14,3 +14,4 @@ date_default_timezone_set("PRC");
 
 //分页显示数量
 $num = 15;
+$waterimg = "php.gif";

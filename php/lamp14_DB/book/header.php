@@ -16,5 +16,5 @@ include "../db.inc.php";
 <h1>图书管理</h1>
 <a href="add.php">添加图书</a>
 <a href="list.php">图书列表</a>
-<a href="ser.php">搜索图书</a>
+<a href="ser.php">搜索图书</a><br>
 
