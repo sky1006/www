@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf9e248a-5536-4981-a038-7e48806426f9" name="Default" comment="1">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp14_DB/uploads/php.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp14_DB/classes/fileupload.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp14_DB/function.inc.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp14_DB/classes/image.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp14_DB/classes/page.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp14_DB/classes/vcode.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp14_DB/book/add.php" afterPath="$PROJECT_DIR$/php/lamp14_DB/book/add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp14_DB/config.inc.php" afterPath="$PROJECT_DIR$/php/lamp14_DB/config.inc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp14_DB/book/header.php" afterPath="$PROJECT_DIR$/php/lamp14_DB/book/header.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp15_PDO/demo1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp15_PDO/demo2.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp15_PDO/demo3.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp15_PDO/demoExec.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp15_PDO/demoPrepare.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp15_PDO/demoPrepare2.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp15_PDO/demoPrepare3.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp15_PDO/demoQuery.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp15_PDO/demoTran.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp15_PDO/phpinfo.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp14_DB/book/list.php" afterPath="$PROJECT_DIR$/php/lamp14_DB/book/list.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp14_DB/book/mod.php" afterPath="$PROJECT_DIR$/php/lamp14_DB/book/mod.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="one.iws" />
@@ -38,112 +38,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="add.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/lamp14_DB/book/add.php">
+      <file leaf-file-name="demoPrepare3.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/lamp15_PDO/demoPrepare3.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.5172415" vertical-offset="0" max-vertical-offset="1140">
-              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.88990825" vertical-offset="829" max-vertical-offset="1500">
+              <caret line="37" column="67" selection-start-line="37" selection-start-column="67" selection-end-line="37" selection-end-column="67" />
               <folding>
-                <marker date="1426582075751" expanded="true" signature="391:584" placeholder="insert into ..." />
-                <marker date="1426582075751" expanded="true" signature="391:600" placeholder="insert into ..." />
-                <marker date="1426582075751" expanded="true" signature="894:1404" placeholder="..." />
+                <marker date="1426670927727" expanded="true" signature="681:747" placeholder="INSERT INTO ..." />
+                <marker date="1426670927727" expanded="true" signature="779:870" placeholder="INSERT INTO ..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="function.inc.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/lamp14_DB/function.inc.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.275862" vertical-offset="193" max-vertical-offset="760">
-              <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
-              <folding>
-                <element signature="e#6#94#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mod.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/lamp14_DB/book/mod.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.4482758" vertical-offset="700" max-vertical-offset="2460">
-              <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-              <folding>
-                <marker date="1426584172396" expanded="true" signature="314:402" placeholder="select id,bo..books..." />
-                <marker date="1426584172396" expanded="true" signature="945:1087" placeholder="update books..." />
-                <marker date="1426584172396" expanded="true" signature="945:1148" placeholder="update books..." />
-                <marker date="1426584172396" expanded="true" signature="1180:1370" placeholder="update books..." />
-                <marker date="1426584172396" expanded="true" signature="1664:2512" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/php/lamp14_DB/book/list.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.2112211" vertical-offset="193" max-vertical-offset="2740">
-              <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
-              <folding>
-                <marker date="1426586574422" expanded="true" signature="1003:1021" placeholder="delete from ..." />
-                <marker date="1426586574422" expanded="true" signature="1003:1064" placeholder="delete from ..." />
-                <marker date="1426586574422" expanded="true" signature="1126:1168" placeholder="delete from ..." />
-                <marker date="1426586574422" expanded="true" signature="1444:1479" placeholder="select count..books..." />
-                <marker date="1426586574422" expanded="true" signature="1444:1480" placeholder="select count..books..." />
-                <marker date="1426586574422" expanded="true" signature="1601:1681" placeholder="select id,bo..books..." />
-                <marker date="1426586574422" expanded="true" signature="1601:1695" placeholder="select id,bo..books..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/lamp14_DB/classes/page.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.827586" vertical-offset="360" max-vertical-offset="5660">
-              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.inc.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/lamp14_DB/config.inc.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.586207" vertical-offset="0" max-vertical-offset="340">
-              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fileupload.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/lamp14_DB/classes/fileupload.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="6260">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/lamp14_DB/book/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.034483" vertical-offset="0" max-vertical-offset="520">
-              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ser.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/lamp14_DB/book/ser.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="240">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -166,16 +69,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/php/lamp12/2.php" />
-        <option value="$PROJECT_DIR$/php/lamp12/parseDirectory.php" />
-        <option value="$PROJECT_DIR$/php/lamp12/traversalDirectory.php" />
-        <option value="$PROJECT_DIR$/php/lamp12/countSize.php" />
-        <option value="$PROJECT_DIR$/php/lamp12/new.txt" />
-        <option value="$PROJECT_DIR$/php/lamp12/baseFileFun.php" />
-        <option value="$PROJECT_DIR$/php/lamp12/yanzi.txt" />
-        <option value="$PROJECT_DIR$/php/lamp12/openCloseFile.php" />
-        <option value="$PROJECT_DIR$/php/lamp12/flock.php" />
-        <option value="$PROJECT_DIR$/php/lamp12/messageBoard.php" />
         <option value="$PROJECT_DIR$/php/lamp12/upform.html" />
         <option value="$PROJECT_DIR$/php/lamp12/uploadFile1.php" />
         <option value="$PROJECT_DIR$/php/lamp12/upform2.html" />
@@ -217,12 +110,23 @@
         <option value="$PROJECT_DIR$/php/lamp14_DB/book/mod.php" />
         <option value="$PROJECT_DIR$/php/lamp14_DB/book/header.php" />
         <option value="$PROJECT_DIR$/php/lamp14_DB/book/list.php" />
+        <option value="$PROJECT_DIR$/php/lamp15_PDO/phpinfo.php" />
+        <option value="$PROJECT_DIR$/php/lamp15_PDO/demo1.php" />
+        <option value="$PROJECT_DIR$/php/lamp15_PDO/demo2.php" />
+        <option value="$PROJECT_DIR$/php/lamp15_PDO/demo3.php" />
+        <option value="$PROJECT_DIR$/php/lamp15_PDO/demoExec.php" />
+        <option value="$PROJECT_DIR$/php/lamp15_PDO/demoQuery.php" />
+        <option value="$PROJECT_DIR$/php/lamp15_PDO/demoTran.php" />
+        <option value="$PROJECT_DIR$/php/lamp15_PDO/demoPrepare.php" />
+        <option value="$PROJECT_DIR$/php/lamp15_PDO/demoPrepare2.php" />
+        <option value="$PROJECT_DIR$/php/lamp15_PDO/demoPrepare3.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="597" />
+    <option name="x" value="619" />
+    <option name="y" value="2" />
     <option name="width" value="758" />
     <option name="height" value="716" />
   </component>
@@ -319,59 +223,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lamp14_DB" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lnmphp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lnmphp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lamp14_DB" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lnmphp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lnmphp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lamp14_DB" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="book" />
+              <option name="myItemId" value="lamp15_PDO" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -401,11 +253,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wamp\www\php\lamp15_PDO" />
       <recent name="D:\wamp\www\php\lamp14_DB\uploads" />
       <recent name="D:\wamp\www\php\lamp14_DB\classes" />
       <recent name="D:\wamp\www\php\lamp14_DB" />
       <recent name="D:\wamp\www\php\lamp13" />
-      <recent name="D:\wamp\www\php\lamp12" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\wamp\www\php\lamp13\images" />
@@ -522,7 +374,13 @@
       <option name="project" value="LOCAL" />
       <updated>1426499023737</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="1">
+      <created>1426586622991</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1426586622991</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -546,24 +404,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="597" y="0" width="758" height="716" extended-state="0" />
+    <frame x="619" y="2" width="758" height="716" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32337433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928944" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864675" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864675" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.398017" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.398017" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14425983" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32700422" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32582322" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864675" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="更改" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -606,69 +464,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php/lamp12_File/uploadFile1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.1153846" vertical-offset="360" max-vertical-offset="1600">
-          <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp12_File/yanzi.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07285974" vertical-offset="0" max-vertical-offset="549">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp12_File/message.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10928962" vertical-offset="0" max-vertical-offset="549">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp12_File/upform2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5769231" vertical-offset="0" max-vertical-offset="520">
-          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp12_File/uploadFile2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5769231" vertical-offset="960" max-vertical-offset="2320">
-          <caret line="62" column="19" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp12_File/upform3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66797644" vertical-offset="0" max-vertical-offset="560">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp12_File/yanzi/yan.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380">
-          <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp12_File/downFile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5870842" vertical-offset="0" max-vertical-offset="511">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp12_File/down.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46966732" vertical-offset="0" max-vertical-offset="511">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/lamp13_GD/map.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.72602737" vertical-offset="529" max-vertical-offset="1080">
@@ -916,44 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp14_DB/book/ser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp14_DB/config.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.586207" vertical-offset="0" max-vertical-offset="340">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp14_DB/book/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.5172415" vertical-offset="0" max-vertical-offset="1140">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding>
-            <marker date="1426582075751" expanded="true" signature="391:584" placeholder="insert into ..." />
-            <marker date="1426582075751" expanded="true" signature="391:600" placeholder="insert into ..." />
-            <marker date="1426582075751" expanded="true" signature="894:1404" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp14_DB/function.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.275862" vertical-offset="193" max-vertical-offset="760">
-          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
-          <folding>
-            <element signature="e#6#94#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/lamp14_DB/classes/vcode.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28747433" vertical-offset="0" max-vertical-offset="2980">
@@ -970,6 +727,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp14_DB/classes/page.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.24640657" vertical-offset="360" max-vertical-offset="5660">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp14_DB/book/ser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php/lamp14_DB/classes/fileupload.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8520">
@@ -978,48 +751,169 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp14_DB/book/mod.php">
+    <entry file="file://$PROJECT_DIR$/php/lamp14_DB/function.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.4482758" vertical-offset="700" max-vertical-offset="2460">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.6399217" vertical-offset="193" max-vertical-offset="780">
+          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
           <folding>
-            <marker date="1426584172396" expanded="true" signature="314:402" placeholder="select id,bo..books..." />
-            <marker date="1426584172396" expanded="true" signature="945:1087" placeholder="update books..." />
-            <marker date="1426584172396" expanded="true" signature="945:1148" placeholder="update books..." />
-            <marker date="1426584172396" expanded="true" signature="1180:1370" placeholder="update books..." />
-            <marker date="1426584172396" expanded="true" signature="1664:2512" placeholder="..." />
+            <element signature="e#6#94#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp14_DB/classes/page.class.php">
+    <entry file="file://$PROJECT_DIR$/php/lamp14_DB/book/add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.827586" vertical-offset="360" max-vertical-offset="5660">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding />
+        <state vertical-scroll-proportion="0.31311154" vertical-offset="0" max-vertical-offset="1140">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding>
+            <marker date="1426586622097" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1426586622097" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1426586622097" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp14_DB/book/mod.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23483366" vertical-offset="320" max-vertical-offset="1840">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding>
+            <marker date="1426586622105" expanded="true" signature="-1:-1" placeholder="select id,bo..books..." />
+            <marker date="1426586622105" expanded="true" signature="-1:-1" placeholder="update books..." />
+            <marker date="1426586622105" expanded="true" signature="-1:-1" placeholder="update books..." />
+            <marker date="1426586622105" expanded="true" signature="-1:-1" placeholder="update books..." />
+            <marker date="1426586622105" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/lamp14_DB/book/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.034483" vertical-offset="0" max-vertical-offset="520">
+        <state vertical-scroll-proportion="0.6262231" vertical-offset="0" max-vertical-offset="520">
           <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp14_DB/config.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43052837" vertical-offset="0" max-vertical-offset="511">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/lamp14_DB/book/list.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2112211" vertical-offset="193" max-vertical-offset="2740">
-          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.46966732" vertical-offset="2280" max-vertical-offset="2860">
+          <caret line="111" column="201" selection-start-line="111" selection-start-column="201" selection-end-line="111" selection-end-column="201" />
           <folding>
-            <marker date="1426586574422" expanded="true" signature="1003:1021" placeholder="delete from ..." />
-            <marker date="1426586574422" expanded="true" signature="1003:1064" placeholder="delete from ..." />
-            <marker date="1426586574422" expanded="true" signature="1126:1168" placeholder="delete from ..." />
-            <marker date="1426586574422" expanded="true" signature="1444:1479" placeholder="select count..books..." />
-            <marker date="1426586574422" expanded="true" signature="1444:1480" placeholder="select count..books..." />
-            <marker date="1426586574422" expanded="true" signature="1601:1681" placeholder="select id,bo..books..." />
-            <marker date="1426586574422" expanded="true" signature="1601:1695" placeholder="select id,bo..books..." />
+            <marker date="1426646646450" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1426646646450" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1426646646450" expanded="true" signature="-1:-1" placeholder="select count..books..." />
+            <marker date="1426646646450" expanded="true" signature="-1:-1" placeholder="select id,bo..books..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp15_PDO/phpinfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2739726" vertical-offset="0" max-vertical-offset="511">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp15_PDO/demo2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.78277886" vertical-offset="0" max-vertical-offset="780">
+          <caret line="19" column="57" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="57" />
+          <folding>
+            <marker date="1426663110310" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1426663110310" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp15_PDO/demo1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.103448" vertical-offset="189" max-vertical-offset="1060">
+          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp15_PDO/demo3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6086106" vertical-offset="169" max-vertical-offset="880">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <marker date="1426663713904" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp15_PDO/demoTran.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.9960861" vertical-offset="0" max-vertical-offset="1400">
+          <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+          <folding>
+            <marker date="1426666541983" expanded="true" signature="-1:-1" placeholder="update users..." />
+            <marker date="1426666541983" expanded="true" signature="-1:-1" placeholder="update users..." />
+            <marker date="1426666541983" expanded="true" signature="-1:-1" placeholder="update users..." />
+            <marker date="1426666541983" expanded="true" signature="-1:-1" placeholder="select * fro..users..." />
+            <marker date="1426666541983" expanded="true" signature="-1:-1" placeholder="update users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp15_PDO/demoQuery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5303327" vertical-offset="489" max-vertical-offset="1060">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <marker date="1426664627888" expanded="true" signature="-1:-1" placeholder="select * fro..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp15_PDO/demoExec.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5088063" vertical-offset="440" max-vertical-offset="1040">
+          <caret line="32" column="136" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="136" />
+          <folding>
+            <marker date="1426664385607" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp15_PDO/demoPrepare.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-35.86207" vertical-offset="0" max-vertical-offset="1800">
+          <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+          <folding>
+            <marker date="1426669881446" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp15_PDO/demoPrepare2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23483366" vertical-offset="540" max-vertical-offset="1540">
+          <caret line="31" column="121" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="121" />
+          <folding>
+            <marker date="1426670393430" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp15_PDO/demoPrepare3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.88990825" vertical-offset="829" max-vertical-offset="1500">
+          <caret line="37" column="67" selection-start-line="37" selection-start-column="67" selection-end-line="37" selection-end-column="67" />
+          <folding>
+            <marker date="1426670927727" expanded="true" signature="681:747" placeholder="INSERT INTO ..." />
+            <marker date="1426670927727" expanded="true" signature="779:870" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>

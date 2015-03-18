@@ -10,28 +10,34 @@ include "../classes/page.class.php";
 
 if (isset($_GET['action']) && $_GET['action'] == 'ser') {
 //    print_r($_POST);
-    $tmp = $_POST;
+    $tmp = !empty($_POST) ? $_POST : $_GET;
     $whr = array();
     //如果bookname不为空，说明想搜索书名
     if (!empty($tmp['bookname'])) {
         $whr[] = "bookname like '%{$tmp['bookname']}%'";
+        $args .= "&bookname={$tmp['bookname']}";
     }
     //如果author不为空，说明想搜索作者
     if (!empty($tmp['author'])) {
         $whr[] = "author like '%{$tmp['author']}%'";
+        $args .= "&author={$tmp['author']}";
     }
     //如果minprice不为空，说明想搜索价格大于多少
     if (!empty($tmp['minprice'])) {
         $whr[] = "price>='{$tmp['minprice']}'";
+        $args .= "&minprice={$tmp['minprice']}";
     }
     //如果maxprice不为空，说明想搜索价格小于多少
     if (!empty($tmp['maxprice'])) {
         $whr[] = "price<='{$tmp['maxprice']}'";
+        $args .= "&maxprice={$tmp['maxprice']}";
     }
 //    print_r($whr);
     if (!empty($whr)) {
         $where = " where " . implode(" and ", $whr);
-
+//        $args=http_build_query($tmp);
+    } else {
+        $where = "";
     }
 }
 //用户是否有动作
@@ -65,7 +71,7 @@ $sql = "select count(*) as total from books {$where}";
 $res = mysql_query($sql);
 $data = mysql_fetch_assoc($res);
 //创建分页对象
-$page = new Page($data['total'], $num);
+$page = new Page($data['total'], $num, $args);
 
 $sql = "select id,bookname,publisher,author,price,ptime from books {$where} order by id {$page->limit}";
 echo $sql . '<br>';
@@ -103,7 +109,7 @@ while (list($id, $bookname, $publisher, $author, $price, $ptime) = mysql_fetch_r
     echo '<td>' . $author . '</td>';
     echo '<td>￥' . number_format($price, 2, ".", ",") . '</td>';
     echo '<td>' . date("Y-m-d H:i", $ptime) . '</td>';
-    echo '<td><a href="mod.php?action=mod&id=' . $id . '">修改</a>/<a onclick="return confirm(\'你确定要删除《' . $bookname . '》这个图书吗？\')" href="list.php?action=del&page=' . $page->page . '&id=' . $id . '">删除</a></td>';
+    echo '<td><a href="mod.php?action=mod&id=' . $id . '">修改</a>/<a onclick="return confirm(\'你确定要删除《' . $bookname . '》这个图书吗？\')" href="list.php?action=del' . $args . '&page=' . $page->page . '&id=' . $id . '">删除</a></td>';
     echo '</tr>';
 }
 
