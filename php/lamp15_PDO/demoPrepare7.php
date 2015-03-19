@@ -31,14 +31,18 @@ try {
     //只是将这个语句放到服务器上（数据库服务器），编译后等待执行，没有执行
 //    $stmt = $pdo->prepare("INSERT INTO users(username,passwd,age,sex,email) VALUES(?,?,?,?,?)");
 
-    $stmt = $pdo->prepare("INSERT INTO users(username,passwd,age,sex,email) VALUES(:username,:passwd,:age,:sex,:email)");
+    $stmt = $pdo->prepare("insert into users( username,passwd,age,sex,email) values(?,?,?,?,?)");
 
     //执行上面在数据库中已经准备好的语句
 //    $stmt->execute(array("meizi", md5('123321'), 30, 'M', 'ads@23.com'));
-    $stmt->execute(array("username" => "qiangge", "passwd" => md5('123'), "age" => 33, "sex" => "M", "email" => "kjk@sddf.com"));
+    $stmt->execute(array('222', '333', '4444', '5555', '6666'));
 
-//    $stmt=$pdo->prepare("update users set username=:username,passwd=:passwd,age=:age,sex:sex,email:email");
 
+    //获取结果中的行数,或如果是影响行数的语句执行，则获取的是影响的行数
+    echo $stmt->rowCount();
+    //如何获取最后一个自动增长的id呢
+    echo '<br>';
+    echo $pdo->lastInsertId();
 } catch (PDOException $e) {
     echo "错误原因:" . $e->getMessage() . '<br>';
 }

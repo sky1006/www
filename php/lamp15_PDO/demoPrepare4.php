@@ -31,14 +31,31 @@ try {
     //只是将这个语句放到服务器上（数据库服务器），编译后等待执行，没有执行
 //    $stmt = $pdo->prepare("INSERT INTO users(username,passwd,age,sex,email) VALUES(?,?,?,?,?)");
 
-    $stmt = $pdo->prepare("INSERT INTO users(username,passwd,age,sex,email) VALUES(:username,:passwd,:age,:sex,:email)");
+    $stmt = $pdo->prepare("select id, username,passwd,age,sex,email from users where id>? and id<?");
 
     //执行上面在数据库中已经准备好的语句
 //    $stmt->execute(array("meizi", md5('123321'), 30, 'M', 'ads@23.com'));
-    $stmt->execute(array("username" => "qiangge", "passwd" => md5('123'), "age" => 33, "sex" => "M", "email" => "kjk@sddf.com"));
+    $stmt->execute(array(1000, 1200));
 
-//    $stmt=$pdo->prepare("update users set username=:username,passwd=:passwd,age=:age,sex:sex,email:email");
-
+    //mysql_fetch_array()   mysql_fetch_rows  mysql_fetch_array()
+    echo '<table border="1" width="800" align="center">';
+    while (list($id, $username, $passwd, $age, $sex, $email) = $stmt->fetch(PDO::FETCH_NUM)) {
+        echo '<tr>';
+        echo '<td>' . $id . '</td>';
+        echo '<td>' . $username . '</td>';
+        echo '<td>' . $passwd . '</td>';
+        echo '<td>' . $age . '</td>';
+        echo '<td>' . $sex . '</td>';
+        echo '<td>' . $email . '</td>';
+        echo '</tr>';
+    }
+    echo '</table>';
+    /*print_r($stmt->fetch());
+    echo '<br>';
+    print_r($stmt->fetch());
+    echo '<br>';
+    print_r($stmt->fetch());
+    echo '<br>';*/
 } catch (PDOException $e) {
     echo "错误原因:" . $e->getMessage() . '<br>';
 }

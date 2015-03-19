@@ -31,14 +31,36 @@ try {
     //只是将这个语句放到服务器上（数据库服务器），编译后等待执行，没有执行
 //    $stmt = $pdo->prepare("INSERT INTO users(username,passwd,age,sex,email) VALUES(?,?,?,?,?)");
 
-    $stmt = $pdo->prepare("INSERT INTO users(username,passwd,age,sex,email) VALUES(:username,:passwd,:age,:sex,:email)");
+    $stmt = $pdo->prepare("select id, username,passwd,age,sex,email from users where id>? and id<?");
 
     //执行上面在数据库中已经准备好的语句
 //    $stmt->execute(array("meizi", md5('123321'), 30, 'M', 'ads@23.com'));
-    $stmt->execute(array("username" => "qiangge", "passwd" => md5('123'), "age" => 33, "sex" => "M", "email" => "kjk@sddf.com"));
+    $stmt->execute(array(1000, 1200));
 
-//    $stmt=$pdo->prepare("update users set username=:username,passwd=:passwd,age=:age,sex:sex,email:email");
+    //绑定列
+    $stmt->bindColumn(1, $id);
+    $stmt->bindColumn(2, $username);
+    $stmt->bindColumn("passwd", $passwd);
+    $stmt->bindColumn(4, $age);
+    $stmt->bindColumn(5, $sex);
+    $stmt->bindColumn(6, $email);
+    //可以设置结果的模式,以下的代码使用fetch()或fetchAll()都是使用这个方面设置的数组的格式
+    $stmt->setFetchMode(PDO::FETCH_NUM);
+    echo '<table border="1" align="center" width="800">';
+    while ($stmt->fetch()) {
+        echo '<tr>';
+        echo '<td>' . $id . '</td>';
+        echo '<td>' . $username . '</td>';
+        echo '<td>' . $passwd . '</td>';
+        echo '<td>' . $age . '</td>';
+        echo '<td>' . $sex . '</td>';
+        echo '<td>' . $email . '</td>';
+        echo '</tr>';
+    }
+    echo '</table>';
 
+    //获取结果中的行数
+    echo $stmt->rowCount();
 } catch (PDOException $e) {
     echo "错误原因:" . $e->getMessage() . '<br>';
 }
