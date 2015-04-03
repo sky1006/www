@@ -15,7 +15,7 @@ if ($sid != '') {
 //可以设置一下用已有的sid开启会话
 session_start();
 
-var_dump($_SESSION);
+
 echo '<br>';
 print_r($_SESSION);
 echo '<br>';
@@ -23,7 +23,7 @@ echo '<br>';
 
 
 echo session_name() . "=" . session_id() . "<br>";
-
+echo session_save_path() . "<br>";
 
 ?>
 
