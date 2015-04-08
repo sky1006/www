@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf9e248a-5536-4981-a038-7e48806426f9" name="Default" comment="1">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp17_Session/session/config.inc.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp17_Session/session/conn.inc.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp17_Session/session/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp17_Session/session/list.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp17_Session/session/login.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp17_Session/session/logout.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp17_Session/session/mail.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp17_Session/session/session.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp17_Session/session/two.php" afterPath="$PROJECT_DIR$/php/lamp17_Session/session/two.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp17_Session/session/sessionDB.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp17_Session/session/test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp17_Session/session/config.inc.php" afterPath="$PROJECT_DIR$/php/lamp17_Session/session/config.inc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp17_Session/session/conn.inc.php" afterPath="$PROJECT_DIR$/php/lamp17_Session/session/conn.inc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp17_Session/session/mail.sql" afterPath="$PROJECT_DIR$/php/lamp17_Session/session/mail.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp17_Session/session/session.php" afterPath="$PROJECT_DIR$/php/lamp17_Session/session/session.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="one.iws" />
@@ -61,24 +57,37 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.137931" vertical-offset="0" max-vertical-offset="960">
-              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+            <state vertical-scroll-proportion="-0.0" vertical-offset="480" max-vertical-offset="980">
+              <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
               <folding>
-                <marker date="1428047475947" expanded="true" signature="497:541" placeholder="select id,ti..email..." />
-                <marker date="1428047475947" expanded="true" signature="638:919" placeholder="..." />
+                <marker date="1428054075454" expanded="true" signature="519:563" placeholder="select id,ti..email..." />
+                <marker date="1428054075454" expanded="true" signature="664:965" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="session.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/session.php">
+      <file leaf-file-name="sessionDB.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/sessionDB.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.241379" vertical-offset="240" max-vertical-offset="1160">
-              <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+            <state vertical-scroll-proportion="1.2541254" vertical-offset="1320" max-vertical-offset="2280">
+              <caret line="79" column="50" selection-start-line="79" selection-start-column="50" selection-end-line="79" selection-end-column="50" />
               <folding>
-                <element signature="e#6#147#0#PHP" expanded="true" />
+                <element signature="e#6#119#0#PHP" expanded="true" />
+                <marker date="1428488247082" expanded="true" signature="1381:1414" placeholder="select * fro..session..." />
+                <marker date="1428488247082" expanded="true" signature="1737:1783" placeholder="update sessi..." />
+                <marker date="1428488247082" expanded="true" signature="2022:2088" placeholder="insert into ..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/test.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.275862" vertical-offset="0" max-vertical-offset="380">
+              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -86,7 +95,7 @@
       <file leaf-file-name="logout.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/logout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.620689" vertical-offset="12" max-vertical-offset="580">
+            <state vertical-scroll-proportion="-7.827586" vertical-offset="93" max-vertical-offset="580">
               <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
               <folding />
             </state>
@@ -103,12 +112,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.inc.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.inc.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/config.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46052632" vertical-offset="0" max-vertical-offset="360">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-              <folding />
+            <state vertical-scroll-proportion="-8.275862" vertical-offset="0" max-vertical-offset="360">
+              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+              <folding>
+                <element signature="e#6#93#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,11 +127,11 @@
       <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.034483" vertical-offset="0" max-vertical-offset="860">
-              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+            <state vertical-scroll-proportion="-5.0689654" vertical-offset="53" max-vertical-offset="840">
+              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
               <folding>
                 <element signature="e#6#93#0#PHP" expanded="true" />
-                <marker date="1428047445139" expanded="true" signature="208:292" placeholder="select id,us..user..." />
+                <marker date="1428054075483" expanded="true" signature="212:296" placeholder="select id,us..user..." />
               </folding>
             </state>
           </provider>
@@ -129,8 +140,8 @@
       <file leaf-file-name="mail.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/mail.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="800">
-              <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="644" max-vertical-offset="1200">
+              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -139,8 +150,8 @@
       <file leaf-file-name="conn.inc.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/conn.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.275862" vertical-offset="0" max-vertical-offset="380">
-              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+            <state vertical-scroll-proportion="-3.4482758" vertical-offset="0" max-vertical-offset="400">
+              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -164,8 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/php/lamp14_DB/demo2.php" />
-        <option value="$PROJECT_DIR$/php/lamp14_DB/demo3.php" />
         <option value="$PROJECT_DIR$/php/lamp14_DB/page.php" />
         <option value="$PROJECT_DIR$/php/lamp14_DB/fenye.php" />
         <option value="$PROJECT_DIR$/php/lamp14_DB/Page.php" />
@@ -207,14 +216,16 @@
         <option value="$PROJECT_DIR$/php/lamp17_Session/session/one.php" />
         <option value="$PROJECT_DIR$/php/lamp17_Session/session/three.php" />
         <option value="$PROJECT_DIR$/php/lamp17_Session/session/two.php" />
-        <option value="$PROJECT_DIR$/php/lamp17_Session/session/conn.inc.php" />
         <option value="$PROJECT_DIR$/php/lamp17_Session/session/list.php" />
-        <option value="$PROJECT_DIR$/php/lamp17_Session/session/mail.sql" />
         <option value="$PROJECT_DIR$/php/lamp17_Session/session/logout.php" />
         <option value="$PROJECT_DIR$/php/lamp17_Session/session/login.php" />
         <option value="$PROJECT_DIR$/php/lamp17_Session/session/index.php" />
-        <option value="$PROJECT_DIR$/php/lamp17_Session/session/config.inc.php" />
         <option value="$PROJECT_DIR$/php/lamp17_Session/session/session.php" />
+        <option value="$PROJECT_DIR$/php/lamp17_Session/session/mail.sql" />
+        <option value="$PROJECT_DIR$/php/lamp17_Session/session/conn.inc.php" />
+        <option value="$PROJECT_DIR$/php/lamp17_Session/session/config.inc.php" />
+        <option value="$PROJECT_DIR$/php/lamp17_Session/session/test.php" />
+        <option value="$PROJECT_DIR$/php/lamp17_Session/session/sessionDB.php" />
       </list>
     </option>
   </component>
@@ -539,7 +550,13 @@
       <option name="project" value="LOCAL" />
       <updated>1427970485681</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="1">
+      <created>1428054076374</created>
+      <option name="number" value="00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1428054076374</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -566,7 +583,8 @@
     <frame x="609" y="12" width="758" height="716" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.322807" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32337433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864675" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -574,7 +592,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.398017" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32807016" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32688928" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14425983" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32700422" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32582322" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -583,7 +601,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864675" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="更改" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -623,20 +640,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php/lamp12_File/uploadFileClass.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="15.325301" vertical-offset="0" max-vertical-offset="8520">
-          <caret line="205" column="5" selection-start-line="205" selection-start-column="5" selection-end-line="205" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp13_GD/Vcode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.8638499" vertical-offset="1620" max-vertical-offset="3880">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/lamp13_GD/code.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5011389" vertical-offset="0" max-vertical-offset="460">
@@ -939,26 +942,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/conn.inc.php">
+    <entry file="file://$PROJECT_DIR$/php/lamp15_PDO/phpinfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.275862" vertical-offset="0" max-vertical-offset="380">
-          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.28688523" vertical-offset="0" max-vertical-offset="488">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/mail.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="800">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="644" max-vertical-offset="1200">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/logout.php">
+    <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/session.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.620689" vertical-offset="12" max-vertical-offset="580">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.2053388" vertical-offset="260" max-vertical-offset="1760">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -971,51 +974,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp15_PDO/phpinfo.php">
+    <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/conn.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28688523" vertical-offset="0" max-vertical-offset="488">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        <state vertical-scroll-proportion="-3.4482758" vertical-offset="0" max-vertical-offset="400">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/config.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.275862" vertical-offset="0" max-vertical-offset="360">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding>
+            <element signature="e#6#93#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.034483" vertical-offset="0" max-vertical-offset="860">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        <state vertical-scroll-proportion="-5.0689654" vertical-offset="53" max-vertical-offset="840">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
           <folding>
             <element signature="e#6#93#0#PHP" expanded="true" />
-            <marker date="1428047445139" expanded="true" signature="208:292" placeholder="select id,us..user..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.241379" vertical-offset="240" max-vertical-offset="1160">
-          <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
-          <folding>
-            <element signature="e#6#147#0#PHP" expanded="true" />
+            <marker date="1428054075483" expanded="true" signature="212:296" placeholder="select id,us..user..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.137931" vertical-offset="0" max-vertical-offset="960">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        <state vertical-scroll-proportion="-0.0" vertical-offset="480" max-vertical-offset="980">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding>
-            <marker date="1428047475947" expanded="true" signature="497:541" placeholder="select id,ti..email..." />
-            <marker date="1428047475947" expanded="true" signature="638:919" placeholder="..." />
+            <marker date="1428054075454" expanded="true" signature="519:563" placeholder="select id,ti..email..." />
+            <marker date="1428054075454" expanded="true" signature="664:965" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/config.inc.php">
+    <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/logout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46052632" vertical-offset="0" max-vertical-offset="360">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        <state vertical-scroll-proportion="-7.827586" vertical-offset="93" max-vertical-offset="580">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.275862" vertical-offset="0" max-vertical-offset="380">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/sessionDB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2541254" vertical-offset="1320" max-vertical-offset="2280">
+          <caret line="79" column="50" selection-start-line="79" selection-start-column="50" selection-end-line="79" selection-end-column="50" />
+          <folding>
+            <element signature="e#6#119#0#PHP" expanded="true" />
+            <marker date="1428488247082" expanded="true" signature="1381:1414" placeholder="select * fro..session..." />
+            <marker date="1428488247082" expanded="true" signature="1737:1783" placeholder="update sessi..." />
+            <marker date="1428488247082" expanded="true" signature="2022:2088" placeholder="insert into ..." />
+          </folding>
         </state>
       </provider>
     </entry>

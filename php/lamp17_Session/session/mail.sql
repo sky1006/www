@@ -1,4 +1,4 @@
-CREATE TABLE email (
+/*CREATE TABLE email (
   id     INT         NOT NULL AUTO_INCREMENT,
   uid    INT         NOT NULL DEFAULT 0,
   title  VARCHAR(80) NOT NULL DEFAULT '',
@@ -21,4 +21,22 @@ INSERT INTO email (uid, title, ptime, nobody) VALUES (3, 'aaaa44444', 14456998, 
 INSERT INTO email (uid, title, ptime, nobody) VALUES (3, 'bbbbb44444', 14456998, '4444444');
 INSERT INTO email (uid, title, ptime, nobody) VALUES (3, 'cccc44444', 14456998, '4444444');
 INSERT INTO email (uid, title, ptime, nobody) VALUES (3, 'dddd44444', 14456998, '4444444');
-INSERT INTO email (uid, title, ptime, nobody) VALUES (3, 'eeee44444', 14456998, '4444444');
+INSERT INTO email (uid, title, ptime, nobody) VALUES (3, 'eeee44444', 14456998, '4444444');*/
+
+/*
+session(建议使用内存表)
+1、记录session id  sid
+2、修改时间         utime
+3、session数据     sdate
+4、ip              uip
+5、user_agent 浏览器  uagent
+*/
+CREATE TABLE session (
+  sid    CHAR(32)     NOT NULL DEFAULT '',
+  utime  INT          NOT NULL DEFAULT 0,
+  sdata  VARCHAR(200),
+  ip     CHAR(15),
+  uagent VARCHAR(200) NOT NULL DEFAULT '',
+  INDEX session_sid(sid)
+);
+
