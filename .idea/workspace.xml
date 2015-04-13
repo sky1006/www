@@ -2,140 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf9e248a-5536-4981-a038-7e48806426f9" name="Default" comment="1">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/comps/0ba31d2e33d4df226330e5bf517a5aee37601fd8.file.test.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/comps/4b8e965fa578f234b48167b6617f6496b9cfab16.file.heater.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/comps/6d656247e96279a85684086ad9ea84785b77bdbd.file.heater.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/comps/7b622dcf1b49817d6a999c4d66bd0cf28e1aa914.file.footer.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/Smarty.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/SmartyBC.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/admin/admin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/block.textformat.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/comps/d998657254ac4dd9552a20e632f39b08adc380d7.file.footer.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/debug.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/demo2.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/templates_c/efe1527205c0c0c2262c08587825512e40a3b08d.file.test.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/views/public/footer.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/function.counter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/function.cycle.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/function.fetch.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/function.html_checkboxes.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/function.html_image.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/function.html_options.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/function.html_radios.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/function.html_select_date.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/function.html_select_time.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/function.html_table.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/function.mailto.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/function.math.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/views/public/heater.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/init.inc.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/modifier.capitalize.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/modifier.date_format.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/modifier.debug_print_var.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/modifier.escape.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/modifier.regex_replace.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/modifier.replace.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/modifier.spacify.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/modifier.truncate.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/modifiercompiler.cat.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/modifiercompiler.count_characters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/modifiercompiler.count_paragraphs.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/modifiercompiler.count_sentences.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/modifiercompiler.count_words.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/modifiercompiler.default.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/modifiercompiler.escape.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/modifiercompiler.from_charset.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/modifiercompiler.indent.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/modifiercompiler.lower.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/modifiercompiler.noprint.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/modifiercompiler.string_format.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/modifiercompiler.strip.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/modifiercompiler.strip_tags.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/modifiercompiler.to_charset.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/modifiercompiler.unescape.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/modifiercompiler.upper.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/modifiercompiler.wordwrap.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/outputfilter.trimwhitespace.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/shared.escape_special_chars.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/shared.literal_compiler_param.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/shared.make_timestamp.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/shared.mb_str_replace.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/shared.mb_unicode.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/shared.mb_wordwrap.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_cacheresource.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_cacheresource_custom.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_cacheresource_keyvaluestore.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_config_source.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_cacheresource_file.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_append.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_assign.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_block.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_break.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_call.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_capture.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_config_load.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_continue.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_debug.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_eval.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_extends.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_for.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_foreach.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_function.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_if.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_include.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_include_php.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_insert.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_ldelim.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_nocache.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_private_block_plugin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_private_function_plugin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_private_modifier.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_private_object_block_function.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_private_object_function.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_private_print_expression.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_private_registered_block.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_private_registered_function.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_private_special_variable.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_rdelim.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_section.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_setfilter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_while.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compilebase.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_config_file_compiler.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_configfilelexer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_configfileparser.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_data.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_debug.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_filter_handler.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_function_call_handler.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_get_include_path.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_nocache_insert.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_parsetree.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_resource_eval.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_resource_extends.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_resource_file.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_resource_php.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_resource_registered.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_resource_stream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_resource_string.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_smartytemplatecompiler.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_templatebase.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_templatelexer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_templateparser.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_utility.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_write_file.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_resource.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_resource_custom.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_resource_recompiled.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_resource_uncompiled.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_security.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/templates/test.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/views/test.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/variablefilter.htmlspecialchars.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/views/comps/010892429d35ef046b9736f33a990de1a214c9f8.file.index.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/views/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/views/index.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/views/init.inc.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="one.iws" />
@@ -185,18 +55,40 @@
       <file leaf-file-name="Smarty.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/libs/Smarty.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-77.44827" vertical-offset="9528" max-vertical-offset="37700">
+            <state vertical-scroll-proportion="-92.965515" vertical-offset="9148" max-vertical-offset="33720">
               <caret line="727" column="25" selection-start-line="727" selection-start-column="13" selection-end-line="727" selection-end-column="25" />
+              <folding>
+                <element signature="e#6#1310#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/views/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.551724" vertical-offset="274" max-vertical-offset="780">
+              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="init.inc.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/init.inc.php">
+      <file leaf-file-name="init.inc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/views/init.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45016077" vertical-offset="0" max-vertical-offset="540">
-              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+            <state vertical-scroll-proportion="-8.965517" vertical-offset="0" max-vertical-offset="560">
+              <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.tpl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/views/index.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.1768489" vertical-offset="94" max-vertical-offset="580">
+              <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -220,9 +112,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/php/lamp15_PDO/demo1.php" />
-        <option value="$PROJECT_DIR$/php/lamp15_PDO/demo2.php" />
-        <option value="$PROJECT_DIR$/php/lamp15_PDO/demo3.php" />
         <option value="$PROJECT_DIR$/php/lamp15_PDO/demoExec.php" />
         <option value="$PROJECT_DIR$/php/lamp15_PDO/demoQuery.php" />
         <option value="$PROJECT_DIR$/php/lamp15_PDO/demoTran.php" />
@@ -271,6 +160,9 @@
         <option value="$PROJECT_DIR$/php/lamp18_Smarty/demo2.php" />
         <option value="$PROJECT_DIR$/php/lamp18_Smarty/admin/admin.php" />
         <option value="$PROJECT_DIR$/php/lamp18_Smarty/init.inc.php" />
+        <option value="$PROJECT_DIR$/php/lamp18_Smarty/views/init.inc.php" />
+        <option value="$PROJECT_DIR$/php/lamp18_Smarty/views/index.php" />
+        <option value="$PROJECT_DIR$/php/lamp18_Smarty/views/index.tpl" />
       </list>
     </option>
   </component>
@@ -375,6 +267,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lamp18_Smarty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lnmphp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lnmphp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lamp18_Smarty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -615,7 +533,13 @@
       <option name="project" value="LOCAL" />
       <updated>1428910794582</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="1">
+      <created>1428917845428</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1428917845428</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -699,27 +623,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php/lamp15_PDO/demoPrepare.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-35.86207" vertical-offset="0" max-vertical-offset="1800">
-          <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp15_PDO/demoPrepare2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23483366" vertical-offset="540" max-vertical-offset="1540">
-          <caret line="31" column="121" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp15_PDO/demoPrepare5.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.137931" vertical-offset="929" max-vertical-offset="1640">
-          <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/lamp15_PDO/demoPrepare3.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6086106" vertical-offset="569" max-vertical-offset="1260">
@@ -1117,18 +1020,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/libs/Smarty.class.php">
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/init.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-77.44827" vertical-offset="9528" max-vertical-offset="37700">
-          <caret line="727" column="25" selection-start-line="727" selection-start-column="13" selection-end-line="727" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.32921812" vertical-offset="20" max-vertical-offset="560">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/init.inc.php">
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/views/init.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45016077" vertical-offset="0" max-vertical-offset="540">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        <state vertical-scroll-proportion="-8.965517" vertical-offset="0" max-vertical-offset="560">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/libs/Smarty.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-92.965515" vertical-offset="9148" max-vertical-offset="38360">
+          <caret line="727" column="25" selection-start-line="727" selection-start-column="13" selection-end-line="727" selection-end-column="25" />
+          <folding>
+            <element signature="e#6#1310#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/views/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.551724" vertical-offset="274" max-vertical-offset="780">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/views/index.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1768489" vertical-offset="94" max-vertical-offset="580">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
           <folding />
         </state>
       </provider>
