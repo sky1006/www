@@ -29,7 +29,7 @@ if (isset($_POST['dosubmit'])) {
         setcookie("allow_3", $allow_3, $time, "/");
         //设置一个登录判断的标记isLogin
         setcookie("isLogin", 1, $time, "/");
-        header("Location:index.php");
+        header("Location:reg.php");
     } else {
         echo "登录失败！";
     }

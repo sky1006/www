@@ -19,6 +19,9 @@ $smarty->setTemplateDir(ROOT . "./views/");
 $smarty->setCompileDir(ROOT . "./comps/");
 //$smarty->addTemplateDir("./home/");
 
+//指定配置文件所在的目录
+$smarty->setConfigDir(ROOT . "./configs/");
+
 //可以让定界符使用空格
 $smarty->auto_literal = false;
 

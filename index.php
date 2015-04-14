@@ -47,7 +47,7 @@ $aliasDir = $server_dir.'alias/';
 
 // on charge le fichier de conf locale
 if (!is_file($wampConfFile))
-    die ('Unable to open WampServer\'s config file, please change path in index.php file');
+    die ('Unable to open WampServer\'s configs file, please change path in reg.php file');
 $fp = fopen($wampConfFile,'r');
 $wampConfFileContents = fread ($fp, filesize ($wampConfFile));
 fclose ($fp);
@@ -356,7 +356,7 @@ foreach ($loaded_extensions as $extension)
 
 
 //header('Status: 301 Moved Permanently', false, 301);      
-//header('Location: /aviatechno/index.php');      
+//header('Location: /aviatechno/reg.php');
 //exit();        
 
 $pageContents = <<< EOPAGE
@@ -394,7 +394,7 @@ body {
 	letter-spacing: -500em;
 	text-indent: -500em;
 	height: 125px;
-	background: url(index.php?img=gifLogo) 0 0 no-repeat;
+	background: url(reg.php?img=gifLogo) 0 0 no-repeat;
 }
 .utility {
 	position: absolute;
@@ -427,13 +427,13 @@ ul.aliases, ul.projects, ul.tools {
 }
 ul.aliases a, ul.projects a, ul.tools a {
 	padding-left: 22px;
-	background: url(index.php?img=pngFolder) 0 100% no-repeat;
+	background: url(reg.php?img=pngFolder) 0 100% no-repeat;
 }
 ul.tools a {
-	background: url(index.php?img=pngWrench) 0 100% no-repeat;
+	background: url(reg.php?img=pngWrench) 0 100% no-repeat;
 }
 ul.aliases a {
-	background: url(index.php?img=pngFolderGo) 0 100% no-repeat;
+	background: url(reg.php?img=pngFolderGo) 0 100% no-repeat;
 }
 
 dl {
@@ -457,7 +457,7 @@ dd ul li {
 	width: 16.5%;
 	margin: 0;
 	padding: 0 0 0 20px;
-	background: url(index.php?img=pngPlugin) 2px 50% no-repeat;
+	background: url(reg.php?img=pngPlugin) 2px 50% no-repeat;
 	line-height: 1.6;
 }
 a {
@@ -483,7 +483,7 @@ a:hover {
 .left {float:left;}
 .right {float:right;}
 </style>
-	<link rel="shortcut icon" href="index.php?img=favicon" type="image/ico" />
+	<link rel="shortcut icon" href="reg.php?img=favicon" type="image/ico" />
 </head>
 
 <body>

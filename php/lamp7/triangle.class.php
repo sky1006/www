@@ -37,7 +37,7 @@ class Triangle extends Shape
 
     function view()
     {
-        $form = '<form action="index.php?action=triangle" method="post">';
+        $form = '<form action="reg.php?action=triangle" method="post">';
         $form .= $this->name . '第一个边:<input type="text" name="bian1" value="' . $_POST['bian1'] . '" /><br>';
         $form .= $this->name . '第二个边:<input type="text" name="bian2" value="' . $_POST['bian2'] . '" /><br>';
         $form .= $this->name . '第三个边:<input type="text" name="bian3" value="' . $_POST['bian3'] . '" /><br>';

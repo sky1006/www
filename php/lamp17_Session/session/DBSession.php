@@ -7,7 +7,7 @@
  * 自定义session存储数据库方式的类
  *
  */
-//include "config.inc.php";
+//include "configs.inc.php";
 class DBSession
 {
     public static $pdo;             //pdo的对象

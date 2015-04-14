@@ -30,7 +30,7 @@ class Circle extends Shape
 
     function view()
     {
-        $form = '<form action="index.php?action=circle" method="post">';
+        $form = '<form action="reg.php?action=circle" method="post">';
         $form .= $this->name . '的半径:<input type="text" name="r" value="' . $_POST['r'] . '" /><br>';
 
         $form .= '<input type="submit" name="dosubmit" value="计算"><br>';

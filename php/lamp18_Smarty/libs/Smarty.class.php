@@ -232,7 +232,7 @@ class Smarty extends Smarty_Internal_TemplateBase
      */
     public $joined_template_dir = null;
     /**
-     * joined config directory string used in cache keys
+     * joined configs directory string used in cache keys
      *
      * @var string
      */
@@ -244,7 +244,7 @@ class Smarty extends Smarty_Internal_TemplateBase
      */
     public $default_template_handler_func = null;
     /**
-     * default config handler
+     * default configs handler
      *
      * @var callable
      */
@@ -274,7 +274,7 @@ class Smarty extends Smarty_Internal_TemplateBase
      */
     private $cache_dir = null;
     /**
-     * config directory
+     * configs directory
      *
      * @var array
      */
@@ -443,7 +443,7 @@ class Smarty extends Smarty_Internal_TemplateBase
     public $get_used_tags = false;
 
     /**#@+
-     * config var settings
+     * configs var settings
      */
 
     /**
@@ -453,13 +453,13 @@ class Smarty extends Smarty_Internal_TemplateBase
      */
     public $config_overwrite = true;
     /**
-     * Controls whether config values of on/true/yes and off/false/no get converted to boolean.
+     * Controls whether configs values of on/true/yes and off/false/no get converted to boolean.
      *
      * @var boolean
      */
     public $config_booleanize = true;
     /**
-     * Controls whether hidden config sections/vars are read from the file.
+     * Controls whether hidden configs sections/vars are read from the file.
      *
      * @var boolean
      */
@@ -513,13 +513,13 @@ class Smarty extends Smarty_Internal_TemplateBase
      */
     public $caching_type = 'file';
     /**
-     * internal config properties
+     * internal configs properties
      *
      * @var array
      */
     public $properties = array();
     /**
-     * config type
+     * configs type
      *
      * @var string
      */
@@ -964,7 +964,7 @@ class Smarty extends Smarty_Internal_TemplateBase
     }
 
     /**
-     * Set config directory
+     * Set configs directory
      *
      * @param $config_dir
      *
@@ -983,10 +983,10 @@ class Smarty extends Smarty_Internal_TemplateBase
     }
 
     /**
-     * Add config directory(s)
+     * Add configs directory(s)
      *
-     * @param string|array $config_dir directory(s) of config sources
-     * @param mixed $key key of the array element to assign the config dir to
+     * @param string|array $config_dir directory(s) of configs sources
+     * @param mixed $key key of the array element to assign the configs dir to
      *
      * @return Smarty current Smarty instance for chaining
      */
@@ -1023,7 +1023,7 @@ class Smarty extends Smarty_Internal_TemplateBase
     }
 
     /**
-     * Get config directory
+     * Get configs directory
      *
      * @param mixed $index index of directory to get, null to get all
      *
@@ -1439,7 +1439,7 @@ class Smarty extends Smarty_Internal_TemplateBase
     }
 
     /**
-     * Compile all config files
+     * Compile all configs files
      *
      * @param  string $extension file extension
      * @param  bool $force_compile force all to recompile

@@ -73,7 +73,7 @@ class Smarty_Internal_Resource_String extends Smarty_Resource
      *
      * @param  Smarty $smarty Smarty instance
      * @param  string $resource_name resource_name to make unique
-     * @param  boolean $is_config flag for config resource
+     * @param  boolean $is_config flag for configs resource
      *
      * @return string unique resource name
      */

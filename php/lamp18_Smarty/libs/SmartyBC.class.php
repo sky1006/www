@@ -392,7 +392,7 @@ class SmartyBC extends Smarty
     }
 
     /**
-     * Returns an array containing config variables
+     * Returns an array containing configs variables
      *
      * @param  string $name
      *

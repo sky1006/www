@@ -282,7 +282,7 @@ class Smarty_Internal_Data
     }
 
     /**
-     * load a config file, optionally load just selected sections
+     * load a configs file, optionally load just selected sections
      *
      * @param  string $config_file filename
      * @param  mixed $sections array of section names, single section or null
@@ -338,12 +338,12 @@ class Smarty_Internal_Data
     }
 
     /**
-     * gets  a config variable
+     * gets  a configs variable
      *
-     * @param  string $variable the name of the config variable
+     * @param  string $variable the name of the configs variable
      * @param bool $error_enable
      *
-     * @return mixed  the value of the config variable
+     * @return mixed  the value of the configs variable
      */
     public function getConfigVariable($variable, $error_enable = true)
     {
@@ -393,7 +393,7 @@ class Smarty_Internal_Data
     }
 
     /**
-     * Returns a single or all config variables
+     * Returns a single or all configs variables
      *
      * @param  string $varname variable name or null
      * @param bool $search_parents
@@ -427,7 +427,7 @@ class Smarty_Internal_Data
     }
 
     /**
-     * Deassigns a single or all config variables
+     * Deassigns a single or all configs variables
      *
      * @param  string $varname variable name or null
      *

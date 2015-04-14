@@ -19,7 +19,7 @@ if (isset($_POST['dosubmit'])) {
 
         //加登录标记
         $_SESSION['isLogin'] = 1;
-        header("Location:index.php");
+        header("Location:reg.php");
     } else {
         echo "登录失败！<br>";
     }

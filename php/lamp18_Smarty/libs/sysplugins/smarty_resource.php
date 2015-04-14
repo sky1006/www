@@ -103,7 +103,7 @@ abstract class Smarty_Resource
      *
      * @param  Smarty $smarty Smarty instance
      * @param  string $resource_name resource_name to make unique
-     * @param  boolean $is_config flag for config resource
+     * @param  boolean $is_config flag for configs resource
      *
      * @return string unique resource name
      */
@@ -327,7 +327,7 @@ abstract class Smarty_Resource
         if ($_default_handler) {
             if (!is_callable($_default_handler)) {
                 if ($source instanceof Smarty_Config_Source) {
-                    throw new SmartyException("Default config handler not callable");
+                    throw new SmartyException("Default configs handler not callable");
                 } else {
                     throw new SmartyException("Default template handler not callable");
                 }
@@ -461,7 +461,7 @@ abstract class Smarty_Resource
             return $smarty->_resource_handlers[$type] = self::$resources['stream'];
         }
 
-        // TODO: try default_(template|config)_handler
+        // TODO: try default_(template|configs)_handler
 
         // give up
         throw new SmartyException("Unknown resource type '{$type}'");
@@ -573,7 +573,7 @@ abstract class Smarty_Resource
     /**
      * initialize Config Source Object for given resource
      *
-     * @param  Smarty_Internal_Config $_config config object
+     * @param  Smarty_Internal_Config $_config configs object
      *
      * @throws SmartyException
      * @return Smarty_Config_Source   Source Object
@@ -589,7 +589,7 @@ abstract class Smarty_Resource
 
         // make sure configs are not loaded via anything smarty can't handle
         if (isset($_incompatible_resources[$type])) {
-            throw new SmartyException ("Unable to use resource '{$type}' for config");
+            throw new SmartyException ("Unable to use resource '{$type}' for configs");
         }
 
         // load resource handler, identify unique resource name
@@ -597,7 +597,7 @@ abstract class Smarty_Resource
         $unique_resource_name = $resource->buildUniqueResourceName($smarty, $name, true);
 
         // check runtime cache
-        $_cache_key = 'config|' . $unique_resource_name;
+        $_cache_key = 'configs|' . $unique_resource_name;
         if (isset(self::$sources[$_cache_key])) {
             return self::$sources[$_cache_key];
         }

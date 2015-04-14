@@ -359,7 +359,7 @@ class Smarty_Security
             }
         }
 
-        // rebuild config dir index
+        // rebuild configs dir index
         if ($_config) {
             $this->_config_dir = $_config_dir;
             foreach ($_config_dir as $directory) {

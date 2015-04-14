@@ -9,7 +9,7 @@
 
 /**
  * Smarty Internal Plugin Config
- * Main class for config variables
+ * Main class for configs variables
  *
  * @package    Smarty
  * @subpackage Config
@@ -24,7 +24,7 @@ class Smarty_Internal_Config
      */
     public $smarty = null;
     /**
-     * Object of config var storage
+     * Object of configs var storage
      *
      * @var object
      */
@@ -36,25 +36,25 @@ class Smarty_Internal_Config
      */
     public $config_resource = null;
     /**
-     * Compiled config file
+     * Compiled configs file
      *
      * @var string
      */
     public $compiled_config = null;
     /**
-     * filepath of compiled config file
+     * filepath of compiled configs file
      *
      * @var string
      */
     public $compiled_filepath = null;
     /**
-     * Filemtime of compiled config Filemtime
+     * Filemtime of compiled configs Filemtime
      *
      * @var int
      */
     public $compiled_timestamp = null;
     /**
-     * flag if compiled config file is invalid and must be (re)compiled
+     * flag if compiled configs file is invalid and must be (re)compiled
      *
      * @var bool
      */
@@ -67,11 +67,11 @@ class Smarty_Internal_Config
     public $compiler_object = null;
 
     /**
-     * Constructor of config file object
+     * Constructor of configs file object
      *
-     * @param string $config_resource config file resource name
+     * @param string $config_resource configs file resource name
      * @param Smarty $smarty Smarty instance
-     * @param object $data object for config vars storage
+     * @param object $data object for configs vars storage
      */
     public function __construct($config_resource, $smarty, $data = null)
     {
@@ -116,7 +116,7 @@ class Smarty_Internal_Config
         }
         $_compile_dir = $this->smarty->getCompileDir();
 
-        return $_compile_dir . $_filepath . '.' . basename($this->source->name) . '.config' . '.php';
+        return $_compile_dir . $_filepath . '.' . basename($this->source->name) . '.configs' . '.php';
     }
 
     /**
@@ -132,8 +132,8 @@ class Smarty_Internal_Config
     }
 
     /**
-     * Returns if the current config file must be compiled
-     * It does compare the timestamps of config source and the compiled config and checks the force compile configuration
+     * Returns if the current configs file must be compiled
+     * It does compare the timestamps of configs source and the compiled configs and checks the force compile configuration
      *
      * @return boolean true if the file must be compiled
      */
@@ -145,10 +145,10 @@ class Smarty_Internal_Config
     }
 
     /**
-     * Returns the compiled config file
-     * It checks if the config file must be compiled or just read the compiled version
+     * Returns the compiled configs file
+     * It checks if the configs file must be compiled or just read the compiled version
      *
-     * @return string the compiled config file
+     * @return string the compiled configs file
      */
     public function getCompiledConfig()
     {
@@ -165,7 +165,7 @@ class Smarty_Internal_Config
     }
 
     /**
-     * Compiles the config files
+     * Compiles the configs files
      *
      * @throws Exception
      */
@@ -198,7 +198,7 @@ class Smarty_Internal_Config
     }
 
     /**
-     * load config variables
+     * load configs variables
      *
      * @param mixed $sections array of section names, single section or null
      * @param string $scope global,parent or local
@@ -230,7 +230,7 @@ class Smarty_Internal_Config
         }
         $_config_vars = array();
         include($this->getCompiledFilepath());
-        // copy global config vars
+        // copy global configs vars
         foreach ($_config_vars['vars'] as $variable => $value) {
             if ($this->smarty->config_overwrite || !isset($scope_ptr->config_vars[$variable])) {
                 $scope_ptr->config_vars[$variable] = $value;
@@ -272,7 +272,7 @@ class Smarty_Internal_Config
                 return;
         }
 
-        throw new SmartyException("invalid config property '$property_name'.");
+        throw new SmartyException("invalid configs property '$property_name'.");
     }
 
     /**
@@ -300,6 +300,6 @@ class Smarty_Internal_Config
                 return $this->compiled;
         }
 
-        throw new SmartyException("config attribute '$property_name' does not exist.");
+        throw new SmartyException("configs attribute '$property_name' does not exist.");
     }
 }
