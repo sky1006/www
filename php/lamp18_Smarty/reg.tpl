@@ -30,3 +30,6 @@
 
 <{$var|mystyle:7}><br>
 <{$var|mystyle:7:"blue"}><br>
+
+<{$var|myucword}><br>
+<{$var|zzreplace:'/\d/':"#"}><br>

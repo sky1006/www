@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-04-14 16:26:39
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-04-14 16:57:49
          compiled from "reg.tpl" */
 ?>
 <?php /*%%SmartyHeaderCode:13827552ccf3f9d4052-12975332%%*/
@@ -9,13 +9,15 @@ $_valid = $_smarty_tpl->decodeProperties(array(
             '248359523987d7d1ad848b471f4e84d39031da3a' =>
                 array(
                     0 => 'reg.tpl',
-                    1 => 1428999992,
+                    1 => 1429023467,
                     2 => 'file',
                 ),
         ),
     'nocache_hash' => '13827552ccf3f9d4052-12975332',
     'function' =>
         array(),
+    'version' => 'Smarty-3.1.21-dev',
+    'unifunc' => 'content_552ccf3fb20122_33813352',
     'variables' =>
         array(
             'var' => 0,
@@ -23,8 +25,6 @@ $_valid = $_smarty_tpl->decodeProperties(array(
             'var3' => 0,
         ),
     'has_nocache_code' => false,
-    'version' => 'Smarty-3.1.21-dev',
-    'unifunc' => 'content_552ccf3fb20122_33813352',
 ), false); /*/%%SmartyHeaderCode%%*/
 ?>
 <?php if ($_valid && !is_callable('content_552ccf3fb20122_33813352')) {
@@ -74,8 +74,15 @@ $_valid = $_smarty_tpl->decodeProperties(array(
         <?php echo smarty_modifier_truncate($_smarty_tpl->tpl_vars['var3']->value, 11, true); ?>
         <br>
 
-        <?php echo fontstyle($_smarty_tpl->tpl_vars['var']->value); ?>
+
+
+        <?php echo fontstyle($_smarty_tpl->tpl_vars['var']->value, 7); ?>
         <br>
-        <?php echo fontstyle($_smarty_tpl->tpl_vars['var']->value, 5, "red"); ?>
+        <?php echo fontstyle($_smarty_tpl->tpl_vars['var']->value, 7, "blue"); ?>
+        <br>
+
+        <?php echo ucwords($_smarty_tpl->tpl_vars['var']->value); ?>
+        <br>
+        <?php echo test($_smarty_tpl->tpl_vars['var']->value, '/\d/', "#"); ?>
         <br><?php }
 } ?>

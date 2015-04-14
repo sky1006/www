@@ -6,7 +6,7 @@
  * Time: 16:02
  */
 include "init.inc.php";
-$var = "this is a demo this is a demo";
+$var = "this is 5a demo thi6s is a d7emo";
 
 $smarty->assign("var", $var);
 $smarty->assign("var2", 100);
@@ -17,5 +17,14 @@ function fontstyle($str, $fontsize = "3", $fontcolor = "green")
     return '<font color="' . $fontcolor . '" size="' . $fontsize . '">' . $str . '</font>';
 }
 
-$smarty->registered_plugins("modifier", "mystyle", function ());
+$smarty->registerPlugin("modifier", "mystyle", "fontstyle");
+
+$smarty->registerPlugin("modifier", "myucword", "ucwords");
+$smarty->registerPlugin("modifier", "zzreplace", "test");
+
+function test($text, $zz, $str)
+{
+    return preg_replace($zz, $str, $text);
+}
+
 $smarty->display("reg.tpl");
