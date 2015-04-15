@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d4c02d3-5570-4c67-977f-ab75d7b04ee5" name="默认的" comment="Revert &quot;1&quot;&#10;&#10;This reverts commit 8ceeb2ed78f91d1db80f6a36c8e56d4baa99cc62.&#10;&#10;Conflicts:&#10;&#9;php/.idea/vcs.xml&#10;&#9;php/.idea/workspace.xml&#10;&#9;php/two/1.html&#10;正则表达式">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/skye.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vagrant.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lamp18_Smarty/comps/248359523987d7d1ad848b471f4e84d39031da3a.file.reg.tpl.php" afterPath="$PROJECT_DIR$/lamp18_Smarty/comps/248359523987d7d1ad848b471f4e84d39031da3a.file.reg.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lamp18_Smarty/reg.php" afterPath="$PROJECT_DIR$/lamp18_Smarty/reg.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lamp18_Smarty/reg.tpl" afterPath="$PROJECT_DIR$/lamp18_Smarty/reg.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lamp18_Smarty/myplugins/block.textarea.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lamp18_Smarty/comps/80b5fa6e0053e7b0236aadf9cbabf8de673fb865.file.defcolor.tpl.php" afterPath="$PROJECT_DIR$/lamp18_Smarty/comps/80b5fa6e0053e7b0236aadf9cbabf8de673fb865.file.defcolor.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lamp18_Smarty/defcolor.php" afterPath="$PROJECT_DIR$/lamp18_Smarty/defcolor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lamp18_Smarty/defcolor.tpl" afterPath="$PROJECT_DIR$/lamp18_Smarty/defcolor.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lamp18_Smarty/myplugins/function.date.php" afterPath="$PROJECT_DIR$/lamp18_Smarty/myplugins/function.date.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lamp18_Smarty/myplugins/function.laydate.php" afterPath="$PROJECT_DIR$/lamp18_Smarty/myplugins/function.laydate.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="php.iws" />
@@ -30,19 +31,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="reg.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="reg.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lamp18_Smarty/reg.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="25" selection-start="355" selection-end="355" vertical-scroll-proportion="0.77936965" vertical-offset="0" max-vertical-offset="561">
+            <state line="16" column="39" selection-start="369" selection-end="369" vertical-scroll-proportion="0.30769232" vertical-offset="280" max-vertical-offset="646">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reg.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lamp18_Smarty/reg.tpl">
+      <file leaf-file-name="defcolor.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lamp18_Smarty/defcolor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="26" selection-start="790" selection-end="790" vertical-scroll-proportion="-16.0" vertical-offset="162" max-vertical-offset="680">
+            <state line="13" column="0" selection-start="267" selection-end="267" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="357">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="defcolor.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lamp18_Smarty/defcolor.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="74" selection-start="498" selection-end="498" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="425">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="block.textarea.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lamp18_Smarty/myplugins/block.textarea.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="39" selection-start="1498" selection-end="1498" vertical-scroll-proportion="0.42105263" vertical-offset="479" max-vertical-offset="1326">
               <folding />
             </state>
           </provider>
@@ -66,11 +85,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/lampbrother5/2.php" />
-        <option value="$PROJECT_DIR$/lampbrother5/3.php" />
-        <option value="$PROJECT_DIR$/lampbrother5/4.php" />
-        <option value="$PROJECT_DIR$/lampbrother5/5.php" />
-        <option value="$PROJECT_DIR$/lampbrother5/function.inc.php" />
         <option value="$PROJECT_DIR$/lampbrother5/6.php" />
         <option value="$PROJECT_DIR$/lampbrother5/7.php" />
         <option value="$PROJECT_DIR$/lampbrother6/1.php" />
@@ -117,15 +131,20 @@
         <option value="$PROJECT_DIR$/lamp9/5.php" />
         <option value="$PROJECT_DIR$/lamp18_Smarty/reg.tpl" />
         <option value="$PROJECT_DIR$/lamp18_Smarty/reg.php" />
+        <option value="$PROJECT_DIR$/lamp18_Smarty/myplugins/function.date.php" />
+        <option value="$PROJECT_DIR$/lamp18_Smarty/defcolor.php" />
+        <option value="$PROJECT_DIR$/lamp18_Smarty/myplugins/function.laydate.php" />
+        <option value="$PROJECT_DIR$/lamp18_Smarty/myplugins/block.textarea.php" />
+        <option value="$PROJECT_DIR$/lamp18_Smarty/defcolor.tpl" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="580" />
-    <option name="y" value="5" />
-    <option name="width" value="784" />
-    <option name="height" value="678" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -222,6 +241,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lamp18_Smarty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lamp18_Smarty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ckeditor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -231,13 +290,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="options.lastSelected" value="editor" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
     <property name="SearchEverywhereHistory" value="&#10;‘" />
+    <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
   </component>
   <component name="ReadonlyStatusHandler">
     <option name="SHOW_DIALOG" value="false" />
@@ -253,6 +313,485 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\wamp\www\php\css\import" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree">
+    <UpdateInfo date="片刻 之前" ActionInfo="更新 (_U)">
+      <UpdatedFiles>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="从服务器更新" />
+          <option name="myStatusName" value="在服务器上已改变" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CHANGED_ON_SERVER" />
+          <FILE-GROUP>
+            <option name="myUpdateName" value="已更新" />
+            <option name="myStatusName" value="已改变" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="UPDATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/../.idea/workspace.xml</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/comps/248359523987d7d1ad848b471f4e84d39031da3a.file.reg.tpl.php</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/init.inc.php</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/reg.php</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/reg.tpl</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="已创建" />
+            <option name="myStatusName" value="已创建" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="CREATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/comps/236b61c954547f50febf0885f135a63823ed4369.file.defun.tpl.php</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/comps/80b5fa6e0053e7b0236aadf9cbabf8de673fb865.file.defcolor.tpl.php</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/defcolor.php</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/defcolor.tpl</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/defun.php</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/defun.tpl</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/CHANGES.md</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/LICENSE.md</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/README.md</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/adapters/jquery.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/build-config.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/ckeditor.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/config.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/contents.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/af.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/ar.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/bg.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/bn.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/bs.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/ca.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/cs.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/cy.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/da.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/de.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/el.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/en-au.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/en-ca.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/en-gb.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/en.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/eo.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/es.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/et.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/eu.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/fa.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/fi.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/fo.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/fr-ca.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/fr.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/gl.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/gu.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/he.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/hi.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/hr.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/hu.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/id.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/is.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/it.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/ja.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/ka.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/km.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/ko.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/ku.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/lt.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/lv.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/mk.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/mn.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/ms.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/nb.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/nl.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/no.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/pl.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/pt-br.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/pt.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/ro.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/ru.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/si.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/sk.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/sl.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/sq.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/sr-latn.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/sr.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/sv.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/th.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/tr.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/tt.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/ug.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/uk.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/vi.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/zh-cn.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/lang/zh.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/af.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/da.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/de.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/el.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/en.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/es.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/et.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/he.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/id.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/it.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/km.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/no.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/si.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/th.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/about/dialogs/about.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/about/dialogs/logo_ckeditor.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/clipboard/dialogs/paste.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/dialog/dialogDefinition.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/icons.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/icons_hidpi.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/image/dialogs/image.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/image/images/noimage.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/link/dialogs/anchor.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/link/dialogs/link.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/link/images/anchor.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/link/images/hidpi/anchor.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/magicline/images/hidpi/icon.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/magicline/images/icon-rtl.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/magicline/images/icon.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/pastefromword/filter/default.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/scayt/LICENSE.md</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/scayt/README.md</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/scayt/dialogs/options.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/scayt/dialogs/toolbar.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/af.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/ar.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/bg.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/ca.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/cs.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/cy.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/da.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/de.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/el.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/en.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/eo.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/es.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/et.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/fa.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/fi.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/fr.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/gl.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/he.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/hr.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/hu.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/id.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/it.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/ja.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/km.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/ku.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/lt.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/lv.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/nb.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/nl.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/no.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/pl.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/pt.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/ru.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/si.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/sk.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/sl.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/sq.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/sv.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/th.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/tr.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/tt.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/ug.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/uk.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/vi.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/zh.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/specialchar.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/table/dialogs/table.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/tabletools/dialogs/tableCell.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/wsc/LICENSE.md</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/wsc/README.md</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/wsc/dialogs/ciframe.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/wsc/dialogs/tmpFrameset.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/wsc/dialogs/wsc.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/wsc/dialogs/wsc.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/plugins/wsc/dialogs/wsc_ie.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/ajax.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/api.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/appendto.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/assets/inlineall/logo.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/assets/outputxhtml/outputxhtml.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/assets/posteddata.php</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/assets/sample.jpg</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/assets/uilanguages/languages.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/datafiltering.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/divreplace.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/inlineall.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/inlinebycode.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/inlinetextarea.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/jquery.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/plugins/dialog/assets/my_dialog.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/plugins/dialog/dialog.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/plugins/enterkey/enterkey.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.fla</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.swf</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/swfobject.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/plugins/htmlwriter/outputforflash.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/plugins/htmlwriter/outputhtml.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/plugins/magicline/magicline.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/plugins/toolbar/toolbar.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/plugins/wysiwygarea/fullpage.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/readonly.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/replacebyclass.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/replacebycode.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/sample.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/sample.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/sample_posteddata.php</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/tabindex.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/uicolor.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/uilanguages.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/samples/xhtmlstyle.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/skins/moono/dialog.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/skins/moono/dialog_ie.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/skins/moono/dialog_ie7.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/skins/moono/dialog_ie8.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/skins/moono/dialog_iequirks.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/skins/moono/editor.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/skins/moono/editor_gecko.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/skins/moono/editor_ie.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/skins/moono/editor_ie7.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/skins/moono/editor_ie8.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/skins/moono/editor_iequirks.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/skins/moono/icons.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/skins/moono/icons_hidpi.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/skins/moono/images/arrow.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/skins/moono/images/close.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/skins/moono/images/hidpi/close.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/skins/moono/images/hidpi/lock-open.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/skins/moono/images/hidpi/lock.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/skins/moono/images/hidpi/refresh.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/skins/moono/images/lock-open.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/skins/moono/images/lock.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/skins/moono/images/refresh.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/skins/moono/readme.md</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/styles.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/border-radius.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/gold/brushed-steel.jpg</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/gold/coolbg.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/gold/gold.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/gold/gold.jpg</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/img/cool-bg-hard-inv.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/img/cool-bg-hard.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/img/cool-bg-inv.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/img/cool-bg.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/img/drop-down.gif</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/img/drop-up.gif</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/img/nav-left-x2.gif</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/img/nav-left.gif</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/img/nav-right-x2.gif</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/img/nav-right.gif</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/img/time-down.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/img/time-up.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/jscal2.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/matrix/matrix.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/matrix/nav-left-x2.gif</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/matrix/nav-left.gif</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/matrix/nav-right-x2.gif</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/matrix/nav-right.gif</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/reduce-spacing.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/shadow-b.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/steel/brushed-steel.jpg</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/steel/brushed-steel.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/steel/coolbg.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/steel/steel.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/steel/steel.jpg</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/css/win2k/win2k.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/js/jscal2.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/js/lang/ca.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/js/lang/cn.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/js/lang/cz.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/js/lang/de.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/js/lang/en.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/js/lang/es.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/js/lang/fr.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/js/lang/hr.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/js/lang/it.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/js/lang/jp.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/js/lang/nl.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/js/lang/pl.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/js/lang/pt.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/js/lang/ro.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/js/lang/ru.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/js/lang/sk.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/js/lang/sv.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/date/js/unicode-letter.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/jscolor/arrow.gif</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/jscolor/cross.gif</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/jscolor/demo.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/jscolor/hs.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/jscolor/hv.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/jscolor/jscolor.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/laydate/README.md</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/laydate/laydate.dev.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/laydate/laydate.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/laydate/need/laydate.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/laydate/skins/dahong/icon.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/laydate/skins/dahong/laydate.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/laydate/skins/danlan/icon.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/laydate/skins/danlan/laydate.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/laydate/skins/default/icon.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/laydate/skins/default/laydate.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/laydate/skins/molv/icon.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/laydate/skins/molv/laydate.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/laydate/skins/qianhuang/icon.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/laydate/skins/qianhuang/laydate.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/laydate/skins/yahui/icon.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/laydate/skins/yahui/laydate.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/laydate/skins/yalan/icon.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/laydate/skins/yalan/laydate.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/laydate/test/demo1.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/laydate/test/demo2.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/js/laydate/test/demo2.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/myplugins/block.world1.php</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/myplugins/function.color.php</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/myplugins/function.date.php</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/myplugins/function.hello.php</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lamp18_Smarty/myplugins/function.laydate.php</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="已删除" />
+            <option name="myStatusName" value="已删除" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="true" />
+            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="已恢复" />
+            <option name="myStatusName" value="将被恢复" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="RESTORED" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="已修改" />
+          <option name="myStatusName" value="已修改" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MODIFIED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="已跳过" />
+          <option name="myStatusName" value="已跳过" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SKIPPED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="合并冲突" />
+          <option name="myStatusName" value="将被合并冲突" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="已合并树冲突" />
+          <option name="myStatusName" value="已合并树冲突" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="已合并属性冲突" />
+          <option name="myStatusName" value="将被合并属性冲突" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="已合并" />
+          <option name="myStatusName" value="将被合并" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="在库里没有" />
+          <option name="myStatusName" value="在库里没有" />
+          <option name="mySupportsDeletion" value="true" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UNKNOWN" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="本地已添加" />
+          <option name="myStatusName" value="本地已添加" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_ADDED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="本地已移除" />
+          <option name="myStatusName" value="本地已移除" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_REMOVED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="已切换" />
+          <option name="myStatusName" value="已切换" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SWITCHED" />
+        </FILE-GROUP>
+      </UpdatedFiles>
+    </UpdateInfo>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -271,6 +810,10 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+    <option name="myConnectionType" value="NONE" />
+  </component>
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
@@ -570,7 +1113,11 @@
       <created>1418998394256</created>
       <updated>1418998394256</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Revert &quot;1&quot;&#10;&#10;This reverts commit 8ceeb2ed78f91d1db80f6a36c8e56d4baa99cc62.&#10;&#10;Conflicts:&#10;&#9;php/.idea/vcs.xml&#10;&#9;php/.idea/workspace.xml&#10;&#9;php/two/1.html&#10;正则表达式">
+      <created>1429023543262</created>
+      <updated>1429023543262</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -594,31 +1141,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="580" y="5" width="784" height="678" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="更改" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20192307" sideWeight="0.4939577" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="更改" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17508417" sideWeight="0.4939577" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3262548" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32491583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24931881" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3030303" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32854986" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24931881" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3262548" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32853717" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -647,90 +1194,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lamp18_Smarty/reg.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="494">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lamp18_Smarty/reg.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="3" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lamp5/3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="5" selection-start="1128" selection-end="1128" vertical-scroll-proportion="2.1639345" vertical-offset="575" max-vertical-offset="1406" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lamp5/2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="17" selection-start="1517" selection-end="1517" vertical-scroll-proportion="1.5377358" vertical-offset="1221" max-vertical-offset="1881" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lamp5/4.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="988" selection-end="988" vertical-scroll-proportion="3.487342" vertical-offset="0" max-vertical-offset="1216" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lamp5/webgrind/js/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="331" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lamp5/function.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="22" selection-start="226" selection-end="226" vertical-scroll-proportion="0.81962025" vertical-offset="102" max-vertical-offset="494" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lamp5/6.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="28" selection-start="478" selection-end="478" vertical-scroll-proportion="1.142405" vertical-offset="0" max-vertical-offset="551" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lamp5/5.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="24" selection-start="126" selection-end="126" vertical-scroll-proportion="0.48101267" vertical-offset="0" max-vertical-offset="1311" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lamp5/7.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="31" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.22327045" vertical-offset="1164" max-vertical-offset="1596" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lamp6/2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="0" selection-start="5130" selection-end="5200" vertical-scroll-proportion="0.3830986" vertical-offset="2752" max-vertical-offset="3363" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lamp6/3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="32" selection-start="1551" selection-end="1551" vertical-scroll-proportion="-6.357143" vertical-offset="924" max-vertical-offset="1463" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lamp6/4.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="0" selection-start="3027" selection-end="3027" vertical-scroll-proportion="-18.107143" vertical-offset="2286" max-vertical-offset="2983" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lamp6/5.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="13" selection-start="3376" selection-end="3376" vertical-scroll-proportion="1.0513513" vertical-offset="2290" max-vertical-offset="2831" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lamp6/6.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="5" selection-start="1213" selection-end="1213" vertical-scroll-proportion="0.33243242" vertical-offset="732" max-vertical-offset="1102" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lamp6/7.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="15" selection-start="942" selection-end="942" vertical-scroll-proportion="0.79891306" vertical-offset="523" max-vertical-offset="931" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lamp6/1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="13" selection-start="764" selection-end="764" vertical-scroll-proportion="0.5887324" vertical-offset="171" max-vertical-offset="2432" />
@@ -886,16 +1349,165 @@
         <state line="88" column="18" selection-start="1982" selection-end="1982" vertical-scroll-proportion="3.5298913" vertical-offset="373" max-vertical-offset="1995" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lamp18_Smarty/reg.tpl">
+    <entry file="file://$PROJECT_DIR$/lamp18_Smarty/reg.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="26" selection-start="790" selection-end="790" vertical-scroll-proportion="-16.0" vertical-offset="162" max-vertical-offset="680">
+        <state line="16" column="39" selection-start="369" selection-end="369" vertical-scroll-proportion="0.30769232" vertical-offset="280" max-vertical-offset="646">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lamp18_Smarty/reg.php">
+    <entry file="file://$PROJECT_DIR$/lamp18_Smarty/js/laydate/laydate.dev.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="25" selection-start="355" selection-end="355" vertical-scroll-proportion="0.77936965" vertical-offset="0" max-vertical-offset="561">
+        <state line="11" column="17" selection-start="145" selection-end="145" vertical-scroll-proportion="0.35150376" vertical-offset="0" max-vertical-offset="15028">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lamp18_Smarty/js/laydate/test/demo1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="-0.34296724" vertical-offset="382" max-vertical-offset="1003">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lamp18_Smarty/js/laydate/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="170" selection-end="170" vertical-scroll-proportion="0.35150376" vertical-offset="0" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lamp18_Smarty/js/laydate/test/demo2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="545">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lamp18_Smarty/reg.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="0" selection-start="1312" selection-end="1312" vertical-scroll-proportion="0.8034682" vertical-offset="518" max-vertical-offset="1037">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lamp18_Smarty/js/date/js/jscal2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="536" column="263" selection-start="22050" selection-end="22050" vertical-scroll-proportion="-1.3471401" vertical-offset="9795" max-vertical-offset="16932">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lamp18_Smarty/js/laydate/laydate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="17" selection-start="175" selection-end="175" vertical-scroll-proportion="-2.2707582" vertical-offset="1479" max-vertical-offset="4658">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lamp18_Smarty/myplugins/function.date.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="22" selection-start="633" selection-end="633" vertical-scroll-proportion="0.4962963" vertical-offset="173" max-vertical-offset="1037">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lamp18_Smarty/myplugins/function.laydate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="32" selection-start="268" selection-end="291" vertical-scroll-proportion="0.11860465" vertical-offset="153" max-vertical-offset="1343">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lamp18_Smarty/libs/plugins/block.textformat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.4232558" vertical-offset="182" max-vertical-offset="1887">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lamp18_Smarty/defcolor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="267" selection-end="267" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lamp18_Smarty/defcolor.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="74" selection-start="498" selection-end="498" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="36" selection-start="788" selection-end="788" vertical-scroll-proportion="0.659612" vertical-offset="0" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/LICENSE.md">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="46" selection-start="570" selection-end="570" vertical-scroll-proportion="-17.47135" vertical-offset="9741" max-vertical-offset="21590">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/CHANGES.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="52" selection-start="1056" selection-end="1056" vertical-scroll-proportion="-3.058201" vertical-offset="2040" max-vertical-offset="23562">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/build-config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-4.0844035" vertical-offset="2226" max-vertical-offset="2771">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lamp18_Smarty/js/ckeditor/ckeditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="625" column="62" selection-start="26113" selection-end="26113" vertical-scroll-proportion="4.3809524" vertical-offset="8600" max-vertical-offset="328457">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1429097528330" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1429097528330" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1429097528330" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1429097528330" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1429097528330" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1429097528330" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1429097528330" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1429097528330" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1429097528330" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1429097528330" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1429097528330" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1429097528330" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lamp18_Smarty/myplugins/block.textarea.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="39" selection-start="1498" selection-end="1498" vertical-scroll-proportion="0.42105263" vertical-offset="479" max-vertical-offset="1326">
           <folding />
         </state>
       </provider>

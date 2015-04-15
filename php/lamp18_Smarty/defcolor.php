@@ -10,6 +10,7 @@ include "init.inc.php";
 $smarty->assign("titlecolor", "FF0000");
 
 //$smarty->registerPlugin("function","laydate","laydate");
-//$smarty->assign("ctime",date("Y-m-d H:i:s"));
+$smarty->assign("ctime", date("Y-m-d H:i:s"));
+
 
 $smarty->display("defcolor.tpl");

@@ -13,7 +13,7 @@
 function smarty_function_laydate($args, $smarty)
 {
     print_r($args);
-    $name = $args['name'];
+    /*$name = $args['name'];
     $value = !empty($args['value']) ? $args['value'] : '';
     $isdatetime = !empty($args['time']) ? $args['time'] : 0;
 
@@ -28,8 +28,8 @@ function smarty_function_laydate($args, $smarty)
         $format = '%Y-%m-%d';
         $showsTime = false;
     }
-    $str = '';
-    if (!defined('CALENDAR_INIT')) {
+    $str = '';*/
+    /*if (!defined('CALENDAR_INIT')) {
         define('CALENDAR_INIT', 1);
         $str .= '<script src="./js/laydate/laydate.js"></script>
 <link rel="stylesheet" type="text/css" href="./js/laydate/need/laydate.css" />
@@ -43,16 +43,32 @@ function smarty_function_laydate($args, $smarty)
     }
     $str .= '<input type="text" name="' . $name . '" id="' . $id . '" value="' . $value . '" size="' . $size . '" class="date" readonly>&nbsp;';
     $str .= '<script type="text/javascript">
-calendar.setup({
-weekNumbers:true,
-inputField:"' . $id . '",
-trigger : "' . $id . '",
-dateFormat:"' . $format . '",
-showTime:"' . $showsTime . '",
-minuteStep:1,
-onSelect:function(){this.hide();}
-});
+var start = {
+    elem:'#start';
+    format: 'YYYY/MM/DD hh:mm:ss';
+    min: laydate.now(); //设定最小日期为当前日期
+    max: '2099-06-16 23:59:59'; //最大日期
+    istime: true;
+    istoday: false;
+    choose: function(datas){
+    end.min = datas; //开始日选好后，重置结束日的最小日期
+    end.start = datas; //将结束日的初始值设定为开始日
+    }
+};
+var end = {
+    elem: '#end';
+    format: 'YYYY/MM/DD hh:mm:ss';
+    min: laydate.now();
+    max: '2099-06-16 23:59:59';
+    istime: true;
+    istoday: false;
+    choose: function(datas){
+        start.max = datas; //结束日选好后，重置开始日的最大日期
+    }
+};
+laydate(start);
+laydate(end);
 </script>';
-    return $str;
+    return $str;*/
 
 }

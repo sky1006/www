@@ -23,7 +23,7 @@ function smarty_function_date($args, $smarty)
     if ($isdatetime) {
         $size = 21;
         $format = '%Y-%m-%d %H:%M:%S';
-        $showsTime = 12;
+        $showsTime = 24;
     } else {
         $size = 10;
         $format = '%Y-%m-%d';
@@ -33,6 +33,7 @@ function smarty_function_date($args, $smarty)
     if ($loadjs || !defined('CALENDAR_INIT')) {
         define('CALENDAR_INIT', 1);
         $str .= '<script src="./js/date/js/jscal2.js"></script>
+<script src="./js/date/js/lang/cn.js"></script>
 <link rel="stylesheet" type="text/css" href="./js/date/css/jscal2.css" />
 <link rel="stylesheet" type="text/css" href="./js/date/css/border-radius.css" />
 <link rel="stylesheet" type="text/css" href="./js/date/css/steel/steel.css" />
