@@ -22,6 +22,10 @@ $smarty->setCompileDir(ROOT . "./comps/");
 //指定配置文件所在的目录
 $smarty->setConfigDir(ROOT . "./configs/");
 
+//添加一个插件的目录
+//$smarty->setPluginsDir(ROOT."./myplugins/");
+$smarty->addPluginsDir(ROOT . "./myplugins/");
+
 //可以让定界符使用空格
 $smarty->auto_literal = false;
 

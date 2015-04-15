@@ -2,46 +2,373 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf9e248a-5536-4981-a038-7e48806426f9" name="Default" comment="1">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/comps/248359523987d7d1ad848b471f4e84d39031da3a.file.reg.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/views/comps/66311b15f8ad42c782a9e5aa6fd0a5039bb27ef4.file.index2.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/comps/815f28c472ab07e62e87bb8ccb7ee5ea3f7c8710.sns.conf.configs.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/views/comps/df6c4dc8eeaba54d8c5da841b716484748fc1bf5.sns.conf.configs.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/views/index2.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/views/index2.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/reg.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/reg.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/configs/sns.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/views/configs/sns.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp17_Session/session/DBSession.php" afterPath="$PROJECT_DIR$/php/lamp17_Session/session/DBSession.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp5/webgrind/library/FileHandler.php" afterPath="$PROJECT_DIR$/php/lamp5/webgrind/library/FileHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp18_Smarty/libs/Smarty.class.php" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/Smarty.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp18_Smarty/libs/SmartyBC.class.php" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/SmartyBC.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp7/circle.class.php" afterPath="$PROJECT_DIR$/php/lamp7/circle.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp5/webgrind/config.php" afterPath="$PROJECT_DIR$/php/lamp5/webgrind/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/link/images/anchor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/link/images/hidpi/anchor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/jscolor/arrow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/skins/moono/images/arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/gold/brushed-steel.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/steel/brushed-steel.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/steel/brushed-steel.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/skins/moono/images/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/skins/moono/images/hidpi/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/img/cool-bg-hard-inv.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/img/cool-bg-hard.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/img/cool-bg-inv.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/img/cool-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/gold/coolbg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/steel/coolbg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/jscolor/cross.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/img/drop-down.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/img/drop-up.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/gold/gold.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/jscolor/hs.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/jscolor/hv.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/magicline/images/icon-rtl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/magicline/images/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/magicline/images/hidpi/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/laydate/skins/dahong/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/laydate/skins/danlan/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/laydate/skins/default/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/laydate/skins/molv/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/laydate/skins/qianhuang/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/laydate/skins/yahui/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/laydate/skins/yalan/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/skins/moono/icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/icons_hidpi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/skins/moono/icons_hidpi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/skins/moono/images/lock-open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/skins/moono/images/hidpi/lock-open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/skins/moono/images/lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/skins/moono/images/hidpi/lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/assets/inlineall/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/about/dialogs/logo_ckeditor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/img/nav-left-x2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/matrix/nav-left-x2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/img/nav-left.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/matrix/nav-left.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/img/nav-right-x2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/matrix/nav-right-x2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/img/nav-right.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/matrix/nav-right.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/image/images/noimage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.fla" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/skins/moono/images/refresh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/skins/moono/images/hidpi/refresh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/assets/sample.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/shadow-b.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/steel/steel.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/img/time-down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/img/time-up.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/comps/236b61c954547f50febf0885f135a63823ed4369.file.defun.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/comps/80b5fa6e0053e7b0236aadf9cbabf8de673fb865.file.defcolor.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/CHANGES.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/scayt/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/wsc/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/scayt/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/wsc/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/laydate/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/about/dialogs/about.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/af.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/af.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/ajax.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/link/dialogs/anchor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/api.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/appendto.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/myplugins/block.world1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/bn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/border-radius.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/bs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/build-config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/js/lang/ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/wsc/dialogs/ciframe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/ckeditor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/js/lang/cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/contents.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/cy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/cy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/js/lang/cz.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/datafiltering.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/js/lang/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/pastefromword/filter/default.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/defcolor.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/defcolor.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/defun.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/defun.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/jscolor/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/laydate/test/demo1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/laydate/test/demo2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/laydate/test/demo2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/skins/moono/dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/plugins/dialog/dialog.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/dialog/dialogDefinition.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/skins/moono/dialog_ie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/skins/moono/dialog_ie7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/skins/moono/dialog_ie8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/skins/moono/dialog_iequirks.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/divreplace.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/skins/moono/editor.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/skins/moono/editor_gecko.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/skins/moono/editor_ie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/skins/moono/editor_ie7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/skins/moono/editor_ie8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/skins/moono/editor_iequirks.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/en-au.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/en-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/en-gb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/js/lang/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/plugins/enterkey/enterkey.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/eo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/eo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/js/lang/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/eu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/fo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/fr-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/js/lang/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/plugins/wysiwygarea/fullpage.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/myplugins/function.color.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/myplugins/function.date.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/myplugins/function.hello.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/myplugins/function.laydate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/gold/gold.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/gu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/hi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/js/lang/hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/image/dialogs/image.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/inlineall.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/inlinebycode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/inlinetextarea.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/js/lang/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/js/lang/jp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/jquery.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/adapters/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/jscal2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/js/jscal2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/jscolor/jscolor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/ka.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/km.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/km.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/ku.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/ku.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/assets/uilanguages/languages.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/laydate/need/laydate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/laydate/skins/dahong/laydate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/laydate/skins/danlan/laydate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/laydate/skins/default/laydate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/laydate/skins/molv/laydate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/laydate/skins/qianhuang/laydate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/laydate/skins/yahui/laydate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/laydate/skins/yalan/laydate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/laydate/laydate.dev.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/laydate/laydate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/link/dialogs/link.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/plugins/magicline/magicline.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/matrix/matrix.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/mk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/mn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/ms.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/plugins/dialog/assets/my_dialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/nb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/nb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/js/lang/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/scayt/dialogs/options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/plugins/htmlwriter/outputforflash.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/plugins/htmlwriter/outputhtml.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/assets/outputxhtml/outputxhtml.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/clipboard/dialogs/paste.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/js/lang/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/assets/posteddata.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/pt-br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/js/lang/pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/skins/moono/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/readonly.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/reduce-spacing.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/replacebyclass.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/replacebycode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/js/lang/ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/js/lang/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/sample.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/sample.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/sample_posteddata.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/si.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/si.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/js/lang/sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/specialchar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/sq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/sq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/sr-latn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/sr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/steel/steel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/styles.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/js/lang/sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/swfobject.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/tabindex.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/table/dialogs/table.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/tabletools/dialogs/tableCell.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/scayt/dialogs/toolbar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/plugins/toolbar/toolbar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/tt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/tt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/ug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/ug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/uicolor.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/uilanguages.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/js/unicode-letter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/date/css/win2k/win2k.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/wsc/dialogs/wsc.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/wsc/dialogs/wsc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/wsc/dialogs/wsc_ie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/samples/xhtmlstyle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/zh-cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/zh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/plugins/specialchar/dialogs/lang/zh.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp18_Smarty/comps/248359523987d7d1ad848b471f4e84d39031da3a.file.reg.tpl.php" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/comps/248359523987d7d1ad848b471f4e84d39031da3a.file.reg.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp18_Smarty/init.inc.php" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/init.inc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp18_Smarty/views/init.inc.php" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/views/init.inc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp5/webgrind/js/jquery.tablesorter.js" afterPath="$PROJECT_DIR$/php/lamp5/webgrind/js/jquery.tablesorter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp17_Session/login.php" afterPath="$PROJECT_DIR$/php/lamp17_Session/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp17_Session/session/login.php" afterPath="$PROJECT_DIR$/php/lamp17_Session/session/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp7/rect.class.php" afterPath="$PROJECT_DIR$/php/lamp7/rect.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_config_source.php" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_config_source.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_config_load.php" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_config_load.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_private_special_variable.php" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_compile_private_special_variable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_config.php" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_config_file_compiler.php" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_config_file_compiler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_configfilelexer.php" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_configfilelexer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_configfileparser.php" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_configfileparser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_data.php" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_data.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_resource_eval.php" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_resource_eval.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_resource_file.php" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_resource_file.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_resource_stream.php" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_resource_stream.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_resource_string.php" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_resource_string.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_templatebase.php" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_templatebase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_utility.php" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_internal_utility.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_resource.php" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_resource.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_security.php" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/libs/sysplugins/smarty_security.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp7/triangle.class.php" afterPath="$PROJECT_DIR$/php/lamp7/triangle.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp18_Smarty/reg.php" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/reg.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp18_Smarty/reg.tpl" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/reg.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="one.iws" />
@@ -91,8 +418,8 @@
       <file leaf-file-name="Smarty.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/libs/Smarty.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.103449" vertical-offset="13528" max-vertical-offset="54480">
-              <caret line="726" column="25" selection-start-line="726" selection-start-column="25" selection-end-line="726" selection-end-column="25" />
+            <state vertical-scroll-proportion="11.5172415" vertical-offset="7528" max-vertical-offset="38360">
+              <caret line="343" column="73" selection-start-line="343" selection-start-column="73" selection-end-line="343" selection-end-column="73" />
               <folding>
                 <element signature="e#6#1310#0#PHP" expanded="true" />
               </folding>
@@ -100,41 +427,69 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reg.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/reg.php">
+      <file leaf-file-name="defcolor.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/defcolor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0482315" vertical-offset="14" max-vertical-offset="520">
-              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            <state vertical-scroll-proportion="-8.965517" vertical-offset="0" max-vertical-offset="400">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reg.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/reg.tpl">
+      <file leaf-file-name="defcolor.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/defcolor.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.413794" vertical-offset="180" max-vertical-offset="740">
-              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+            <state vertical-scroll-proportion="-8.275862" vertical-offset="0" max-vertical-offset="520">
+              <caret line="12" column="80" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="init.inc.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/init.inc.php">
+      <file leaf-file-name="function.date.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/myplugins/function.date.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.413794" vertical-offset="0" max-vertical-offset="620">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="1.7421603" vertical-offset="360" max-vertical-offset="1340">
+              <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
+              <folding>
+                <marker date="1429093846042" expanded="true" signature="1407:1618" placeholder="..." />
+                <marker date="1429093846042" expanded="true" signature="1424:1607" placeholder="{&quot;weekNumbers&quot;: true...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sns.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/configs/sns.conf">
+      <file leaf-file-name="function.laydate.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/myplugins/function.laydate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440">
-              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+            <state vertical-scroll-proportion="-12.413794" vertical-offset="240" max-vertical-offset="1500">
+              <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+              <folding>
+                <marker date="1429091066704" expanded="true" signature="1836:2045" placeholder="..." />
+                <marker date="1429091066704" expanded="true" signature="1853:2034" placeholder="{&quot;weekNumbers&quot;: true...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="laydate.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/js/laydate/laydate.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5480">
+              <caret line="10" column="91" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="91" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="function.color.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/myplugins/function.color.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.586207" vertical-offset="120" max-vertical-offset="640">
+              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -158,16 +513,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/php/lamp15_PDO/demoPrepare4.php" />
-        <option value="$PROJECT_DIR$/php/lamp15_PDO/demoPrepare6.php" />
-        <option value="$PROJECT_DIR$/php/lamp15_PDO/demoPrepare7.php" />
-        <option value="$PROJECT_DIR$/php/lamp16_memcache/demo.php" />
-        <option value="$PROJECT_DIR$/php/lamp16_memcache/demo2.php" />
-        <option value="$PROJECT_DIR$/php/lamp16_memcache/demo3.php" />
-        <option value="$PROJECT_DIR$/php/lamp17_Session/cookie.php" />
-        <option value="$PROJECT_DIR$/php/lamp17_Session/user.sql" />
-        <option value="$PROJECT_DIR$/php/lamp17_Session/login.php" />
-        <option value="$PROJECT_DIR$/php/lamp17_Session/index.php" />
         <option value="$PROJECT_DIR$/php/lamp17_Session/content.php" />
         <option value="$PROJECT_DIR$/php/lamp17_Session/logout.php" />
         <option value="$PROJECT_DIR$/php/lamp17_Session/list.php" />
@@ -206,9 +551,19 @@
         <option value="$PROJECT_DIR$/php/lamp18_Smarty/views/index2.php" />
         <option value="$PROJECT_DIR$/php/lamp18_Smarty/views/index2.tpl" />
         <option value="$PROJECT_DIR$/php/lamp18_Smarty/index.php" />
-        <option value="$PROJECT_DIR$/php/lamp18_Smarty/init.inc.php" />
-        <option value="$PROJECT_DIR$/php/lamp18_Smarty/reg.tpl" />
         <option value="$PROJECT_DIR$/php/lamp18_Smarty/reg.php" />
+        <option value="$PROJECT_DIR$/php/lamp18_Smarty/reg.tpl" />
+        <option value="$PROJECT_DIR$/php/lamp18_Smarty/init.inc.php" />
+        <option value="$PROJECT_DIR$/php/lamp18_Smarty/myplugins/function.hello.php" />
+        <option value="$PROJECT_DIR$/php/lamp18_Smarty/defun.php" />
+        <option value="$PROJECT_DIR$/php/lamp18_Smarty/myplugins/block.world1.php" />
+        <option value="$PROJECT_DIR$/php/lamp18_Smarty/defun.tpl" />
+        <option value="$PROJECT_DIR$/php/lamp18_Smarty/myplugins/function_laydate.php" />
+        <option value="$PROJECT_DIR$/php/lamp18_Smarty/myplugins/function.color.php" />
+        <option value="$PROJECT_DIR$/php/lamp18_Smarty/myplugins/function.laydate.php" />
+        <option value="$PROJECT_DIR$/php/lamp18_Smarty/defcolor.php" />
+        <option value="$PROJECT_DIR$/php/lamp18_Smarty/defcolor.tpl" />
+        <option value="$PROJECT_DIR$/php/lamp18_Smarty/myplugins/function.date.php" />
       </list>
     </option>
   </component>
@@ -338,7 +693,97 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="myplugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lnmphp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lnmphp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lamp18_Smarty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lnmphp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lnmphp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lamp18_Smarty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="date" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lnmphp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lnmphp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lamp18_Smarty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="date" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -371,19 +816,136 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wamp\www\php\lamp18_Smarty\myplugins" />
+      <recent name="D:\wamp\www\php\lamp18_Smarty\js\date" />
+      <recent name="D:\wamp\www\php\lamp18_Smarty\js" />
       <recent name="D:\wamp\www\php\lamp18_Smarty" />
       <recent name="D:\wamp\www\php\lamp18_Smarty\views" />
-      <recent name="D:\wamp\www\php\lamp17_Session\se" />
-      <recent name="D:\wamp\www\php\lamp17_Session\session" />
-      <recent name="D:\wamp\www\php\lamp17_Session" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\wamp\www\php\lamp18_Smarty\js\date" />
       <recent name="D:\wamp\www\php\lamp18_Smarty\views" />
       <recent name="D:\wamp\www\php\lamp18_Smarty" />
       <recent name="D:\wamp\www\php\lamp18_Smarty\comps" />
       <recent name="D:\wamp\www\php\lamp18_Smarty\templates" />
-      <recent name="D:\wamp\www\php\lamp17_Session" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree">
+    <UpdateInfo date="Moments ago" ActionInfo="_Update">
+      <UpdatedFiles>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated from server" />
+          <option name="myStatusName" value="Changed on server" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CHANGED_ON_SERVER" />
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Updated" />
+            <option name="myStatusName" value="Changed" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="UPDATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/php/.idea/workspace.xml</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/php/lamp18_Smarty/comps/248359523987d7d1ad848b471f4e84d39031da3a.file.reg.tpl.php</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/php/lamp18_Smarty/reg.php</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/php/lamp18_Smarty/reg.tpl</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Created" />
+            <option name="myStatusName" value="Created" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="CREATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/php/.idea/dictionaries/skye.xml</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/php/.idea/vagrant.xml</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Deleted" />
+            <option name="myStatusName" value="Deleted" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="true" />
+            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Restored" />
+            <option name="myStatusName" value="Will be restored" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="RESTORED" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Modified" />
+          <option name="myStatusName" value="Modified" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MODIFIED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Skipped" />
+          <option name="myStatusName" value="Skipped" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SKIPPED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with conflicts" />
+          <option name="myStatusName" value="Will be merged with conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with tree conflicts" />
+          <option name="myStatusName" value="Merged with tree conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with property conflicts" />
+          <option name="myStatusName" value="Will be merged with property conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged" />
+          <option name="myStatusName" value="Will be merged" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Not in repository" />
+          <option name="myStatusName" value="Not in repository" />
+          <option name="mySupportsDeletion" value="true" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UNKNOWN" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally added" />
+          <option name="myStatusName" value="Locally added" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_ADDED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally removed" />
+          <option name="myStatusName" value="Locally removed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_REMOVED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Switched" />
+          <option name="myStatusName" value="Switched" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SWITCHED" />
+        </FILE-GROUP>
+      </UpdatedFiles>
+    </UpdateInfo>
   </component>
   <component name="RunManager" selected="PHP Script.efe1527205c0c0c2262c08587825512e40a3b08d.file.test.tpl.php">
     <configuration default="false" name="efe1527205c0c0c2262c08587825512e40a3b08d.file.test.tpl.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/php/lamp18_Smarty/templates_c/efe1527205c0c0c2262c08587825512e40a3b08d.file.test.tpl.php">
@@ -591,7 +1153,13 @@
       <option name="project" value="LOCAL" />
       <updated>1428919375117</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="1">
+      <created>1429006489531</created>
+      <option name="number" value="00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1429006489531</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -625,7 +1193,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32700422" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14425983" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32582322" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32536766" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864675" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -675,159 +1243,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="dbDummy://db-console:/433973ce/66712df6-9ecf-416c-809c-71e5071c3825/">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="517">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp16_memcache/demo3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.034483" vertical-offset="180" max-vertical-offset="860">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp17_Session/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="420">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp17_Session/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.950324" vertical-offset="0" max-vertical-offset="720">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp17_Session/cookie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5088063" vertical-offset="0" max-vertical-offset="511">
-          <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp17_Session/content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5870842" vertical-offset="0" max-vertical-offset="511">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/one.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28688523" vertical-offset="160" max-vertical-offset="920">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding>
-            <element signature="e#6#93#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/three.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47540984" vertical-offset="68" max-vertical-offset="1000">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding>
-            <element signature="e#6#93#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/two.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8196721" vertical-offset="0" max-vertical-offset="800">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#93#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp17_Session/user.sql">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17748918" vertical-offset="158" max-vertical-offset="780">
-          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp15_PDO/phpinfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28688523" vertical-offset="0" max-vertical-offset="488">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/mail.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="644" max-vertical-offset="1200">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2053388" vertical-offset="260" max-vertical-offset="1760">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08213552" vertical-offset="480" max-vertical-offset="980">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          <folding>
-            <marker date="1428054075454" expanded="true" signature="-1:-1" placeholder="select id,ti..email..." />
-            <marker date="1428054075454" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/DBSession.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="36.551723" vertical-offset="1260" max-vertical-offset="3460">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="e#6#119#0#PHP" expanded="true" />
-            <marker date="1428983573173" expanded="true" signature="-1:-1" placeholder="select * fro..session..." />
-            <marker date="1428983573173" expanded="true" signature="-1:-1" placeholder="select * fro..session..." />
-            <marker date="1428983573173" expanded="true" signature="-1:-1" placeholder="update sessi..." />
-            <marker date="1428983573173" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1428983573173" expanded="true" signature="-1:-1" placeholder="delete from ..." />
-            <marker date="1428983573173" expanded="true" signature="-1:-1" placeholder="delete from ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16427104" vertical-offset="0" max-vertical-offset="487">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4661191" vertical-offset="93" max-vertical-offset="580">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/lamp17_Session/session/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30184805" vertical-offset="53" max-vertical-offset="840">
@@ -1054,16 +1469,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/libs/Smarty.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.103449" vertical-offset="13528" max-vertical-offset="54480">
-          <caret line="726" column="25" selection-start-line="726" selection-start-column="25" selection-end-line="726" selection-end-column="25" />
-          <folding>
-            <element signature="e#6#1310#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/views/index2.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1400">
@@ -1090,33 +1495,189 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/configs/sns.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440">
+        <state vertical-scroll-proportion="0.28513238" vertical-offset="0" max-vertical-offset="491">
           <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/init.inc.php">
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/modifier.spacify.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.413794" vertical-offset="0" max-vertical-offset="620">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.66233766" vertical-offset="134" max-vertical-offset="620">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/function.html_select_time.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.024692" vertical-offset="4140" max-vertical-offset="8780">
+          <caret line="15" column="63" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/reg.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.413794" vertical-offset="180" max-vertical-offset="740">
-          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.8353909" vertical-offset="734" max-vertical-offset="1260">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/reg.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0482315" vertical-offset="14" max-vertical-offset="520">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.74485594" vertical-offset="318" max-vertical-offset="820">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/defun.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34632036" vertical-offset="0" max-vertical-offset="462">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/myplugins/function.hello.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4526749" vertical-offset="0" max-vertical-offset="540">
+          <caret line="11" column="12" selection-start-line="6" selection-start-column="3" selection-end-line="11" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/myplugins/block.world1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41563785" vertical-offset="358" max-vertical-offset="860">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/js/jscolor/jscolor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.399185" vertical-offset="2340" max-vertical-offset="24140">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/js/ckeditor/lang/af.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20366599" vertical-offset="0" max-vertical-offset="4240">
+          <caret line="4" column="232" selection-start-line="4" selection-start-column="232" selection-end-line="4" selection-end-column="232" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/js/laydate/need/laydate.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4940">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1414787314000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/function.html_select_date.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34632036" vertical-offset="8520" max-vertical-offset="9140">
+          <caret line="370" column="17" selection-start-line="370" selection-start-column="17" selection-end-line="370" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/libs/Smarty.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="11.5172415" vertical-offset="7528" max-vertical-offset="38360">
+          <caret line="343" column="73" selection-start-line="343" selection-start-column="73" selection-end-line="343" selection-end-column="73" />
+          <folding>
+            <element signature="e#6#1310#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/defun.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6103896" vertical-offset="198" max-vertical-offset="780">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/js/laydate/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="860">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/init.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.275862" vertical-offset="180" max-vertical-offset="700">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/js/laydate/laydate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5480">
+          <caret line="10" column="91" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="91" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/myplugins/function.color.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.586207" vertical-offset="120" max-vertical-offset="640">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/myplugins/function.laydate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.413794" vertical-offset="240" max-vertical-offset="1500">
+          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+          <folding>
+            <marker date="1429091066704" expanded="true" signature="1836:2045" placeholder="..." />
+            <marker date="1429091066704" expanded="true" signature="1853:2034" placeholder="{&quot;weekNumbers&quot;: true...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/defcolor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.965517" vertical-offset="0" max-vertical-offset="400">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/defcolor.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.275862" vertical-offset="0" max-vertical-offset="520">
+          <caret line="12" column="80" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/myplugins/function.date.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.7421603" vertical-offset="360" max-vertical-offset="1340">
+          <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
+          <folding>
+            <marker date="1429093846042" expanded="true" signature="1407:1618" placeholder="..." />
+            <marker date="1429093846042" expanded="true" signature="1424:1607" placeholder="{&quot;weekNumbers&quot;: true...}" />
+          </folding>
         </state>
       </provider>
     </entry>

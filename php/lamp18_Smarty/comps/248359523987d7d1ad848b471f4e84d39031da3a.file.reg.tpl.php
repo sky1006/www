@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-04-14 16:57:49
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-04-15 14:24:36
          compiled from "reg.tpl" */
 ?>
 <?php /*%%SmartyHeaderCode:13827552ccf3f9d4052-12975332%%*/
@@ -9,7 +9,7 @@ $_valid = $_smarty_tpl->decodeProperties(array(
             '248359523987d7d1ad848b471f4e84d39031da3a' =>
                 array(
                     0 => 'reg.tpl',
-                    1 => 1429023467,
+                    1 => 1429079076,
                     2 => 'file',
                 ),
         ),
@@ -23,6 +23,8 @@ $_valid = $_smarty_tpl->decodeProperties(array(
             'var' => 0,
             'var2' => 0,
             'var3' => 0,
+            'data' => 0,
+            'tr' => 0,
         ),
     'has_nocache_code' => false,
 ), false); /*/%%SmartyHeaderCode%%*/
@@ -35,6 +37,8 @@ $_valid = $_smarty_tpl->decodeProperties(array(
         if (!is_callable('smarty_modifier_date_format')) include 'D:\\wamp\\www\\php\\lamp18_Smarty\\libs\\plugins\\modifier.date_format.php';
         if (!is_callable('smarty_modifier_regex_replace')) include 'D:\\wamp\\www\\php\\lamp18_Smarty\\libs\\plugins\\modifier.regex_replace.php';
         if (!is_callable('smarty_modifier_spacify')) include 'D:\\wamp\\www\\php\\lamp18_Smarty\\libs\\plugins\\modifier.spacify.php';
+        if (!is_callable('smarty_function_html_select_date')) include 'D:\\wamp\\www\\php\\lamp18_Smarty\\libs\\plugins\\function.html_select_date.php';
+        if (!is_callable('smarty_function_html_table')) include 'D:\\wamp\\www\\php\\lamp18_Smarty\\libs\\plugins\\function.html_table.php';
         ?><?php  $_config = new Smarty_Internal_Config("sns.conf", $_smarty_tpl->smarty, $_smarty_tpl);
         $_config->loadConfigVars("index", 'local'); ?>
 
@@ -84,5 +88,19 @@ $_valid = $_smarty_tpl->decodeProperties(array(
         <?php echo ucwords($_smarty_tpl->tpl_vars['var']->value); ?>
         <br>
         <?php echo test($_smarty_tpl->tpl_vars['var']->value, '/\d/', "#"); ?>
+        <br>
+
+
+
+        <?php echo smarty_function_html_select_date(array('start_year' => "2000", 'end_year' => "2020"), $_smarty_tpl); ?>
+        <br>
+
+        <?php echo smarty_function_html_table(array('loop' => $_smarty_tpl->tpl_vars['data']->value), $_smarty_tpl); ?>
+        <br>
+        <?php echo smarty_function_html_table(array('loop' => $_smarty_tpl->tpl_vars['data']->value, 'cols' => "4"), $_smarty_tpl); ?>
+        <br>
+        <?php echo smarty_function_html_table(array('loop' => $_smarty_tpl->tpl_vars['data']->value, 'cols' => "4", 'table_attr' => 'border="0"'), $_smarty_tpl); ?>
+        <br>
+        <?php echo smarty_function_html_table(array('loop' => $_smarty_tpl->tpl_vars['data']->value, 'cols' => "first,second,third,fourth", 'tr_attr' => $_smarty_tpl->tpl_vars['tr']->value), $_smarty_tpl); ?>
         <br><?php }
 } ?>

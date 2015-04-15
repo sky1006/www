@@ -33,3 +33,23 @@
 
 <{$var|myucword}><br>
 <{$var|zzreplace:'/\d/':"#"}><br>
+
+<{*<input type="text" name="username" value="this is a demo" size="10" />
+<{funname args="" args1="" args2=""}><br>
+
+
+<font color="red" font-size="7">
+    this is a demo
+</font>
+
+<{funname args="",args1=""}>
+    this is a demo
+<{/funname}>*}>
+
+<{html_select_date start_year="2000" end_year="2020"}><br>
+
+<{html_table loop=$data}><br>
+<{html_table loop=$data cols="4"}><br>
+<{html_table loop=$data cols="4" table_attr='border="0"'}><br>
+<{html_table loop=$data cols="first,second,third,fourth" tr_attr=$tr }><br>
+
