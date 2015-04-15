@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d4c02d3-5570-4c67-977f-ab75d7b04ee5" name="默认的" comment="Revert &quot;1&quot;&#10;&#10;This reverts commit 8ceeb2ed78f91d1db80f6a36c8e56d4baa99cc62.&#10;&#10;Conflicts:&#10;&#9;php/.idea/vcs.xml&#10;&#9;php/.idea/workspace.xml&#10;&#9;php/two/1.html&#10;正则表达式">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lamp18_Smarty/myplugins/block.textarea.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lamp18_Smarty/comps/80b5fa6e0053e7b0236aadf9cbabf8de673fb865.file.defcolor.tpl.php" afterPath="$PROJECT_DIR$/lamp18_Smarty/comps/80b5fa6e0053e7b0236aadf9cbabf8de673fb865.file.defcolor.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lamp18_Smarty/defcolor.php" afterPath="$PROJECT_DIR$/lamp18_Smarty/defcolor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lamp18_Smarty/defcolor.tpl" afterPath="$PROJECT_DIR$/lamp18_Smarty/defcolor.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lamp18_Smarty/myplugins/function.date.php" afterPath="$PROJECT_DIR$/lamp18_Smarty/myplugins/function.date.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lamp18_Smarty/myplugins/function.laydate.php" afterPath="$PROJECT_DIR$/lamp18_Smarty/myplugins/function.laydate.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="php.iws" />
@@ -43,7 +37,7 @@
       <file leaf-file-name="defcolor.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lamp18_Smarty/defcolor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="267" selection-end="267" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="357">
+            <state line="13" column="0" selection-start="268" selection-end="268" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="357">
               <folding />
             </state>
           </provider>
@@ -61,7 +55,7 @@
       <file leaf-file-name="block.textarea.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lamp18_Smarty/myplugins/block.textarea.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="39" selection-start="1498" selection-end="1498" vertical-scroll-proportion="0.42105263" vertical-offset="479" max-vertical-offset="1326">
+            <state line="35" column="16" selection-start="1458" selection-end="1458" vertical-scroll-proportion="0.7276888" vertical-offset="328" max-vertical-offset="1326">
               <folding />
             </state>
           </provider>
@@ -238,46 +232,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lamp18_Smarty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lamp18_Smarty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lamp18_Smarty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckeditor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1117,7 +1071,11 @@
       <created>1429023543262</created>
       <updated>1429023543262</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Revert &quot;1&quot;&#10;&#10;This reverts commit 8ceeb2ed78f91d1db80f6a36c8e56d4baa99cc62.&#10;&#10;Conflicts:&#10;&#9;php/.idea/vcs.xml&#10;&#9;php/.idea/workspace.xml&#10;&#9;php/two/1.html&#10;正则表达式">
+      <created>1429112218912</created>
+      <updated>1429112218912</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -1144,7 +1102,7 @@
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="更改" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17508417" sideWeight="0.4939577" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="更改" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17508417" sideWeight="0.49622357" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32491583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1152,15 +1110,15 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24931881" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32853717" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32854986" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24931881" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3262548" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17508417" sideWeight="0.5030211" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32853717" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1432,7 +1390,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lamp18_Smarty/defcolor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="267" selection-end="267" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="357">
+        <state line="13" column="0" selection-start="268" selection-end="268" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="357">
           <folding />
         </state>
       </provider>
@@ -1507,7 +1465,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lamp18_Smarty/myplugins/block.textarea.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="39" selection-start="1498" selection-end="1498" vertical-scroll-proportion="0.42105263" vertical-offset="479" max-vertical-offset="1326">
+        <state line="35" column="16" selection-start="1458" selection-end="1458" vertical-scroll-proportion="0.7276888" vertical-offset="328" max-vertical-offset="1326">
           <folding />
         </state>
       </provider>
