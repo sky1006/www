@@ -90,6 +90,7 @@ CKEDITOR.lang['el'] = {
         "superscript": "Εκθέτης",
         "underline": "Υπογράμμιση"
     },
+    "bidi": {"ltr": "Διεύθυνση κειμένου από αριστερά στα δεξιά", "rtl": "Διεύθυνση κειμένου από δεξιά στα αριστερά"},
     "blockquote": {"toolbar": "Περιοχή Παράθεσης"},
     "clipboard": {
         "copy": "Αντιγραφή",
@@ -102,8 +103,87 @@ CKEDITOR.lang['el'] = {
         "securityMsg": "Λόγων των ρυθμίσεων ασφάλειας του περιηγητή σας, ο επεξεργαστής δεν μπορεί να έχει πρόσβαση στην μνήμη επικόλλησης. Χρειάζεται να επικολλήσετε ξανά σε αυτό το παράθυρο.",
         "title": "Επικόλληση"
     },
-    "contextmenu": {"options": "Επιλογές Αναδυόμενου Μενού"},
     "button": {"selectedLabel": "%1 (Επιλεγμένο)"},
+    "colorbutton": {
+        "auto": "Αυτόματα",
+        "bgColorTitle": "Χρώμα Φόντου",
+        "colors": {
+            "000": "Μαύρο",
+            "800000": "Καστανέρυθρο",
+            "8B4513": "Saddle Brown",
+            "2F4F4F": "Dark Slate Gray",
+            "008080": "Βαθυκύανο",
+            "000080": "Μπλε μαρέν",
+            "4B0082": "Ινδικό",
+            "696969": "Σκούρο Γκρι",
+            "B22222": "Ανοικτό Κόκκινο",
+            "A52A2A": "Καφέ",
+            "DAA520": "Golden Rod",
+            "006400": "Σκούρο Πράσινο",
+            "40E0D0": "Τυρκουάζ",
+            "0000CD": "Medium Blue",
+            "800080": "Μοβ",
+            "808080": "Γκρι",
+            "F00": "Κόκκινο",
+            "FF8C00": "Σκούρο Πορτοκαλί",
+            "FFD700": "Χρυσαφί",
+            "008000": "Πράσινο",
+            "0FF": "Κυανό",
+            "00F": "Μπλε",
+            "EE82EE": "Μενεξεδί",
+            "A9A9A9": "Ποντικί",
+            "FFA07A": "Ανοικτό Σομόν",
+            "FFA500": "Πορτοκαλί",
+            "FFFF00": "Κίτρινο",
+            "00FF00": "Μοσχολέμονο",
+            "AFEEEE": "Pale Turquoise",
+            "ADD8E6": "Γαλάζιο",
+            "DDA0DD": "Plum",
+            "D3D3D3": "Ανοικτό Γκρι",
+            "FFF0F5": "Lavender Blush",
+            "FAEBD7": "Antique White",
+            "FFFFE0": "Ανοικτό Κίτρινο",
+            "F0FFF0": "Honeydew",
+            "F0FFFF": "Γαλανό",
+            "F0F8FF": "Alice Blue",
+            "E6E6FA": "Ελαφρός Ιώδες",
+            "FFF": "Λευκό"
+        },
+        "more": "Περισσότερα Χρώματα...",
+        "panelTitle": "Χρώματα",
+        "textColorTitle": "Χρώμα Κειμένου"
+    },
+    "colordialog": {
+        "clear": "Εκκαθάριση",
+        "highlight": "Σήμανση",
+        "options": "Επιλογές Χρωμάτων",
+        "selected": "Επιλεγμένο Χρώμα",
+        "title": "Επιλογή χρώματος"
+    },
+    "templates": {
+        "button": "Πρότυπα",
+        "emptyListMsg": "(Δεν έχουν καθοριστεί πρότυπα)",
+        "insertOption": "Αντικατάσταση υπάρχοντων περιεχομένων",
+        "options": "Επιλογές Προτύπου",
+        "selectPromptMsg": "Παρακαλώ επιλέξτε πρότυπο για εισαγωγή στο πρόγραμμα",
+        "title": "Πρότυπα Περιεχομένου"
+    },
+    "contextmenu": {"options": "Επιλογές Αναδυόμενου Μενού"},
+    "div": {
+        "IdInputLabel": "Id",
+        "advisoryTitleInputLabel": "Ενδεικτικός Τίτλος",
+        "cssClassInputLabel": "Κλάσεις Φύλλων Στυλ",
+        "edit": "Επεξεργασία Div",
+        "inlineStyleInputLabel": "Στυλ Εν Σειρά",
+        "langDirLTRLabel": "Αριστερά προς Δεξιά (LTR)",
+        "langDirLabel": "Κατεύθυνση Κειμένου",
+        "langDirRTLLabel": "Δεξιά προς Αριστερά (RTL)",
+        "languageCodeInputLabel": "Κωδικός Γλώσσας",
+        "remove": "Διαγραφή Div",
+        "styleSelectLabel": "Μορφή",
+        "title": "Δημιουργία Div",
+        "toolbar": "Δημιουργία Div"
+    },
     "toolbar": {
         "toolbarCollapse": "Σύμπτυξη Εργαλειοθήκης",
         "toolbarExpand": "Ανάπτυξη Εργαλειοθήκης",
@@ -123,6 +203,129 @@ CKEDITOR.lang['el'] = {
         "toolbars": "Εργαλειοθήκες επεξεργαστή"
     },
     "elementspath": {"eleLabel": "Διαδρομή Στοιχείων", "eleTitle": "Στοιχείο %1"},
+    "find": {
+        "find": "Εύρεση",
+        "findOptions": "Επιλογές Εύρεσης",
+        "findWhat": "Εύρεση για:",
+        "matchCase": "Ταίριασμα πεζών/κεφαλαίων",
+        "matchCyclic": "Αναδρομική εύρεση",
+        "matchWord": "Εύρεση μόνο πλήρων λέξεων",
+        "notFoundMsg": "Το κείμενο δεν βρέθηκε.",
+        "replace": "Αντικατάσταση",
+        "replaceAll": "Αντικατάσταση Όλων",
+        "replaceSuccessMsg": "Ο(ι) όρος(-οι) αντικαταστήθηκε(-αν) %1 φορές.",
+        "replaceWith": "Αντικατάσταση με:",
+        "title": "Εύρεση και Αντικατάσταση"
+    },
+    "fakeobjects": {
+        "anchor": "Άγκυρα",
+        "flash": "Ταινία Flash",
+        "hiddenfield": "Κρυφό Πεδίο",
+        "iframe": "IFrame",
+        "unknown": "Άγνωστο Αντικείμενο"
+    },
+    "flash": {
+        "access": "Πρόσβαση Script",
+        "accessAlways": "Πάντα",
+        "accessNever": "Ποτέ",
+        "accessSameDomain": "Ίδιο όνομα τομέα",
+        "alignAbsBottom": "Απόλυτα Κάτω",
+        "alignAbsMiddle": "Απόλυτα στη Μέση",
+        "alignBaseline": "Γραμμή Βάσης",
+        "alignTextTop": "Κορυφή Κειμένου",
+        "bgcolor": "Χρώμα Υποβάθρου",
+        "chkFull": "Να Επιτρέπεται η Προβολή σε Πλήρη Οθόνη",
+        "chkLoop": "Επανάληψη",
+        "chkMenu": "Ενεργοποίηση Flash Menu",
+        "chkPlay": "Αυτόματη Εκτέλεση",
+        "flashvars": "Μεταβλητές για Flash",
+        "hSpace": "Οριζόντιο Διάστημα",
+        "properties": "Ιδιότητες Flash",
+        "propertiesTab": "Ιδιότητες",
+        "quality": "Ποιότητα",
+        "qualityAutoHigh": "Αυτόματη Υψηλή",
+        "qualityAutoLow": "Αυτόματη Χαμηλή",
+        "qualityBest": "Καλύτερη",
+        "qualityHigh": "Υψηλή",
+        "qualityLow": "Χαμηλή",
+        "qualityMedium": "Μεσαία",
+        "scale": "Μεγέθυνση",
+        "scaleAll": "Εμφάνιση όλων",
+        "scaleFit": "Ακριβές Μέγεθος",
+        "scaleNoBorder": "Χωρίς Περίγραμμα",
+        "title": "Ιδιότητες Flash",
+        "vSpace": "Κάθετο Διάστημα",
+        "validateHSpace": "Το HSpace πρέπει να είναι αριθμός.",
+        "validateSrc": "Εισάγετε την τοποθεσία (URL) του υπερσυνδέσμου (Link)",
+        "validateVSpace": "Το VSpace πρέπει να είναι αριθμός.",
+        "windowMode": "Τρόπος λειτουργίας παραθύρου",
+        "windowModeOpaque": "Συμπαγές",
+        "windowModeTransparent": "Διάφανο",
+        "windowModeWindow": "Παράθυρο"
+    },
+    "font": {
+        "fontSize": {
+            "label": "Μέγεθος",
+            "voiceLabel": "Μέγεθος Γραμματοσειράς",
+            "panelTitle": "Μέγεθος Γραμματοσειράς"
+        }, "label": "Γραμματοσειρά", "panelTitle": "Όνομα Γραμματοσειράς", "voiceLabel": "Γραμματοσειρά"
+    },
+    "forms": {
+        "button": {
+            "title": "Ιδιότητες Κουμπιού",
+            "text": "Κείμενο (Τιμή)",
+            "type": "Τύπος",
+            "typeBtn": "Κουμπί",
+            "typeSbm": "Υποβολή",
+            "typeRst": "Επαναφορά"
+        },
+        "checkboxAndRadio": {
+            "checkboxTitle": "Ιδιότητες Κουτιού Επιλογής",
+            "radioTitle": "Ιδιότητες Κουμπιού Επιλογής",
+            "value": "Τιμή",
+            "selected": "Επιλεγμένο"
+        },
+        "form": {
+            "title": "Ιδιότητες Φόρμας",
+            "menu": "Ιδιότητες Φόρμας",
+            "action": "Ενέργεια",
+            "method": "Μέθοδος",
+            "encoding": "Κωδικοποίηση"
+        },
+        "hidden": {"title": "Ιδιότητες Κρυφού Πεδίου", "name": "Όνομα", "value": "Τιμή"},
+        "select": {
+            "title": "Ιδιότητες Πεδίου Επιλογής",
+            "selectInfo": "Πληροφορίες Πεδίου Επιλογής",
+            "opAvail": "Διαθέσιμες Επιλογές",
+            "value": "Τιμή",
+            "size": "Μέγεθος",
+            "lines": "γραμμές",
+            "chkMulti": "Να επιτρέπονται οι πολλαπλές επιλογές",
+            "opText": "Κείμενο",
+            "opValue": "Τιμή",
+            "btnAdd": "Προσθήκη",
+            "btnModify": "Τροποποίηση",
+            "btnUp": "Πάνω",
+            "btnDown": "Κάτω",
+            "btnSetValue": "Θέση ως προεπιλογή",
+            "btnDelete": "Διαγραφή"
+        },
+        "textarea": {"title": "Ιδιότητες Περιοχής Κειμένου", "cols": "Στήλες", "rows": "Σειρές"},
+        "textfield": {
+            "title": "Ιδιότητες Πεδίου Κειμένου",
+            "name": "Όνομα",
+            "value": "Τιμή",
+            "charWidth": "Πλάτος Χαρακτήρων",
+            "maxChars": "Μέγιστοι χαρακτήρες",
+            "type": "Τύπος",
+            "typeText": "Κείμενο",
+            "typePass": "Κωδικός",
+            "typeEmail": "Email",
+            "typeSearch": "Αναζήτηση",
+            "typeTel": "Αριθμός Τηλεφώνου",
+            "typeUrl": "URL"
+        }
+    },
     "format": {
         "label": "Μορφοποίηση",
         "panelTitle": "Μορφοποίηση Παραγράφου",
@@ -138,6 +341,13 @@ CKEDITOR.lang['el'] = {
         "tag_pre": "Προ-μορφοποιημένη"
     },
     "horizontalrule": {"toolbar": "Εισαγωγή Οριζόντιας Γραμμής"},
+    "iframe": {
+        "border": "Προβολή περιγράμματος πλαισίου",
+        "noUrl": "Παρακαλούμε εισάγεται το URL του iframe",
+        "scrolling": "Ενεργοποίηση μπαρών κύλισης",
+        "title": "Ιδιότητες IFrame",
+        "toolbar": "IFrame"
+    },
     "image": {
         "alertUrl": "Εισάγετε την τοποθεσία (URL) της εικόνας",
         "alt": "Εναλλακτικό Κείμενο",
@@ -161,13 +371,14 @@ CKEDITOR.lang['el'] = {
         "validateVSpace": "Το VSpace πρέπει να είναι ένας ακέραιος αριθμός."
     },
     "indent": {"indent": "Αύξηση Εσοχής", "outdent": "Μείωση Εσοχής"},
-    "fakeobjects": {
-        "anchor": "Άγκυρα",
-        "flash": "Ταινία Flash",
-        "hiddenfield": "Κρυφό Πεδίο",
-        "iframe": "IFrame",
-        "unknown": "Άγνωστο Αντικείμενο"
+    "smiley": {"options": "Επιλογές Φατσούλων", "title": "Εισάγετε μια Φατσούλα", "toolbar": "Φατσούλα"},
+    "justify": {
+        "block": "Πλήρης Στοίχιση",
+        "center": "Στο Κέντρο",
+        "left": "Στοίχιση Αριστερά",
+        "right": "Στοίχιση Δεξιά"
     },
+    "language": {"button": "Θέση γλώσσας", "remove": "Αφαίρεση γλώσσας"},
     "link": {
         "acccessKey": "Συντόμευση",
         "advanced": "Για Προχωρημένους",
@@ -233,8 +444,31 @@ CKEDITOR.lang['el'] = {
         "bulletedlist": "Εισαγωγή/Απομάκρυνση Λίστας Κουκκίδων",
         "numberedlist": "Εισαγωγή/Απομάκρυνση Αριθμημένης Λίστας"
     },
+    "liststyle": {
+        "armenian": "Αρμενική αρίθμηση",
+        "bulletedTitle": "Ιδιότητες Λίστας Σημείων",
+        "circle": "Κύκλος",
+        "decimal": "Δεκαδική (1, 2, 3, κτλ)",
+        "decimalLeadingZero": "Δεκαδική με αρχικό μηδεν (01, 02, 03, κτλ)",
+        "disc": "Δίσκος",
+        "georgian": "Γεωργιανή αρίθμηση (ა, ბ, გ, κτλ)",
+        "lowerAlpha": "Μικρά Λατινικά (a, b, c, d, e, κτλ.)",
+        "lowerGreek": "Μικρά Ελληνικά (α, β, γ, κτλ)",
+        "lowerRoman": "Μικρά Ρωμαϊκά (i, ii, iii, iv, v, κτλ)",
+        "none": "Καμία",
+        "notset": "<δεν έχει οριστεί>",
+        "numberedTitle": "Ιδιότητες Αριθμημένης Λίστας ",
+        "square": "Τετράγωνο",
+        "start": "Εκκίνηση",
+        "type": "Τύπος",
+        "upperAlpha": "Κεφαλαία Λατινικά (A, B, C, D, E, κτλ)",
+        "upperRoman": "Κεφαλαία Ρωμαϊκά (I, II, III, IV, V, κτλ)",
+        "validateStartNumber": "Ο αριθμός εκκίνησης της αρίθμησης πρέπει να είναι ακέραιος αριθμός."
+    },
     "magicline": {"title": "Εισάγετε παράγραφο εδώ"},
     "maximize": {"maximize": "Μεγιστοποίηση", "minimize": "Ελαχιστοποίηση"},
+    "newpage": {"toolbar": "Νέα Σελίδα"},
+    "pagebreak": {"alt": "Αλλαγή Σελίδας", "toolbar": "Εισαγωγή Τέλους Σελίδας για Εκτύπωση"},
     "pastetext": {"button": "Επικόλληση ως απλό κείμενο", "title": "Επικόλληση ως απλό κείμενο"},
     "pastefromword": {
         "confirmCleanup": "Το κείμενο που επικολλάται φαίνεται να είναι αντιγραμμένο από το Word. Μήπως θα θέλατε να καθαριστεί προτού επικολληθεί;",
@@ -242,7 +476,12 @@ CKEDITOR.lang['el'] = {
         "title": "Επικόλληση από το Word",
         "toolbar": "Επικόλληση από το Word"
     },
+    "preview": {"preview": "Προεπισκόπιση"},
+    "print": {"toolbar": "Εκτύπωση"},
     "removeformat": {"toolbar": "Εκκαθάριση Μορφοποίησης"},
+    "save": {"toolbar": "Αποθήκευση"},
+    "selectall": {"toolbar": "Επιλογή όλων"},
+    "showblocks": {"toolbar": "Προβολή Τμημάτων"},
     "sourcearea": {"toolbar": "Κώδικας"},
     "specialchar": {
         "options": "Επιλογές Ειδικών Χαρακτήρων",

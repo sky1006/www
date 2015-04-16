@@ -90,6 +90,10 @@ CKEDITOR.lang['pt-br'] = {
         "superscript": "Sobrescrito",
         "underline": "Sublinhado"
     },
+    "bidi": {
+        "ltr": "Direção do texto da esquerda para a direita",
+        "rtl": "Direção do texto da direita para a esquerda"
+    },
     "blockquote": {"toolbar": "Citação"},
     "clipboard": {
         "copy": "Copiar",
@@ -102,8 +106,87 @@ CKEDITOR.lang['pt-br'] = {
         "securityMsg": "As configurações de segurança do seu navegador não permitem que o editor acesse os dados da área de transferência diretamente. Por favor cole o conteúdo manualmente nesta janela.",
         "title": "Colar"
     },
-    "contextmenu": {"options": "Opções Menu de Contexto"},
     "button": {"selectedLabel": "%1 (Selecionado)"},
+    "colorbutton": {
+        "auto": "Automático",
+        "bgColorTitle": "Cor do Plano de Fundo",
+        "colors": {
+            "000": "Preto",
+            "800000": "Foquete",
+            "8B4513": "Marrom 1",
+            "2F4F4F": "Cinza 1",
+            "008080": "Cerceta",
+            "000080": "Azul Marinho",
+            "4B0082": "Índigo",
+            "696969": "Cinza 2",
+            "B22222": "Tijolo de Fogo",
+            "A52A2A": "Marrom 2",
+            "DAA520": "Vara Dourada",
+            "006400": "Verde Escuro",
+            "40E0D0": "Turquesa",
+            "0000CD": "Azul Médio",
+            "800080": "Roxo",
+            "808080": "Cinza 3",
+            "F00": "Vermelho",
+            "FF8C00": "Laranja Escuro",
+            "FFD700": "Dourado",
+            "008000": "Verde",
+            "0FF": "Ciano",
+            "00F": "Azul",
+            "EE82EE": "Violeta",
+            "A9A9A9": "Cinza Escuro",
+            "FFA07A": "Salmão Claro",
+            "FFA500": "Laranja",
+            "FFFF00": "Amarelo",
+            "00FF00": "Lima",
+            "AFEEEE": "Turquesa Pálido",
+            "ADD8E6": "Azul Claro",
+            "DDA0DD": "Ameixa",
+            "D3D3D3": "Cinza Claro",
+            "FFF0F5": "Lavanda 1",
+            "FAEBD7": "Branco Antiguidade",
+            "FFFFE0": "Amarelo Claro",
+            "F0FFF0": "Orvalho",
+            "F0FFFF": "Azure",
+            "F0F8FF": "Azul Alice",
+            "E6E6FA": "Lavanda 2",
+            "FFF": "Branco"
+        },
+        "more": "Mais Cores...",
+        "panelTitle": "Cores",
+        "textColorTitle": "Cor do Texto"
+    },
+    "colordialog": {
+        "clear": "Limpar",
+        "highlight": "Grifar",
+        "options": "Opções de Cor",
+        "selected": "Cor Selecionada",
+        "title": "Selecione uma Cor"
+    },
+    "templates": {
+        "button": "Modelos de layout",
+        "emptyListMsg": "(Não foram definidos modelos de layout)",
+        "insertOption": "Substituir o conteúdo atual",
+        "options": "Opções de Template",
+        "selectPromptMsg": "Selecione um modelo de layout para ser aberto no editor<br>(o conteúdo atual será perdido):",
+        "title": "Modelo de layout de conteúdo"
+    },
+    "contextmenu": {"options": "Opções Menu de Contexto"},
+    "div": {
+        "IdInputLabel": "Id",
+        "advisoryTitleInputLabel": "Título Consulta",
+        "cssClassInputLabel": "Classes de CSS",
+        "edit": "Editar Div",
+        "inlineStyleInputLabel": "Estilo Inline",
+        "langDirLTRLabel": "Esquerda para Direita (LTR)",
+        "langDirLabel": "Direção da Escrita",
+        "langDirRTLLabel": "Direita para Esquerda (RTL)",
+        "languageCodeInputLabel": "Código de Idioma",
+        "remove": "Remover Div",
+        "styleSelectLabel": "Estilo",
+        "title": "Criar Container de DIV",
+        "toolbar": "Criar Container de DIV"
+    },
     "toolbar": {
         "toolbarCollapse": "Diminuir Barra de Ferramentas",
         "toolbarExpand": "Aumentar Barra de Ferramentas",
@@ -123,6 +206,128 @@ CKEDITOR.lang['pt-br'] = {
         "toolbars": "Barra de Ferramentas do Editor"
     },
     "elementspath": {"eleLabel": "Caminho dos Elementos", "eleTitle": "Elemento %1"},
+    "find": {
+        "find": "Localizar",
+        "findOptions": "Opções",
+        "findWhat": "Procurar por:",
+        "matchCase": "Coincidir Maiúsculas/Minúsculas",
+        "matchCyclic": "Coincidir cíclico",
+        "matchWord": "Coincidir a palavra inteira",
+        "notFoundMsg": "O texto especificado não foi encontrado.",
+        "replace": "Substituir",
+        "replaceAll": "Substituir Tudo",
+        "replaceSuccessMsg": "%1 ocorrência(s) substituída(s).",
+        "replaceWith": "Substituir por:",
+        "title": "Localizar e Substituir"
+    },
+    "fakeobjects": {
+        "anchor": "Âncora",
+        "flash": "Animação em Flash",
+        "hiddenfield": "Campo Oculto",
+        "iframe": "IFrame",
+        "unknown": "Objeto desconhecido"
+    },
+    "flash": {
+        "access": "Acesso ao script",
+        "accessAlways": "Sempre",
+        "accessNever": "Nunca",
+        "accessSameDomain": "Acessar Mesmo Domínio",
+        "alignAbsBottom": "Inferior Absoluto",
+        "alignAbsMiddle": "Centralizado Absoluto",
+        "alignBaseline": "Baseline",
+        "alignTextTop": "Superior Absoluto",
+        "bgcolor": "Cor do Plano de Fundo",
+        "chkFull": "Permitir tela cheia",
+        "chkLoop": "Tocar Infinitamente",
+        "chkMenu": "Habilita Menu Flash",
+        "chkPlay": "Tocar Automaticamente",
+        "flashvars": "Variáveis do Flash",
+        "hSpace": "HSpace",
+        "properties": "Propriedades do Flash",
+        "propertiesTab": "Propriedades",
+        "quality": "Qualidade",
+        "qualityAutoHigh": "Qualidade Alta Automática",
+        "qualityAutoLow": "Qualidade Baixa Automática",
+        "qualityBest": "Qualidade Melhor",
+        "qualityHigh": "Qualidade Alta",
+        "qualityLow": "Qualidade Baixa",
+        "qualityMedium": "Qualidade Média",
+        "scale": "Escala",
+        "scaleAll": "Mostrar tudo",
+        "scaleFit": "Escala Exata",
+        "scaleNoBorder": "Sem Borda",
+        "title": "Propriedades do Flash",
+        "vSpace": "VSpace",
+        "validateHSpace": "O HSpace tem que ser um número",
+        "validateSrc": "Por favor, digite o endereço do link",
+        "validateVSpace": "O VSpace tem que ser um número.",
+        "windowMode": "Modo da janela",
+        "windowModeOpaque": "Opaca",
+        "windowModeTransparent": "Transparente",
+        "windowModeWindow": "Janela"
+    },
+    "font": {
+        "fontSize": {"label": "Tamanho", "voiceLabel": "Tamanho da fonte", "panelTitle": "Tamanho"},
+        "label": "Fonte",
+        "panelTitle": "Fonte",
+        "voiceLabel": "Fonte"
+    },
+    "forms": {
+        "button": {
+            "title": "Formatar Botão",
+            "text": "Texto (Valor)",
+            "type": "Tipo",
+            "typeBtn": "Botão",
+            "typeSbm": "Enviar",
+            "typeRst": "Limpar"
+        },
+        "checkboxAndRadio": {
+            "checkboxTitle": "Formatar Caixa de Seleção",
+            "radioTitle": "Formatar Botão de Opção",
+            "value": "Valor",
+            "selected": "Selecionado"
+        },
+        "form": {
+            "title": "Formatar Formulário",
+            "menu": "Formatar Formulário",
+            "action": "Ação",
+            "method": "Método",
+            "encoding": "Codificação"
+        },
+        "hidden": {"title": "Formatar Campo Oculto", "name": "Nome", "value": "Valor"},
+        "select": {
+            "title": "Formatar Caixa de Listagem",
+            "selectInfo": "Informações",
+            "opAvail": "Opções disponíveis",
+            "value": "Valor",
+            "size": "Tamanho",
+            "lines": "linhas",
+            "chkMulti": "Permitir múltiplas seleções",
+            "opText": "Texto",
+            "opValue": "Valor",
+            "btnAdd": "Adicionar",
+            "btnModify": "Modificar",
+            "btnUp": "Para cima",
+            "btnDown": "Para baixo",
+            "btnSetValue": "Definir como selecionado",
+            "btnDelete": "Remover"
+        },
+        "textarea": {"title": "Formatar Área de Texto", "cols": "Colunas", "rows": "Linhas"},
+        "textfield": {
+            "title": "Formatar Caixa de Texto",
+            "name": "Nome",
+            "value": "Valor",
+            "charWidth": "Comprimento (em caracteres)",
+            "maxChars": "Número Máximo de Caracteres",
+            "type": "Tipo",
+            "typeText": "Texto",
+            "typePass": "Senha",
+            "typeEmail": "Email",
+            "typeSearch": "Busca",
+            "typeTel": "Número de Telefone",
+            "typeUrl": "URL"
+        }
+    },
     "format": {
         "label": "Formatação",
         "panelTitle": "Formatação",
@@ -138,6 +343,13 @@ CKEDITOR.lang['pt-br'] = {
         "tag_pre": "Formatado"
     },
     "horizontalrule": {"toolbar": "Inserir Linha Horizontal"},
+    "iframe": {
+        "border": "Mostra borda do iframe",
+        "noUrl": "Insira a URL do iframe",
+        "scrolling": "Abilita scrollbars",
+        "title": "Propriedade do IFrame",
+        "toolbar": "IFrame"
+    },
     "image": {
         "alertUrl": "Por favor, digite a URL da imagem.",
         "alt": "Texto Alternativo",
@@ -161,13 +373,14 @@ CKEDITOR.lang['pt-br'] = {
         "validateVSpace": "O VSpace deve ser um número inteiro."
     },
     "indent": {"indent": "Aumentar Recuo", "outdent": "Diminuir Recuo"},
-    "fakeobjects": {
-        "anchor": "Âncora",
-        "flash": "Animação em Flash",
-        "hiddenfield": "Campo Oculto",
-        "iframe": "IFrame",
-        "unknown": "Objeto desconhecido"
+    "smiley": {"options": "Opções de Emoticons", "title": "Inserir Emoticon", "toolbar": "Emoticon"},
+    "justify": {
+        "block": "Justificado",
+        "center": "Centralizar",
+        "left": "Alinhar Esquerda",
+        "right": "Alinhar Direita"
     },
+    "language": {"button": "Configure o Idioma", "remove": "Remover Idioma"},
     "link": {
         "acccessKey": "Chave de Acesso",
         "advanced": "Avançado",
@@ -230,8 +443,31 @@ CKEDITOR.lang['pt-br'] = {
         "upload": "Enviar ao Servidor"
     },
     "list": {"bulletedlist": "Lista sem números", "numberedlist": "Lista numerada"},
+    "liststyle": {
+        "armenian": "Numeração Armêna",
+        "bulletedTitle": "Propriedades da Lista sem Numeros",
+        "circle": "Círculo",
+        "decimal": "Numeração Decimal (1, 2, 3, etc.)",
+        "decimalLeadingZero": "Numeração Decimal com zeros (01, 02, 03, etc.)",
+        "disc": "Disco",
+        "georgian": "Numeração da Geórgia (an, ban, gan, etc.)",
+        "lowerAlpha": "Numeração Alfabética minúscula (a, b, c, d, e, etc.)",
+        "lowerGreek": "Numeração Grega minúscula (alpha, beta, gamma, etc.)",
+        "lowerRoman": "Numeração Romana minúscula (i, ii, iii, iv, v, etc.)",
+        "none": "Nenhum",
+        "notset": "<não definido>",
+        "numberedTitle": "Propriedades da Lista Numerada",
+        "square": "Quadrado",
+        "start": "Início",
+        "type": "Tipo",
+        "upperAlpha": "Numeração Alfabética Maiúscula (A, B, C, D, E, etc.)",
+        "upperRoman": "Numeração Romana maiúscula (I, II, III, IV, V, etc.)",
+        "validateStartNumber": "O número inicial da lista deve ser um número inteiro."
+    },
     "magicline": {"title": "Insera um parágrafo aqui"},
     "maximize": {"maximize": "Maximizar", "minimize": "Minimize"},
+    "newpage": {"toolbar": "Novo"},
+    "pagebreak": {"alt": "Quebra de Página", "toolbar": "Inserir Quebra de Página"},
     "pastetext": {"button": "Colar como Texto sem Formatação", "title": "Colar como Texto sem Formatação"},
     "pastefromword": {
         "confirmCleanup": "O texto que você deseja colar parece ter sido copiado do Word. Você gostaria de remover a formatação antes de colar?",
@@ -239,7 +475,12 @@ CKEDITOR.lang['pt-br'] = {
         "title": "Colar do Word",
         "toolbar": "Colar do Word"
     },
+    "preview": {"preview": "Visualizar"},
+    "print": {"toolbar": "Imprimir"},
     "removeformat": {"toolbar": "Remover Formatação"},
+    "save": {"toolbar": "Salvar"},
+    "selectall": {"toolbar": "Selecionar Tudo"},
+    "showblocks": {"toolbar": "Mostrar blocos de código"},
     "sourcearea": {"toolbar": "Código-Fonte"},
     "specialchar": {
         "options": "Opções de Caractere Especial",

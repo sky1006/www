@@ -6,14 +6,15 @@
 
 
 <{date name="starttime" time=1 value="$ctime"}> - <{date name="endtime" time=1}><br>
-<{laydate name="start" time=1 value="$ctime"}> - <{laydate name="end" time=1}><br>
+
+<{*<{laydate name="start" time=1 value="$ctime"}> - <{laydate name="end" time=1}><br>*}>
 
 
 <textarea name="notice">
     this is a demo
 </textarea><br>
 
-<{textarea name="article" toolbar="desc"  height="300"}> <{/textarea}><br>
+<{textarea name="content" toolbar="full" height="300"}> this is demo <{/textarea}><br>
 <{*
 <{table name="article" page="5" where ="age>10" line="10" sql="select * from users" field="id,name"}><br>*}>
 

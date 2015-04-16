@@ -12,7 +12,7 @@
  */
 function smarty_function_laydate($args, $smarty)
 {
-    print_r($args);
+    //print_r($args);
     /*$name = $args['name'];
     $value = !empty($args['value']) ? $args['value'] : '';
     $isdatetime = !empty($args['time']) ? $args['time'] : 0;

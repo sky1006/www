@@ -15,14 +15,15 @@
 function smarty_block_textarea($args, $content, $smarty, &$repeat)
 {
     if (!$repeat) {
-        $textareaid = $args['name'];
+        $textareaid = !empty($args['name']) ? $args['name'] : 'content';
         $toolbar = !empty($args['toolbar']) ? $args['toolbar'] : "basic";
         $height = !empty($args['height']) ? $args['height'] : 200;
         $color = !empty($args['color']) ? $args['color'] : '';
+        $up = !empty($args['up']) ? $args['up'] : true;
 
-        $str = '<textarea name="' . $textareaid . '"></textarea>';
+        $str = '<textarea name="' . $textareaid . '">' . $content . '</textarea>';
         if (!defined('EDITOR_INIT')) {
-            $str = '<script type="text/javascript" src="./js/ckeditor/ckeditor.js"></script>';
+            $str .= '<script type="text/javascript" src="./js/ckeditor/ckeditor.js"></script>';
             define('EDITOR_INIT', 1);
         }
 

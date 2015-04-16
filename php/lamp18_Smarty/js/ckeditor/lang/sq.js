@@ -90,6 +90,10 @@ CKEDITOR.lang['sq'] = {
         "superscript": "Super-skriptë",
         "underline": "Nënvijëzuar"
     },
+    "bidi": {
+        "ltr": "Drejtimi i tekstit nga e majta në të djathtë",
+        "rtl": "Drejtimi i tekstit nga e djathta në të majtë"
+    },
     "blockquote": {"toolbar": "Citatet"},
     "clipboard": {
         "copy": "Kopjo",
@@ -102,8 +106,87 @@ CKEDITOR.lang['sq'] = {
         "securityMsg": "Për shkak të dhënave të sigurisë së shfletuesit tuaj, redaktuesi nuk është në gjendje të i qaset drejtpërdrejtë të dhanve të tabelës suaj të punës. Ju duhet të hidhni atë përsëri në këtë dritare.",
         "title": "Hidhe"
     },
-    "contextmenu": {"options": "Mundësitë e Menysë së Kontekstit"},
     "button": {"selectedLabel": "%1 (Përzgjedhur)"},
+    "colorbutton": {
+        "auto": "Automatik",
+        "bgColorTitle": "Ngjyra e Prapavijës",
+        "colors": {
+            "000": "E zezë",
+            "800000": "Ngjyrë gështenjë",
+            "8B4513": "Ngjyrë Shale Kafe",
+            "2F4F4F": "Ngjyrë Gri të errët ardëz",
+            "008080": "Ngjyrë bajukë",
+            "000080": "Ngjyrë Marine",
+            "4B0082": "Indigo",
+            "696969": "Gri e Errët",
+            "B22222": "Tullë në Flakë",
+            "A52A2A": "Ngjytë Kafe",
+            "DAA520": "Shkop i Artë",
+            "006400": "E Gjelbër e Errët",
+            "40E0D0": "Ngjyrë e Bruztë",
+            "0000CD": "E Kaltër e Mesme",
+            "800080": "Vjollcë",
+            "808080": "Gri",
+            "F00": "E Kuqe",
+            "FF8C00": "E Portokalltë e Errët",
+            "FFD700": "Ngjyrë Ari",
+            "008000": "E Gjelbërt",
+            "0FF": "Cyan",
+            "00F": "E Kaltër",
+            "EE82EE": "Vjollcë",
+            "A9A9A9": "Gri e Zbehtë",
+            "FFA07A": "Salmon i Ndritur",
+            "FFA500": "E Portokalltë",
+            "FFFF00": "E Verdhë",
+            "00FF00": "Ngjyrë Gëlqere",
+            "AFEEEE": "Ngjyrë e Bruztë e Zbehtë",
+            "ADD8E6": "E Kaltër e Ndritur",
+            "DDA0DD": "Ngjyrë Llokumi",
+            "D3D3D3": "Gri e Ndritur",
+            "FFF0F5": "Ngjyrë Purpur e Skuqur",
+            "FAEBD7": "E Bardhë Antike",
+            "FFFFE0": "E verdhë e Ndritur",
+            "F0FFF0": "Ngjyrë Nektari",
+            "F0FFFF": "Ngjyrë Qielli",
+            "F0F8FF": "E Kaltër Alice",
+            "E6E6FA": "Ngjyrë Purpur e Zbetë",
+            "FFF": "E bardhë"
+        },
+        "more": "Më Shumë Ngjyra...",
+        "panelTitle": "Ngjyrat",
+        "textColorTitle": "Ngjyra e Tekstit"
+    },
+    "colordialog": {
+        "clear": "Pastro",
+        "highlight": "Thekso",
+        "options": "Përzgjedhjet e Ngjyrave",
+        "selected": "Ngjyra e Përzgjedhur",
+        "title": "Përzgjidh një ngjyrë"
+    },
+    "templates": {
+        "button": "Shabllonet",
+        "emptyListMsg": "(Asnjë shabllon nuk është paradefinuar)",
+        "insertOption": "Zëvendëso përmbajtjen aktuale",
+        "options": "Opsionet e Shabllonit",
+        "selectPromptMsg": "Përzgjidhni shabllonin për të hapur tek redaktuesi",
+        "title": "Përmbajtja e Shabllonit"
+    },
+    "contextmenu": {"options": "Mundësitë e Menysë së Kontekstit"},
+    "div": {
+        "IdInputLabel": "Id",
+        "advisoryTitleInputLabel": "Titull",
+        "cssClassInputLabel": "Klasa stili CSS",
+        "edit": "Redakto Div",
+        "inlineStyleInputLabel": "Stili i brendshëm",
+        "langDirLTRLabel": "Nga e majta në të djathë (LTR)",
+        "langDirLabel": "Drejtim teksti",
+        "langDirRTLLabel": "Nga e djathta në të majtë (RTL)",
+        "languageCodeInputLabel": "Kodi i Gjuhës",
+        "remove": "Largo Div",
+        "styleSelectLabel": "Stil",
+        "title": "Krijo Div Përmbajtës",
+        "toolbar": "Krijo Div Përmbajtës"
+    },
     "toolbar": {
         "toolbarCollapse": "Zvogëlo Shiritin",
         "toolbarExpand": "Zgjero Shiritin",
@@ -123,6 +206,129 @@ CKEDITOR.lang['sq'] = {
         "toolbars": "Shiritet e Redaktuesit"
     },
     "elementspath": {"eleLabel": "Rruga e elementeve", "eleTitle": "%1 element"},
+    "find": {
+        "find": "Gjej",
+        "findOptions": "Gjejë Alternativat",
+        "findWhat": "Gjej çka:",
+        "matchCase": "Rasti i përputhjes",
+        "matchCyclic": "Përputh ciklikun",
+        "matchWord": "Përputh fjalën e tërë",
+        "notFoundMsg": "Teksti i caktuar nuk mundej të gjendet.",
+        "replace": "Zëvendëso",
+        "replaceAll": "Zëvendëso të gjitha",
+        "replaceSuccessMsg": "%1 rast(e) u zëvendësua(n).",
+        "replaceWith": "Zëvendëso me:",
+        "title": "Gjej dhe Zëvendëso"
+    },
+    "fakeobjects": {
+        "anchor": "Spirancë",
+        "flash": "Objekt flash",
+        "hiddenfield": "Fushë e fshehur",
+        "iframe": "IFrame",
+        "unknown": "Objekt i Panjohur"
+    },
+    "flash": {
+        "access": "Qasja në Skriptë",
+        "accessAlways": "Gjithnjë",
+        "accessNever": "Asnjëherë",
+        "accessSameDomain": "Fusha e Njëjtë",
+        "alignAbsBottom": "Abs në Fund",
+        "alignAbsMiddle": "Abs në Mes",
+        "alignBaseline": "Baza",
+        "alignTextTop": "Koka e Tekstit",
+        "bgcolor": "Ngjyra e Prapavijës",
+        "chkFull": "Lejo Ekran të Plotë",
+        "chkLoop": "Përsëritje",
+        "chkMenu": "Lejo Menynë për Flash",
+        "chkPlay": "Auto Play",
+        "flashvars": "Variablat për Flash",
+        "hSpace": "Hapësira Horizontale",
+        "properties": "Karakteristikat për Flash",
+        "propertiesTab": "Karakteristikat",
+        "quality": "Kualiteti",
+        "qualityAutoHigh": "Automatikisht i Lartë",
+        "qualityAutoLow": "Automatikisht i Ulët",
+        "qualityBest": "Më i Miri",
+        "qualityHigh": "I Lartë",
+        "qualityLow": "Më i Ulti",
+        "qualityMedium": "I Mesëm",
+        "scale": "Shkalla",
+        "scaleAll": "Shfaq të Gjitha",
+        "scaleFit": "Përputhje të Plotë",
+        "scaleNoBorder": "Pa Kornizë",
+        "title": "Rekuizitat për Flash",
+        "vSpace": "Hapësira Vertikale",
+        "validateHSpace": "Hapësira Horizontale duhet të është numër.",
+        "validateSrc": "URL nuk duhet mbetur zbrazur.",
+        "validateVSpace": "Hapësira Vertikale duhet të është numër.",
+        "windowMode": "Window mode",
+        "windowModeOpaque": "Errët",
+        "windowModeTransparent": "Tejdukshëm",
+        "windowModeWindow": "Window"
+    },
+    "font": {
+        "fontSize": {
+            "label": "Madhësia",
+            "voiceLabel": "Madhësia e Shkronjës",
+            "panelTitle": "Madhësia e Shkronjës"
+        }, "label": "Shkronja", "panelTitle": "Emri i Shkronjës", "voiceLabel": "Shkronja"
+    },
+    "forms": {
+        "button": {
+            "title": "Rekuizitat e Pullës",
+            "text": "Teskti (Vlera)",
+            "type": "LLoji",
+            "typeBtn": "Buton",
+            "typeSbm": "Dërgo",
+            "typeRst": "Rikthe"
+        },
+        "checkboxAndRadio": {
+            "checkboxTitle": "Rekuizitat e Kutizë Përzgjedhëse",
+            "radioTitle": "Rekuizitat e Pullës",
+            "value": "Vlera",
+            "selected": "Përzgjedhur"
+        },
+        "form": {
+            "title": "Rekuizitat e Formës",
+            "menu": "Rekuizitat e Formës",
+            "action": "Veprim",
+            "method": "Metoda",
+            "encoding": "Kodimi"
+        },
+        "hidden": {"title": "Rekuizitat e Fushës së Fshehur", "name": "Emër", "value": "Vlera"},
+        "select": {
+            "title": "Rekuizitat e Fushës së Përzgjedhur",
+            "selectInfo": "Përzgjidh Informacionin",
+            "opAvail": "Opsionet e Mundshme",
+            "value": "Vlera",
+            "size": "Madhësia",
+            "lines": "rreshtat",
+            "chkMulti": "Lejo përzgjidhje të shumëfishta",
+            "opText": "Teksti",
+            "opValue": "Vlera",
+            "btnAdd": "Vendos",
+            "btnModify": "Ndrysho",
+            "btnUp": "Sipër",
+            "btnDown": "Poshtë",
+            "btnSetValue": "Bëje si vlerë të përzgjedhur",
+            "btnDelete": "Grise"
+        },
+        "textarea": {"title": "Rekuzitat e Fushës së Tekstit", "cols": "Kolonat", "rows": "Rreshtat"},
+        "textfield": {
+            "title": "Rekuizitat e Fushës së Tekstit",
+            "name": "Emër",
+            "value": "Vlera",
+            "charWidth": "Gjerësia e Karakterit",
+            "maxChars": "Numri maksimal i karaktereve",
+            "type": "LLoji",
+            "typeText": "Teksti",
+            "typePass": "Fjalëkalimi",
+            "typeEmail": "Posta Elektronike",
+            "typeSearch": "Kërko",
+            "typeTel": "Numri i Telefonit",
+            "typeUrl": "URL"
+        }
+    },
     "format": {
         "label": "Formati",
         "panelTitle": "Formati i Paragrafit",
@@ -138,6 +344,13 @@ CKEDITOR.lang['sq'] = {
         "tag_pre": "Formatuar"
     },
     "horizontalrule": {"toolbar": "Vendos Vijë Horizontale"},
+    "iframe": {
+        "border": "Shfaq kufirin e kornizës",
+        "noUrl": "Ju lutemi shkruani URL-në e iframe-it",
+        "scrolling": "Lejo shiritët zvarritës",
+        "title": "Karakteristikat e IFrame",
+        "toolbar": "IFrame"
+    },
     "image": {
         "alertUrl": "Ju lutemi shkruani URL-në e fotos",
         "alt": "Tekst Alternativ",
@@ -161,13 +374,9 @@ CKEDITOR.lang['sq'] = {
         "validateVSpace": "Hapësira vertikale duhet të jetë numër i plotë."
     },
     "indent": {"indent": "Rrite Identin", "outdent": "Zvogëlo Identin"},
-    "fakeobjects": {
-        "anchor": "Spirancë",
-        "flash": "Objekt flash",
-        "hiddenfield": "Fushë e fshehur",
-        "iframe": "IFrame",
-        "unknown": "Objekt i Panjohur"
-    },
+    "smiley": {"options": "Opsionet e Ikonave", "title": "Vendos Ikonë", "toolbar": "Ikona"},
+    "justify": {"block": "Zgjero", "center": "Qendër", "left": "Rreshto majtas", "right": "Rreshto Djathtas"},
+    "language": {"button": "Përzgjidhni gjuhën", "remove": "Largoni gjuhën"},
     "link": {
         "acccessKey": "Sipas ID-së së Elementit",
         "advanced": "Të përparuara",
@@ -230,8 +439,31 @@ CKEDITOR.lang['sq'] = {
         "upload": "Ngarko"
     },
     "list": {"bulletedlist": "Vendos/Largo Listën me Pika", "numberedlist": "Vendos/Largo Listën me Numra"},
+    "liststyle": {
+        "armenian": "Numërim armenian",
+        "bulletedTitle": "Karakteristikat e Listës me Pulla",
+        "circle": "Rreth",
+        "decimal": "Decimal (1, 2, 3, etj.)",
+        "decimalLeadingZero": "Decimal me zerro udhëheqëse (01, 02, 03, etj.)",
+        "disc": "Disk",
+        "georgian": "Numërim gjeorgjian (an, ban, gan, etj.)",
+        "lowerAlpha": "Të vogla alfa (a, b, c, d, e, etj.)",
+        "lowerGreek": "Të vogla greke (alpha, beta, gamma, etj.)",
+        "lowerRoman": "Të vogla romake (i, ii, iii, iv, v, etj.)",
+        "none": "Asnjë",
+        "notset": "<e pazgjedhur>",
+        "numberedTitle": "Karakteristikat e Listës me Numra",
+        "square": "Katror",
+        "start": "Fillimi",
+        "type": "LLoji",
+        "upperAlpha": "Të mëdha alfa (A, B, C, D, E, etj.)",
+        "upperRoman": "Të mëdha romake (I, II, III, IV, V, etj.)",
+        "validateStartNumber": "Numri i fillimit të listës duhet të është numër i plotë."
+    },
     "magicline": {"title": "Vendos paragraf këtu"},
     "maximize": {"maximize": "Zmadho", "minimize": "Zvogëlo"},
+    "newpage": {"toolbar": "Faqe e Re"},
+    "pagebreak": {"alt": "Thyerja e Faqes", "toolbar": "Vendos Thyerje Faqeje për Shtyp"},
     "pastetext": {"button": "Hidhe si tekst të thjeshtë", "title": "Hidhe si Tekst të Thjeshtë"},
     "pastefromword": {
         "confirmCleanup": "Teksti që dëshironi të e hidhni siç duket është kopjuar nga Word-i. Dëshironi të e pastroni para se të e hidhni?",
@@ -239,7 +471,12 @@ CKEDITOR.lang['sq'] = {
         "title": "Hidhe nga Word-i",
         "toolbar": "Hidhe nga Word-i"
     },
+    "preview": {"preview": "Parashiko"},
+    "print": {"toolbar": "Shtype"},
     "removeformat": {"toolbar": "Largo Formatin"},
+    "save": {"toolbar": "Ruaje"},
+    "selectall": {"toolbar": "Përzgjidh të Gjitha"},
+    "showblocks": {"toolbar": "Shfaq Blloqet"},
     "sourcearea": {"toolbar": "Burimi"},
     "specialchar": {
         "options": "Mundësitë për Karaktere Speciale",

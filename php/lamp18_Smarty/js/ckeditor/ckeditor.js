@@ -11150,6 +11150,109 @@
             }
         })
     })();
+    (function () {
+        function f(c) {
+            var a = this.att, c = c && c.hasAttribute(a) && c.getAttribute(a) || "";
+            void 0 !== c && this.setValue(c)
+        }
+
+        function g() {
+            for (var c, a = 0; a < arguments.length; a++)if (arguments[a]instanceof CKEDITOR.dom.element) {
+                c = arguments[a];
+                break
+            }
+            if (c) {
+                var a = this.att, b = this.getValue();
+                b ? c.setAttribute(a, b) : c.removeAttribute(a, b)
+            }
+        }
+
+        var i = {id: 1, dir: 1, classes: 1, styles: 1};
+        CKEDITOR.plugins.add("dialogadvtab", {
+            requires: "dialog", allowedContent: function (c) {
+                c || (c = i);
+                var a = [];
+                c.id && a.push("id");
+                c.dir && a.push("dir");
+                var b =
+                    "";
+                a.length && (b += "[" + a.join(",") + "]");
+                c.classes && (b += "(*)");
+                c.styles && (b += "{*}");
+                return b
+            }, createAdvancedTab: function (c, a, b) {
+                a || (a = i);
+                var d = c.lang.common, h = {
+                    id: "advanced",
+                    label: d.advancedTab,
+                    title: d.advancedTab,
+                    elements: [{type: "vbox", padding: 1, children: []}]
+                }, e = [];
+                if (a.id || a.dir)a.id && e.push({
+                    id: "advId",
+                    att: "id",
+                    type: "text",
+                    requiredContent: b ? b + "[id]" : null,
+                    label: d.id,
+                    setup: f,
+                    commit: g
+                }), a.dir && e.push({
+                    id: "advLangDir",
+                    att: "dir",
+                    type: "select",
+                    requiredContent: b ? b + "[dir]" : null,
+                    label: d.langDir,
+                    "default": "",
+                    style: "width:100%",
+                    items: [[d.notSet, ""], [d.langDirLTR, "ltr"], [d.langDirRTL, "rtl"]],
+                    setup: f,
+                    commit: g
+                }), h.elements[0].children.push({type: "hbox", widths: ["50%", "50%"], children: [].concat(e)});
+                if (a.styles || a.classes)e = [], a.styles && e.push({
+                    id: "advStyles",
+                    att: "style",
+                    type: "text",
+                    requiredContent: b ? b + "{cke-xyz}" : null,
+                    label: d.styles,
+                    "default": "",
+                    validate: CKEDITOR.dialog.validate.inlineStyle(d.invalidInlineStyle),
+                    onChange: function () {
+                    },
+                    getStyle: function (a, c) {
+                        var b = this.getValue().match(RegExp("(?:^|;)\\s*" + a +
+                        "\\s*:\\s*([^;]*)", "i"));
+                        return b ? b[1] : c
+                    },
+                    updateStyle: function (a, b) {
+                        var d = this.getValue(), e = c.document.createElement("span");
+                        e.setAttribute("style", d);
+                        e.setStyle(a, b);
+                        d = CKEDITOR.tools.normalizeCssText(e.getAttribute("style"));
+                        this.setValue(d, 1)
+                    },
+                    setup: f,
+                    commit: g
+                }), a.classes && e.push({
+                    type: "hbox",
+                    widths: ["45%", "55%"],
+                    children: [{
+                        id: "advCSSClasses",
+                        att: "class",
+                        type: "text",
+                        requiredContent: b ? b + "(cke-xyz)" : null,
+                        label: d.cssClasses,
+                        "default": "",
+                        setup: f,
+                        commit: g
+                    }]
+                }), h.elements[0].children.push({
+                    type: "hbox",
+                    widths: ["50%", "50%"], children: [].concat(e)
+                });
+                return h
+            }
+        })
+    })();
     CKEDITOR.plugins.add("basicstyles", {
         init: function (c) {
             var e = 0, d = function (g, d, b, a) {
@@ -11191,6 +11294,142 @@
     CKEDITOR.config.coreStyles_strike = {element: "s", overrides: "strike"};
     CKEDITOR.config.coreStyles_subscript = {element: "sub"};
     CKEDITOR.config.coreStyles_superscript = {element: "sup"};
+    (function () {
+        function n(a, f, d, b) {
+            if (!a.isReadOnly() && !a.equals(d.editable())) {
+                CKEDITOR.dom.element.setMarker(b, a, "bidi_processed", 1);
+                for (var b = a, c = d.editable(); (b = b.getParent()) && !b.equals(c);)if (b.getCustomData("bidi_processed")) {
+                    a.removeStyle("direction");
+                    a.removeAttribute("dir");
+                    return
+                }
+                b = "useComputedState"in d.config ? d.config.useComputedState : 1;
+                if ((b ? a.getComputedStyle("direction") : a.getStyle("direction") || a.hasAttribute("dir")) != f)a.removeStyle("direction"), b ? (a.removeAttribute("dir"), f != a.getComputedStyle("direction") &&
+                a.setAttribute("dir", f)) : a.setAttribute("dir", f), d.forceNextSelectionCheck()
+            }
+        }
+
+        function r(a, f, d) {
+            var b = a.getCommonAncestor(!1, !0), a = a.clone();
+            a.enlarge(d == CKEDITOR.ENTER_BR ? CKEDITOR.ENLARGE_LIST_ITEM_CONTENTS : CKEDITOR.ENLARGE_BLOCK_CONTENTS);
+            if (a.checkBoundaryOfElement(b, CKEDITOR.START) && a.checkBoundaryOfElement(b, CKEDITOR.END)) {
+                for (var c; b && b.type == CKEDITOR.NODE_ELEMENT && (c = b.getParent()) && 1 == c.getChildCount() && !(b.getName()in f);)b = c;
+                return b.type == CKEDITOR.NODE_ELEMENT && b.getName()in f && b
+            }
+        }
+
+        function m(a) {
+            return {
+                context: "p",
+                allowedContent: {
+                    "h1 h2 h3 h4 h5 h6 table ul ol blockquote div tr p div li td": {
+                        propertiesOnly: !0,
+                        attributes: "dir"
+                    }
+                }, requiredContent: "p[dir]", refresh: function (a, d) {
+                    var b = a.config.useComputedState, c, b = void 0 === b || b;
+                    if (!b) {
+                        c = d.lastElement;
+                        for (var h = a.editable(); c && !(c.getName()in q || c.equals(h));) {
+                            var e = c.getParent();
+                            if (!e)break;
+                            c = e
+                        }
+                    }
+                    c = c || d.block || d.blockLimit;
+                    c.equals(a.editable()) && (h = a.getSelection().getRanges()[0].getEnclosedNode()) && h.type == CKEDITOR.NODE_ELEMENT && (c = h);
+                    c && (b = b ? c.getComputedStyle("direction") :
+                    c.getStyle("direction") || c.getAttribute("dir"), a.getCommand("bidirtl").setState("rtl" == b ? CKEDITOR.TRISTATE_ON : CKEDITOR.TRISTATE_OFF), a.getCommand("bidiltr").setState("ltr" == b ? CKEDITOR.TRISTATE_ON : CKEDITOR.TRISTATE_OFF));
+                    b = (d.block || d.blockLimit || a.editable()).getDirection(1);
+                    if (b != (a._.selDir || a.lang.dir))a._.selDir = b, a.fire("contentDirChanged", b)
+                }, exec: function (f) {
+                    var d = f.getSelection(), b = f.config.enterMode, c = d.getRanges();
+                    if (c && c.length) {
+                        for (var h = {}, e = d.createBookmarks(), c = c.createIterator(), g,
+                                 j = 0; g = c.getNextRange(1);) {
+                            var i = g.getEnclosedNode();
+                            if (!i || i && !(i.type == CKEDITOR.NODE_ELEMENT && i.getName()in o))i = r(g, p, b);
+                            i && n(i, a, f, h);
+                            var k = new CKEDITOR.dom.walker(g), l = e[j].startNode, m = e[j++].endNode;
+                            k.evaluator = function (a) {
+                                var c = b == CKEDITOR.ENTER_P ? "p" : "div", d;
+                                if (!(d = !(a && a.type == CKEDITOR.NODE_ELEMENT))) {
+                                    if (d = a.getName()in p) {
+                                        if (!(c = !a.is(c)))c = a.getParent(), c = !(c && c.type == CKEDITOR.NODE_ELEMENT) || !a.getParent().is("blockquote");
+                                        d = c && a.getPosition(l) & CKEDITOR.POSITION_FOLLOWING && (a.getPosition(m) &
+                                        CKEDITOR.POSITION_PRECEDING + CKEDITOR.POSITION_CONTAINS) == CKEDITOR.POSITION_PRECEDING
+                                    }
+                                    d = !d
+                                }
+                                return !d
+                            };
+                            for (; i = k.next();)n(i, a, f, h);
+                            g = g.createIterator();
+                            for (g.enlargeBr = b != CKEDITOR.ENTER_BR; i = g.getNextParagraph(b == CKEDITOR.ENTER_P ? "p" : "div");)n(i, a, f, h)
+                        }
+                        CKEDITOR.dom.element.clearAllMarkers(h);
+                        f.forceNextSelectionCheck();
+                        d.selectBookmarks(e);
+                        f.focus()
+                    }
+                }
+            }
+        }
+
+        function s(a) {
+            var f = a == j.setAttribute, d = a == j.removeAttribute, b = /\bdirection\s*:\s*(.*?)\s*(:?$|;)/;
+            return function (c, h) {
+                if (!this.isReadOnly()) {
+                    var e;
+                    if (e = c == (f || d ? "dir" : "direction") || "style" == c && (d || b.test(h))) {
+                        a:{
+                            e = this;
+                            for (var g = e.getDocument().getBody().getParent(); e;) {
+                                if (e.equals(g)) {
+                                    e = !1;
+                                    break a
+                                }
+                                e = e.getParent()
+                            }
+                            e = !0
+                        }
+                        e = !e
+                    }
+                    if (e && (e = this.getDirection(1), g = a.apply(this, arguments), e != this.getDirection(1)))return this.getDocument().fire("dirChanged", this), g
+                }
+                return a.apply(this, arguments)
+            }
+        }
+
+        var p = {table: 1, ul: 1, ol: 1, blockquote: 1, div: 1}, o = {}, q = {};
+        CKEDITOR.tools.extend(o, p, {tr: 1, p: 1, div: 1, li: 1});
+        CKEDITOR.tools.extend(q, o, {td: 1});
+        CKEDITOR.plugins.add("bidi",
+            {
+                init: function (a) {
+                    function f(b, c, d, e, f) {
+                        a.addCommand(d, new CKEDITOR.command(a, e));
+                        a.ui.addButton && a.ui.addButton(b, {label: c, command: d, toolbar: "bidi," + f})
+                    }
+
+                    if (!a.blockless) {
+                        var d = a.lang.bidi;
+                        f("BidiLtr", d.ltr, "bidiltr", m("ltr"), 10);
+                        f("BidiRtl", d.rtl, "bidirtl", m("rtl"), 20);
+                        a.on("contentDom", function () {
+                            a.document.on("dirChanged", function (b) {
+                                a.fire("dirChanged", {node: b.data, dir: b.data.getDirection(1)})
+                            })
+                        });
+                        a.on("contentDirChanged", function (b) {
+                            var b = (a.lang.dir != b.data ? "add" : "remove") + "Class", c = a.ui.space(a.config.toolbarLocation);
+                            if (c)c[b]("cke_mixed_dir_content")
+                        })
+                    }
+                }
+            });
+        for (var j = CKEDITOR.dom.element.prototype, l = ["setStyle", "removeStyle", "setAttribute", "removeAttribute"], k = 0; k < l.length; k++)j[l[k]] = CKEDITOR.tools.override(j[l[k]], s)
+    })();
     (function () {
         var k = {
             exec: function (g) {
@@ -11739,6 +11978,179 @@
         })
     })();
     (function () {
+        var c = '<a id="{id}" class="cke_button cke_button__{name} cke_button_{state} {cls}"' + (CKEDITOR.env.gecko && !CKEDITOR.env.hc ? "" : " href=\"javascript:void('{titleJs}')\"") + ' title="{title}" tabindex="-1" hidefocus="true" role="button" aria-labelledby="{id}_label" aria-haspopup="{hasArrow}" aria-disabled="{ariaDisabled}"';
+        CKEDITOR.env.gecko && CKEDITOR.env.mac && (c += ' onkeypress="return false;"');
+        CKEDITOR.env.gecko && (c += ' onblur="this.style.cssText = this.style.cssText;"');
+        var c = c + (' onkeydown="return CKEDITOR.tools.callFunction({keydownFn},event);" onfocus="return CKEDITOR.tools.callFunction({focusFn},event);" ' +
+            (CKEDITOR.env.ie ? 'onclick="return false;" onmouseup' : "onclick") + '="CKEDITOR.tools.callFunction({clickFn},this);return false;"><span class="cke_button_icon cke_button__{iconName}_icon" style="{style}"'), c = c + '>&nbsp;</span><span id="{id}_label" class="cke_button_label cke_button__{name}_label" aria-hidden="false">{label}</span>{arrowHtml}</a>', o = CKEDITOR.addTemplate("buttonArrow", '<span class="cke_button_arrow">' + (CKEDITOR.env.hc ? "&#9660;" : "") + "</span>"), p = CKEDITOR.addTemplate("button", c);
+        CKEDITOR.plugins.add("button",
+            {
+                beforeInit: function (a) {
+                    a.ui.addHandler(CKEDITOR.UI_BUTTON, CKEDITOR.ui.button.handler)
+                }
+            });
+        CKEDITOR.UI_BUTTON = "button";
+        CKEDITOR.ui.button = function (a) {
+            CKEDITOR.tools.extend(this, a, {
+                title: a.label, click: a.click || function (b) {
+                    b.execCommand(a.command)
+                }
+            });
+            this._ = {}
+        };
+        CKEDITOR.ui.button.handler = {
+            create: function (a) {
+                return new CKEDITOR.ui.button(a)
+            }
+        };
+        CKEDITOR.ui.button.prototype = {
+            render: function (a, b) {
+                function c() {
+                    var e = a.mode;
+                    e && (e = this.modes[e] ? void 0 !== i[e] ? i[e] : CKEDITOR.TRISTATE_OFF : CKEDITOR.TRISTATE_DISABLED,
+                        e = a.readOnly && !this.readOnly ? CKEDITOR.TRISTATE_DISABLED : e, this.setState(e), this.refresh && this.refresh())
+                }
+
+                var j = CKEDITOR.env, k = this._.id = CKEDITOR.tools.getNextId(), f = "", g = this.command, l;
+                this._.editor = a;
+                var d = {
+                    id: k, button: this, editor: a, focus: function () {
+                        CKEDITOR.document.getById(k).focus()
+                    }, execute: function () {
+                        this.button.click(a)
+                    }, attach: function (a) {
+                        this.button.attach(a)
+                    }
+                }, q = CKEDITOR.tools.addFunction(function (a) {
+                    if (d.onkey)return a = new CKEDITOR.dom.event(a), !1 !== d.onkey(d, a.getKeystroke())
+                }), r = CKEDITOR.tools.addFunction(function (a) {
+                    var b;
+                    d.onfocus && (b = !1 !== d.onfocus(d, new CKEDITOR.dom.event(a)));
+                    return b
+                }), m = 0;
+                d.clickFn = l = CKEDITOR.tools.addFunction(function () {
+                    m && (a.unlockSelection(1), m = 0);
+                    d.execute();
+                    j.iOS && a.focus()
+                });
+                if (this.modes) {
+                    var i = {};
+                    a.on("beforeModeUnload", function () {
+                        a.mode && this._.state != CKEDITOR.TRISTATE_DISABLED && (i[a.mode] = this._.state)
+                    }, this);
+                    a.on("activeFilterChange", c, this);
+                    a.on("mode", c, this);
+                    !this.readOnly && a.on("readOnly", c, this)
+                } else if (g && (g = a.getCommand(g)))g.on("state", function () {
+                    this.setState(g.state)
+                }, this),
+                    f += g.state == CKEDITOR.TRISTATE_ON ? "on" : g.state == CKEDITOR.TRISTATE_DISABLED ? "disabled" : "off";
+                if (this.directional)a.on("contentDirChanged", function (b) {
+                    var c = CKEDITOR.document.getById(this._.id), d = c.getFirst(), b = b.data;
+                    b != a.lang.dir ? c.addClass("cke_" + b) : c.removeClass("cke_ltr").removeClass("cke_rtl");
+                    d.setAttribute("style", CKEDITOR.skin.getIconStyle(h, "rtl" == b, this.icon, this.iconOffset))
+                }, this);
+                g || (f += "off");
+                var n = this.name || this.command, h = n;
+                this.icon && !/\./.test(this.icon) && (h = this.icon, this.icon = null);
+                f = {
+                    id: k,
+                    name: n,
+                    iconName: h,
+                    label: this.label,
+                    cls: this.className || "",
+                    state: f,
+                    ariaDisabled: "disabled" == f ? "true" : "false",
+                    title: this.title,
+                    titleJs: j.gecko && !j.hc ? "" : (this.title || "").replace("'", ""),
+                    hasArrow: this.hasArrow ? "true" : "false",
+                    keydownFn: q,
+                    focusFn: r,
+                    clickFn: l,
+                    style: CKEDITOR.skin.getIconStyle(h, "rtl" == a.lang.dir, this.icon, this.iconOffset),
+                    arrowHtml: this.hasArrow ? o.output() : ""
+                };
+                p.output(f, b);
+                if (this.onRender)this.onRender();
+                return d
+            }, setState: function (a) {
+                if (this._.state == a)return !1;
+                this._.state = a;
+                var b = CKEDITOR.document.getById(this._.id);
+                return b ? (b.setState(a, "cke_button"), a == CKEDITOR.TRISTATE_DISABLED ? b.setAttribute("aria-disabled", !0) : b.removeAttribute("aria-disabled"), this.hasArrow ? (a = a == CKEDITOR.TRISTATE_ON ? this._.editor.lang.button.selectedLabel.replace(/%1/g, this.label) : this.label, CKEDITOR.document.getById(this._.id + "_label").setText(a)) : a == CKEDITOR.TRISTATE_ON ? b.setAttribute("aria-pressed", !0) : b.removeAttribute("aria-pressed"), !0) : !1
+            }, getState: function () {
+                return this._.state
+            }, toFeature: function (a) {
+                if (this._.feature)return this._.feature;
+                var b = this;
+                !this.allowedContent && (!this.requiredContent && this.command) && (b = a.getCommand(this.command) || b);
+                return this._.feature = b
+            }
+        };
+        CKEDITOR.ui.prototype.addButton = function (a, b) {
+            this.add(a, CKEDITOR.UI_BUTTON, b)
+        }
+    })();
+    CKEDITOR.plugins.add("panelbutton", {
+        requires: "button", onLoad: function () {
+            function e(c) {
+                var a = this._;
+                a.state != CKEDITOR.TRISTATE_DISABLED && (this.createPanel(c), a.on ? a.panel.hide() : a.panel.showBlock(this._.id, this.document.getById(this._.id), 4))
+            }
+
+            CKEDITOR.ui.panelButton = CKEDITOR.tools.createClass({
+                base: CKEDITOR.ui.button, $: function (c) {
+                    var a = c.panel || {};
+                    delete c.panel;
+                    this.base(c);
+                    this.document = a.parent && a.parent.getDocument() || CKEDITOR.document;
+                    a.block = {attributes: a.attributes};
+                    this.hasArrow = a.toolbarRelated = !0;
+                    this.click = e;
+                    this._ = {panelDefinition: a}
+                }, statics: {
+                    handler: {
+                        create: function (c) {
+                            return new CKEDITOR.ui.panelButton(c)
+                        }
+                    }
+                }, proto: {
+                    createPanel: function (c) {
+                        var a = this._;
+                        if (!a.panel) {
+                            var f = this._.panelDefinition, e = this._.panelDefinition.block, g = f.parent || CKEDITOR.document.getBody(), d = this._.panel = new CKEDITOR.ui.floatPanel(c, g, f), f = d.addBlock(a.id, e), b = this;
+                            d.onShow = function () {
+                                b.className && this.element.addClass(b.className + "_panel");
+                                b.setState(CKEDITOR.TRISTATE_ON);
+                                a.on = 1;
+                                b.editorFocus && c.focus();
+                                if (b.onOpen)b.onOpen()
+                            };
+                            d.onHide = function (d) {
+                                b.className && this.element.getFirst().removeClass(b.className + "_panel");
+                                b.setState(b.modes && b.modes[c.mode] ? CKEDITOR.TRISTATE_OFF : CKEDITOR.TRISTATE_DISABLED);
+                                a.on = 0;
+                                if (!d && b.onClose)b.onClose()
+                            };
+                            d.onEscape = function () {
+                                d.hide(1);
+                                b.document.getById(a.id).focus()
+                            };
+                            if (this.onBlock)this.onBlock(d, f);
+                            f.onHide = function () {
+                                a.on = 0;
+                                b.setState(CKEDITOR.TRISTATE_OFF)
+                            }
+                        }
+                    }
+                }
+            })
+        }, beforeInit: function (e) {
+            e.ui.addHandler(CKEDITOR.UI_PANELBUTTON, CKEDITOR.ui.panelButton.handler)
+        }
+    });
+    CKEDITOR.UI_PANELBUTTON = "panelbutton";
+    (function () {
         CKEDITOR.plugins.add("panel", {
             beforeInit: function (a) {
                 a.ui.addHandler(CKEDITOR.UI_PANEL, CKEDITOR.ui.panel.handler)
@@ -12067,6 +12479,177 @@
             a && (g = {})
         })
     })();
+    CKEDITOR.plugins.add("colorbutton", {
+        requires: "panelbutton,floatpanel", init: function (c) {
+            function o(m, g, e, h) {
+                var i = new CKEDITOR.style(j["colorButton_" + g + "Style"]), k = CKEDITOR.tools.getNextId() + "_colorBox";
+                c.ui.add(m, CKEDITOR.UI_PANELBUTTON, {
+                    label: e,
+                    title: e,
+                    modes: {wysiwyg: 1},
+                    editorFocus: 0,
+                    toolbar: "colors," + h,
+                    allowedContent: i,
+                    requiredContent: i,
+                    panel: {
+                        css: CKEDITOR.skin.getPath("editor"),
+                        attributes: {role: "listbox", "aria-label": f.panelTitle}
+                    },
+                    onBlock: function (a, b) {
+                        b.autoSize = !0;
+                        b.element.addClass("cke_colorblock");
+                        b.element.setHtml(q(a, g, k));
+                        b.element.getDocument().getBody().setStyle("overflow", "hidden");
+                        CKEDITOR.ui.fire("ready", this);
+                        var d = b.keys, e = "rtl" == c.lang.dir;
+                        d[e ? 37 : 39] = "next";
+                        d[40] = "next";
+                        d[9] = "next";
+                        d[e ? 39 : 37] = "prev";
+                        d[38] = "prev";
+                        d[CKEDITOR.SHIFT + 9] = "prev";
+                        d[32] = "click"
+                    },
+                    refresh: function () {
+                        c.activeFilter.check(i) || this.setState(CKEDITOR.TRISTATE_DISABLED)
+                    },
+                    onOpen: function () {
+                        var a = c.getSelection(), a = a && a.getStartElement(), a = c.elementPath(a), b;
+                        if (a) {
+                            a = a.block || a.blockLimit || c.document.getBody();
+                            do b =
+                                a && a.getComputedStyle("back" == g ? "background-color" : "color") || "transparent"; while ("back" == g && "transparent" == b && a && (a = a.getParent()));
+                            if (!b || "transparent" == b)b = "#ffffff";
+                            this._.panel._.iframe.getFrameDocument().getById(k).setStyle("background-color", b);
+                            return b
+                        }
+                    }
+                })
+            }
+
+            function q(m, g, e) {
+                var h = [], i = j.colorButton_colors.split(","), k = c.plugins.colordialog && !1 !== j.colorButton_enableMore, a = i.length + (k ? 2 : 1), b = CKEDITOR.tools.addFunction(function (a, b) {
+                    function d(a) {
+                        this.removeListener("ok", d);
+                        this.removeListener("cancel",
+                            d);
+                        "ok" == a.name && e(this.getContentElement("picker", "selectedColor").getValue(), b)
+                    }
+
+                    var e = arguments.callee;
+                    if ("?" == a)c.openDialog("colordialog", function () {
+                        this.on("ok", d);
+                        this.on("cancel", d)
+                    }); else {
+                        c.focus();
+                        m.hide();
+                        c.fire("saveSnapshot");
+                        c.removeStyle(new CKEDITOR.style(j["colorButton_" + b + "Style"], {color: "inherit"}));
+                        if (a) {
+                            var f = j["colorButton_" + b + "Style"];
+                            f.childRule = "back" == b ? function (a) {
+                                return p(a)
+                            } : function (a) {
+                                return !(a.is("a") || a.getElementsByTag("a").count()) || p(a)
+                            };
+                            c.applyStyle(new CKEDITOR.style(f,
+                                {color: a}))
+                        }
+                        c.fire("saveSnapshot")
+                    }
+                });
+                h.push('<a class="cke_colorauto" _cke_focus=1 hidefocus=true title="', f.auto, '" onclick="CKEDITOR.tools.callFunction(', b, ",null,'", g, "');return false;\" href=\"javascript:void('", f.auto, '\')" role="option" aria-posinset="1" aria-setsize="', a, '"><table role="presentation" cellspacing=0 cellpadding=0 width="100%"><tr><td><span class="cke_colorbox" id="', e, '"></span></td><td colspan=7 align=center>', f.auto, '</td></tr></table></a><table role="presentation" cellspacing=0 cellpadding=0 width="100%">');
+                for (e = 0; e < i.length; e++) {
+                    0 === e % 8 && h.push("</tr><tr>");
+                    var d = i[e].split("/"), l = d[0], n = d[1] || l;
+                    d[1] || (l = "#" + l.replace(/^(.)(.)(.)$/, "$1$1$2$2$3$3"));
+                    d = c.lang.colorbutton.colors[n] || n;
+                    h.push('<td><a class="cke_colorbox" _cke_focus=1 hidefocus=true title="', d, '" onclick="CKEDITOR.tools.callFunction(', b, ",'", l, "','", g, "'); return false;\" href=\"javascript:void('", d, '\')" role="option" aria-posinset="', e + 2, '" aria-setsize="', a, '"><span class="cke_colorbox" style="background-color:#', n, '"></span></a></td>')
+                }
+                k &&
+                h.push('</tr><tr><td colspan=8 align=center><a class="cke_colormore" _cke_focus=1 hidefocus=true title="', f.more, '" onclick="CKEDITOR.tools.callFunction(', b, ",'?','", g, "');return false;\" href=\"javascript:void('", f.more, "')\"", ' role="option" aria-posinset="', a, '" aria-setsize="', a, '">', f.more, "</a></td>");
+                h.push("</tr></table>");
+                return h.join("")
+            }
+
+            function p(c) {
+                return "false" == c.getAttribute("contentEditable") || c.getAttribute("data-nostyle")
+            }
+
+            var j = c.config, f = c.lang.colorbutton;
+            CKEDITOR.env.hc || (o("TextColor",
+                "fore", f.textColorTitle, 10), o("BGColor", "back", f.bgColorTitle, 20))
+        }
+    });
+    CKEDITOR.config.colorButton_colors = "000,800000,8B4513,2F4F4F,008080,000080,4B0082,696969,B22222,A52A2A,DAA520,006400,40E0D0,0000CD,800080,808080,F00,FF8C00,FFD700,008000,0FF,00F,EE82EE,A9A9A9,FFA07A,FFA500,FFFF00,00FF00,AFEEEE,ADD8E6,DDA0DD,D3D3D3,FFF0F5,FAEBD7,FFFFE0,F0FFF0,F0FFFF,F0F8FF,E6E6FA,FFF";
+    CKEDITOR.config.colorButton_foreStyle = {
+        element: "span",
+        styles: {color: "#(color)"},
+        overrides: [{element: "font", attributes: {color: null}}]
+    };
+    CKEDITOR.config.colorButton_backStyle = {element: "span", styles: {"background-color": "#(color)"}};
+    CKEDITOR.plugins.colordialog = {
+        requires: "dialog", init: function (b) {
+            var c = new CKEDITOR.dialogCommand("colordialog");
+            c.editorFocus = !1;
+            b.addCommand("colordialog", c);
+            CKEDITOR.dialog.add("colordialog", this.path + "dialogs/colordialog.js");
+            b.getColorFromDialog = function (c, f) {
+                var d = function (a) {
+                    this.removeListener("ok", d);
+                    this.removeListener("cancel", d);
+                    a = "ok" == a.name ? this.getValueOf("picker", "selectedColor") : null;
+                    c.call(f, a)
+                }, e = function (a) {
+                    a.on("ok", d);
+                    a.on("cancel", d)
+                };
+                b.execCommand("colordialog");
+                if (b._.storedDialogs &&
+                    b._.storedDialogs.colordialog)e(b._.storedDialogs.colordialog); else CKEDITOR.on("dialogDefinition", function (a) {
+                    if ("colordialog" == a.data.name) {
+                        var b = a.data.definition;
+                        a.removeListener();
+                        b.onLoad = CKEDITOR.tools.override(b.onLoad, function (a) {
+                            return function () {
+                                e(this);
+                                b.onLoad = a;
+                                "function" == typeof a && a.call(this)
+                            }
+                        })
+                    }
+                })
+            }
+        }
+    };
+    CKEDITOR.plugins.add("colordialog", CKEDITOR.plugins.colordialog);
+    (function () {
+        CKEDITOR.plugins.add("templates", {
+            requires: "dialog", init: function (a) {
+                CKEDITOR.dialog.add("templates", CKEDITOR.getUrl(this.path + "dialogs/templates.js"));
+                a.addCommand("templates", new CKEDITOR.dialogCommand("templates"));
+                a.ui.addButton && a.ui.addButton("Templates", {
+                    label: a.lang.templates.button,
+                    command: "templates",
+                    toolbar: "doctools,10"
+                })
+            }
+        });
+        var c = {}, f = {};
+        CKEDITOR.addTemplates = function (a, d) {
+            c[a] = d
+        };
+        CKEDITOR.getTemplates = function (a) {
+            return c[a]
+        };
+        CKEDITOR.loadTemplates = function (a, d) {
+            for (var e =
+                [], b = 0, c = a.length; b < c; b++)f[a[b]] || (e.push(a[b]), f[a[b]] = 1);
+            e.length ? CKEDITOR.scriptLoader.load(e, d) : setTimeout(d, 0)
+        }
+    })();
+    CKEDITOR.config.templates_files = [CKEDITOR.getUrl("plugins/templates/templates/default.js")];
+    CKEDITOR.config.templates_replaceContent = !0;
     CKEDITOR.plugins.add("menu", {
         requires: "floatpanel", beforeInit: function (g) {
             for (var h = g.config.menu_groups.split(","), m = g._.menuGroups = {}, l = g._.menuItems = {}, a = 0; a < h.length; a++)m[h[a]] = a + 1;
@@ -12326,6 +12909,66 @@
             a.setKeystroke(CKEDITOR.CTRL + CKEDITOR.SHIFT + 121, "contextMenu")
         }
     });
+    (function () {
+        CKEDITOR.plugins.add("div", {
+            requires: "dialog", init: function (a) {
+                if (!a.blockless) {
+                    var c = a.lang.div, b = "div(*)";
+                    CKEDITOR.dialog.isTabEnabled(a, "editdiv", "advanced") && (b += ";div[dir,id,lang,title]{*}");
+                    a.addCommand("creatediv", new CKEDITOR.dialogCommand("creatediv", {
+                        allowedContent: b,
+                        requiredContent: "div",
+                        contextSensitive: !0,
+                        refresh: function (a, c) {
+                            this.setState("div"in(a.config.div_wrapTable ? c.root : c.blockLimit).getDtd() ? CKEDITOR.TRISTATE_OFF : CKEDITOR.TRISTATE_DISABLED)
+                        }
+                    }));
+                    a.addCommand("editdiv",
+                        new CKEDITOR.dialogCommand("editdiv", {requiredContent: "div"}));
+                    a.addCommand("removediv", {
+                        requiredContent: "div", exec: function (a) {
+                            function c(b) {
+                                if ((b = CKEDITOR.plugins.div.getSurroundDiv(a, b)) && !b.data("cke-div-added"))f.push(b), b.data("cke-div-added")
+                            }
+
+                            for (var b = a.getSelection(), g = b && b.getRanges(), e, h = b.createBookmarks(), f = [], d = 0; d < g.length; d++)e = g[d], e.collapsed ? c(b.getStartElement()) : (e = new CKEDITOR.dom.walker(e), e.evaluator = c, e.lastForward());
+                            for (d = 0; d < f.length; d++)f[d].remove(!0);
+                            b.selectBookmarks(h)
+                        }
+                    });
+                    a.ui.addButton && a.ui.addButton("CreateDiv", {
+                        label: c.toolbar,
+                        command: "creatediv",
+                        toolbar: "blocks,50"
+                    });
+                    a.addMenuItems && (a.addMenuItems({
+                        editdiv: {
+                            label: c.edit,
+                            command: "editdiv",
+                            group: "div",
+                            order: 1
+                        }, removediv: {label: c.remove, command: "removediv", group: "div", order: 5}
+                    }), a.contextMenu && a.contextMenu.addListener(function (b) {
+                        return !b || b.isReadOnly() ? null : CKEDITOR.plugins.div.getSurroundDiv(a) ? {
+                            editdiv: CKEDITOR.TRISTATE_OFF,
+                            removediv: CKEDITOR.TRISTATE_OFF
+                        } : null
+                    }));
+                    CKEDITOR.dialog.add("creatediv", this.path +
+                    "dialogs/div.js");
+                    CKEDITOR.dialog.add("editdiv", this.path + "dialogs/div.js")
+                }
+            }
+        });
+        CKEDITOR.plugins.div = {
+            getSurroundDiv: function (a, c) {
+                var b = a.elementPath(c);
+                return a.elementPath(b.blockLimit).contains(function (a) {
+                    return a.is("div") && !a.isReadOnly()
+                }, 1)
+            }
+        }
+    })();
     CKEDITOR.plugins.add("resize", {
         init: function (b) {
             var f, g, n, o;
@@ -12384,120 +13027,6 @@
             }
         }
     });
-    (function () {
-        var c = '<a id="{id}" class="cke_button cke_button__{name} cke_button_{state} {cls}"' + (CKEDITOR.env.gecko && !CKEDITOR.env.hc ? "" : " href=\"javascript:void('{titleJs}')\"") + ' title="{title}" tabindex="-1" hidefocus="true" role="button" aria-labelledby="{id}_label" aria-haspopup="{hasArrow}" aria-disabled="{ariaDisabled}"';
-        CKEDITOR.env.gecko && CKEDITOR.env.mac && (c += ' onkeypress="return false;"');
-        CKEDITOR.env.gecko && (c += ' onblur="this.style.cssText = this.style.cssText;"');
-        var c = c + (' onkeydown="return CKEDITOR.tools.callFunction({keydownFn},event);" onfocus="return CKEDITOR.tools.callFunction({focusFn},event);" ' +
-            (CKEDITOR.env.ie ? 'onclick="return false;" onmouseup' : "onclick") + '="CKEDITOR.tools.callFunction({clickFn},this);return false;"><span class="cke_button_icon cke_button__{iconName}_icon" style="{style}"'), c = c + '>&nbsp;</span><span id="{id}_label" class="cke_button_label cke_button__{name}_label" aria-hidden="false">{label}</span>{arrowHtml}</a>', o = CKEDITOR.addTemplate("buttonArrow", '<span class="cke_button_arrow">' + (CKEDITOR.env.hc ? "&#9660;" : "") + "</span>"), p = CKEDITOR.addTemplate("button", c);
-        CKEDITOR.plugins.add("button",
-            {
-                beforeInit: function (a) {
-                    a.ui.addHandler(CKEDITOR.UI_BUTTON, CKEDITOR.ui.button.handler)
-                }
-            });
-        CKEDITOR.UI_BUTTON = "button";
-        CKEDITOR.ui.button = function (a) {
-            CKEDITOR.tools.extend(this, a, {
-                title: a.label, click: a.click || function (b) {
-                    b.execCommand(a.command)
-                }
-            });
-            this._ = {}
-        };
-        CKEDITOR.ui.button.handler = {
-            create: function (a) {
-                return new CKEDITOR.ui.button(a)
-            }
-        };
-        CKEDITOR.ui.button.prototype = {
-            render: function (a, b) {
-                function c() {
-                    var e = a.mode;
-                    e && (e = this.modes[e] ? void 0 !== i[e] ? i[e] : CKEDITOR.TRISTATE_OFF : CKEDITOR.TRISTATE_DISABLED,
-                        e = a.readOnly && !this.readOnly ? CKEDITOR.TRISTATE_DISABLED : e, this.setState(e), this.refresh && this.refresh())
-                }
-
-                var j = CKEDITOR.env, k = this._.id = CKEDITOR.tools.getNextId(), f = "", g = this.command, l;
-                this._.editor = a;
-                var d = {
-                    id: k, button: this, editor: a, focus: function () {
-                        CKEDITOR.document.getById(k).focus()
-                    }, execute: function () {
-                        this.button.click(a)
-                    }, attach: function (a) {
-                        this.button.attach(a)
-                    }
-                }, q = CKEDITOR.tools.addFunction(function (a) {
-                    if (d.onkey)return a = new CKEDITOR.dom.event(a), !1 !== d.onkey(d, a.getKeystroke())
-                }), r = CKEDITOR.tools.addFunction(function (a) {
-                    var b;
-                    d.onfocus && (b = !1 !== d.onfocus(d, new CKEDITOR.dom.event(a)));
-                    return b
-                }), m = 0;
-                d.clickFn = l = CKEDITOR.tools.addFunction(function () {
-                    m && (a.unlockSelection(1), m = 0);
-                    d.execute();
-                    j.iOS && a.focus()
-                });
-                if (this.modes) {
-                    var i = {};
-                    a.on("beforeModeUnload", function () {
-                        a.mode && this._.state != CKEDITOR.TRISTATE_DISABLED && (i[a.mode] = this._.state)
-                    }, this);
-                    a.on("activeFilterChange", c, this);
-                    a.on("mode", c, this);
-                    !this.readOnly && a.on("readOnly", c, this)
-                } else if (g && (g = a.getCommand(g)))g.on("state", function () {
-                    this.setState(g.state)
-                }, this),
-                    f += g.state == CKEDITOR.TRISTATE_ON ? "on" : g.state == CKEDITOR.TRISTATE_DISABLED ? "disabled" : "off";
-                if (this.directional)a.on("contentDirChanged", function (b) {
-                    var c = CKEDITOR.document.getById(this._.id), d = c.getFirst(), b = b.data;
-                    b != a.lang.dir ? c.addClass("cke_" + b) : c.removeClass("cke_ltr").removeClass("cke_rtl");
-                    d.setAttribute("style", CKEDITOR.skin.getIconStyle(h, "rtl" == b, this.icon, this.iconOffset))
-                }, this);
-                g || (f += "off");
-                var n = this.name || this.command, h = n;
-                this.icon && !/\./.test(this.icon) && (h = this.icon, this.icon = null);
-                f = {
-                    id: k,
-                    name: n,
-                    iconName: h,
-                    label: this.label,
-                    cls: this.className || "",
-                    state: f,
-                    ariaDisabled: "disabled" == f ? "true" : "false",
-                    title: this.title,
-                    titleJs: j.gecko && !j.hc ? "" : (this.title || "").replace("'", ""),
-                    hasArrow: this.hasArrow ? "true" : "false",
-                    keydownFn: q,
-                    focusFn: r,
-                    clickFn: l,
-                    style: CKEDITOR.skin.getIconStyle(h, "rtl" == a.lang.dir, this.icon, this.iconOffset),
-                    arrowHtml: this.hasArrow ? o.output() : ""
-                };
-                p.output(f, b);
-                if (this.onRender)this.onRender();
-                return d
-            }, setState: function (a) {
-                if (this._.state == a)return !1;
-                this._.state = a;
-                var b = CKEDITOR.document.getById(this._.id);
-                return b ? (b.setState(a, "cke_button"), a == CKEDITOR.TRISTATE_DISABLED ? b.setAttribute("aria-disabled", !0) : b.removeAttribute("aria-disabled"), this.hasArrow ? (a = a == CKEDITOR.TRISTATE_ON ? this._.editor.lang.button.selectedLabel.replace(/%1/g, this.label) : this.label, CKEDITOR.document.getById(this._.id + "_label").setText(a)) : a == CKEDITOR.TRISTATE_ON ? b.setAttribute("aria-pressed", !0) : b.removeAttribute("aria-pressed"), !0) : !1
-            }, getState: function () {
-                return this._.state
-            }, toFeature: function (a) {
-                if (this._.feature)return this._.feature;
-                var b = this;
-                !this.allowedContent && (!this.requiredContent && this.command) && (b = a.getCommand(this.command) || b);
-                return this._.feature = b
-            }
-        };
-        CKEDITOR.ui.prototype.addButton = function (a, b) {
-            this.add(a, CKEDITOR.UI_BUTTON, b)
-        }
-    })();
     (function () {
         function w(a) {
             function d() {
@@ -13129,6 +13658,162 @@
             d.hidden && d.filebrowser && (d.hidden = !h(c, d.id, d.filebrowser))
         })
     })();
+    CKEDITOR.plugins.add("find", {
+        requires: "dialog", init: function (a) {
+            var b = a.addCommand("find", new CKEDITOR.dialogCommand("find"));
+            b.canUndo = !1;
+            b.readOnly = 1;
+            a.addCommand("replace", new CKEDITOR.dialogCommand("replace")).canUndo = !1;
+            a.ui.addButton && (a.ui.addButton("Find", {
+                label: a.lang.find.find,
+                command: "find",
+                toolbar: "find,10"
+            }), a.ui.addButton("Replace", {label: a.lang.find.replace, command: "replace", toolbar: "find,20"}));
+            CKEDITOR.dialog.add("find", this.path + "dialogs/find.js");
+            CKEDITOR.dialog.add("replace", this.path +
+            "dialogs/find.js")
+        }
+    });
+    CKEDITOR.config.find_highlight = {element: "span", styles: {"background-color": "#004", color: "#fff"}};
+    (function () {
+        function g(a, b) {
+            var c = j.exec(a), d = j.exec(b);
+            if (c) {
+                if (!c[2] && "px" == d[2])return d[1];
+                if ("px" == c[2] && !d[2])return d[1] + "px"
+            }
+            return b
+        }
+
+        var i = CKEDITOR.htmlParser.cssStyle, h = CKEDITOR.tools.cssLength, j = /^((?:\d*(?:\.\d+))|(?:\d+))(.*)?$/i, k = {
+            elements: {
+                $: function (a) {
+                    var b = a.attributes;
+                    if ((b = (b = (b = b && b["data-cke-realelement"]) && new CKEDITOR.htmlParser.fragment.fromHtml(decodeURIComponent(b))) && b.children[0]) && a.attributes["data-cke-resizable"]) {
+                        var c = (new i(a)).rules, a = b.attributes, d = c.width, c =
+                            c.height;
+                        d && (a.width = g(a.width, d));
+                        c && (a.height = g(a.height, c))
+                    }
+                    return b
+                }
+            }
+        };
+        CKEDITOR.plugins.add("fakeobjects", {
+            init: function (a) {
+                a.filter.allow("img[!data-cke-realelement,src,alt,title](*){*}", "fakeobjects")
+            }, afterInit: function (a) {
+                (a = (a = a.dataProcessor) && a.htmlFilter) && a.addRules(k, {applyToAll: !0})
+            }
+        });
+        CKEDITOR.editor.prototype.createFakeElement = function (a, b, c, d) {
+            var e = this.lang.fakeobjects, e = e[c] || e.unknown, b = {
+                "class": b,
+                "data-cke-realelement": encodeURIComponent(a.getOuterHtml()),
+                "data-cke-real-node-type": a.type,
+                alt: e,
+                title: e,
+                align: a.getAttribute("align") || ""
+            };
+            CKEDITOR.env.hc || (b.src = CKEDITOR.tools.transparentImageData);
+            c && (b["data-cke-real-element-type"] = c);
+            d && (b["data-cke-resizable"] = d, c = new i, d = a.getAttribute("width"), a = a.getAttribute("height"), d && (c.rules.width = h(d)), a && (c.rules.height = h(a)), c.populate(b));
+            return this.document.createElement("img", {attributes: b})
+        };
+        CKEDITOR.editor.prototype.createFakeParserElement = function (a, b, c, d) {
+            var e = this.lang.fakeobjects, e = e[c] || e.unknown, f;
+            f = new CKEDITOR.htmlParser.basicWriter;
+            a.writeHtml(f);
+            f = f.getHtml();
+            b = {
+                "class": b,
+                "data-cke-realelement": encodeURIComponent(f),
+                "data-cke-real-node-type": a.type,
+                alt: e,
+                title: e,
+                align: a.attributes.align || ""
+            };
+            CKEDITOR.env.hc || (b.src = CKEDITOR.tools.transparentImageData);
+            c && (b["data-cke-real-element-type"] = c);
+            d && (b["data-cke-resizable"] = d, d = a.attributes, a = new i, c = d.width, d = d.height, void 0 !== c && (a.rules.width = h(c)), void 0 !== d && (a.rules.height = h(d)), a.populate(b));
+            return new CKEDITOR.htmlParser.element("img", b)
+        };
+        CKEDITOR.editor.prototype.restoreRealElement =
+            function (a) {
+                if (a.data("cke-real-node-type") != CKEDITOR.NODE_ELEMENT)return null;
+                var b = CKEDITOR.dom.element.createFromHtml(decodeURIComponent(a.data("cke-realelement")), this.document);
+                if (a.data("cke-resizable")) {
+                    var c = a.getStyle("width"), a = a.getStyle("height");
+                    c && b.setAttribute("width", g(b.getAttribute("width"), c));
+                    a && b.setAttribute("height", g(b.getAttribute("height"), a))
+                }
+                return b
+            }
+    })();
+    (function () {
+        function d(a) {
+            a = a.attributes;
+            return "application/x-shockwave-flash" == a.type || f.test(a.src || "")
+        }
+
+        function e(a, b) {
+            return a.createFakeParserElement(b, "cke_flash", "flash", !0)
+        }
+
+        var f = /\.swf(?:$|\?)/i;
+        CKEDITOR.plugins.add("flash", {
+            requires: "dialog,fakeobjects", onLoad: function () {
+                CKEDITOR.addCss("img.cke_flash{background-image: url(" + CKEDITOR.getUrl(this.path + "images/placeholder.png") + ");background-position: center center;background-repeat: no-repeat;border: 1px solid #a9a9a9;width: 80px;height: 80px;}")
+            },
+            init: function (a) {
+                var b = "object[classid,codebase,height,hspace,vspace,width];param[name,value];embed[height,hspace,pluginspage,src,type,vspace,width]";
+                CKEDITOR.dialog.isTabEnabled(a, "flash", "properties") && (b += ";object[align]; embed[allowscriptaccess,quality,scale,wmode]");
+                CKEDITOR.dialog.isTabEnabled(a, "flash", "advanced") && (b += ";object[id]{*}; embed[bgcolor]{*}(*)");
+                a.addCommand("flash", new CKEDITOR.dialogCommand("flash", {
+                    allowedContent: b,
+                    requiredContent: "embed"
+                }));
+                a.ui.addButton && a.ui.addButton("Flash",
+                    {label: a.lang.common.flash, command: "flash", toolbar: "insert,20"});
+                CKEDITOR.dialog.add("flash", this.path + "dialogs/flash.js");
+                a.addMenuItems && a.addMenuItems({
+                    flash: {
+                        label: a.lang.flash.properties,
+                        command: "flash",
+                        group: "flash"
+                    }
+                });
+                a.on("doubleclick", function (a) {
+                    var b = a.data.element;
+                    b.is("img") && "flash" == b.data("cke-real-element-type") && (a.data.dialog = "flash")
+                });
+                a.contextMenu && a.contextMenu.addListener(function (a) {
+                    if (a && a.is("img") && !a.isReadOnly() && "flash" == a.data("cke-real-element-type"))return {flash: CKEDITOR.TRISTATE_OFF}
+                })
+            },
+            afterInit: function (a) {
+                var b = a.dataProcessor;
+                (b = b && b.dataFilter) && b.addRules({
+                    elements: {
+                        "cke:object": function (b) {
+                            var c = b.attributes;
+                            if ((!c.classid || !("" + c.classid).toLowerCase()) && !d(b)) {
+                                for (c = 0; c < b.children.length; c++)if ("cke:embed" == b.children[c].name) {
+                                    if (!d(b.children[c]))break;
+                                    return e(a, b)
+                                }
+                                return null
+                            }
+                            return e(a, b)
+                        }, "cke:embed": function (b) {
+                            return !d(b) ? null : e(a, b)
+                        }
+                    }
+                }, 5)
+            }
+        })
+    })();
+    CKEDITOR.tools.extend(CKEDITOR.config, {flashEmbedTagOnly: !1, flashAddEmbedTag: !0, flashConvertOnEdit: !1});
     (function () {
         function i(a) {
             var j = a.config, m = a.fire("uiSpace", {space: "top", html: ""}).html, p = function () {
@@ -13519,6 +14204,246 @@
             this.add(a, CKEDITOR.UI_RICHCOMBO, b)
         }
     })();
+    (function () {
+        function j(a, b, c, f, m, j, p, r) {
+            for (var s = a.config, n = new CKEDITOR.style(p), i = m.split(";"), m = [], k = {}, d = 0; d < i.length; d++) {
+                var h = i[d];
+                if (h) {
+                    var h = h.split("/"), q = {}, l = i[d] = h[0];
+                    q[c] = m[d] = h[1] || l;
+                    k[l] = new CKEDITOR.style(p, q);
+                    k[l]._.definition.name = l
+                } else i.splice(d--, 1)
+            }
+            a.ui.addRichCombo(b, {
+                label: f.label,
+                title: f.panelTitle,
+                toolbar: "styles," + r,
+                allowedContent: n,
+                requiredContent: n,
+                panel: {
+                    css: [CKEDITOR.skin.getPath("editor")].concat(s.contentsCss),
+                    multiSelect: !1,
+                    attributes: {"aria-label": f.panelTitle}
+                },
+                init: function () {
+                    this.startGroup(f.panelTitle);
+                    for (var a = 0; a < i.length; a++) {
+                        var b = i[a];
+                        this.add(b, k[b].buildPreview(), b)
+                    }
+                },
+                onClick: function (b) {
+                    a.focus();
+                    a.fire("saveSnapshot");
+                    var c = this.getValue(), f = k[b];
+                    if (c && b != c) {
+                        var i = k[c], e = a.getSelection().getRanges()[0];
+                        if (e.collapsed) {
+                            var d = a.elementPath(), g = d.contains(function (a) {
+                                return i.checkElementRemovable(a)
+                            });
+                            if (g) {
+                                var h = e.checkBoundaryOfElement(g, CKEDITOR.START), j = e.checkBoundaryOfElement(g, CKEDITOR.END);
+                                if (h && j) {
+                                    for (h = e.createBookmark(); d = g.getFirst();)d.insertBefore(g);
+                                    g.remove();
+                                    e.moveToBookmark(h)
+                                } else h ? e.moveToPosition(g, CKEDITOR.POSITION_BEFORE_START) : j ? e.moveToPosition(g, CKEDITOR.POSITION_AFTER_END) : (e.splitElement(g), e.moveToPosition(g, CKEDITOR.POSITION_AFTER_END), o(e, d.elements.slice(), g));
+                                a.getSelection().selectRanges([e])
+                            }
+                        } else a.removeStyle(i)
+                    }
+                    a[c == b ? "removeStyle" : "applyStyle"](f);
+                    a.fire("saveSnapshot")
+                },
+                onRender: function () {
+                    a.on("selectionChange", function (b) {
+                        for (var c = this.getValue(), b = b.data.path.elements, d = 0, f; d < b.length; d++) {
+                            f = b[d];
+                            for (var e in k)if (k[e].checkElementMatch(f,
+                                    !0, a)) {
+                                e != c && this.setValue(e);
+                                return
+                            }
+                        }
+                        this.setValue("", j)
+                    }, this)
+                },
+                refresh: function () {
+                    a.activeFilter.check(n) || this.setState(CKEDITOR.TRISTATE_DISABLED)
+                }
+            })
+        }
+
+        function o(a, b, c) {
+            var f = b.pop();
+            if (f) {
+                if (c)return o(a, b, f.equals(c) ? null : c);
+                c = f.clone();
+                a.insertNode(c);
+                a.moveToPosition(c, CKEDITOR.POSITION_AFTER_START);
+                o(a, b)
+            }
+        }
+
+        CKEDITOR.plugins.add("font", {
+            requires: "richcombo", init: function (a) {
+                var b = a.config;
+                j(a, "Font", "family", a.lang.font, b.font_names, b.font_defaultLabel, b.font_style, 30);
+                j(a, "FontSize", "size",
+                    a.lang.font.fontSize, b.fontSize_sizes, b.fontSize_defaultLabel, b.fontSize_style, 40)
+            }
+        })
+    })();
+    CKEDITOR.config.font_names = "Arial/Arial, Helvetica, sans-serif;Comic Sans MS/Comic Sans MS, cursive;Courier New/Courier New, Courier, monospace;Georgia/Georgia, serif;Lucida Sans Unicode/Lucida Sans Unicode, Lucida Grande, sans-serif;Tahoma/Tahoma, Geneva, sans-serif;Times New Roman/Times New Roman, Times, serif;Trebuchet MS/Trebuchet MS, Helvetica, sans-serif;Verdana/Verdana, Geneva, sans-serif";
+    CKEDITOR.config.font_defaultLabel = "";
+    CKEDITOR.config.font_style = {
+        element: "span",
+        styles: {"font-family": "#(family)"},
+        overrides: [{element: "font", attributes: {face: null}}]
+    };
+    CKEDITOR.config.fontSize_sizes = "8/8px;9/9px;10/10px;11/11px;12/12px;14/14px;16/16px;18/18px;20/20px;22/22px;24/24px;26/26px;28/28px;36/36px;48/48px;72/72px";
+    CKEDITOR.config.fontSize_defaultLabel = "";
+    CKEDITOR.config.fontSize_style = {
+        element: "span",
+        styles: {"font-size": "#(size)"},
+        overrides: [{element: "font", attributes: {size: null}}]
+    };
+    CKEDITOR.plugins.add("forms", {
+        requires: "dialog,fakeobjects", onLoad: function () {
+            CKEDITOR.addCss(".cke_editable form{border: 1px dotted #FF0000;padding: 2px;}\n");
+            CKEDITOR.addCss("img.cke_hidden{background-image: url(" + CKEDITOR.getUrl(this.path + "images/hiddenfield.gif") + ");background-position: center center;background-repeat: no-repeat;border: 1px solid #a9a9a9;width: 16px !important;height: 16px !important;}")
+        }, init: function (a) {
+            var b = a.lang, g = 0, h = {email: 1, password: 1, search: 1, tel: 1, text: 1, url: 1}, j = {
+                checkbox: "input[type,name,checked]",
+                radio: "input[type,name,checked]",
+                textfield: "input[type,name,value,size,maxlength]",
+                textarea: "textarea[cols,rows,name]",
+                select: "select[name,size,multiple]; option[value,selected]",
+                button: "input[type,name,value]",
+                form: "form[action,name,id,enctype,target,method]",
+                hiddenfield: "input[type,name,value]",
+                imagebutton: "input[type,alt,src]{width,height,border,border-width,border-style,margin,float}"
+            }, k = {
+                checkbox: "input",
+                radio: "input",
+                textfield: "input",
+                textarea: "textarea",
+                select: "select",
+                button: "input",
+                form: "form",
+                hiddenfield: "input",
+                imagebutton: "input"
+            }, e = function (d, c, e) {
+                var h = {allowedContent: j[c], requiredContent: k[c]};
+                "form" == c && (h.context = "form");
+                a.addCommand(c, new CKEDITOR.dialogCommand(c, h));
+                a.ui.addButton && a.ui.addButton(d, {
+                    label: b.common[d.charAt(0).toLowerCase() + d.slice(1)],
+                    command: c,
+                    toolbar: "forms," + (g += 10)
+                });
+                CKEDITOR.dialog.add(c, e)
+            }, f = this.path + "dialogs/";
+            !a.blockless && e("Form", "form", f + "form.js");
+            e("Checkbox", "checkbox", f + "checkbox.js");
+            e("Radio", "radio", f + "radio.js");
+            e("TextField", "textfield",
+                f + "textfield.js");
+            e("Textarea", "textarea", f + "textarea.js");
+            e("Select", "select", f + "select.js");
+            e("Button", "button", f + "button.js");
+            var i = a.plugins.image;
+            i && !a.plugins.image2 && e("ImageButton", "imagebutton", CKEDITOR.plugins.getPath("image") + "dialogs/image.js");
+            e("HiddenField", "hiddenfield", f + "hiddenfield.js");
+            a.addMenuItems && (e = {
+                checkbox: {label: b.forms.checkboxAndRadio.checkboxTitle, command: "checkbox", group: "checkbox"},
+                radio: {label: b.forms.checkboxAndRadio.radioTitle, command: "radio", group: "radio"},
+                textfield: {
+                    label: b.forms.textfield.title,
+                    command: "textfield", group: "textfield"
+                },
+                hiddenfield: {label: b.forms.hidden.title, command: "hiddenfield", group: "hiddenfield"},
+                button: {label: b.forms.button.title, command: "button", group: "button"},
+                select: {label: b.forms.select.title, command: "select", group: "select"},
+                textarea: {label: b.forms.textarea.title, command: "textarea", group: "textarea"}
+            }, i && (e.imagebutton = {
+                label: b.image.titleButton,
+                command: "imagebutton",
+                group: "imagebutton"
+            }), !a.blockless && (e.form = {label: b.forms.form.menu, command: "form", group: "form"}),
+                a.addMenuItems(e));
+            a.contextMenu && (!a.blockless && a.contextMenu.addListener(function (d, c, a) {
+                if ((d = a.contains("form", 1)) && !d.isReadOnly())return {form: CKEDITOR.TRISTATE_OFF}
+            }), a.contextMenu.addListener(function (d) {
+                if (d && !d.isReadOnly()) {
+                    var c = d.getName();
+                    if (c == "select")return {select: CKEDITOR.TRISTATE_OFF};
+                    if (c == "textarea")return {textarea: CKEDITOR.TRISTATE_OFF};
+                    if (c == "input") {
+                        var a = d.getAttribute("type") || "text";
+                        switch (a) {
+                            case "button":
+                            case "submit":
+                            case "reset":
+                                return {button: CKEDITOR.TRISTATE_OFF};
+                            case "checkbox":
+                                return {checkbox: CKEDITOR.TRISTATE_OFF};
+                            case "radio":
+                                return {radio: CKEDITOR.TRISTATE_OFF};
+                            case "image":
+                                return i ? {imagebutton: CKEDITOR.TRISTATE_OFF} : null
+                        }
+                        if (h[a])return {textfield: CKEDITOR.TRISTATE_OFF}
+                    }
+                    if (c == "img" && d.data("cke-real-element-type") == "hiddenfield")return {hiddenfield: CKEDITOR.TRISTATE_OFF}
+                }
+            }));
+            a.on("doubleclick", function (d) {
+                var c = d.data.element;
+                if (!a.blockless && c.is("form"))d.data.dialog = "form"; else if (c.is("select"))d.data.dialog = "select"; else if (c.is("textarea"))d.data.dialog = "textarea"; else if (c.is("img") && c.data("cke-real-element-type") ==
+                    "hiddenfield")d.data.dialog = "hiddenfield"; else if (c.is("input")) {
+                    c = c.getAttribute("type") || "text";
+                    switch (c) {
+                        case "button":
+                        case "submit":
+                        case "reset":
+                            d.data.dialog = "button";
+                            break;
+                        case "checkbox":
+                            d.data.dialog = "checkbox";
+                            break;
+                        case "radio":
+                            d.data.dialog = "radio";
+                            break;
+                        case "image":
+                            d.data.dialog = "imagebutton"
+                    }
+                    if (h[c])d.data.dialog = "textfield"
+                }
+            })
+        }, afterInit: function (a) {
+            var b = a.dataProcessor, g = b && b.htmlFilter, b = b && b.dataFilter;
+            CKEDITOR.env.ie && g && g.addRules({
+                elements: {
+                    input: function (a) {
+                        var a = a.attributes,
+                            b = a.type;
+                        b || (a.type = "text");
+                        ("checkbox" == b || "radio" == b) && "on" == a.value && delete a.value
+                    }
+                }
+            }, {applyToAll: !0});
+            b && b.addRules({
+                elements: {
+                    input: function (b) {
+                        if ("hidden" == b.attributes.type)return a.createFakeParserElement(b, "cke_hidden", "hiddenfield")
+                    }
+                }
+            }, {applyToAll: !0})
+        }
+    });
     CKEDITOR.plugins.add("format", {
         requires: "richcombo", init: function (a) {
             if (!a.blockless) {
@@ -13677,6 +14602,42 @@
             }
         }
     });
+    (function () {
+        CKEDITOR.plugins.add("iframe", {
+            requires: "dialog,fakeobjects", onLoad: function () {
+                CKEDITOR.addCss("img.cke_iframe{background-image: url(" + CKEDITOR.getUrl(this.path + "images/placeholder.png") + ");background-position: center center;background-repeat: no-repeat;border: 1px solid #a9a9a9;width: 80px;height: 80px;}")
+            }, init: function (a) {
+                var b = a.lang.iframe, c = "iframe[align,longdesc,frameborder,height,name,scrolling,src,title,width]";
+                a.plugins.dialogadvtab && (c += ";iframe" + a.plugins.dialogadvtab.allowedContent({
+                    id: 1,
+                    classes: 1, styles: 1
+                }));
+                CKEDITOR.dialog.add("iframe", this.path + "dialogs/iframe.js");
+                a.addCommand("iframe", new CKEDITOR.dialogCommand("iframe", {
+                    allowedContent: c,
+                    requiredContent: "iframe"
+                }));
+                a.ui.addButton && a.ui.addButton("Iframe", {label: b.toolbar, command: "iframe", toolbar: "insert,80"});
+                a.on("doubleclick", function (a) {
+                    var b = a.data.element;
+                    b.is("img") && "iframe" == b.data("cke-real-element-type") && (a.data.dialog = "iframe")
+                });
+                a.addMenuItems && a.addMenuItems({iframe: {label: b.title, command: "iframe", group: "image"}});
+                a.contextMenu && a.contextMenu.addListener(function (a) {
+                    if (a && a.is("img") && "iframe" == a.data("cke-real-element-type"))return {iframe: CKEDITOR.TRISTATE_OFF}
+                })
+            }, afterInit: function (a) {
+                var b = a.dataProcessor;
+                (b = b && b.dataFilter) && b.addRules({
+                    elements: {
+                        iframe: function (b) {
+                            return a.createFakeParserElement(b, "cke_iframe", "iframe", !0)
+                        }
+                    }
+                })
+            }
+        })
+    })();
     (function () {
         function k(a) {
             var e = this.editor, b = a.document, c = b.body, d = b.getElementById("cke_actscrpt");
@@ -14090,6 +15051,109 @@
         }
     })();
     (function () {
+        function f(b, d, a) {
+            if (!b.getCustomData("indent_processed")) {
+                var e = this.editor, j = this.isIndent;
+                if (d) {
+                    e = b.$.className.match(this.classNameRegex);
+                    a = 0;
+                    e && (e = e[1], a = CKEDITOR.tools.indexOf(d, e) + 1);
+                    if (0 > (a += j ? 1 : -1))return;
+                    a = Math.min(a, d.length);
+                    a = Math.max(a, 0);
+                    b.$.className = CKEDITOR.tools.ltrim(b.$.className.replace(this.classNameRegex, ""));
+                    0 < a && b.addClass(d[a - 1])
+                } else {
+                    var d = k(b, a), a = parseInt(b.getStyle(d), 10), g = e.config.indentOffset || 40;
+                    isNaN(a) && (a = 0);
+                    a += (j ? 1 : -1) * g;
+                    if (0 > a)return;
+                    a = Math.max(a,
+                        0);
+                    a = Math.ceil(a / g) * g;
+                    b.setStyle(d, a ? a + (e.config.indentUnit || "px") : "");
+                    "" === b.getAttribute("style") && b.removeAttribute("style")
+                }
+                CKEDITOR.dom.element.setMarker(this.database, b, "indent_processed", 1)
+            }
+        }
+
+        function k(b, d) {
+            return "ltr" == (d || b.getComputedStyle("direction")) ? "margin-left" : "margin-right"
+        }
+
+        var h = CKEDITOR.dtd.$listItem, m = CKEDITOR.dtd.$list, i = CKEDITOR.TRISTATE_DISABLED, l = CKEDITOR.TRISTATE_OFF;
+        CKEDITOR.plugins.add("indentblock", {
+            requires: "indent", init: function (b) {
+                function d() {
+                    a.specificDefinition.apply(this,
+                        arguments);
+                    this.allowedContent = {
+                        "div h1 h2 h3 h4 h5 h6 ol p pre ul": {
+                            propertiesOnly: !0,
+                            styles: !e ? "margin-left,margin-right" : null,
+                            classes: e || null
+                        }
+                    };
+                    this.enterBr && (this.allowedContent.div = !0);
+                    this.requiredContent = (this.enterBr ? "div" : "p") + (e ? "(" + e.join(",") + ")" : "{margin-left}");
+                    this.jobs = {
+                        20: {
+                            refresh: function (a, b) {
+                                var c = b.block || b.blockLimit;
+                                c.is(h) || (c = c.getAscendant(h) || c);
+                                c.is(h) && (c = c.getParent());
+                                if (!this.enterBr && !this.getContext(b))return i;
+                                if (e) {
+                                    var d;
+                                    d = e;
+                                    var c = c.$.className.match(this.classNameRegex),
+                                        f = this.isIndent;
+                                    d = c ? f ? c[1] != d.slice(-1) : true : f;
+                                    return d ? l : i
+                                }
+                                return this.isIndent ? l : c ? CKEDITOR[(parseInt(c.getStyle(k(c)), 10) || 0) <= 0 ? "TRISTATE_DISABLED" : "TRISTATE_OFF"] : i
+                            }, exec: function (a) {
+                                var b = a.getSelection(), b = b && b.getRanges()[0], c;
+                                if (c = a.elementPath().contains(m))f.call(this, c, e); else {
+                                    b = b.createIterator();
+                                    a = a.config.enterMode;
+                                    b.enforceRealBlocks = true;
+                                    for (b.enlargeBr = a != CKEDITOR.ENTER_BR; c = b.getNextParagraph(a == CKEDITOR.ENTER_P ? "p" : "div");)c.isReadOnly() || f.call(this, c, e)
+                                }
+                                return true
+                            }
+                        }
+                    }
+                }
+
+                var a =
+                    CKEDITOR.plugins.indent, e = b.config.indentClasses;
+                a.registerCommands(b, {
+                    indentblock: new d(b, "indentblock", !0),
+                    outdentblock: new d(b, "outdentblock")
+                });
+                CKEDITOR.tools.extend(d.prototype, a.specificDefinition.prototype, {
+                    context: {
+                        div: 1,
+                        dl: 1,
+                        h1: 1,
+                        h2: 1,
+                        h3: 1,
+                        h4: 1,
+                        h5: 1,
+                        h6: 1,
+                        ul: 1,
+                        ol: 1,
+                        p: 1,
+                        pre: 1,
+                        table: 1
+                    }, classNameRegex: e ? RegExp("(?:^|\\s+)(" + e.join("|") + ")(?=$|\\s)") : null
+                })
+            }
+        })
+    })();
+    (function () {
         function s(c) {
             function f(b) {
                 for (var e = d.startContainer, a = d.endContainer; e && !e.getParent().equals(b);)e = e.getParent();
@@ -14183,80 +15247,238 @@
             return j && n && n.equals(j.getFirst(p))
         }
     })();
+    CKEDITOR.plugins.add("smiley", {
+        requires: "dialog", init: function (a) {
+            a.config.smiley_path = a.config.smiley_path || this.path + "images/";
+            a.addCommand("smiley", new CKEDITOR.dialogCommand("smiley", {
+                allowedContent: "img[alt,height,!src,title,width]",
+                requiredContent: "img"
+            }));
+            a.ui.addButton && a.ui.addButton("Smiley", {
+                label: a.lang.smiley.toolbar,
+                command: "smiley",
+                toolbar: "insert,50"
+            });
+            CKEDITOR.dialog.add("smiley", this.path + "dialogs/smiley.js")
+        }
+    });
+    CKEDITOR.config.smiley_images = "regular_smile.png sad_smile.png wink_smile.png teeth_smile.png confused_smile.png tongue_smile.png embarrassed_smile.png omg_smile.png whatchutalkingabout_smile.png angry_smile.png angel_smile.png shades_smile.png devil_smile.png cry_smile.png lightbulb.png thumbs_down.png thumbs_up.png heart.png broken_heart.png kiss.png envelope.png".split(" ");
+    CKEDITOR.config.smiley_descriptions = "smiley;sad;wink;laugh;frown;cheeky;blush;surprise;indecision;angry;angel;cool;devil;crying;enlightened;no;yes;heart;broken heart;kiss;mail".split(";");
     (function () {
-        function g(a, b) {
-            var c = j.exec(a), d = j.exec(b);
-            if (c) {
-                if (!c[2] && "px" == d[2])return d[1];
-                if ("px" == c[2] && !d[2])return d[1] + "px"
+        function l(a, c) {
+            var c = void 0 === c || c, b;
+            if (c)b = a.getComputedStyle("text-align"); else {
+                for (; !a.hasAttribute || !a.hasAttribute("align") && !a.getStyle("text-align");) {
+                    b = a.getParent();
+                    if (!b)break;
+                    a = b
+                }
+                b = a.getStyle("text-align") || a.getAttribute("align") || ""
             }
+            b && (b = b.replace(/(?:-(?:moz|webkit)-)?(?:start|auto)/i, ""));
+            !b && c && (b = "rtl" == a.getComputedStyle("direction") ? "right" : "left");
             return b
         }
 
-        var i = CKEDITOR.htmlParser.cssStyle, h = CKEDITOR.tools.cssLength, j = /^((?:\d*(?:\.\d+))|(?:\d+))(.*)?$/i, k = {
-            elements: {
-                $: function (a) {
-                    var b = a.attributes;
-                    if ((b = (b = (b = b && b["data-cke-realelement"]) && new CKEDITOR.htmlParser.fragment.fromHtml(decodeURIComponent(b))) && b.children[0]) && a.attributes["data-cke-resizable"]) {
-                        var c = (new i(a)).rules, a = b.attributes, d = c.width, c =
-                            c.height;
-                        d && (a.width = g(a.width, d));
-                        c && (a.height = g(a.height, c))
+        function g(a, c, b) {
+            this.editor = a;
+            this.name = c;
+            this.value = b;
+            this.context = "p";
+            var c = a.config.justifyClasses, h = a.config.enterMode ==
+            CKEDITOR.ENTER_P ? "p" : "div";
+            if (c) {
+                switch (b) {
+                    case "left":
+                        this.cssClassName = c[0];
+                        break;
+                    case "center":
+                        this.cssClassName = c[1];
+                        break;
+                    case "right":
+                        this.cssClassName = c[2];
+                        break;
+                    case "justify":
+                        this.cssClassName = c[3]
+                }
+                this.cssClassRegex = RegExp("(?:^|\\s+)(?:" + c.join("|") + ")(?=$|\\s)");
+                this.requiredContent = h + "(" + this.cssClassName + ")"
+            } else this.requiredContent = h + "{text-align}";
+            this.allowedContent = {
+                "caption div h1 h2 h3 h4 h5 h6 p pre td th li": {
+                    propertiesOnly: !0, styles: this.cssClassName ? null : "text-align", classes: this.cssClassName ||
+                    null
+                }
+            };
+            a.config.enterMode == CKEDITOR.ENTER_BR && (this.allowedContent.div = !0)
+        }
+
+        function j(a) {
+            var c = a.editor, b = c.createRange();
+            b.setStartBefore(a.data.node);
+            b.setEndAfter(a.data.node);
+            for (var h = new CKEDITOR.dom.walker(b), d; d = h.next();)if (d.type == CKEDITOR.NODE_ELEMENT)if (!d.equals(a.data.node) && d.getDirection())b.setStartAfter(d), h = new CKEDITOR.dom.walker(b); else {
+                var e = c.config.justifyClasses;
+                e && (d.hasClass(e[0]) ? (d.removeClass(e[0]), d.addClass(e[2])) : d.hasClass(e[2]) && (d.removeClass(e[2]), d.addClass(e[0])));
+                e = d.getStyle("text-align");
+                "left" == e ? d.setStyle("text-align", "right") : "right" == e && d.setStyle("text-align", "left")
+            }
+        }
+
+        g.prototype = {
+            exec: function (a) {
+                var c = a.getSelection(), b = a.config.enterMode;
+                if (c) {
+                    for (var h = c.createBookmarks(), d = c.getRanges(), e = this.cssClassName, g, f, i = a.config.useComputedState, i = void 0 === i || i, k = d.length - 1; 0 <= k; k--) {
+                        g = d[k].createIterator();
+                        for (g.enlargeBr = b != CKEDITOR.ENTER_BR; f = g.getNextParagraph(b == CKEDITOR.ENTER_P ? "p" : "div");)if (!f.isReadOnly()) {
+                            f.removeAttribute("align");
+                            f.removeStyle("text-align");
+                            var j = e && (f.$.className = CKEDITOR.tools.ltrim(f.$.className.replace(this.cssClassRegex, ""))), m = this.state == CKEDITOR.TRISTATE_OFF && (!i || l(f, !0) != this.value);
+                            e ? m ? f.addClass(e) : j || f.removeAttribute("class") : m && f.setStyle("text-align", this.value)
+                        }
                     }
-                    return b
+                    a.focus();
+                    a.forceNextSelectionCheck();
+                    c.selectBookmarks(h)
                 }
+            }, refresh: function (a, c) {
+                var b = c.block || c.blockLimit;
+                this.setState("body" != b.getName() && l(b, this.editor.config.useComputedState) == this.value ? CKEDITOR.TRISTATE_ON : CKEDITOR.TRISTATE_OFF)
             }
         };
-        CKEDITOR.plugins.add("fakeobjects", {
-            init: function (a) {
-                a.filter.allow("img[!data-cke-realelement,src,alt,title](*){*}", "fakeobjects")
-            }, afterInit: function (a) {
-                (a = (a = a.dataProcessor) && a.htmlFilter) && a.addRules(k, {applyToAll: !0})
-            }
-        });
-        CKEDITOR.editor.prototype.createFakeElement = function (a, b, c, d) {
-            var e = this.lang.fakeobjects, e = e[c] || e.unknown, b = {
-                "class": b,
-                "data-cke-realelement": encodeURIComponent(a.getOuterHtml()),
-                "data-cke-real-node-type": a.type,
-                alt: e,
-                title: e,
-                align: a.getAttribute("align") || ""
-            };
-            CKEDITOR.env.hc || (b.src = CKEDITOR.tools.transparentImageData);
-            c && (b["data-cke-real-element-type"] = c);
-            d && (b["data-cke-resizable"] = d, c = new i, d = a.getAttribute("width"), a = a.getAttribute("height"), d && (c.rules.width = h(d)), a && (c.rules.height = h(a)), c.populate(b));
-            return this.document.createElement("img", {attributes: b})
-        };
-        CKEDITOR.editor.prototype.createFakeParserElement = function (a, b, c, d) {
-            var e = this.lang.fakeobjects, e = e[c] || e.unknown, f;
-            f = new CKEDITOR.htmlParser.basicWriter;
-            a.writeHtml(f);
-            f = f.getHtml();
-            b = {
-                "class": b,
-                "data-cke-realelement": encodeURIComponent(f),
-                "data-cke-real-node-type": a.type,
-                alt: e,
-                title: e,
-                align: a.attributes.align || ""
-            };
-            CKEDITOR.env.hc || (b.src = CKEDITOR.tools.transparentImageData);
-            c && (b["data-cke-real-element-type"] = c);
-            d && (b["data-cke-resizable"] = d, d = a.attributes, a = new i, c = d.width, d = d.height, void 0 !== c && (a.rules.width = h(c)), void 0 !== d && (a.rules.height = h(d)), a.populate(b));
-            return new CKEDITOR.htmlParser.element("img", b)
-        };
-        CKEDITOR.editor.prototype.restoreRealElement =
-            function (a) {
-                if (a.data("cke-real-node-type") != CKEDITOR.NODE_ELEMENT)return null;
-                var b = CKEDITOR.dom.element.createFromHtml(decodeURIComponent(a.data("cke-realelement")), this.document);
-                if (a.data("cke-resizable")) {
-                    var c = a.getStyle("width"), a = a.getStyle("height");
-                    c && b.setAttribute("width", g(b.getAttribute("width"), c));
-                    a && b.setAttribute("height", g(b.getAttribute("height"), a))
+        CKEDITOR.plugins.add("justify",
+            {
+                init: function (a) {
+                    if (!a.blockless) {
+                        var c = new g(a, "justifyleft", "left"), b = new g(a, "justifycenter", "center"), h = new g(a, "justifyright", "right"), d = new g(a, "justifyblock", "justify");
+                        a.addCommand("justifyleft", c);
+                        a.addCommand("justifycenter", b);
+                        a.addCommand("justifyright", h);
+                        a.addCommand("justifyblock", d);
+                        a.ui.addButton && (a.ui.addButton("JustifyLeft", {
+                            label: a.lang.justify.left,
+                            command: "justifyleft",
+                            toolbar: "align,10"
+                        }), a.ui.addButton("JustifyCenter", {
+                            label: a.lang.justify.center, command: "justifycenter",
+                            toolbar: "align,20"
+                        }), a.ui.addButton("JustifyRight", {
+                            label: a.lang.justify.right,
+                            command: "justifyright",
+                            toolbar: "align,30"
+                        }), a.ui.addButton("JustifyBlock", {
+                            label: a.lang.justify.block,
+                            command: "justifyblock",
+                            toolbar: "align,40"
+                        }));
+                        a.on("dirChanged", j)
+                    }
                 }
-                return b
+            })
+    })();
+    CKEDITOR.plugins.add("menubutton", {
+        requires: "button,menu", onLoad: function () {
+            var d = function (c) {
+                var a = this._, b = a.menu;
+                a.state !== CKEDITOR.TRISTATE_DISABLED && (a.on && b ? b.hide() : (a.previousState = a.state, b || (b = a.menu = new CKEDITOR.menu(c, {
+                    panel: {
+                        className: "cke_menu_panel",
+                        attributes: {"aria-label": c.lang.common.options}
+                    }
+                }), b.onHide = CKEDITOR.tools.bind(function () {
+                    var b = this.command ? c.getCommand(this.command).modes : this.modes;
+                    this.setState(!b || b[c.mode] ? a.previousState : CKEDITOR.TRISTATE_DISABLED);
+                    a.on = 0
+                }, this),
+                this.onMenu && b.addListener(this.onMenu)), this.setState(CKEDITOR.TRISTATE_ON), a.on = 1, setTimeout(function () {
+                    b.show(CKEDITOR.document.getById(a.id), 4)
+                }, 0)))
+            };
+            CKEDITOR.ui.menuButton = CKEDITOR.tools.createClass({
+                base: CKEDITOR.ui.button, $: function (c) {
+                    delete c.panel;
+                    this.base(c);
+                    this.hasArrow = !0;
+                    this.click = d
+                }, statics: {
+                    handler: {
+                        create: function (c) {
+                            return new CKEDITOR.ui.menuButton(c)
+                        }
+                    }
+                }
+            })
+        }, beforeInit: function (d) {
+            d.ui.addHandler(CKEDITOR.UI_MENUBUTTON, CKEDITOR.ui.menuButton.handler)
+        }
+    });
+    CKEDITOR.UI_MENUBUTTON = "menubutton";
+    (function () {
+        CKEDITOR.plugins.add("language", {
+            requires: "menubutton", init: function (a) {
+                var b = a.config.language_list || ["ar:Arabic:rtl", "fr:French", "es:Spanish"], c = this, d = a.lang.language, e = {}, g, h, i, f;
+                a.addCommand("language", {
+                    allowedContent: "span[!lang,!dir]",
+                    requiredContent: "span[lang,dir]",
+                    contextSensitive: !0,
+                    exec: function (a, b) {
+                        var c = e["language_" + b];
+                        if (c)a[c.style.checkActive(a.elementPath(), a) ? "removeStyle" : "applyStyle"](c.style)
+                    },
+                    refresh: function (a) {
+                        this.setState(c.getCurrentLangElement(a) ? CKEDITOR.TRISTATE_ON :
+                            CKEDITOR.TRISTATE_OFF)
+                    }
+                });
+                for (f = 0; f < b.length; f++)g = b[f].split(":"), h = g[0], i = "language_" + h, e[i] = {
+                    label: g[1],
+                    langId: h,
+                    group: "language",
+                    order: f,
+                    ltr: "rtl" != ("" + g[2]).toLowerCase(),
+                    onClick: function () {
+                        a.execCommand("language", this.langId)
+                    },
+                    role: "menuitemcheckbox"
+                }, e[i].style = new CKEDITOR.style({
+                    element: "span",
+                    attributes: {lang: h, dir: e[i].ltr ? "ltr" : "rtl"}
+                });
+                e.language_remove = {
+                    label: d.remove,
+                    group: "language_remove",
+                    state: CKEDITOR.TRISTATE_DISABLED,
+                    order: e.length,
+                    onClick: function () {
+                        var b = c.getCurrentLangElement(a);
+                        b && a.execCommand("language", b.getAttribute("lang"))
+                    }
+                };
+                a.addMenuGroup("language", 1);
+                a.addMenuGroup("language_remove");
+                a.addMenuItems(e);
+                a.ui.add("Language", CKEDITOR.UI_MENUBUTTON, {
+                    label: d.button,
+                    allowedContent: "span[!lang,!dir]",
+                    requiredContent: "span[lang,dir]",
+                    toolbar: "bidi,30",
+                    command: "language",
+                    onMenu: function () {
+                        var b = {}, d = c.getCurrentLangElement(a), f;
+                        for (f in e)b[f] = CKEDITOR.TRISTATE_OFF;
+                        b.language_remove = d ? CKEDITOR.TRISTATE_OFF : CKEDITOR.TRISTATE_DISABLED;
+                        d && (b["language_" + d.getAttribute("lang")] =
+                            CKEDITOR.TRISTATE_ON);
+                        return b
+                    }
+                })
+            }, getCurrentLangElement: function (a) {
+                var b = a.elementPath(), a = b && b.elements, c;
+                if (b)for (var d = 0; d < a.length; d++)b = a[d], !c && ("span" == b.getName() && b.hasAttribute("dir") && b.hasAttribute("lang")) && (c = b);
+                return c
             }
+        })
     })();
     (function () {
         function m(c) {
@@ -14916,6 +16138,53 @@
         })
     })();
     (function () {
+        CKEDITOR.plugins.liststyle = {
+            requires: "dialog,contextmenu", init: function (a) {
+                if (!a.blockless) {
+                    var b;
+                    b = new CKEDITOR.dialogCommand("numberedListStyle", {
+                        requiredContent: "ol",
+                        allowedContent: "ol{list-style-type}[start]"
+                    });
+                    b = a.addCommand("numberedListStyle", b);
+                    a.addFeature(b);
+                    CKEDITOR.dialog.add("numberedListStyle", this.path + "dialogs/liststyle.js");
+                    b = new CKEDITOR.dialogCommand("bulletedListStyle", {
+                        requiredContent: "ul",
+                        allowedContent: "ul{list-style-type}"
+                    });
+                    b = a.addCommand("bulletedListStyle", b);
+                    a.addFeature(b);
+                    CKEDITOR.dialog.add("bulletedListStyle", this.path + "dialogs/liststyle.js");
+                    a.addMenuGroup("list", 108);
+                    a.addMenuItems({
+                        numberedlist: {
+                            label: a.lang.liststyle.numberedTitle,
+                            group: "list",
+                            command: "numberedListStyle"
+                        },
+                        bulletedlist: {
+                            label: a.lang.liststyle.bulletedTitle,
+                            group: "list",
+                            command: "bulletedListStyle"
+                        }
+                    });
+                    a.contextMenu.addListener(function (a) {
+                        if (!a || a.isReadOnly())return null;
+                        for (; a;) {
+                            var b = a.getName();
+                            if ("ol" == b)return {numberedlist: CKEDITOR.TRISTATE_OFF};
+                            if ("ul" == b)return {bulletedlist: CKEDITOR.TRISTATE_OFF};
+                            a = a.getParent()
+                        }
+                        return null
+                    })
+                }
+            }
+        };
+        CKEDITOR.plugins.add("liststyle", CKEDITOR.plugins.liststyle)
+    })();
+    (function () {
         function Q(a, c, d) {
             return m(c) && m(d) && d.equals(c.getNext(function (a) {
                 return !(z(a) || A(a) || p(a))
@@ -15534,6 +16803,107 @@
             }
         })
     })();
+    CKEDITOR.plugins.add("newpage", {
+        init: function (a) {
+            a.addCommand("newpage", {
+                modes: {wysiwyg: 1, source: 1}, exec: function (b) {
+                    var a = this;
+                    b.setData(b.config.newpage_html || "", function () {
+                        b.focus();
+                        setTimeout(function () {
+                            b.fire("afterCommandExec", {name: "newpage", command: a});
+                            b.selectionChange()
+                        }, 200)
+                    })
+                }, async: !0
+            });
+            a.ui.addButton && a.ui.addButton("NewPage", {
+                label: a.lang.newpage.toolbar,
+                command: "newpage",
+                toolbar: "document,20"
+            })
+        }
+    });
+    (function () {
+        function e(a) {
+            return {
+                "aria-label": a,
+                "class": "cke_pagebreak",
+                contenteditable: "false",
+                "data-cke-display-name": "pagebreak",
+                "data-cke-pagebreak": 1,
+                style: "page-break-after: always",
+                title: a
+            }
+        }
+
+        CKEDITOR.plugins.add("pagebreak", {
+            requires: "fakeobjects", onLoad: function () {
+                var a = ("background:url(" + CKEDITOR.getUrl(this.path + "images/pagebreak.gif") + ") no-repeat center center;clear:both;width:100%;border-top:#999 1px dotted;border-bottom:#999 1px dotted;padding:0;height:5px;cursor:default;").replace(/;/g,
+                    " !important;");
+                CKEDITOR.addCss("div.cke_pagebreak{" + a + "}")
+            }, init: function (a) {
+                a.blockless || (a.addCommand("pagebreak", CKEDITOR.plugins.pagebreakCmd), a.ui.addButton && a.ui.addButton("PageBreak", {
+                    label: a.lang.pagebreak.toolbar,
+                    command: "pagebreak",
+                    toolbar: "insert,70"
+                }), CKEDITOR.env.webkit && a.on("contentDom", function () {
+                    a.document.on("click", function (b) {
+                        b = b.data.getTarget();
+                        b.is("div") && b.hasClass("cke_pagebreak") && a.getSelection().selectElement(b)
+                    })
+                }))
+            }, afterInit: function (a) {
+                function b(f) {
+                    CKEDITOR.tools.extend(f.attributes,
+                        e(a.lang.pagebreak.alt), !0);
+                    f.children.length = 0
+                }
+
+                var c = a.dataProcessor, g = c && c.dataFilter, c = c && c.htmlFilter, h = /page-break-after\s*:\s*always/i, i = /display\s*:\s*none/i;
+                c && c.addRules({
+                    attributes: {
+                        "class": function (a, b) {
+                            var c = a.replace("cke_pagebreak", "");
+                            if (c != a) {
+                                var d = CKEDITOR.htmlParser.fragment.fromHtml('<span style="display: none;">&nbsp;</span>').children[0];
+                                b.children.length = 0;
+                                b.add(d);
+                                d = b.attributes;
+                                delete d["aria-label"];
+                                delete d.contenteditable;
+                                delete d.title
+                            }
+                            return c
+                        }
+                    }
+                }, {applyToAll: !0, priority: 5});
+                g && g.addRules({
+                    elements: {
+                        div: function (a) {
+                            if (a.attributes["data-cke-pagebreak"])b(a); else if (h.test(a.attributes.style)) {
+                                var c = a.children[0];
+                                c && ("span" == c.name && i.test(c.attributes.style)) && b(a)
+                            }
+                        }
+                    }
+                })
+            }
+        });
+        CKEDITOR.plugins.pagebreakCmd = {
+            exec: function (a) {
+                var b = a.document.createElement("div", {attributes: e(a.lang.pagebreak.alt)});
+                a.insertElement(b)
+            }, context: "div", allowedContent: {
+                div: {styles: "!page-break-after"}, span: {
+                    match: function (a) {
+                        return (a = a.parent) && "div" == a.name && a.styles && a.styles["page-break-after"]
+                    },
+                    styles: "display"
+                }
+            }, requiredContent: "div{page-break-after}"
+        }
+    })();
     (function () {
         var c = {
             canUndo: !1, async: !0, exec: function (a) {
@@ -15609,6 +16979,59 @@
             }
         })
     })();
+    (function () {
+        var h, i = {
+            modes: {wysiwyg: 1, source: 1}, canUndo: !1, readOnly: 1, exec: function (a) {
+                var g, b = a.config, f = b.baseHref ? '<base href="' + b.baseHref + '"/>' : "";
+                if (b.fullPage)g = a.getData().replace(/<head>/, "$&" + f).replace(/[^>]*(?=<\/title>)/, "$& &mdash; " + a.lang.preview.preview); else {
+                    var b = "<body ", d = a.document && a.document.getBody();
+                    d && (d.getAttribute("id") && (b += 'id="' + d.getAttribute("id") + '" '), d.getAttribute("class") && (b += 'class="' + d.getAttribute("class") + '" '));
+                    g = a.config.docType + '<html dir="' + a.config.contentsLangDirection +
+                    '"><head>' + f + "<title>" + a.lang.preview.preview + "</title>" + CKEDITOR.tools.buildStyleHtml(a.config.contentsCss) + "</head>" + (b + ">") + a.getData() + "</body></html>"
+                }
+                f = 640;
+                b = 420;
+                d = 80;
+                try {
+                    var c = window.screen, f = Math.round(0.8 * c.width), b = Math.round(0.7 * c.height), d = Math.round(0.1 * c.width)
+                } catch (i) {
+                }
+                if (!1 === a.fire("contentPreview", a = {dataValue: g}))return !1;
+                var c = "", e;
+                CKEDITOR.env.ie && (window._cke_htmlToLoad = a.dataValue, e = "javascript:void( (function(){document.open();" + ("(" + CKEDITOR.tools.fixDomain + ")();").replace(/\/\/.*?\n/g,
+                    "").replace(/parent\./g, "window.opener.") + "document.write( window.opener._cke_htmlToLoad );document.close();window.opener._cke_htmlToLoad = null;})() )", c = "");
+                CKEDITOR.env.gecko && (window._cke_htmlToLoad = a.dataValue, c = CKEDITOR.getUrl(h + "preview.html"));
+                c = window.open(c, null, "toolbar=yes,location=no,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=" + f + ",height=" + b + ",left=" + d);
+                CKEDITOR.env.ie && c && (c.location = e);
+                !CKEDITOR.env.ie && !CKEDITOR.env.gecko && (e = c.document, e.open(), e.write(a.dataValue),
+                    e.close());
+                return !0
+            }
+        };
+        CKEDITOR.plugins.add("preview", {
+            init: function (a) {
+                a.elementMode != CKEDITOR.ELEMENT_MODE_INLINE && (h = this.path, a.addCommand("preview", i), a.ui.addButton && a.ui.addButton("Preview", {
+                    label: a.lang.preview.preview,
+                    command: "preview",
+                    toolbar: "document,40"
+                }))
+            }
+        })
+    })();
+    CKEDITOR.plugins.add("print", {
+        init: function (a) {
+            a.elementMode != CKEDITOR.ELEMENT_MODE_INLINE && (a.addCommand("print", CKEDITOR.plugins.print), a.ui.addButton && a.ui.addButton("Print", {
+                label: a.lang.print.toolbar,
+                command: "print",
+                toolbar: "document,50"
+            }))
+        }
+    });
+    CKEDITOR.plugins.print = {
+        exec: function (a) {
+            CKEDITOR.env.gecko ? a.window.$.print() : a.document.$.execCommand("Print")
+        }, canUndo: !1, readOnly: 1, modes: {wysiwyg: 1}
+    };
     CKEDITOR.plugins.add("removeformat", {
         init: function (a) {
             a.addCommand("removeFormat", CKEDITOR.plugins.removeformat.commands.removeformat);
@@ -15656,6 +17079,97 @@
     };
     CKEDITOR.config.removeFormatTags = "b,big,cite,code,del,dfn,em,font,i,ins,kbd,q,s,samp,small,span,strike,strong,sub,sup,tt,u,var";
     CKEDITOR.config.removeFormatAttributes = "class,style,lang,width,height,align,hspace,valign";
+    (function () {
+        var b = {
+            readOnly: 1, exec: function (a) {
+                if (a.fire("save") && (a = a.element.$.form))try {
+                    a.submit()
+                } catch (b) {
+                    a.submit.click && a.submit.click()
+                }
+            }
+        };
+        CKEDITOR.plugins.add("save", {
+            init: function (a) {
+                a.elementMode == CKEDITOR.ELEMENT_MODE_REPLACE && (a.addCommand("save", b).modes = {wysiwyg: !!a.element.$.form}, a.ui.addButton && a.ui.addButton("Save", {
+                    label: a.lang.save.toolbar,
+                    command: "save",
+                    toolbar: "document,10"
+                }))
+            }
+        })
+    })();
+    (function () {
+        CKEDITOR.plugins.add("selectall", {
+            init: function (b) {
+                b.addCommand("selectAll", {
+                    modes: {wysiwyg: 1, source: 1}, exec: function (a) {
+                        var b = a.editable();
+                        if (b.is("textarea"))a = b.$, CKEDITOR.env.ie ? a.createTextRange().execCommand("SelectAll") : (a.selectionStart = 0, a.selectionEnd = a.value.length), a.focus(); else {
+                            if (b.is("body"))a.document.$.execCommand("SelectAll", !1, null); else {
+                                var c = a.createRange();
+                                c.selectNodeContents(b);
+                                c.select()
+                            }
+                            a.forceNextSelectionCheck();
+                            a.selectionChange()
+                        }
+                    }, canUndo: !1
+                });
+                b.ui.addButton &&
+                b.ui.addButton("SelectAll", {
+                    label: b.lang.selectall.toolbar,
+                    command: "selectAll",
+                    toolbar: "selection,10"
+                })
+            }
+        })
+    })();
+    (function () {
+        var i = {
+            readOnly: 1, preserveState: !0, editorFocus: !1, exec: function (a) {
+                this.toggleState();
+                this.refresh(a)
+            }, refresh: function (a) {
+                if (a.document) {
+                    var c = this.state == CKEDITOR.TRISTATE_ON && (a.elementMode != CKEDITOR.ELEMENT_MODE_INLINE || a.focusManager.hasFocus) ? "attachClass" : "removeClass";
+                    a.editable()[c]("cke_show_blocks")
+                }
+            }
+        };
+        CKEDITOR.plugins.add("showblocks", {
+            onLoad: function () {
+                var a = "p div pre address blockquote h1 h2 h3 h4 h5 h6".split(" "), c, b, e, f, i = CKEDITOR.getUrl(this.path), j = !(CKEDITOR.env.ie &&
+                9 > CKEDITOR.env.version), g = j ? ":not([contenteditable=false]):not(.cke_show_blocks_off)" : "", d, h;
+                for (c = b = e = f = ""; d = a.pop();)h = a.length ? "," : "", c += ".cke_show_blocks " + d + g + h, e += ".cke_show_blocks.cke_contents_ltr " + d + g + h, f += ".cke_show_blocks.cke_contents_rtl " + d + g + h, b += ".cke_show_blocks " + d + g + "{background-image:url(" + CKEDITOR.getUrl(i + "images/block_" + d + ".png") + ")}";
+                CKEDITOR.addCss((c + "{background-repeat:no-repeat;border:1px dotted gray;padding-top:8px}").concat(b, e + "{background-position:top left;padding-left:8px}",
+                    f + "{background-position:top right;padding-right:8px}"));
+                j || CKEDITOR.addCss(".cke_show_blocks [contenteditable=false],.cke_show_blocks .cke_show_blocks_off{border:none;padding-top:0;background-image:none}.cke_show_blocks.cke_contents_rtl [contenteditable=false],.cke_show_blocks.cke_contents_rtl .cke_show_blocks_off{padding-right:0}.cke_show_blocks.cke_contents_ltr [contenteditable=false],.cke_show_blocks.cke_contents_ltr .cke_show_blocks_off{padding-left:0}")
+            }, init: function (a) {
+                function c() {
+                    b.refresh(a)
+                }
+
+                if (!a.blockless) {
+                    var b = a.addCommand("showblocks", i);
+                    b.canUndo = !1;
+                    a.config.startupOutlineBlocks && b.setState(CKEDITOR.TRISTATE_ON);
+                    a.ui.addButton && a.ui.addButton("ShowBlocks", {
+                        label: a.lang.showblocks.toolbar,
+                        command: "showblocks",
+                        toolbar: "tools,20"
+                    });
+                    a.on("mode", function () {
+                        b.state != CKEDITOR.TRISTATE_DISABLED && b.refresh(a)
+                    });
+                    a.elementMode == CKEDITOR.ELEMENT_MODE_INLINE && (a.on("focus", c), a.on("blur", c));
+                    a.on("contentDom", function () {
+                        b.state != CKEDITOR.TRISTATE_DISABLED && b.refresh(a)
+                    })
+                }
+            }
+        })
+    })();
     (function () {
         var f = {
             preserveState: !0, editorFocus: !1, readOnly: 1, exec: function (a) {
@@ -15884,43 +17398,6 @@
         }
     });
     CKEDITOR.config.specialChars = "! &quot; # $ % &amp; ' ( ) * + - . / 0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ ] ^ _ ` a b c d e f g h i j k l m n o p q r s t u v w x y z { | } ~ &euro; &lsquo; &rsquo; &ldquo; &rdquo; &ndash; &mdash; &iexcl; &cent; &pound; &curren; &yen; &brvbar; &sect; &uml; &copy; &ordf; &laquo; &not; &reg; &macr; &deg; &sup2; &sup3; &acute; &micro; &para; &middot; &cedil; &sup1; &ordm; &raquo; &frac14; &frac12; &frac34; &iquest; &Agrave; &Aacute; &Acirc; &Atilde; &Auml; &Aring; &AElig; &Ccedil; &Egrave; &Eacute; &Ecirc; &Euml; &Igrave; &Iacute; &Icirc; &Iuml; &ETH; &Ntilde; &Ograve; &Oacute; &Ocirc; &Otilde; &Ouml; &times; &Oslash; &Ugrave; &Uacute; &Ucirc; &Uuml; &Yacute; &THORN; &szlig; &agrave; &aacute; &acirc; &atilde; &auml; &aring; &aelig; &ccedil; &egrave; &eacute; &ecirc; &euml; &igrave; &iacute; &icirc; &iuml; &eth; &ntilde; &ograve; &oacute; &ocirc; &otilde; &ouml; &divide; &oslash; &ugrave; &uacute; &ucirc; &uuml; &yacute; &thorn; &yuml; &OElig; &oelig; &#372; &#374 &#373 &#375; &sbquo; &#8219; &bdquo; &hellip; &trade; &#9658; &bull; &rarr; &rArr; &hArr; &diams; &asymp;".split(" ");
-    CKEDITOR.plugins.add("menubutton", {
-        requires: "button,menu", onLoad: function () {
-            var d = function (c) {
-                var a = this._, b = a.menu;
-                a.state !== CKEDITOR.TRISTATE_DISABLED && (a.on && b ? b.hide() : (a.previousState = a.state, b || (b = a.menu = new CKEDITOR.menu(c, {
-                    panel: {
-                        className: "cke_menu_panel",
-                        attributes: {"aria-label": c.lang.common.options}
-                    }
-                }), b.onHide = CKEDITOR.tools.bind(function () {
-                    var b = this.command ? c.getCommand(this.command).modes : this.modes;
-                    this.setState(!b || b[c.mode] ? a.previousState : CKEDITOR.TRISTATE_DISABLED);
-                    a.on = 0
-                }, this),
-                this.onMenu && b.addListener(this.onMenu)), this.setState(CKEDITOR.TRISTATE_ON), a.on = 1, setTimeout(function () {
-                    b.show(CKEDITOR.document.getById(a.id), 4)
-                }, 0)))
-            };
-            CKEDITOR.ui.menuButton = CKEDITOR.tools.createClass({
-                base: CKEDITOR.ui.button, $: function (c) {
-                    delete c.panel;
-                    this.base(c);
-                    this.hasArrow = !0;
-                    this.click = d
-                }, statics: {
-                    handler: {
-                        create: function (c) {
-                            return new CKEDITOR.ui.menuButton(c)
-                        }
-                    }
-                }
-            })
-        }, beforeInit: function (d) {
-            d.ui.addHandler(CKEDITOR.UI_MENUBUTTON, CKEDITOR.ui.menuButton.handler)
-        }
-    });
-    CKEDITOR.UI_MENUBUTTON = "menubutton";
     CKEDITOR.plugins.add("scayt", {
         requires: "menubutton,dialog", tabToOpen: null, dialogName: "scaytDialog", init: function (a) {
             var c = this, d = CKEDITOR.plugins.scayt;
@@ -17461,7 +18938,7 @@
             CKEDITOR.dialog.add("checkspell", this.path + (CKEDITOR.env.ie && 7 >= CKEDITOR.env.version ? "dialogs/wsc_ie.js" : window.postMessage ? "dialogs/wsc.js" : "dialogs/wsc_ie.js"))
         }
     });
-    CKEDITOR.config.plugins = 'dialogui,dialog,about,a11yhelp,basicstyles,blockquote,clipboard,panel,floatpanel,menu,contextmenu,resize,button,toolbar,elementspath,enterkey,entities,popup,filebrowser,floatingspace,listblock,richcombo,format,horizontalrule,htmlwriter,wysiwygarea,image,indent,indentlist,fakeobjects,link,list,magicline,maximize,pastetext,pastefromword,removeformat,showborders,sourcearea,specialchar,menubutton,scayt,stylescombo,tab,table,tabletools,undo,wsc';
+    CKEDITOR.config.plugins = 'dialogui,dialog,about,a11yhelp,dialogadvtab,basicstyles,bidi,blockquote,clipboard,button,panelbutton,panel,floatpanel,colorbutton,colordialog,templates,menu,contextmenu,div,resize,toolbar,elementspath,enterkey,entities,popup,filebrowser,find,fakeobjects,flash,floatingspace,listblock,richcombo,font,forms,format,horizontalrule,htmlwriter,iframe,wysiwygarea,image,indent,indentblock,indentlist,smiley,justify,menubutton,language,link,list,liststyle,magicline,maximize,newpage,pagebreak,pastetext,pastefromword,preview,print,removeformat,save,selectall,showblocks,showborders,sourcearea,specialchar,scayt,stylescombo,tab,table,tabletools,undo,wsc';
     CKEDITOR.config.skin = 'moono';
     (function () {
         var setIcons = function (icons, strip) {
@@ -17473,7 +18950,7 @@
                 bgsize: icons[++i]
             };
         };
-        if (CKEDITOR.env.hidpi) setIcons('about,0,,bold,24,,italic,48,,strike,72,,subscript,96,,superscript,120,,underline,144,,blockquote,168,,copy-rtl,192,,copy,216,,cut-rtl,240,,cut,264,,paste-rtl,288,,paste,312,,horizontalrule,336,,image,360,,indent-rtl,384,,indent,408,,outdent-rtl,432,,outdent,456,,anchor-rtl,480,,anchor,504,,link,528,,unlink,552,,bulletedlist-rtl,576,,bulletedlist,600,,numberedlist-rtl,624,,numberedlist,648,,maximize,672,,pastetext-rtl,696,,pastetext,720,,pastefromword-rtl,744,,pastefromword,768,,removeformat,792,,source-rtl,816,,source,840,,specialchar,864,,scayt,888,,table,912,,redo-rtl,936,,redo,960,,undo-rtl,984,,undo,1008,,spellchecker,1032,', 'icons_hidpi.png'); else setIcons('about,0,auto,bold,24,auto,italic,48,auto,strike,72,auto,subscript,96,auto,superscript,120,auto,underline,144,auto,blockquote,168,auto,copy-rtl,192,auto,copy,216,auto,cut-rtl,240,auto,cut,264,auto,paste-rtl,288,auto,paste,312,auto,horizontalrule,336,auto,image,360,auto,indent-rtl,384,auto,indent,408,auto,outdent-rtl,432,auto,outdent,456,auto,anchor-rtl,480,auto,anchor,504,auto,link,528,auto,unlink,552,auto,bulletedlist-rtl,576,auto,bulletedlist,600,auto,numberedlist-rtl,624,auto,numberedlist,648,auto,maximize,672,auto,pastetext-rtl,696,auto,pastetext,720,auto,pastefromword-rtl,744,auto,pastefromword,768,auto,removeformat,792,auto,source-rtl,816,auto,source,840,auto,specialchar,864,auto,scayt,888,auto,table,912,auto,redo-rtl,936,auto,redo,960,auto,undo-rtl,984,auto,undo,1008,auto,spellchecker,1032,auto', 'icons.png');
+        if (CKEDITOR.env.hidpi) setIcons('about,0,,bold,24,,italic,48,,strike,72,,subscript,96,,superscript,120,,underline,144,,bidiltr,168,,bidirtl,192,,blockquote,216,,copy-rtl,240,,copy,264,,cut-rtl,288,,cut,312,,paste-rtl,336,,paste,360,,bgcolor,384,,textcolor,408,,templates-rtl,432,,templates,456,,creatediv,480,,find-rtl,504,,find,528,,replace,552,,flash,576,,button,600,,checkbox,624,,form,648,,hiddenfield,672,,imagebutton,696,,radio,720,,select-rtl,744,,select,768,,textarea-rtl,792,,textarea,816,,textfield-rtl,840,,textfield,864,,horizontalrule,888,,iframe,912,,image,936,,indent-rtl,960,,indent,984,,outdent-rtl,1008,,outdent,1032,,smiley,1056,,justifyblock,1080,,justifycenter,1104,,justifyleft,1128,,justifyright,1152,,language,1176,,anchor-rtl,1200,,anchor,1224,,link,1248,,unlink,1272,,bulletedlist-rtl,1296,,bulletedlist,1320,,numberedlist-rtl,1344,,numberedlist,1368,,maximize,1392,,newpage-rtl,1416,,newpage,1440,,pagebreak-rtl,1464,,pagebreak,1488,,pastetext-rtl,1512,,pastetext,1536,,pastefromword-rtl,1560,,pastefromword,1584,,preview-rtl,1608,,preview,1632,,print,1656,,removeformat,1680,,save,1704,,selectall,1728,,showblocks-rtl,1752,,showblocks,1776,,source-rtl,1800,,source,1824,,specialchar,1848,,scayt,1872,,table,1896,,redo-rtl,1920,,redo,1944,,undo-rtl,1968,,undo,1992,,spellchecker,2016,', 'icons_hidpi.png'); else setIcons('about,0,auto,bold,24,auto,italic,48,auto,strike,72,auto,subscript,96,auto,superscript,120,auto,underline,144,auto,bidiltr,168,auto,bidirtl,192,auto,blockquote,216,auto,copy-rtl,240,auto,copy,264,auto,cut-rtl,288,auto,cut,312,auto,paste-rtl,336,auto,paste,360,auto,bgcolor,384,auto,textcolor,408,auto,templates-rtl,432,auto,templates,456,auto,creatediv,480,auto,find-rtl,504,auto,find,528,auto,replace,552,auto,flash,576,auto,button,600,auto,checkbox,624,auto,form,648,auto,hiddenfield,672,auto,imagebutton,696,auto,radio,720,auto,select-rtl,744,auto,select,768,auto,textarea-rtl,792,auto,textarea,816,auto,textfield-rtl,840,auto,textfield,864,auto,horizontalrule,888,auto,iframe,912,auto,image,936,auto,indent-rtl,960,auto,indent,984,auto,outdent-rtl,1008,auto,outdent,1032,auto,smiley,1056,auto,justifyblock,1080,auto,justifycenter,1104,auto,justifyleft,1128,auto,justifyright,1152,auto,language,1176,auto,anchor-rtl,1200,auto,anchor,1224,auto,link,1248,auto,unlink,1272,auto,bulletedlist-rtl,1296,auto,bulletedlist,1320,auto,numberedlist-rtl,1344,auto,numberedlist,1368,auto,maximize,1392,auto,newpage-rtl,1416,auto,newpage,1440,auto,pagebreak-rtl,1464,auto,pagebreak,1488,auto,pastetext-rtl,1512,auto,pastetext,1536,auto,pastefromword-rtl,1560,auto,pastefromword,1584,auto,preview-rtl,1608,auto,preview,1632,auto,print,1656,auto,removeformat,1680,auto,save,1704,auto,selectall,1728,auto,showblocks-rtl,1752,auto,showblocks,1776,auto,source-rtl,1800,auto,source,1824,auto,specialchar,1848,auto,scayt,1872,auto,table,1896,auto,redo-rtl,1920,auto,redo,1944,auto,undo-rtl,1968,auto,undo,1992,auto,spellchecker,2016,auto', 'icons.png');
     })();
     CKEDITOR.lang.languages = {
         "af": 1,

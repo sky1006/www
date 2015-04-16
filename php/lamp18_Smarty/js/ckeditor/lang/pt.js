@@ -90,6 +90,10 @@ CKEDITOR.lang['pt'] = {
         "superscript": "Inferior à Linha",
         "underline": "Sublinhado"
     },
+    "bidi": {
+        "ltr": "Direção do texto da esquerda para a direita",
+        "rtl": "Direção do texto da direita para a esquerda"
+    },
     "blockquote": {"toolbar": "Bloco de citação"},
     "clipboard": {
         "copy": "Copiar",
@@ -102,8 +106,87 @@ CKEDITOR.lang['pt'] = {
         "securityMsg": "Devido ás definições de segurança do teu browser, o editor não pode aceder ao clipboard diretamente. É necessário que voltes a colar as informações nesta janela.",
         "title": "Colar"
     },
-    "contextmenu": {"options": "Menu de opções de contexto"},
     "button": {"selectedLabel": "%1 (Selecionado)"},
+    "colorbutton": {
+        "auto": "Automático",
+        "bgColorTitle": "Cor de Fundo",
+        "colors": {
+            "000": "Black",
+            "800000": "Maroon",
+            "8B4513": "Saddle Brown",
+            "2F4F4F": "Dark Slate Gray",
+            "008080": "Teal",
+            "000080": "Navy",
+            "4B0082": "Indigo",
+            "696969": "Dark Gray",
+            "B22222": "Fire Brick",
+            "A52A2A": "Brown",
+            "DAA520": "Golden Rod",
+            "006400": "Dark Green",
+            "40E0D0": "Turquoise",
+            "0000CD": "Medium Blue",
+            "800080": "Purple",
+            "808080": "Gray",
+            "F00": "Red",
+            "FF8C00": "Dark Orange",
+            "FFD700": "Gold",
+            "008000": "Green",
+            "0FF": "Cyan",
+            "00F": "Blue",
+            "EE82EE": "Violet",
+            "A9A9A9": "Dim Gray",
+            "FFA07A": "Light Salmon",
+            "FFA500": "Orange",
+            "FFFF00": "Yellow",
+            "00FF00": "Lime",
+            "AFEEEE": "Pale Turquoise",
+            "ADD8E6": "Light Blue",
+            "DDA0DD": "Plum",
+            "D3D3D3": "Cinza claro",
+            "FFF0F5": "Lavender Blush",
+            "FAEBD7": "Branco velho",
+            "FFFFE0": "Amarelo claro",
+            "F0FFF0": "Honeydew",
+            "F0FFFF": "Azure",
+            "F0F8FF": "Alice Blue",
+            "E6E6FA": "Lavender",
+            "FFF": "Branco"
+        },
+        "more": "Mais cores...",
+        "panelTitle": "Cores",
+        "textColorTitle": "Cor do texto"
+    },
+    "colordialog": {
+        "clear": "Limpar",
+        "highlight": "Realçar",
+        "options": "Opções de cor",
+        "selected": "Cor selecionada",
+        "title": "Selecionar cor"
+    },
+    "templates": {
+        "button": "Modelos",
+        "emptyListMsg": "(Sem modelos definidos)",
+        "insertOption": "Substituir conteúdos atuais",
+        "options": "Opções do modelo",
+        "selectPromptMsg": "Por favor, selecione o modelo para abrir no editor",
+        "title": "Conteúdo dos Modelos"
+    },
+    "contextmenu": {"options": "Menu de opções de contexto"},
+    "div": {
+        "IdInputLabel": "ID",
+        "advisoryTitleInputLabel": "Título",
+        "cssClassInputLabel": "Classes de folhas de estilo",
+        "edit": "Editar Div",
+        "inlineStyleInputLabel": "Estilho em Linha",
+        "langDirLTRLabel": "Esquerda à Direita (LTR)",
+        "langDirLabel": "Orientação de idioma",
+        "langDirRTLLabel": "Direita a Esquerda (RTL)",
+        "languageCodeInputLabel": "Codigo do Idioma",
+        "remove": "Remover Div",
+        "styleSelectLabel": "Estilo",
+        "title": "Criar Div",
+        "toolbar": "Criar Div"
+    },
     "toolbar": {
         "toolbarCollapse": "Ocultar barra de ferramentas",
         "toolbarExpand": "Expandir barra de ferramentas",
@@ -123,6 +206,128 @@ CKEDITOR.lang['pt'] = {
         "toolbars": "Editor de Barras de Ferramentas"
     },
     "elementspath": {"eleLabel": "Caminho dos elementos", "eleTitle": "Elemento %1"},
+    "find": {
+        "find": "Procurar",
+        "findOptions": "Find Options",
+        "findWhat": "Texto a procurar:",
+        "matchCase": "Maiúsculas/Minúsculas",
+        "matchCyclic": "Match cyclic",
+        "matchWord": "Coincidir com toda a palavra",
+        "notFoundMsg": "O texto especificado não foi encontrado.",
+        "replace": "Substituir",
+        "replaceAll": "Substituir Tudo",
+        "replaceSuccessMsg": "%1 occurrence(s) replaced.",
+        "replaceWith": "Substituir por:",
+        "title": "Find and Replace"
+    },
+    "fakeobjects": {
+        "anchor": " Inserir/Editar Âncora",
+        "flash": "Animação Flash",
+        "hiddenfield": "Campo oculto",
+        "iframe": "IFrame",
+        "unknown": "Objeto Desconhecido"
+    },
+    "flash": {
+        "access": "Acesso ao Script",
+        "accessAlways": "Sempre",
+        "accessNever": "Nunca",
+        "accessSameDomain": "Mesmo dominio",
+        "alignAbsBottom": "Abs inferior",
+        "alignAbsMiddle": "Abs centro",
+        "alignBaseline": "Linha de base",
+        "alignTextTop": "Topo do texto",
+        "bgcolor": "Cor de Fundo",
+        "chkFull": "Permitir Ecrã inteiro",
+        "chkLoop": "Loop",
+        "chkMenu": "Permitir Menu do Flash",
+        "chkPlay": "Reproduzir automaticamente",
+        "flashvars": "Variaveis para o Flash",
+        "hSpace": "Esp.Horiz",
+        "properties": "Propriedades do Flash",
+        "propertiesTab": "Propriedades",
+        "quality": "Qualidade",
+        "qualityAutoHigh": "Alta Automaticamente",
+        "qualityAutoLow": "Baixa Automaticamente",
+        "qualityBest": "Melhor",
+        "qualityHigh": "Alta",
+        "qualityLow": "Baixa",
+        "qualityMedium": "Média",
+        "scale": "Escala",
+        "scaleAll": "Mostrar tudo",
+        "scaleFit": "Tamanho Exacto",
+        "scaleNoBorder": "Sem Limites",
+        "title": "Propriedades do Flash",
+        "vSpace": "Esp.Vert",
+        "validateHSpace": "HSpace tem de ser um numero.",
+        "validateSrc": "Por favor introduza a hiperligação URL",
+        "validateVSpace": "VSpace tem de ser um numero.",
+        "windowMode": "Modo de janela",
+        "windowModeOpaque": "Opaco",
+        "windowModeTransparent": "Transparente",
+        "windowModeWindow": "Janela"
+    },
+    "font": {
+        "fontSize": {"label": "Tamanho", "voiceLabel": "Tamanho da letra", "panelTitle": "Tamanho da letra"},
+        "label": "Fonte",
+        "panelTitle": "Nome do Tipo de Letra",
+        "voiceLabel": "Tipo de Letra"
+    },
+    "forms": {
+        "button": {
+            "title": "Propriedades do Botão",
+            "text": "Texto (Valor)",
+            "type": "Tipo",
+            "typeBtn": "Botão",
+            "typeSbm": "Submit",
+            "typeRst": "Reset"
+        },
+        "checkboxAndRadio": {
+            "checkboxTitle": "Propriedades da Caixa de Verificação",
+            "radioTitle": "Propriedades do Botão de Opção",
+            "value": "Valor",
+            "selected": "Seleccionado"
+        },
+        "form": {
+            "title": "Propriedades do Formulário",
+            "menu": "Propriedades do Formulário",
+            "action": "Acção",
+            "method": "Método",
+            "encoding": "Encoding"
+        },
+        "hidden": {"title": "Propriedades do Campo Escondido", "name": "Nome", "value": "Valor"},
+        "select": {
+            "title": "Propriedades da Caixa de Combinação",
+            "selectInfo": "Informação",
+            "opAvail": "Opções Possíveis",
+            "value": "Valor",
+            "size": "Tamanho",
+            "lines": "linhas",
+            "chkMulti": "Permitir selecções múltiplas",
+            "opText": "Texto",
+            "opValue": "Valor",
+            "btnAdd": "Adicionar",
+            "btnModify": "Modificar",
+            "btnUp": "Para cima",
+            "btnDown": "Para baixo",
+            "btnSetValue": "Definir um valor por defeito",
+            "btnDelete": "Apagar"
+        },
+        "textarea": {"title": "Propriedades da Área de Texto", "cols": "Colunas", "rows": "Linhas"},
+        "textfield": {
+            "title": "Propriedades do Campo de Texto",
+            "name": "Nome",
+            "value": "Valor",
+            "charWidth": "Tamanho do caracter",
+            "maxChars": "Nr. Máximo de Caracteres",
+            "type": "Tipo",
+            "typeText": "Texto",
+            "typePass": "Senha",
+            "typeEmail": "Email",
+            "typeSearch": "Pesquisar",
+            "typeTel": "Telefone",
+            "typeUrl": "URL"
+        }
+    },
     "format": {
         "label": "Formatar",
         "panelTitle": "Formatar Parágrafo",
@@ -138,6 +343,13 @@ CKEDITOR.lang['pt'] = {
         "tag_pre": "Formatado"
     },
     "horizontalrule": {"toolbar": "Inserir Linha Horizontal"},
+    "iframe": {
+        "border": "Mostrar a borda da Frame",
+        "noUrl": "Por favor, digite o URL da iframe",
+        "scrolling": "Ativar barras de rolamento",
+        "title": "Propriedades da IFrame",
+        "toolbar": "IFrame"
+    },
     "image": {
         "alertUrl": "Por favor introduza o URL da imagem",
         "alt": "Texto Alternativo",
@@ -161,13 +373,14 @@ CKEDITOR.lang['pt'] = {
         "validateVSpace": "VSpace tem de ser um numero."
     },
     "indent": {"indent": "Aumentar Avanço", "outdent": "Diminuir Avanço"},
-    "fakeobjects": {
-        "anchor": " Inserir/Editar Âncora",
-        "flash": "Animação Flash",
-        "hiddenfield": "Campo oculto",
-        "iframe": "IFrame",
-        "unknown": "Objeto Desconhecido"
+    "smiley": {"options": "Opções de Emoticons", "title": "Inserir um Emoticon", "toolbar": "Emoticons"},
+    "justify": {
+        "block": "Justificado",
+        "center": "Alinhar ao Centro",
+        "left": "Alinhar à esquerda",
+        "right": "Alinhar à direita"
     },
+    "language": {"button": "Definir Idioma", "remove": "Remover idioma"},
     "link": {
         "acccessKey": "Chave de Acesso",
         "advanced": "Avançado",
@@ -230,8 +443,31 @@ CKEDITOR.lang['pt'] = {
         "upload": "Carregar"
     },
     "list": {"bulletedlist": "Marcas", "numberedlist": "Numeração"},
+    "liststyle": {
+        "armenian": "Numeração armênia",
+        "bulletedTitle": "Bulleted List Properties",
+        "circle": "Círculo",
+        "decimal": "Decimal (1, 2, 3, etc.)",
+        "decimalLeadingZero": "Decimal leading zero (01, 02, 03, etc.)",
+        "disc": "Disco",
+        "georgian": "Georgian numbering (an, ban, gan, etc.)",
+        "lowerAlpha": "Lower Alpha (a, b, c, d, e, etc.)",
+        "lowerGreek": "Lower Greek (alpha, beta, gamma, etc.)",
+        "lowerRoman": "Lower Roman (i, ii, iii, iv, v, etc.)",
+        "none": "Nenhum",
+        "notset": "<not set>",
+        "numberedTitle": "Numbered List Properties",
+        "square": "Quadrado",
+        "start": "Iniciar",
+        "type": "Tipo",
+        "upperAlpha": "Upper Alpha (A, B, C, D, E, etc.)",
+        "upperRoman": "Upper Roman (I, II, III, IV, V, etc.)",
+        "validateStartNumber": "List start number must be a whole number."
+    },
     "magicline": {"title": "Insira aqui o parágrafo"},
     "maximize": {"maximize": "Maximizar", "minimize": "Minimizar"},
+    "newpage": {"toolbar": "Nova Página"},
+    "pagebreak": {"alt": "Quebra de página", "toolbar": "Inserir Quebra de Página"},
     "pastetext": {"button": "Colar como Texto Simples", "title": "Colar como Texto Simples"},
     "pastefromword": {
         "confirmCleanup": "O texto que pretende colar parece ter sido copiado do Word. Deseja limpá-lo antes de colar?",
@@ -239,7 +475,12 @@ CKEDITOR.lang['pt'] = {
         "title": "Colar do Word",
         "toolbar": "Colar do Word"
     },
+    "preview": {"preview": "Pré-visualizar"},
+    "print": {"toolbar": "Imprimir"},
     "removeformat": {"toolbar": "Eliminar Formato"},
+    "save": {"toolbar": "Guardar"},
+    "selectall": {"toolbar": "Selecionar tudo"},
+    "showblocks": {"toolbar": "Exibir blocos"},
     "sourcearea": {"toolbar": "Fonte"},
     "specialchar": {
         "options": "Opções de caracteres especiais",
