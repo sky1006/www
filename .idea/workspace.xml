@@ -2,14 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf9e248a-5536-4981-a038-7e48806426f9" name="Default" comment="1">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/extend/comps/463d1cd24b57e5e4fda35a9bf865d707f53b2eb4.file.parent.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/extend/comps/9c36a9f5372fffa62f512e5531971c31779437fa.file.child.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/extend/child.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/extend/child.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/extend/comps/dc8f6ca1fff616920f77f4936e097a03b0a1b4af.extends.child.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/extend/init.inc.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/extend/parent.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/extend/parent.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/1fun.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/1fun.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/extend/comps/979a5ae458f9db5dde3623fa8a0d383cbe65c0d8.file.cache.tpl.cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/extend/comps/979a5ae458f9db5dde3623fa8a0d383cbe65c0d8.file.cache.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/extend/cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/extend/cache.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/newindex.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/newindex1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/newindex2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/newindex3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/page.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/extend/page.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/5foreach3.php" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/5foreach3.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/6section.tpl" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/6section.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/comps/8b8fa48507edaeed66e9f15ec04719dc7fe3ece5.file.6section.tpl.php" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/comps/8b8fa48507edaeed66e9f15ec04719dc7fe3ece5.file.6section.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/lamp18_Smarty/extend/init.inc.php" afterPath="$PROJECT_DIR$/php/lamp18_Smarty/extend/init.inc.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="one.iws" />
@@ -59,7 +67,7 @@
       <file leaf-file-name="Smarty.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/libs/Smarty.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="9.793103" vertical-offset="6448" max-vertical-offset="33720">
+            <state vertical-scroll-proportion="59.793102" vertical-offset="9348" max-vertical-offset="33720">
               <caret line="294" column="34" selection-start-line="294" selection-start-column="34" selection-end-line="294" selection-end-column="34" />
               <folding>
                 <element signature="e#6#1310#0#PHP" expanded="true" />
@@ -68,46 +76,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="parent.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/extend/parent.tpl">
+      <file leaf-file-name="init.inc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/extend/init.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.586207" vertical-offset="0" max-vertical-offset="420">
-              <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+            <state vertical-scroll-proportion="-13.793103" vertical-offset="0" max-vertical-offset="900">
+              <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="child.tpl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/extend/child.tpl">
+      <file leaf-file-name="cache.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/extend/cache.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6480836" vertical-offset="34" max-vertical-offset="620">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.98392284" vertical-offset="454" max-vertical-offset="1020">
+              <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+              <folding>
+                <marker date="1429257894775" expanded="true" signature="570:614" placeholder="select id,us..users..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cache.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/extend/cache.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.4827585" vertical-offset="594" max-vertical-offset="1080">
+              <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parent.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/extend/parent.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.5172415" vertical-offset="0" max-vertical-offset="320">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="10" selection-end-column="31" />
-              <folding>
-                <element signature="e#6#94#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="child.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/extend/child.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.827586" vertical-offset="0" max-vertical-offset="340">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding>
-                <element signature="e#6#94#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -130,10 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/php/lamp18_Smarty/templates/test.tpl" />
-        <option value="$PROJECT_DIR$/php/lamp18_Smarty/public/heater.tpl" />
-        <option value="$PROJECT_DIR$/php/lamp18_Smarty/public/footer.tpl" />
-        <option value="$PROJECT_DIR$/php/lamp18_Smarty/views/test.tpl" />
         <option value="$PROJECT_DIR$/php/lamp18_Smarty/demo2.php" />
         <option value="$PROJECT_DIR$/php/lamp18_Smarty/admin/admin.php" />
         <option value="$PROJECT_DIR$/php/lamp18_Smarty/views/index.php" />
@@ -169,18 +161,22 @@
         <option value="$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/3for.tpl" />
         <option value="$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/4foreach2.php" />
         <option value="$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/4foreach2.tpl" />
-        <option value="$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/5foreach3.php" />
         <option value="$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/5foreach3.tpl" />
         <option value="$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/6section.php" />
-        <option value="$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/6section.tpl" />
         <option value="$PROJECT_DIR$/php/lamp18_Smarty/exentd/parent.tpl" />
         <option value="$PROJECT_DIR$/php/lamp18_Smarty/exentd/child.tpl" />
         <option value="$PROJECT_DIR$/php/lamp18_Smarty/exentd/parent.php" />
         <option value="$PROJECT_DIR$/php/lamp18_Smarty/extend/parent.php" />
-        <option value="$PROJECT_DIR$/php/lamp18_Smarty/extend/init.inc.php" />
         <option value="$PROJECT_DIR$/php/lamp18_Smarty/extend/child.php" />
         <option value="$PROJECT_DIR$/php/lamp18_Smarty/extend/parent.tpl" />
         <option value="$PROJECT_DIR$/php/lamp18_Smarty/extend/child.tpl" />
+        <option value="$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/1fun.php" />
+        <option value="$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/1fun.tpl" />
+        <option value="$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/6section.tpl" />
+        <option value="$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/5foreach3.php" />
+        <option value="$PROJECT_DIR$/php/lamp18_Smarty/extend/init.inc.php" />
+        <option value="$PROJECT_DIR$/php/lamp18_Smarty/extend/cache.tpl" />
+        <option value="$PROJECT_DIR$/php/lamp18_Smarty/extend/cache.php" />
       </list>
     </option>
   </component>
@@ -297,6 +293,32 @@
               <option name="myItemId" value="lnmphp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lamp18_Smarty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lnmphp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lnmphp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -317,11 +339,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\wamp\www\php\lamp18_Smarty\exentd" />
+      <recent name="D:\wamp\www\php\lamp18_Smarty\extend" />
       <recent name="D:\wamp\www\php\lamp18_Smarty\builtFunction" />
+      <recent name="D:\wamp\www\php\lamp18_Smarty\exentd" />
       <recent name="D:\wamp\www\php\lamp18_Smarty\js" />
       <recent name="D:\wamp\www\php\lamp18_Smarty\myplugins" />
-      <recent name="D:\wamp\www\php\lamp18_Smarty\js\date" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\wamp\www\php\lamp18_Smarty\js\date" />
@@ -673,7 +695,13 @@
       <option name="project" value="LOCAL" />
       <updated>1429178717640</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="1">
+      <created>1429180393428</created>
+      <option name="number" value="00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1429180393428</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -700,7 +728,7 @@
     <frame x="615" y="2" width="758" height="716" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3216912" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3216912" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928944" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3272059" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -712,7 +740,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864675" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.398017" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.398017" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32688928" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -757,64 +785,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/defun.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34632036" vertical-offset="0" max-vertical-offset="462">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/myplugins/function.hello.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4526749" vertical-offset="0" max-vertical-offset="540">
-          <caret line="11" column="12" selection-start-line="6" selection-start-column="3" selection-end-line="11" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/myplugins/block.world1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41563785" vertical-offset="358" max-vertical-offset="860">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/js/jscolor/jscolor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.399185" vertical-offset="2340" max-vertical-offset="24140">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/js/laydate/need/laydate.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4940">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1429093900331" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/libs/plugins/function.html_select_date.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34632036" vertical-offset="8520" max-vertical-offset="9140">
-          <caret line="370" column="17" selection-start-line="370" selection-start-column="17" selection-end-line="370" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/defun.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6103896" vertical-offset="198" max-vertical-offset="780">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/js/laydate/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="860">
@@ -1057,32 +1027,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/5foreach3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.551724" vertical-offset="54" max-vertical-offset="580">
-          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-          <folding>
-            <marker date="1429176228804" expanded="true" signature="-1:-1" placeholder="select id,us..users..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/5foreach3.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.3448277" vertical-offset="774" max-vertical-offset="1280">
-          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/6section.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5473251" vertical-offset="1374" max-vertical-offset="1980">
-          <caret line="80" column="35" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/6section.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8765432" vertical-offset="34" max-vertical-offset="600">
@@ -1093,9 +1037,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/extend/child.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4025974" vertical-offset="34" max-vertical-offset="620">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/extend/parent.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.77922076" vertical-offset="0" max-vertical-offset="540">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/extend/child.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28806585" vertical-offset="0" max-vertical-offset="486">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#94#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/extend/parent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32921812" vertical-offset="0" max-vertical-offset="486">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="10" selection-end-column="31" />
+          <folding>
+            <element signature="e#6#94#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/1fun.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32921812" vertical-offset="0" max-vertical-offset="486">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/1fun.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5761317" vertical-offset="0" max-vertical-offset="486">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/5foreach3.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57575756" vertical-offset="614" max-vertical-offset="1120">
+          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/5foreach3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3030303" vertical-offset="0" max-vertical-offset="1320">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <marker date="1429253064190" expanded="true" signature="-1:-1" placeholder="select id,us..users..." />
+            <marker date="1429253064190" expanded="true" signature="-1:-1" placeholder="select id,us..users..." />
+            <marker date="1429253064190" expanded="true" signature="-1:-1" placeholder="select id,us..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/libs/Smarty.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="9.793103" vertical-offset="6448" max-vertical-offset="38360">
+        <state vertical-scroll-proportion="59.793102" vertical-offset="9348" max-vertical-offset="54480">
           <caret line="294" column="34" selection-start-line="294" selection-start-column="34" selection-end-line="294" selection-end-column="34" />
           <folding>
             <element signature="e#6#1310#0#PHP" expanded="true" />
@@ -1103,47 +1119,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/extend/parent.php">
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/page.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.5172415" vertical-offset="0" max-vertical-offset="320">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="10" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7640">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6#94#0#PHP" expanded="true" />
+            <marker date="1426499022641" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1426499022641" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1426499022641" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1426499022641" expanded="false" signature="-1:-1" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/builtFunction/6section.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4526749" vertical-offset="1414" max-vertical-offset="2400">
+          <caret line="87" column="19" selection-start-line="87" selection-start-column="19" selection-end-line="87" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/extend/init.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20576131" vertical-offset="0" max-vertical-offset="700">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        <state vertical-scroll-proportion="-13.793103" vertical-offset="0" max-vertical-offset="900">
+          <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/extend/child.php">
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/extend/page.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.827586" vertical-offset="0" max-vertical-offset="340">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.12684989" vertical-offset="60" max-vertical-offset="4860">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6#94#0#PHP" expanded="true" />
+            <marker date="1426499022641" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1426499022641" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1426499022641" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1426499022641" expanded="false" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/extend/parent.tpl">
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/extend/cache.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.586207" vertical-offset="0" max-vertical-offset="420">
-          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+        <state vertical-scroll-proportion="-8.4827585" vertical-offset="594" max-vertical-offset="1080">
+          <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/extend/child.tpl">
+    <entry file="file://$PROJECT_DIR$/php/lamp18_Smarty/extend/cache.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6480836" vertical-offset="34" max-vertical-offset="620">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding />
+        <state vertical-scroll-proportion="0.98392284" vertical-offset="454" max-vertical-offset="1020">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+          <folding>
+            <marker date="1429257894775" expanded="true" signature="570:614" placeholder="select id,us..users..." />
+          </folding>
         </state>
       </provider>
     </entry>

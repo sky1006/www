@@ -1,165 +1,36 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-04-17 14:35:08
-         compiled from "6section.tpl" */
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-04-17 16:03:21
+         compiled from "cache.tpl" */
 ?>
-<?php /*%%SmartyHeaderCode:176805530a99cbda5d8-78855810%%*/
+<?php /*%%SmartyHeaderCode:198525530adb5d842b3-98493707%%*/
 if (!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array(
     'file_dependency' =>
         array(
-            '8b8fa48507edaeed66e9f15ec04719dc7fe3ece5' =>
+            '979a5ae458f9db5dde3623fa8a0d383cbe65c0d8' =>
                 array(
-                    0 => '6section.tpl',
-                    1 => 1429251950,
+                    0 => 'cache.tpl',
+                    1 => 1429257796,
                     2 => 'file',
                 ),
         ),
-    'nocache_hash' => '176805530a99cbda5d8-78855810',
+    'nocache_hash' => '198525530adb5d842b3-98493707',
     'function' =>
         array(),
+    'version' => 'Smarty-3.1.21-dev',
+    'unifunc' => 'content_5530adb6087fb4_03803585',
     'variables' =>
         array(
             'arr' => 0,
-            'k' => 0,
-            'value' => 0,
+            'time' => 0,
             'users' => 0,
-            'user' => 0,
-            'col' => 0,
             'fpage' => 0,
         ),
     'has_nocache_code' => false,
-    'version' => 'Smarty-3.1.21-dev',
-    'unifunc' => 'content_5530a99cdd6346_60894005',
 ), false); /*/%%SmartyHeaderCode%%*/
 ?>
-<?php if ($_valid && !is_callable('content_5530a99cdd6346_60894005')) {
-    function content_5530a99cdd6346_60894005($_smarty_tpl)
-    {
-        ?><?php  $_smarty_tpl->tpl_vars["value"] = new Smarty_Variable;
-        $_smarty_tpl->tpl_vars["value"]->_loop = false;
-        $_smarty_tpl->tpl_vars["k"] = new Smarty_Variable;
-        $_from = $_smarty_tpl->tpl_vars['arr']->value;
-        if (!is_array($_from) && !is_object($_from)) {
-            settype($_from, 'array');
-        }
-        $_smarty_tpl->tpl_vars["value"]->total = $_smarty_tpl->_count($_from);
-        $_smarty_tpl->tpl_vars["value"]->iteration = 0;
-        $_smarty_tpl->tpl_vars["value"]->index = -1;
-        $_smarty_tpl->tpl_vars['smarty']->value['foreach']["smart2"]['total'] = $_smarty_tpl->tpl_vars["value"]->total;
-        $_smarty_tpl->tpl_vars['smarty']->value['foreach']["smart2"]['iteration'] = 0;
-        foreach ($_from as $_smarty_tpl->tpl_vars["value"]->key => $_smarty_tpl->tpl_vars["value"]->value) {
-            $_smarty_tpl->tpl_vars["value"]->_loop = true;
-            $_smarty_tpl->tpl_vars["k"]->value = $_smarty_tpl->tpl_vars["value"]->key;
-            $_smarty_tpl->tpl_vars["value"]->iteration++;
-            $_smarty_tpl->tpl_vars["value"]->index++;
-            $_smarty_tpl->tpl_vars["value"]->first = $_smarty_tpl->tpl_vars["value"]->index === 0;
-            $_smarty_tpl->tpl_vars["value"]->last = $_smarty_tpl->tpl_vars["value"]->iteration === $_smarty_tpl->tpl_vars["value"]->total;
-            $_smarty_tpl->tpl_vars['smarty']->value['foreach']["smart2"]['first'] = $_smarty_tpl->tpl_vars["value"]->first;
-            $_smarty_tpl->tpl_vars['smarty']->value['foreach']["smart2"]['iteration']++;
-            $_smarty_tpl->tpl_vars['smarty']->value['foreach']["smart2"]['last'] = $_smarty_tpl->tpl_vars["value"]->last;
-?>
-            <?php if ($_smarty_tpl->getVariable('smarty')->value['foreach']['smart2']['first']) { ?>
-                这是第一次：
-            <?php } ?>
-
-            <?php echo $_smarty_tpl->getVariable('smarty')->value['foreach']['smart2']['iteration']; ?>
-            ==><?php echo $_smarty_tpl->tpl_vars['k']->value; ?>
-            =<?php echo $_smarty_tpl->tpl_vars['value']->value; ?>
-            <br>
-
-            <?php if ($_smarty_tpl->getVariable('smarty')->value['foreach']['smart2']['last']) { ?>
-                这是最后一次：
-            <?php } ?>
-
-        <?php
-        }
-        if (!$_smarty_tpl->tpl_vars["value"]->_loop) {
-            ?>
-            数组为空，或不存在！
-        <?php } ?>
-
-        <?php echo $_smarty_tpl->getVariable('smarty')->value['foreach']['smart2']['total']; ?>
-        <br>
-
-        ---------关联数组---------<br>
-
-        <?php  $_smarty_tpl->tpl_vars['value'] = new Smarty_Variable;
-        $_smarty_tpl->tpl_vars['value']->_loop = false;
-        $_smarty_tpl->tpl_vars['key'] = new Smarty_Variable;
-        $_from = $_smarty_tpl->tpl_vars['arr']->value;
-        if (!is_array($_from) && !is_object($_from)) {
-            settype($_from, 'array');
-        }
-        $_smarty_tpl->tpl_vars['value']->total = $_smarty_tpl->_count($_from);
-        $_smarty_tpl->tpl_vars['value']->iteration = 0;
-        $_smarty_tpl->tpl_vars['value']->index = -1;
-        foreach ($_from as $_smarty_tpl->tpl_vars['value']->key => $_smarty_tpl->tpl_vars['value']->value) {
-            $_smarty_tpl->tpl_vars['value']->_loop = true;
-            $_smarty_tpl->tpl_vars['key']->value = $_smarty_tpl->tpl_vars['value']->key;
-            $_smarty_tpl->tpl_vars['value']->iteration++;
-            $_smarty_tpl->tpl_vars['value']->index++;
-            ?>
-            <?php echo $_smarty_tpl->tpl_vars['value']->iteration; ?>
-            ==<?php echo $_smarty_tpl->tpl_vars['value']->index; ?>
-            ==<?php echo $_smarty_tpl->tpl_vars['value']->key; ?>
-            ==> =><?php echo $_smarty_tpl->tpl_vars['value']->value; ?>
-            <br>
-        <?php
-        }
-        if (!$_smarty_tpl->tpl_vars['value']->_loop) {
-            ?>
-            数组为空，或不存在！
-        <?php } ?>
-        <?php echo $_smarty_tpl->tpl_vars['value']->total; ?>
-
-
-        <table border="1" width="800" align="center">
-            <?php  $_smarty_tpl->tpl_vars['user'] = new Smarty_Variable;
-            $_smarty_tpl->tpl_vars['user']->_loop = false;
-            $_from = $_smarty_tpl->tpl_vars['users']->value;
-            if (!is_array($_from) && !is_object($_from)) {
-                settype($_from, 'array');
-            }
-            $_smarty_tpl->tpl_vars['user']->total = $_smarty_tpl->_count($_from);
-            $_smarty_tpl->tpl_vars['user']->iteration = 0;
-            $_smarty_tpl->tpl_vars['user']->index = -1;
-            foreach ($_from as $_smarty_tpl->tpl_vars['user']->key => $_smarty_tpl->tpl_vars['user']->value) {
-                $_smarty_tpl->tpl_vars['user']->_loop = true;
-                $_smarty_tpl->tpl_vars['user']->iteration++;
-                $_smarty_tpl->tpl_vars['user']->index++;
-                $_smarty_tpl->tpl_vars['user']->first = $_smarty_tpl->tpl_vars['user']->index === 0;
-                $_smarty_tpl->tpl_vars['user']->last = $_smarty_tpl->tpl_vars['user']->iteration === $_smarty_tpl->tpl_vars['user']->total;
-                ?>
-
-                <?php if ($_smarty_tpl->tpl_vars['user']->first) { ?>
-                    <tr bgcolor="red">
-                <?php } elseif ($_smarty_tpl->tpl_vars['user']->last) { ?>
-                    <tr bgcolor="blue">
-                <?php } elseif (!(1 & $_smarty_tpl->tpl_vars['user']->index)) { ?>
-                    <tr bgcolor="green">
-                <?php } else { ?>
-                    <tr>
-                <?php } ?>
-
-                <?php  $_smarty_tpl->tpl_vars['col'] = new Smarty_Variable;
-                $_smarty_tpl->tpl_vars['col']->_loop = false;
-                $_from = $_smarty_tpl->tpl_vars['user']->value;
-                if (!is_array($_from) && !is_object($_from)) {
-                    settype($_from, 'array');
-                }
-                foreach ($_from as $_smarty_tpl->tpl_vars['col']->key => $_smarty_tpl->tpl_vars['col']->value) {
-                    $_smarty_tpl->tpl_vars['col']->_loop = true;
-                    ?>
-                    <td><?php echo $_smarty_tpl->tpl_vars['col']->value; ?>
-                    </td>
-                <?php } ?>
-                </tr>
-            <?php
-            }
-            if (!$_smarty_tpl->tpl_vars['user']->_loop) {
-                ?>
-                没有用户
-            <?php } ?>
-        </table>
+<?php if ($_valid && !is_callable('content_5530adb6087fb4_03803585')) {
+    function content_5530adb6087fb4_03803585($_smarty_tpl)
+    { ?>
 
         <br>---------索引数组---------<br>
         <?php if (isset($_smarty_tpl->tpl_vars['smarty']->value['section']["ss"])) unset($_smarty_tpl->tpl_vars['smarty']->value['section']["ss"]);
@@ -201,7 +72,8 @@ $_valid = $_smarty_tpl->decodeProperties(array(
         <?php endif; ?>
 
         <table border="1" width="800" align="center">
-            <caption><h1>用户表</h1></caption>
+            <caption><h1>用户表<?php echo $_smarty_tpl->tpl_vars['time']->value; ?>
+                </h1></caption>
             <tr>
                 <th>index</th>
                 <th>iteration</th>

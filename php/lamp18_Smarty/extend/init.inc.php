@@ -26,6 +26,16 @@ $smarty->setConfigDir(ROOT . "./configs/");
 //$smarty->setPluginsDir(ROOT."./myplugins/");
 $smarty->addPluginsDir(ROOT . "./myplugins/");
 
+//缓存时间
+$smarty->cache_lifetime = 10;
+
+//缓存位置
+$smarty->setCacheDir(ROOT . "./cache/");
+
+//开启缓存的功能
+$smarty->caching = true;
+
+
 //可以让定界符使用空格
 $smarty->auto_literal = false;
 

@@ -1,19 +1,19 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-04-17 14:35:08
-         compiled from "6section.tpl" */
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-04-17 14:51:43
+         compiled from "cache.tpl" */
 ?>
-<?php /*%%SmartyHeaderCode:176805530a99cbda5d8-78855810%%*/
+<?php /*%%SmartyHeaderCode:162145530ad7f696487-89100306%%*/
 if (!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array(
     'file_dependency' =>
         array(
-            '8b8fa48507edaeed66e9f15ec04719dc7fe3ece5' =>
+            '979a5ae458f9db5dde3623fa8a0d383cbe65c0d8' =>
                 array(
-                    0 => '6section.tpl',
+                    0 => 'cache.tpl',
                     1 => 1429251950,
                     2 => 'file',
                 ),
         ),
-    'nocache_hash' => '176805530a99cbda5d8-78855810',
+    'nocache_hash' => '162145530ad7f696487-89100306',
     'function' =>
         array(),
     'variables' =>
@@ -28,11 +28,11 @@ $_valid = $_smarty_tpl->decodeProperties(array(
         ),
     'has_nocache_code' => false,
     'version' => 'Smarty-3.1.21-dev',
-    'unifunc' => 'content_5530a99cdd6346_60894005',
+    'unifunc' => 'content_5530ad7f88a4f8_65546028',
 ), false); /*/%%SmartyHeaderCode%%*/
 ?>
-<?php if ($_valid && !is_callable('content_5530a99cdd6346_60894005')) {
-    function content_5530a99cdd6346_60894005($_smarty_tpl)
+<?php if ($_valid && !is_callable('content_5530ad7f88a4f8_65546028')) {
+    function content_5530ad7f88a4f8_65546028($_smarty_tpl)
     {
         ?><?php  $_smarty_tpl->tpl_vars["value"] = new Smarty_Variable;
         $_smarty_tpl->tpl_vars["value"]->_loop = false;
@@ -56,7 +56,7 @@ $_valid = $_smarty_tpl->decodeProperties(array(
             $_smarty_tpl->tpl_vars['smarty']->value['foreach']["smart2"]['first'] = $_smarty_tpl->tpl_vars["value"]->first;
             $_smarty_tpl->tpl_vars['smarty']->value['foreach']["smart2"]['iteration']++;
             $_smarty_tpl->tpl_vars['smarty']->value['foreach']["smart2"]['last'] = $_smarty_tpl->tpl_vars["value"]->last;
-?>
+            ?>
             <?php if ($_smarty_tpl->getVariable('smarty')->value['foreach']['smart2']['first']) { ?>
                 这是第一次：
             <?php } ?>
