@@ -102,7 +102,7 @@ class Webgrind_FileHandler
                 continue;
 
             $invokeUrl = $this->getInvokeUrl($absoluteFilename);
-            if (Webgrind_Config::$hideWebgrindProfiles && $invokeUrl == dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . 'index.php')
+            if (Webgrind_Config::$hideWebgrindProfiles && $invokeUrl == dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . 'reg.php')
                 continue;
 
 

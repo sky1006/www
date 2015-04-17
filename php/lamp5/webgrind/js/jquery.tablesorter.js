@@ -533,7 +533,7 @@
                     // build headers
                     $headers = buildHeaders(this);
 
-                    // try to auto detect column type, and store in tables config
+                    // try to auto detect column type, and store in tables configs
                     this.config.parsers = buildParserCache(this, $headers);
 
 

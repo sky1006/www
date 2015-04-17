@@ -36,7 +36,7 @@ class Webgrind_Config
      * %1$s will be replaced by the full path name of the file
      * %2$d will be replaced by the linenumber
      */
-    static $fileUrlFormat = 'index.php?op=fileviewer&file=%1$s&line=%2$d'; // Built in fileviewer
+    static $fileUrlFormat = 'reg.php?op=fileviewer&file=%1$s&line=%2$d'; // Built in fileviewer
     //static $fileUrlFormat = 'txmt://open/?url=file://%1$s&line=%2$d'; // Textmate
     //static $fileUrlFormat = 'file://%1$s'; // ?
 
