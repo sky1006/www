@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d4c02d3-5570-4c67-977f-ab75d7b04ee5" name="默认的" comment="Revert &quot;1&quot;&#10;&#10;This reverts commit 8ceeb2ed78f91d1db80f6a36c8e56d4baa99cc62.&#10;&#10;Conflicts:&#10;&#9;php/.idea/vcs.xml&#10;&#9;php/.idea/workspace.xml&#10;&#9;php/two/1.html&#10;正则表达式">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ThinkPHP/Study/ThinkPHP3.1.2完全开发手册.chw" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ThinkPHP/Home/Tpl/Index/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ThinkPHP/Home/Tpl/Index/show.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ThinkPHP/Study/3.输出和模型使用.txt" afterPath="$PROJECT_DIR$/../ThinkPHP/Study/3.输出和模型使用.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ThinkPHP/Admin/Runtime/Cache/9885ecc411f90bec36756701bd64bb4a.php" afterPath="$PROJECT_DIR$/../ThinkPHP/Admin/Runtime/Cache/9885ecc411f90bec36756701bd64bb4a.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ThinkPHP/thinkphp312/Extend/Driver/TagLib/TagLibHtml.class.php" afterPath="$PROJECT_DIR$/../ThinkPHP/thinkphp312/Extend/Driver/TagLib/TagLibHtml.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ThinkPHP/Home/Conf/config.php" afterPath="$PROJECT_DIR$/../ThinkPHP/Home/Conf/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ThinkPHP/thinkphp312/Common/runtime.php" afterPath="$PROJECT_DIR$/../ThinkPHP/thinkphp312/Common/runtime.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ThinkPHP/thinkphp312/Extend/Vendor/Smarty/plugins/shared.mb_unicode.php" afterPath="$PROJECT_DIR$/../ThinkPHP/thinkphp312/Extend/Vendor/Smarty/plugins/shared.mb_unicode.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lamp18_Smarty/libs/plugins/shared.mb_unicode.php" afterPath="$PROJECT_DIR$/lamp18_Smarty/libs/plugins/shared.mb_unicode.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ThinkPHP/thinkphp312/Extend/Vendor/EaseTemplate/template.core.php" afterPath="$PROJECT_DIR$/../ThinkPHP/thinkphp312/Extend/Vendor/EaseTemplate/template.core.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ThinkPHP/Admin/Runtime/~runtime.php" afterPath="$PROJECT_DIR$/../ThinkPHP/Admin/Runtime/~runtime.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ThinkPHP/Home/Runtime/~runtime.php" afterPath="$PROJECT_DIR$/../ThinkPHP/Home/Runtime/~runtime.php" />
-      <change type="MOVED" beforePath="D:\wamp\www\ThinkPHP\Home\Runtime\Cache\9885ecc411f90bec36756701bd64bb4a.php" afterPath="$PROJECT_DIR$/../ThinkPHP/Home/Lib/Action/IndexAction.class.php" />
     </list>
     <ignored path="php.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,7 +40,7 @@
       <file leaf-file-name="config.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ThinkPHP/Home/Conf/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="263" selection-end="263" vertical-scroll-proportion="-6.206897" vertical-offset="0" max-vertical-offset="360">
+            <state line="9" column="13" selection-start="269" selection-end="269" vertical-scroll-proportion="-6.206897" vertical-offset="0" max-vertical-offset="360">
               <folding />
             </state>
           </provider>
@@ -72,17 +58,9 @@
       <file leaf-file-name="IndexAction.class.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../ThinkPHP/Home/Lib/Action/IndexAction.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="36" selection-start="756" selection-end="756" vertical-scroll-proportion="0.3271028" vertical-offset="0" max-vertical-offset="428">
+            <state line="40" column="37" selection-start="872" selection-end="872" vertical-scroll-proportion="0.39252338" vertical-offset="32" max-vertical-offset="480">
               <folding>
-                <element signature="e#91#698#0" expanded="false" />
-                <marker date="1429543874559" expanded="true" signature="129:490" placeholder="..." />
-                <marker date="1429543874559" expanded="true" signature="132:178" placeholder="{...}" />
-                <marker date="1429543874559" expanded="true" signature="188:222" placeholder="{...}" />
-                <marker date="1429543874559" expanded="true" signature="233:316" placeholder="{...}" />
-                <marker date="1429543874559" expanded="true" signature="325:416" placeholder="{...}" />
-                <marker date="1429543874559" expanded="true" signature="424:483" placeholder="{...}" />
-                <marker date="1429543874559" expanded="false" signature="504:523" placeholder="..." />
-                <marker date="1429543874559" expanded="true" signature="524:575" placeholder="..." />
+                <element signature="e#104#811#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -153,10 +131,10 @@
         <option value="$PROJECT_DIR$/lamp18_Smarty/myplugins/block.textarea.php" />
         <option value="$PROJECT_DIR$/lamp18_Smarty/defcolor.tpl" />
         <option value="$PROJECT_DIR$/../ThinkPHP/Home/Tpl/Index/show.html" />
-        <option value="$PROJECT_DIR$/../ThinkPHP/Home/Lib/Action/IndexAction.class.php" />
         <option value="$PROJECT_DIR$/../ThinkPHP/Study/3.输出和模型使用.txt" />
         <option value="$PROJECT_DIR$/../ThinkPHP/Home/Tpl/Index/index.html" />
         <option value="$PROJECT_DIR$/../ThinkPHP/Home/Conf/config.php" />
+        <option value="$PROJECT_DIR$/../ThinkPHP/Home/Lib/Action/IndexAction.class.php" />
       </list>
     </option>
   </component>
@@ -1488,7 +1466,11 @@
       <created>1429541032378</created>
       <updated>1429541032378</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="Revert &quot;1&quot;&#10;&#10;This reverts commit 8ceeb2ed78f91d1db80f6a36c8e56d4baa99cc62.&#10;&#10;Conflicts:&#10;&#9;php/.idea/vcs.xml&#10;&#9;php/.idea/workspace.xml&#10;&#9;php/two/1.html&#10;正则表达式">
+      <created>1429546076419</created>
+      <updated>1429546076419</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -1838,7 +1820,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../ThinkPHP/Home/Conf/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="263" selection-end="263" vertical-scroll-proportion="-6.206897" vertical-offset="0" max-vertical-offset="360">
+        <state line="9" column="13" selection-start="269" selection-end="269" vertical-scroll-proportion="-6.206897" vertical-offset="0" max-vertical-offset="360">
           <folding />
         </state>
       </provider>
@@ -1852,17 +1834,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../ThinkPHP/Home/Lib/Action/IndexAction.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="36" selection-start="756" selection-end="756" vertical-scroll-proportion="0.3271028" vertical-offset="0" max-vertical-offset="428">
+        <state line="40" column="37" selection-start="872" selection-end="872" vertical-scroll-proportion="0.39252338" vertical-offset="32" max-vertical-offset="480">
           <folding>
-            <element signature="e#91#698#0" expanded="false" />
-            <marker date="1429543874559" expanded="true" signature="129:490" placeholder="..." />
-            <marker date="1429543874559" expanded="true" signature="132:178" placeholder="{...}" />
-            <marker date="1429543874559" expanded="true" signature="188:222" placeholder="{...}" />
-            <marker date="1429543874559" expanded="true" signature="233:316" placeholder="{...}" />
-            <marker date="1429543874559" expanded="true" signature="325:416" placeholder="{...}" />
-            <marker date="1429543874559" expanded="true" signature="424:483" placeholder="{...}" />
-            <marker date="1429543874559" expanded="false" signature="504:523" placeholder="..." />
-            <marker date="1429543874559" expanded="true" signature="524:575" placeholder="..." />
+            <element signature="e#104#811#0" expanded="false" />
           </folding>
         </state>
       </provider>
