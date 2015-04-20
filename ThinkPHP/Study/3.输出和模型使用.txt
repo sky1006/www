@@ -1,0 +1,33 @@
+#
+# ThinkPHP 3.1.2 输出和模型使用
+#
+讲师：赵桐正
+微博：http://weibo.com/zhaotongzheng
+
+
+本节课大纲：
+一、ThinkPHP 3 的输出      （重点）
+	a、通过 echo 等PHP原生的输出方式在页面中输出
+	b、通过display方法输出
+		想分配变量可以使用assign方法
+	c、修改左右定界符
+		休要修改配置文件中的配置项
+		'TMPL_L_DELIM'=>'<{', //修改左定界符
+		'TMPL_R_DELIM'=>'}>', //修改右定界符
+
+二、ThinkPHP 3 的模型使用  （重点）
+	需要在方法中通过new Model（表名）的形式操作数据库
+		$m=new Model('User');
+		$arr=$m->select(); 
+	'DB_TYPE'=>'mysql',   //设置数据库类型
+	'DB_HOST'=>'localhost',//设置主机
+	'DB_NAME'=>'thinkphp',//设置数据库名
+	'DB_USER'=>'root',    //设置用户名
+	'DB_PWD'=>'',        //设置密码
+	'DB_PORT'=>'3306',   //设置端口号
+	'DB_PREFIX'=>'tp_',  //设置表前缀
+三、补充                   （了解）
+
+'URL_PATHINFO_DEPR'=>'-',//修改URL的分隔符
+'TMPL_L_DELIM'=>'<{', //修改左定界符
+'TMPL_R_DELIM'=>'}>', //修改右定界符
