@@ -1,0 +1,53 @@
+#
+# ThinkPHP 3 介绍及安装
+#
+讲师：赵桐正
+微博：http://weibo.com/zhaotongzheng
+
+本节课大纲：
+一、ThinkPHP的介绍            //了解
+	MVC
+		M - Model 模型                工作：负责数据的操作
+		V - View  视图（模板）        工作：负责前台页面显示
+		C - Controller 控制器（模块） 工作：描述功能
+	框架
+二、ThinkPHP的获取            //了解
+	http://www.thinkphp.cn
+三、ThinkPHP核心文件介绍      //了解
+	├─ThinkPHP.php     框架入口文件
+	├─Common 框架公共文件
+	├─Conf 框架配置文件
+	├─Extend 框架扩展目录
+	├─Lang 核心语言包目录
+	├─Lib 核心类库目录
+	│  ├─Behavior 核心行为类库
+	│  ├─Core 核心基类库
+	│  ├─Driver 内置驱动
+	│  │  ├─Cache 内置缓存驱动
+	│  │  ├─Db 内置数据库驱动
+	│  │  ├─TagLib 内置标签驱动
+	│  │  └─Template 内置模板引擎驱动
+	│  └─Template 内置模板引擎
+	└─Tpl 系统模板目录
+四、实验环境搭建              //了解
+五、项目搭建                  //重点
+	#项目目录结构及说明：
+		Home 前台应用文件夹
+		├─Common 项目公共文件目录
+		├─Conf 项目配置目录
+		├─Lang 项目语言目录
+		├─Lib 项目类库目录
+		│  ├─Action Action类库目录
+		│  ├─Behavior 行为类库目录
+		│  ├─Model 模型类库目录
+		│  └─Widget Widget类库目录
+		├─Runtime 项目运行时目录
+		│  ├─Cache 模板缓存目录
+		│  ├─Data 数据缓存目录
+		│  ├─Logs 日志文件目录
+		│  └─Temp 临时缓存目录
+		└─Tpl 项目模板目录
+六、补充知识                  //了解
+
+
+

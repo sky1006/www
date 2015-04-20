@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-04-17 16:03:21
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-04-20 09:05:34
          compiled from "cache.tpl" */
 ?>
 <?php /*%%SmartyHeaderCode:198525530adb5d842b3-98493707%%*/
@@ -9,7 +9,7 @@ $_valid = $_smarty_tpl->decodeProperties(array(
             '979a5ae458f9db5dde3623fa8a0d383cbe65c0d8' =>
                 array(
                     0 => 'cache.tpl',
-                    1 => 1429257796,
+                    1 => 1429260271,
                     2 => 'file',
                 ),
         ),
@@ -30,9 +30,7 @@ $_valid = $_smarty_tpl->decodeProperties(array(
 ?>
 <?php if ($_valid && !is_callable('content_5530adb6087fb4_03803585')) {
     function content_5530adb6087fb4_03803585($_smarty_tpl)
-    { ?>
-
-        <br>---------索引数组---------<br>
+    { ?><br>---------索引数组---------<br>
         <?php if (isset($_smarty_tpl->tpl_vars['smarty']->value['section']["ss"])) unset($_smarty_tpl->tpl_vars['smarty']->value['section']["ss"]);
         $_smarty_tpl->tpl_vars['smarty']->value['section']["ss"]['name'] = "ss";
         $_smarty_tpl->tpl_vars['smarty']->value['section']["ss"]['loop'] = is_array($_loop = $_smarty_tpl->tpl_vars['arr']->value) ? count($_loop) : max(0, (int)$_loop);
