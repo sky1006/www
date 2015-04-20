@@ -2,10 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d4c02d3-5570-4c67-977f-ab75d7b04ee5" name="默认的" comment="Revert &quot;1&quot;&#10;&#10;This reverts commit 8ceeb2ed78f91d1db80f6a36c8e56d4baa99cc62.&#10;&#10;Conflicts:&#10;&#9;php/.idea/vcs.xml&#10;&#9;php/.idea/workspace.xml&#10;&#9;php/two/1.html&#10;正则表达式">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ThinkPHP/Study/3.输出和模型使用.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/php.iml" afterPath="$PROJECT_DIR$/.idea/php.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ThinkPHP/Study/ThinkPHP3.1.2完全开发手册.chw" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ThinkPHP/Home/Tpl/Index/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ThinkPHP/Home/Tpl/Index/show.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ThinkPHP/Study/3.输出和模型使用.txt" afterPath="$PROJECT_DIR$/../ThinkPHP/Study/3.输出和模型使用.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ThinkPHP/Admin/Runtime/Cache/9885ecc411f90bec36756701bd64bb4a.php" afterPath="$PROJECT_DIR$/../ThinkPHP/Admin/Runtime/Cache/9885ecc411f90bec36756701bd64bb4a.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ThinkPHP/thinkphp312/Extend/Driver/TagLib/TagLibHtml.class.php" afterPath="$PROJECT_DIR$/../ThinkPHP/thinkphp312/Extend/Driver/TagLib/TagLibHtml.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ThinkPHP/Home/Conf/config.php" afterPath="$PROJECT_DIR$/../ThinkPHP/Home/Conf/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ThinkPHP/thinkphp312/Common/runtime.php" afterPath="$PROJECT_DIR$/../ThinkPHP/thinkphp312/Common/runtime.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ThinkPHP/thinkphp312/Extend/Vendor/Smarty/plugins/shared.mb_unicode.php" afterPath="$PROJECT_DIR$/../ThinkPHP/thinkphp312/Extend/Vendor/Smarty/plugins/shared.mb_unicode.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lamp18_Smarty/libs/plugins/shared.mb_unicode.php" afterPath="$PROJECT_DIR$/lamp18_Smarty/libs/plugins/shared.mb_unicode.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ThinkPHP/thinkphp312/Extend/Vendor/EaseTemplate/template.core.php" afterPath="$PROJECT_DIR$/../ThinkPHP/thinkphp312/Extend/Vendor/EaseTemplate/template.core.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\wamp\www\ThinkPHP\Study\2 MVC模式和URL访问.txt" afterPath="$PROJECT_DIR$/../ThinkPHP/Study/2.MVC模式和URL访问.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ThinkPHP/Admin/Runtime/~runtime.php" afterPath="$PROJECT_DIR$/../ThinkPHP/Admin/Runtime/~runtime.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ThinkPHP/Home/Runtime/~runtime.php" afterPath="$PROJECT_DIR$/../ThinkPHP/Home/Runtime/~runtime.php" />
+      <change type="MOVED" beforePath="D:\wamp\www\ThinkPHP\Home\Runtime\Cache\9885ecc411f90bec36756701bd64bb4a.php" afterPath="$PROJECT_DIR$/../ThinkPHP/Home/Lib/Action/IndexAction.class.php" />
     </list>
     <ignored path="php.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +42,7 @@
       <file leaf-file-name="3.输出和模型使用.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ThinkPHP/Study/3.输出和模型使用.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="1" selection-start="1" selection-end="1" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="760">
+            <state line="14" column="8" selection-start="201" selection-end="264" vertical-scroll-proportion="-5.0" vertical-offset="130" max-vertical-offset="760">
               <folding />
             </state>
           </provider>
@@ -40,24 +51,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserAction.class.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../ThinkPHP/Home/Lib/Action/UserAction.class.php">
+      <file leaf-file-name="config.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../ThinkPHP/Home/Conf/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
+            <state line="9" column="13" selection-start="263" selection-end="263" vertical-scroll-proportion="-6.206897" vertical-offset="0" max-vertical-offset="360">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2.MVC模式和URL访问.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ThinkPHP/Study/2.MVC模式和URL访问.txt">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../ThinkPHP/Home/Tpl/Index/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="69" selection-start="496" selection-end="557" vertical-scroll-proportion="-9.6" vertical-offset="152" max-vertical-offset="780">
+            <state line="7" column="25" selection-start="166" selection-end="166" vertical-scroll-proportion="-4.827586" vertical-offset="0" max-vertical-offset="300">
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-            <state />
+        </entry>
+      </file>
+      <file leaf-file-name="IndexAction.class.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../ThinkPHP/Home/Lib/Action/IndexAction.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="36" selection-start="756" selection-end="756" vertical-scroll-proportion="0.3271028" vertical-offset="0" max-vertical-offset="428">
+              <folding>
+                <element signature="e#91#698#0" expanded="false" />
+                <marker date="1429543874559" expanded="true" signature="129:490" placeholder="..." />
+                <marker date="1429543874559" expanded="true" signature="132:178" placeholder="{...}" />
+                <marker date="1429543874559" expanded="true" signature="188:222" placeholder="{...}" />
+                <marker date="1429543874559" expanded="true" signature="233:316" placeholder="{...}" />
+                <marker date="1429543874559" expanded="true" signature="325:416" placeholder="{...}" />
+                <marker date="1429543874559" expanded="true" signature="424:483" placeholder="{...}" />
+                <marker date="1429543874559" expanded="false" signature="504:523" placeholder="..." />
+                <marker date="1429543874559" expanded="true" signature="524:575" placeholder="..." />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -79,11 +106,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/lampbrother5/6.php" />
-        <option value="$PROJECT_DIR$/lampbrother5/7.php" />
-        <option value="$PROJECT_DIR$/lampbrother6/1.php" />
-        <option value="$PROJECT_DIR$/lampbrother6/2.php" />
-        <option value="$PROJECT_DIR$/lampbrother6/3.php" />
         <option value="$PROJECT_DIR$/lampbrother6/4.php" />
         <option value="$PROJECT_DIR$/lampbrother6/5.php" />
         <option value="$PROJECT_DIR$/lampbrother6/6.php" />
@@ -130,6 +152,11 @@
         <option value="$PROJECT_DIR$/lamp18_Smarty/myplugins/function.laydate.php" />
         <option value="$PROJECT_DIR$/lamp18_Smarty/myplugins/block.textarea.php" />
         <option value="$PROJECT_DIR$/lamp18_Smarty/defcolor.tpl" />
+        <option value="$PROJECT_DIR$/../ThinkPHP/Home/Tpl/Index/show.html" />
+        <option value="$PROJECT_DIR$/../ThinkPHP/Home/Lib/Action/IndexAction.class.php" />
+        <option value="$PROJECT_DIR$/../ThinkPHP/Study/3.输出和模型使用.txt" />
+        <option value="$PROJECT_DIR$/../ThinkPHP/Home/Tpl/Index/index.html" />
+        <option value="$PROJECT_DIR$/../ThinkPHP/Home/Conf/config.php" />
       </list>
     </option>
   </component>
@@ -240,7 +267,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Study" />
+              <option name="myItemId" value="thinkphp312" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ThinkPHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thinkphp312" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Conf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -259,6 +308,50 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ThinkPHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Runtime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ThinkPHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -297,6 +390,28 @@
               <option name="myItemId" value="php" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ThinkPHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Conf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -306,7 +421,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ThinkPHP" />
-    <property name="options.lastSelected" value="web-ide.project.structure" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -320,13 +435,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wamp\www\ThinkPHP\Admin\Lib\Action" />
       <recent name="D:\wamp\www\ThinkPHP\Study" />
       <recent name="D:\wamp\www\php\lampbrother7" />
       <recent name="D:\wamp\www\php\lampbrother5" />
       <recent name="D:\wamp\www\php" />
-      <recent name="D:\wamp\www\php\div" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\wamp\www\ThinkPHP\Home\Lib\Action" />
       <recent name="D:\wamp\www\php\css\import" />
     </key>
   </component>
@@ -1368,7 +1484,11 @@
       <created>1429112218912</created>
       <updated>1429112218912</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Revert &quot;1&quot;&#10;&#10;This reverts commit 8ceeb2ed78f91d1db80f6a36c8e56d4baa99cc62.&#10;&#10;Conflicts:&#10;&#9;php/.idea/vcs.xml&#10;&#9;php/.idea/workspace.xml&#10;&#9;php/two/1.html&#10;正则表达式">
+      <created>1429541032378</created>
+      <updated>1429541032378</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -1395,26 +1515,27 @@
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32853717" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3248731" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24931881" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="更改" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17428088" sideWeight="0.49620637" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3248731" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994923" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24931881" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19119878" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24931881" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3248731" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994923" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32853717" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1447,46 +1568,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lamp7/2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="17" selection-start="2364" selection-end="2364" vertical-scroll-proportion="2.9859154" vertical-offset="1163" max-vertical-offset="2451" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lamp7/3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="19" selection-start="1467" selection-end="1467" vertical-scroll-proportion="-2.1042254" vertical-offset="2324" max-vertical-offset="2679" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lamp7/4.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="17" selection-start="442" selection-end="442" vertical-scroll-proportion="1.1239437" vertical-offset="0" max-vertical-offset="1292" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lamp7/objstr.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="33" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="398" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lamp7/write.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="28" selection-start="160" selection-end="160" vertical-scroll-proportion="0.46264368" vertical-offset="29" max-vertical-offset="399" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lamp7/read.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="11" selection-start="131" selection-end="131" vertical-scroll-proportion="0.4108108" vertical-offset="0" max-vertical-offset="370" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lamp7/boyFriend.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="3" selection-start="518" selection-end="518" vertical-scroll-proportion="1.758209" vertical-offset="0" max-vertical-offset="1615" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lamp7/5.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="713" selection-end="713" vertical-scroll-proportion="2.2385058" vertical-offset="0" max-vertical-offset="931" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lamp7/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="135" selection-end="135" vertical-scroll-proportion="0.4108108" vertical-offset="0" max-vertical-offset="570" />
@@ -1698,30 +1779,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ThinkPHP/Study/2.MVC模式和URL访问.txt">
+    <entry file="file://$PROJECT_DIR$/../ThinkPHP/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="69" selection-start="496" selection-end="557" vertical-scroll-proportion="-9.6" vertical-offset="152" max-vertical-offset="780">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="534">
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ThinkPHP/Study/3.输出和模型使用.txt">
+    <entry file="file://$PROJECT_DIR$/../ThinkPHP/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="1" selection-start="1" selection-end="1" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="760">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="534">
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../ThinkPHP/Home/Lib/Action/UserAction.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="560">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="534">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ThinkPHP/Admin/Lib/Action/IndexAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="332" selection-start="428" selection-end="428" vertical-scroll-proportion="0.3960396" vertical-offset="0" max-vertical-offset="505">
+          <folding>
+            <marker date="1429539872393" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ThinkPHP/Study/2.MVC模式和URL访问.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="851" selection-end="887" vertical-scroll-proportion="0.81349206" vertical-offset="250" max-vertical-offset="780">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ThinkPHP/Home/Tpl/Index/show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="153" selection-end="153" vertical-scroll-proportion="0.2636535" vertical-offset="0" max-vertical-offset="531">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ThinkPHP/Study/3.输出和模型使用.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="8" selection-start="201" selection-end="264" vertical-scroll-proportion="-5.0" vertical-offset="130" max-vertical-offset="760">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ThinkPHP/Home/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="263" selection-end="263" vertical-scroll-proportion="-6.206897" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ThinkPHP/Home/Tpl/Index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="25" selection-start="166" selection-end="166" vertical-scroll-proportion="-4.827586" vertical-offset="0" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ThinkPHP/Home/Lib/Action/IndexAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="36" selection-start="756" selection-end="756" vertical-scroll-proportion="0.3271028" vertical-offset="0" max-vertical-offset="428">
+          <folding>
+            <element signature="e#91#698#0" expanded="false" />
+            <marker date="1429543874559" expanded="true" signature="129:490" placeholder="..." />
+            <marker date="1429543874559" expanded="true" signature="132:178" placeholder="{...}" />
+            <marker date="1429543874559" expanded="true" signature="188:222" placeholder="{...}" />
+            <marker date="1429543874559" expanded="true" signature="233:316" placeholder="{...}" />
+            <marker date="1429543874559" expanded="true" signature="325:416" placeholder="{...}" />
+            <marker date="1429543874559" expanded="true" signature="424:483" placeholder="{...}" />
+            <marker date="1429543874559" expanded="false" signature="504:523" placeholder="..." />
+            <marker date="1429543874559" expanded="true" signature="524:575" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

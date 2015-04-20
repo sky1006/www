@@ -60,7 +60,7 @@ class TagLibHtml extends TagLib
                 $parseStr = "<!-- 编辑器调用开始 --><script type='text/javascript' src='__ROOT__/Public/Js/eWebEditor/js/edit.js'></script><input type='hidden'  id='{$id}' name='{$name}'  value='{$conent}'><iframe src='__ROOT__/Public/Js/eWebEditor/ewebeditor.htm?id={$name}' frameborder=0 scrolling=no width='{$width}' height='{$height}'></iframe><script type='text/javascript'>function saveEditor(){document.getElementById('{$id}').value = getHTML();} </script><!-- 编辑器调用结束 -->";
                 break;
             case 'NETEASE':
-                $parseStr = '<!-- 编辑器调用开始 --><textarea id="' . $id . '" name="' . $name . '" style="display:none">' . $content . '</textarea><iframe ID="Editor" name="Editor" src="__ROOT__/Public/Js/HtmlEditor/index.html?ID=' . $name . '" frameBorder="0" marginHeight="0" marginWidth="0" scrolling="No" style="height:' . $height . ';width:' . $width . '"></iframe><!-- 编辑器调用结束 -->';
+                $parseStr = '<!-- 编辑器调用开始 --><textarea id="' . $id . '" name="' . $name . '" style="display:none">' . $content . '</textarea><iframe ID="Editor" name="Editor" src="__ROOT__/Public/Js/HtmlEditor/a.html?ID=' . $name . '" frameBorder="0" marginHeight="0" marginWidth="0" scrolling="No" style="height:' . $height . ';width:' . $width . '"></iframe><!-- 编辑器调用结束 -->';
                 break;
             case 'UBB':
                 $parseStr = '<script type="text/javascript" src="__ROOT__/Public/Js/UbbEditor.js"></script><div style="padding:1px;width:' . $width . ';border:1px solid silver;float:left;"><script LANGUAGE="JavaScript"> showTool(); </script></div><div><TEXTAREA id="UBBEditor" name="' . $name . '"  style="clear:both;float:none;width:' . $width . ';height:' . $height . '" >' . $content . '</TEXTAREA></div><div style="padding:1px;width:' . $width . ';border:1px solid silver;float:left;"><script LANGUAGE="JavaScript">showEmot();  </script></div>';
@@ -85,12 +85,12 @@ class TagLibHtml extends TagLib
     public function _imageBtn($attr)
     {
         $tag = $this->parseXmlAttr($attr, 'imageBtn');
-        $name = $tag['name'];                //名称
-        $value = $tag['value'];                //文字
-        $id = isset($tag['id']) ? $tag['id'] : '';                //ID
-        $style = isset($tag['style']) ? $tag['style'] : '';                //样式名
-        $click = isset($tag['click']) ? $tag['click'] : '';                //点击
-        $type = empty($tag['type']) ? 'button' : $tag['type'];                //按钮类型
+        $name = $tag['name']; //名称
+        $value = $tag['value']; //文字
+        $id = isset($tag['id']) ? $tag['id'] : ''; //ID
+        $style = isset($tag['style']) ? $tag['style'] : ''; //样式名
+        $click = isset($tag['click']) ? $tag['click'] : ''; //点击
+        $type = empty($tag['type']) ? 'button' : $tag['type']; //按钮类型
 
         if (!empty($name)) {
             $parseStr = '<div class="' . $style . '" ><input type="' . $type . '" id="' . $id . '" name="' . $name . '" value="' . $value . '" onclick="' . $click . '" class="' . $name . ' imgButton"></div>';
@@ -111,12 +111,12 @@ class TagLibHtml extends TagLib
     public function _imgLink($attr)
     {
         $tag = $this->parseXmlAttr($attr, 'imgLink');
-        $name = $tag['name'];                //名称
-        $alt = $tag['alt'];                //文字
-        $id = $tag['id'];                //ID
-        $style = $tag['style'];                //样式名
-        $click = $tag['click'];                //点击
-        $type = $tag['type'];                //点击
+        $name = $tag['name']; //名称
+        $alt = $tag['alt']; //文字
+        $id = $tag['id']; //ID
+        $style = $tag['style']; //样式名
+        $click = $tag['click']; //点击
+        $type = $tag['type']; //点击
         if (empty($type)) {
             $type = 'button';
         }
@@ -248,15 +248,15 @@ class TagLibHtml extends TagLib
     public function _grid($attr)
     {
         $tag = $this->parseXmlAttr($attr, 'grid');
-        $id = $tag['id'];                       //表格ID
-        $datasource = $tag['datasource'];               //列表显示的数据源VoList名称
-        $pk = empty($tag['pk']) ? 'id' : $tag['pk'];//主键名，默认为id
-        $style = $tag['style'];                    //样式名
-        $name = !empty($tag['name']) ? $tag['name'] : 'vo';                 //Vo对象名
-        $action = !empty($tag['action']) ? $tag['action'] : false;                   //是否显示功能操作
+        $id = $tag['id']; //表格ID
+        $datasource = $tag['datasource']; //列表显示的数据源VoList名称
+        $pk = empty($tag['pk']) ? 'id' : $tag['pk']; //主键名，默认为id
+        $style = $tag['style']; //样式名
+        $name = !empty($tag['name']) ? $tag['name'] : 'vo'; //Vo对象名
+        $action = !empty($tag['action']) ? $tag['action'] : false; //是否显示功能操作
         $key = !empty($tag['key']) ? true : false;
         if (isset($tag['actionlist'])) {
-            $actionlist = explode(',', trim($tag['actionlist']));    //指定功能列表
+            $actionlist = explode(',', trim($tag['actionlist'])); //指定功能列表
         }
 
         if (substr($tag['show'], 0, 1) == '$') {
@@ -264,7 +264,7 @@ class TagLibHtml extends TagLib
         } else {
             $show = $tag['show'];
         }
-        $show = explode(',', $show);                //列表显示字段列表
+        $show = explode(',', $show); //列表显示字段列表
 
         //计算表格的列数
         $colNum = count($show);
@@ -285,7 +285,7 @@ class TagLibHtml extends TagLib
         if (!empty($key)) {
             $parseStr .= '<th width="12">No</th>';
         }
-        foreach ($fields as $field) {//显示指定的字段
+        foreach ($fields as $field) { //显示指定的字段
             $property = explode('|', $field[0]);
             $showname = explode('|', $field[1]);
             if (isset($showname[1])) {
@@ -295,11 +295,11 @@ class TagLibHtml extends TagLib
             }
             $parseStr .= $showname[0] . '</th>';
         }
-        if (!empty($action)) {//如果指定显示操作功能列
+        if (!empty($action)) { //如果指定显示操作功能列
             $parseStr .= '<th >操作</th>';
         }
         $parseStr .= '</tr>';
-        $parseStr .= '<volist name="' . $datasource . '" id="' . $name . '" ><tr class="row" >';    //支持鼠标移动单元行颜色变化 具体方法在js中定义
+        $parseStr .= '<volist name="' . $datasource . '" id="' . $name . '" ><tr class="row" >'; //支持鼠标移动单元行颜色变化 具体方法在js中定义
 
         if (!empty($key)) {
             $parseStr .= '<td>{$i}</td>';
@@ -351,8 +351,8 @@ class TagLibHtml extends TagLib
             $parseStr .= '</td>';
 
         }
-        if (!empty($action)) {//显示功能操作
-            if (!empty($actionlist[0])) {//显示指定的功能项
+        if (!empty($action)) { //显示功能操作
+            if (!empty($actionlist[0])) { //显示指定的功能项
                 $parseStr .= '<td>';
                 foreach ($actionlist as $val) {
                     if (strpos($val, ':')) {
@@ -389,17 +389,17 @@ class TagLibHtml extends TagLib
     public function _list($attr)
     {
         $tag = $this->parseXmlAttr($attr, 'list');
-        $id = $tag['id'];                       //表格ID
-        $datasource = $tag['datasource'];               //列表显示的数据源VoList名称
-        $pk = empty($tag['pk']) ? 'id' : $tag['pk'];//主键名，默认为id
-        $style = $tag['style'];                    //样式名
-        $name = !empty($tag['name']) ? $tag['name'] : 'vo';                 //Vo对象名
-        $action = $tag['action'] == 'true' ? true : false;                   //是否显示功能操作
+        $id = $tag['id']; //表格ID
+        $datasource = $tag['datasource']; //列表显示的数据源VoList名称
+        $pk = empty($tag['pk']) ? 'id' : $tag['pk']; //主键名，默认为id
+        $style = $tag['style']; //样式名
+        $name = !empty($tag['name']) ? $tag['name'] : 'vo'; //Vo对象名
+        $action = $tag['action'] == 'true' ? true : false; //是否显示功能操作
         $key = !empty($tag['key']) ? true : false;
         $sort = $tag['sort'] == 'false' ? false : true;
-        $checkbox = $tag['checkbox'];                 //是否显示Checkbox
+        $checkbox = $tag['checkbox']; //是否显示Checkbox
         if (isset($tag['actionlist'])) {
-            $actionlist = explode(',', trim($tag['actionlist']));    //指定功能列表
+            $actionlist = explode(',', trim($tag['actionlist'])); //指定功能列表
         }
 
         if (substr($tag['show'], 0, 1) == '$') {
@@ -407,7 +407,7 @@ class TagLibHtml extends TagLib
         } else {
             $show = $tag['show'];
         }
-        $show = explode(',', $show);                //列表显示字段列表
+        $show = explode(',', $show); //列表显示字段列表
 
         //计算表格的列数
         $colNum = count($show);
@@ -425,13 +425,13 @@ class TagLibHtml extends TagLib
         foreach ($show as $val) {
             $fields[] = explode(':', $val);
         }
-        if (!empty($checkbox) && 'true' == strtolower($checkbox)) {//如果指定需要显示checkbox列
+        if (!empty($checkbox) && 'true' == strtolower($checkbox)) { //如果指定需要显示checkbox列
             $parseStr .= '<th width="8"><input type="checkbox" id="check" onclick="CheckAll(\'' . $id . '\')"></th>';
         }
         if (!empty($key)) {
             $parseStr .= '<th width="12">No</th>';
         }
-        foreach ($fields as $field) {//显示指定的字段
+        foreach ($fields as $field) { //显示指定的字段
             $property = explode('|', $field[0]);
             $showname = explode('|', $field[1]);
             if (isset($showname[1])) {
@@ -447,17 +447,17 @@ class TagLibHtml extends TagLib
             }
 
         }
-        if (!empty($action)) {//如果指定显示操作功能列
+        if (!empty($action)) { //如果指定显示操作功能列
             $parseStr .= '<th >操作</th>';
         }
 
         $parseStr .= '</tr>';
-        $parseStr .= '<volist name="' . $datasource . '" id="' . $name . '" ><tr class="row" ';    //支持鼠标移动单元行颜色变化 具体方法在js中定义
+        $parseStr .= '<volist name="' . $datasource . '" id="' . $name . '" ><tr class="row" '; //支持鼠标移动单元行颜色变化 具体方法在js中定义
         if (!empty($checkbox)) {
             $parseStr .= 'onmouseover="over(event)" onmouseout="out(event)" onclick="change(event)" ';
         }
         $parseStr .= '>';
-        if (!empty($checkbox)) {//如果需要显示checkbox 则在每行开头显示checkbox
+        if (!empty($checkbox)) { //如果需要显示checkbox 则在每行开头显示checkbox
             $parseStr .= '<td><input type="checkbox" name="key"	value="{$' . $name . '.' . $pk . '}"></td>';
         }
         if (!empty($key)) {
@@ -510,8 +510,8 @@ class TagLibHtml extends TagLib
             $parseStr .= '</td>';
 
         }
-        if (!empty($action)) {//显示功能操作
-            if (!empty($actionlist[0])) {//显示指定的功能项
+        if (!empty($action)) { //显示功能操作
+            if (!empty($actionlist[0])) { //显示指定的功能项
                 $parseStr .= '<td>';
                 foreach ($actionlist as $val) {
                     if (strpos($val, ':')) {

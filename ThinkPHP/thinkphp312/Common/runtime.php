@@ -57,10 +57,10 @@ if (!IS_CLI) {
     }
 
     //支持的URL模式
-    define('URL_COMMON', 0);   //普通模式
-    define('URL_PATHINFO', 1);   //PATHINFO模式
-    define('URL_REWRITE', 2);   //REWRITE模式
-    define('URL_COMPAT', 3);   // 兼容模式
+    define('URL_COMMON', 0); //普通模式
+    define('URL_PATHINFO', 1); //PATHINFO模式
+    define('URL_REWRITE', 2); //REWRITE模式
+    define('URL_COMPAT', 3); // 兼容模式
 }
 
 // 路径设置 可在入口文件中重新定义 所有路径常量都必须以/ 结尾
@@ -92,7 +92,7 @@ function load_runtime_file()
     // 读取核心文件列表
     $list = array(
         CORE_PATH . 'Core/Think.class.php',
-        CORE_PATH . 'Core/ThinkException.class.php',  // 异常处理类
+        CORE_PATH . 'Core/ThinkException.class.php', // 异常处理类
         CORE_PATH . 'Core/Behavior.class.php',
     );
     // 加载模式文件列表
@@ -124,10 +124,10 @@ function check_runtime()
         header('Content-Type:text/html; charset=utf-8');
         exit('目录 [ ' . RUNTIME_PATH . ' ] 不可写！');
     }
-    mkdir(CACHE_PATH);  // 模板缓存目录
-    if (!is_dir(LOG_PATH)) mkdir(LOG_PATH);    // 日志目录
-    if (!is_dir(TEMP_PATH)) mkdir(TEMP_PATH);   // 数据缓存目录
-    if (!is_dir(DATA_PATH)) mkdir(DATA_PATH);   // 数据文件目录
+    mkdir(CACHE_PATH); // 模板缓存目录
+    if (!is_dir(LOG_PATH)) mkdir(LOG_PATH); // 日志目录
+    if (!is_dir(TEMP_PATH)) mkdir(TEMP_PATH); // 数据缓存目录
+    if (!is_dir(DATA_PATH)) mkdir(DATA_PATH); // 数据文件目录
     return true;
 }
 
@@ -229,7 +229,7 @@ function build_dir_secure($dirs = '')
 {
     // 目录安全写入
     if (defined('BUILD_DIR_SECURE') && BUILD_DIR_SECURE) {
-        defined('DIR_SECURE_FILENAME') or define('DIR_SECURE_FILENAME', 'index.html');
+        defined('DIR_SECURE_FILENAME') or define('DIR_SECURE_FILENAME', 'a.html');
         defined('DIR_SECURE_CONTENT') or define('DIR_SECURE_CONTENT', ' ');
         // 自动写入目录安全文件
         $content = DIR_SECURE_CONTENT;
