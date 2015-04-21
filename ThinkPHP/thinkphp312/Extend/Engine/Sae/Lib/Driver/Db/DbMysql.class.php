@@ -11,7 +11,6 @@
 
 defined('THINK_PATH') or exit();
 define('CLIENT_MULTI_RESULTS', 131072);
-
 /**
  * Mysql数据库驱动类
  * @category   Think

@@ -113,7 +113,7 @@ function dump($var, $echo = true, $label = null, $strict = true)
 
 /**
  * 404处理
- * 调试模式会抛异常
+ * 调试模式会抛异常 
  * 部署模式下面传入url参数可以指定跳转页面，否则发送404信息
  * @param string $msg 提示信息
  * @param string $url 跳转URL地址
@@ -272,7 +272,7 @@ function U($url = '', $vars = '', $suffix = true, $redirect = false, $domain = f
         if (!empty($vars)) { // 添加参数
             foreach ($vars as $var => $val) {
                 if ('' !== trim($val)) $url .= $depr . $var . $depr . $val;
-            }
+            }                
         }
         if ($suffix) {
             $suffix = $suffix === true ? C('URL_HTML_SUFFIX') : $suffix;
@@ -300,7 +300,7 @@ function U($url = '', $vars = '', $suffix = true, $redirect = false, $domain = f
  * 渲染输出Widget
  * @param string $name Widget名称
  * @param array $data 传人的参数
- * @param boolean $return 是否返回内容
+ * @param boolean $return 是否返回内容 
  * @return void
  */
 function W($name, $data = array(), $return = false)
@@ -460,7 +460,6 @@ function F($name, $value = '', $path = DATA_PATH)
     $value = $kv->get($_SERVER['HTTP_APPVERSION'] . '/' . $name);
     return $value;
 }
-
 /**
  * 取得对象实例 支持调用类的静态方法
  * @param string $name 类名

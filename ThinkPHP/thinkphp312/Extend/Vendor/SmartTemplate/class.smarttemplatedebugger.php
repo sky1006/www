@@ -377,5 +377,4 @@ class SmartTemplateDebugger
         return $code;
     }
 }
-
 ?>

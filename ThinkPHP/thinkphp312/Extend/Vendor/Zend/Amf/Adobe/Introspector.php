@@ -36,7 +36,7 @@ require_once 'Zend/Server/Reflection.php';
  * @copyright  Copyright (c) 2005-2009 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
-class Zend_Amf_Adobe_Introspector
+class Zend_Amf_Adobe_Introspector 
 {
     /**
      * Options used:
@@ -64,7 +64,7 @@ class Zend_Amf_Adobe_Introspector
 
     /**
      * Constructor
-     *
+     * 
      * @return void
      */
     public function __construct()
@@ -74,12 +74,12 @@ class Zend_Amf_Adobe_Introspector
 
     /**
      * Create XML definition on an AMF service class
-     *
+     * 
      * @param  string $serviceClass Service class name
      * @param  array $options invocation options
      * @return string XML with service class introspection
      */
-    public function introspect($serviceClass, $options = array())
+    public function introspect($serviceClass, $options = array()) 
     {
         $this->_options = $options;
 
@@ -114,7 +114,7 @@ class Zend_Amf_Adobe_Introspector
 
     /**
      * Authentication handler
-     *
+     * 
      * @param  Zend_Acl $acl
      * @return unknown_type
      */
@@ -125,9 +125,9 @@ class Zend_Amf_Adobe_Introspector
 
     /**
      * Generate map of public class attributes
-     *
+     * 
      * @param  string $typename type name
-     * @param  DOMElement $typexml target XML element
+     * @param  DOMElement $typexml target XML element 
      * @return void
      */
     protected function _addClassAttributes($typename, DOMElement $typexml)
@@ -157,14 +157,14 @@ class Zend_Amf_Adobe_Introspector
     /**
      * Build XML service description from reflection class
      *
-     * @param  Zend_Server_Reflection_Class $refclass
+     * @param  Zend_Server_Reflection_Class $refclass  
      * @param  DOMElement $target target XML element
      * @return void
      */
     protected function _addService(Zend_Server_Reflection_Class $refclass, DOMElement $target)
     {
         foreach ($refclass->getMethods() as $method) {
-            if (!$method->isPublic()
+            if (!$method->isPublic() 
                 || $method->isConstructor()
                 || ('__' == substr($method->name, 0, 2))
             ) {
@@ -200,7 +200,7 @@ class Zend_Amf_Adobe_Introspector
 
     /**
      * Extract type of the property from DocBlock
-     *
+     * 
      * @param  Zend_Reflection_Property $prop reflection property object
      * @return string Property type
      */
@@ -222,10 +222,10 @@ class Zend_Amf_Adobe_Introspector
 
     /**
      * Get the array of service directories
-     *
+     * 
      * @return array Service class directories
      */
-    protected function _getServicePath()
+    protected function _getServicePath() 
     {
         if (isset($this->_options['server'])) {
             return $this->_options['server']->getDirectory();
@@ -240,7 +240,7 @@ class Zend_Amf_Adobe_Introspector
 
     /**
      * Map from PHP type name to AS type name
-     *
+     * 
      * @param  string $typename PHP type name
      * @return string AS type name
      */
@@ -263,11 +263,11 @@ class Zend_Amf_Adobe_Introspector
 
     /**
      * Register new type on the system
-     *
+     * 
      * @param  string $typename type name
      * @return string New type name
      */
-    protected function _registerType($typename)
+    protected function _registerType($typename) 
     {
         // Known type - return its AS name
         if (isset($this->_typesMap[$typename])) {
@@ -291,19 +291,19 @@ class Zend_Amf_Adobe_Introspector
         $typeEl = $this->_xml->createElement('type');
         $typeEl->setAttribute('name', $asTypeName);
         $this->_addClassAttributes($typename, $typeEl);
-        $this->_types->appendChild($typeEl);
+        $this->_types->appendChild($typeEl);    
 
         return $asTypeName;
     }
 
     /**
      * Return error with error message
-     *
+     * 
      * @param  string $msg Error message
-     * @return string
+     * @return string 
      */
-    protected function _returnError($msg)
+    protected function _returnError($msg) 
     {
-        return 'ERROR: $msg';
+        return 'ERROR: $msg';    
     }
 }

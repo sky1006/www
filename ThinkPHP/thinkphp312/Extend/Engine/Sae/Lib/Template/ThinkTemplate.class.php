@@ -30,7 +30,6 @@ class  ThinkTemplate
     public $config = array();
     private $literal = array();
     private $block = array();
-
     /**
      * 架构函数
      * @access public
@@ -569,10 +568,10 @@ class  ThinkTemplate
                                 $name = "$fun($args[1])";
                             } else {
                                 $name = "$fun($name,$args[1])";
-                            }
+                        }
                         } else if (!empty($args[0])) {
                             $name = "$fun($name)";
-                        }
+                    }
                     }
             }
         }
@@ -712,5 +711,5 @@ class  ThinkTemplate
             $parseStr .= file_get_contents($templateName);
         }
         return $parseStr;
-    }
+    }    
 }

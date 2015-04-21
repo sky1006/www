@@ -150,7 +150,7 @@ class Zend_Amf_Parse_Amf3_Serializer extends Zend_Amf_Parse_Serializer
                         $markerType = Zend_Amf_Constants::AMF3_OBJECT;
                     }
                     break;
-                default:
+                default: 
                     require_once 'Zend/Amf/Exception.php';
                     throw new Zend_Amf_Exception('Unsupported data type: ' . gettype($data));
             }
@@ -359,7 +359,7 @@ class Zend_Amf_Parse_Amf3_Serializer extends Zend_Amf_Parse_Serializer
     /**
      * Check if the given object is in the reference table, write the reference if it exists,
      * otherwise add the object to the reference table
-     *
+     * 
      * @param mixed $object object to check for reference
      * @return Boolean true, if the reference was written, false otherwise
      */
@@ -449,7 +449,7 @@ class Zend_Amf_Parse_Amf3_Serializer extends Zend_Amf_Parse_Serializer
                 'encoding' => $encoding,
                 'propertyNames' => $propertyNames,
             );
-
+            
             $traitsInfo = Zend_Amf_Constants::AMF3_OBJECT_ENCODING;
             $traitsInfo |= $encoding << 2;
             $traitsInfo |= (count($propertyNames) << 4);
@@ -493,7 +493,7 @@ class Zend_Amf_Parse_Amf3_Serializer extends Zend_Amf_Parse_Serializer
                     require_once 'Zend/Amf/Exception.php';
                     throw new Zend_Amf_Exception('External Object Encoding not implemented');
                     break;
-                default:
+                default: 
                     require_once 'Zend/Amf/Exception.php';
                     throw new Zend_Amf_Exception('Unknown Object Encoding type: ' . $encoding);
             }

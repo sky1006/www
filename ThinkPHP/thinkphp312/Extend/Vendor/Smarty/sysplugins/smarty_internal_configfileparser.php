@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Smarty Internal Plugin Configfileparser
  *
@@ -9,6 +8,7 @@
  * @subpackage Compiler
  * @author Uwe Tews
  */
+
 class TPC_yyToken implements ArrayAccess
 {
     public $string = '';
@@ -104,7 +104,6 @@ class Smarty_Internal_Configfileparser#line 79 "smarty_internal_configfileparser
         $this->smarty = $compiler->smarty;
         $this->compiler = $compiler;
     }
-
     public static function &instance($new_instance = null)
     {
         static $instance = null;
@@ -189,7 +188,6 @@ class Smarty_Internal_Configfileparser#line 79 "smarty_internal_configfileparser
             $this->set_var($var, $this->compiler->config_data['sections'][$section_name]);
         }
     }
-
 #line 173 "smarty_internal_configfileparser.php"
 
     const TPC_OPENB = 1;
@@ -342,7 +340,6 @@ class Smarty_Internal_Configfileparser#line 79 "smarty_internal_configfileparser
     const YYERRSYMDT = 'yy0';
     const YYFALLBACK = 0;
     static public $yyFallback = array();
-
     static function Trace($TraceFILE, $zTracePrompt)
     {
         if (!$TraceFILE) {
@@ -758,7 +755,6 @@ class Smarty_Internal_Configfileparser#line 79 "smarty_internal_configfileparser
         17 => 17,
         19 => 19,
     );
-
 #line 131 "smarty_internal_configfileparser.y"
     function yy_r0()
     {
@@ -784,7 +780,7 @@ class Smarty_Internal_Configfileparser#line 79 "smarty_internal_configfileparser
     {
         if ($this->smarty->config_read_hidden) {
             $this->add_section_vars($this->yystack[$this->yyidx + -3]->minor, $this->yystack[$this->yyidx + 0]->minor);
-        }
+    }
         $this->_retvalue = null;
     }
 #line 687 "smarty_internal_configfileparser.php"
@@ -865,7 +861,6 @@ class Smarty_Internal_Configfileparser#line 79 "smarty_internal_configfileparser
     {
         $this->_retvalue = '';
     }
-
 #line 752 "smarty_internal_configfileparser.php"
 
     private $_retvalue;
@@ -1040,5 +1035,4 @@ class Smarty_Internal_Configfileparser#line 79 "smarty_internal_configfileparser
         } while ($yymajor != self::YYNOCODE && $this->yyidx >= 0);
     }
 }
-
 ?>

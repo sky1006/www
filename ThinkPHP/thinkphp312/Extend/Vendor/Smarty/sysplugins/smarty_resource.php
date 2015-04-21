@@ -715,7 +715,7 @@ class Smarty_Template_Source
             case 'timestamp':
             case 'exists':
             case 'content':
-                // required for extends: only
+            // required for extends: only
             case 'template':
                 $this->$property_name = $value;
                 break;

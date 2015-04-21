@@ -10,7 +10,6 @@
 // +----------------------------------------------------------------------
 
 defined('THINK_PATH') or exit();
-
 /**
  * Sqlsrv数据库驱动
  * @category   Extend
@@ -21,7 +20,6 @@ defined('THINK_PATH') or exit();
 class DbSqlsrv extends Db
 {
     protected $selectSql = 'SELECT T1.* FROM (SELECT thinkphp.*, ROW_NUMBER() OVER (%ORDER%) AS ROW_NUMBER FROM (SELECT %DISTINCT% %FIELD% FROM %TABLE%%JOIN%%WHERE%%GROUP%%HAVING%) AS thinkphp) AS T1 %LIMIT%%COMMENT%';
-
     /**
      * 架构函数 读取数据库配置信息
      * @access public

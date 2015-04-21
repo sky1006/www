@@ -127,7 +127,6 @@ function  parse_sae_define($define)
     $define = str_replace(',', ".','.", $define);
     return 'SAE_' . $define;
 }
-
 // 编译系统行为扩展类库
 function build_tags_cache()
 {
@@ -181,7 +180,7 @@ function buildApp()
         } else { //[sae] 默认加载系统行为扩展定义
             C('extends', include SAE_PATH . 'Conf/tags.php');
         }
-    }
+        }
 
     // 加载应用行为定义
     if (isset($mode['tags'])) {
@@ -206,7 +205,7 @@ function buildApp()
             SAE_PATH . 'Lib/Core/Action.class.php', //[sae] 控制器类
             CORE_PATH . 'Core/View.class.php',  // 视图类
         );
-    }
+        }
     // 项目追加核心编译列表文件
     if (is_file(CONF_PATH . 'core.php')) {
         $list = array_merge($list, include CONF_PATH . 'core.php');
@@ -232,7 +231,7 @@ function buildApp()
         //[sae] 别名文件
         $alias = include SAE_PATH . 'Conf/alias.php';
     }
-    alias_import($alias);
+        alias_import($alias);
     $compile .= 'alias_import(' . var_export($alias, true) . ');';
 
     // 加载项目别名定义
@@ -244,4 +243,4 @@ function buildApp()
     // 部署模式下面生成编译文件
     build_runtime_cache($compile);
     return;
-}
+    }

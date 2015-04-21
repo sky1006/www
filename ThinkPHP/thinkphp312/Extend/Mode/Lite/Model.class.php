@@ -219,7 +219,6 @@ class Model
             return;
         }
     }
-
     // 回调方法 初始化模型
     protected function _initialize()
     {
@@ -645,14 +644,14 @@ class Model
                     switch ($auto[3]) {
                         case 'function':    //  使用函数进行填充 字段的值作为参数
                         case 'callback': // 使用回调方法
-                            $args = isset($auto[4]) ? $auto[4] : array();
-                            if (isset($data[$auto[0]])) {
-                                array_unshift($args, $data[$auto[0]]);
+                        $args = isset($auto[4]) ? $auto[4] : array();
+                        if (isset($data[$auto[0]])) {
+                            array_unshift($args, $data[$auto[0]]);
                             }
-                            if ('function' == $auto[3]) {
-                                $data[$auto[0]] = call_user_func_array($auto[1], $args);
-                            } else {
-                                $data[$auto[0]] = call_user_func_array(array(&$this, $auto[1]), $args);
+                        if ('function' == $auto[3]) {
+                            $data[$auto[0]] = call_user_func_array($auto[1], $args);
+                        } else {
+                            $data[$auto[0]] = call_user_func_array(array(&$this, $auto[1]), $args);
                             }
                             break;
                         case 'field':    // 用其它字段的值进行填充
@@ -750,11 +749,11 @@ class Model
         switch ($val[4]) {
             case 'function':// 使用函数进行验证
             case 'callback':// 调用方法进行验证
-                $args = isset($val[6]) ? $val[6] : array();
-                array_unshift($args, $data[$val[0]]);
-                if ('function' == $val[4]) {
+            $args = isset($val[6]) ? $val[6] : array();
+            array_unshift($args, $data[$val[0]]);
+            if ('function' == $val[4]) {
                     return call_user_func_array($val[1], $args);
-                } else {
+            } else {
                     return call_user_func_array(array(&$this, $val[1]), $args);
                 }
             case 'confirm': // 验证两个字段是否相同
@@ -819,7 +818,7 @@ class Model
             case 'regex':
             default:    // 默认使用正则验证 可以使用验证类中定义的验证名称
                 // 检查附加规则
-                return $this->regex($value, $rule);
+            return $this->regex($value, $rule);
         }
     }
 
@@ -992,7 +991,6 @@ class Model
     {
         return $this->db->getLastSql();
     }
-
     // 鉴于getLastSql比较常用 增加_sql 别名
     public function _sql()
     {

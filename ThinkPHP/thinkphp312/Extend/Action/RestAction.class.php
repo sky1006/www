@@ -10,9 +10,8 @@
 // +----------------------------------------------------------------------
 
 defined('THINK_PATH') or exit();
-
 /**
- * ThinkPHP Restful 控制器扩展
+ * ThinkPHP Restful 控制器扩展 
  * @category   Extend
  * @package  Extend
  * @subpackage  Action
@@ -315,7 +314,6 @@ abstract class RestAction
             header('Status:' . $code . ' ' . $_status[$code]);
         }
     }
-
     /**
      * 获取当前请求的Accept头信息
      * @return string

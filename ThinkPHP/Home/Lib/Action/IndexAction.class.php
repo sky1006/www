@@ -37,13 +37,42 @@ class IndexAction extends Action
     <script type="text/javascript" src="http://tajs.qq.com/stats?sId=9347272" charset="UTF-8"></script>','utf-8');
             */
 
-        $name = "燕子";
-        $this->assign('data', $name);
+//        $user=new Model('Users');
+        $user = M('Users');
+        $arr = $user->select();
+//        var_dump($arr);
+//        $name=$arr[2]['username'];
+//        $this->assign('myname',$arr);
+//        $arr=$user->where('id=1025')->getField('username');
+
+        //add
+        /*    $user->username='nokia1';
+            $user->passwd=md5(111111);
+            $user->age='23';
+            $user->sex='nv';
+            $user->email='ads@163.com';
+            $user->add();*/
+
+
+//        var_dump($arr);
+        //删除
+//        $user->delete(1030);
+
+        //update
+        $data['id'] = 1031;
+        $data['username'] = 'huawei';
+        $data['passwd'] = md5(123);
+        $user->save($data);
+
         $this->display();
     }
 
     public function show()
     {
+        $this->assign('data1', '中文');
+        $this->assign('data2', 'english');
+        $this->assign('中国', '中国');
+        $this->assign('美国', 'Amercian');
         $this->display();
     }
 }

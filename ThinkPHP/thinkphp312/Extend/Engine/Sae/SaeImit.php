@@ -35,5 +35,4 @@ function sae_auto_load($class)
     if (isset($files[$class]))
         require $files[$class];
 }
-
 ?>

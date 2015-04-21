@@ -101,7 +101,7 @@ class MongoModel extends Model
         // 根据主键类型处理主键数据
         if (isset($data[$pk]) && $this->_idType == self::TYPE_OBJECT) {
             $data[$pk] = new MongoId($data[$pk]);
-        }
+        }    
     }
 
     /**

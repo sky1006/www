@@ -48,7 +48,7 @@ class SaeObject
 
     public function setAuth($accesskey, $secretkey)
     {
-
+        
     }
 
     protected function createTable()

@@ -1,4 +1,4 @@
-<?php
+<?php 
 // +----------------------------------------------------------------------
 // | ThinkPHP [ WE CAN DO IT JUST THINK IT ]
 // +----------------------------------------------------------------------
@@ -10,7 +10,6 @@
 // +----------------------------------------------------------------------
 
 defined('THINK_PATH') or exit();
-
 /**
  * 数据库方式Session驱动
  *    CREATE TABLE think_session (
@@ -46,7 +45,7 @@ class SessionDb
      * 打开Session
      * @access public
      * @param string $savePath
-     * @param mixed $sessName
+     * @param mixed $sessName  
      */
     public function open($savePath, $sessName)
     {
@@ -58,11 +57,11 @@ class SessionDb
             return false;
         $this->hander = $hander;
         return true;
-    }
+    } 
 
     /**
      * 关闭Session
-     * @access public
+     * @access public 
      */
     public function close()
     {
@@ -73,7 +72,7 @@ class SessionDb
     /**
      * 读取Session
      * @access public
-     * @param string $sessID
+     * @param string $sessID 
      */
     public function read($sessID)
     {
@@ -89,7 +88,7 @@ class SessionDb
      * 写入Session
      * @access public
      * @param string $sessID
-     * @param String $sessData
+     * @param String $sessData  
      */
     public function write($sessID, $sessData)
     {
@@ -103,7 +102,7 @@ class SessionDb
     /**
      * 删除Session
      * @access public
-     * @param string $sessID
+     * @param string $sessID 
      */
     public function destroy($sessID)
     {
@@ -116,7 +115,7 @@ class SessionDb
     /**
      * Session 垃圾回收
      * @access public
-     * @param string $sessMaxLifeTime
+     * @param string $sessMaxLifeTime 
      */
     public function gc($sessMaxLifeTime)
     {
@@ -126,7 +125,7 @@ class SessionDb
 
     /**
      * 打开Session
-     * @access public
+     * @access public 
      */
     public function execute()
     {

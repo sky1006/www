@@ -48,6 +48,7 @@ class  ThinkTemplate
         $this->config['tmpl_end'] = $this->stripPreg(C('TMPL_R_DELIM'));
         $this->config['default_tmpl'] = C('TEMPLATE_NAME');
         $this->config['layout_item'] = C('TMPL_LAYOUT_ITEM');
+
     }
 
     private function stripPreg($str)

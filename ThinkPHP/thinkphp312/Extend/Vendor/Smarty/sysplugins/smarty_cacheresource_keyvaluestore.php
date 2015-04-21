@@ -160,7 +160,6 @@ abstract class Smarty_CacheResource_KeyValueStore extends Smarty_CacheResource
         $this->invalidate($cid, $resource_name, $cache_id, $compile_id, $uid);
         return -1;
     }
-
     /**
      * Get template's unique ID
      *

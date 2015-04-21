@@ -113,7 +113,6 @@ class Model
     protected function _initialize()
     {
     }
-
     /**
      * 利用__call方法实现一些特殊的Model方法 （魔术方法）
      * @access public
@@ -463,7 +462,6 @@ class Model
     {
         return $this->db->rollback();
     }
-
     /**
      * 获取主键名称
      * @access public

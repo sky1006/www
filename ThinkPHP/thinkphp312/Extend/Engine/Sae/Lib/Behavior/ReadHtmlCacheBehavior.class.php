@@ -10,7 +10,6 @@
 // +----------------------------------------------------------------------
 
 defined('THINK_PATH') or exit();
-
 /**
  * 系统行为扩展：静态缓存读取
  * @category   Think
@@ -27,7 +26,6 @@ class ReadHtmlCacheBehavior extends Behavior
         'HTML_FILE_SUFFIX' => '.html',
     );
     static protected $html_content = '';//[sae] 存储html内容
-
     // 行为扩展的执行入口必须是run
     public function run(&$params)
     {

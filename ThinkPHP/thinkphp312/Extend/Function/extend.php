@@ -138,7 +138,6 @@ function is_utf8($string)
        |  \xF4[\x80-\x8F][\x80-\xBF]{2}     # plane 16
     )*$%xs', $string);
 }
-
 /**
  * 代码加亮
  * @param String $str 要高亮显示的字符串 或者 文件名
@@ -357,7 +356,7 @@ function remove_xss($val)
                     $pattern .= '|';
                     $pattern .= '|(&#0{0,8}([9|10|13]);)';
                     $pattern .= ')*';
-                }
+            }
                 $pattern .= $ra[$i][$j];
             }
             $pattern .= '/i';

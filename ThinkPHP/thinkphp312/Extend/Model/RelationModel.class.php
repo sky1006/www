@@ -11,7 +11,7 @@
 
 defined('THINK_PATH') or exit();
 /**
- * ThinkPHP关联模型扩展
+ * ThinkPHP关联模型扩展 
  * @category   Extend
  * @package  Extend
  * @subpackage  Model
@@ -168,7 +168,7 @@ class RelationModel extends Model
                                 $mappingFk = !empty($val['parent_key']) ? $val['parent_key'] : 'parent_id';
                             } else {
                                 $mappingFk = !empty($val['foreign_key']) ? $val['foreign_key'] : strtolower($model->getModelName()) . '_id';     //  关联外键
-                            }
+                                }
                             $fk = $result[$mappingFk];
                             $mappingCondition .= " AND {$model->getPk()}='{$fk}'";
                             $relationData = $model->where($mappingCondition)->field($mappingFields)->find();
@@ -216,12 +216,12 @@ class RelationModel extends Model
                             }
                         } else {
                             $result[$mappingName] = $relationData;
-                        }
+                            }
                         unset($relationData);
                     } else {
                         return $relationData;
+                        }
                     }
-                }
             }
         }
         return $result;

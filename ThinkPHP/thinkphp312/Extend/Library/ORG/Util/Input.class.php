@@ -113,26 +113,26 @@ class Input
                 $callback = array_shift($args);
                 $params = array_shift($args);
                 $data = call_user_func_array($callback, $params);
-                if (count($args) === 0) {
+                if (count($args)===0) {
                     return $data;
                 }
                 $filter = isset($args[0]) ? $args[0] : $this->filter;
                 if (!empty($filter)) {
-                    $data = call_user_func_array($filter, $data);
+                    $data = call_user_func_array($filter,$data);
                 }
             } else {
-                if (0 == count($args) || empty($args[0])) {
+                if (0 == count($args) || empty($args[0]) ) {
                     return $input;
                 } elseif (array_key_exists($args[0], $input)) {
                     // 系统变量
                     $data = $input[$args[0]];
                     $filter = isset($args[1]) ? $args[1] : $this->filter;
                     if (!empty($filter)) {
-                        $data = call_user_func_array($filter, $data);
+                        $data = call_user_func_array($filter,$data);
                     }
-                } else {
+                }else{
                     // 不存在指定输入
-                    $data = isset($args[2]) ? $args[2] : NULL;
+                    $data = isset($args[2]) ? $args[2]:NULL;
                 }
             }
             return $data;
@@ -152,7 +152,7 @@ class Input
      */
     public function filter($filter)
     {
-        $this->filter = $filter;
+        $this->filter   =   $filter;
         return $this;
     }
 
@@ -188,7 +188,7 @@ class Input
      */
     static public function forSearch($string)
     {
-        return str_replace(array('%', '_'), array('\%', '\_'), $string);
+        return str_replace(array('%', '_'), array('\%','\_'), $string);
     }
 
     /**
@@ -202,7 +202,7 @@ class Input
      */
     static public function forShow($string)
     {
-        return self::nl2Br(self::hsc($string));
+        return self::nl2Br( self::hsc($string));
     }
 
     /**
@@ -234,7 +234,7 @@ class Input
      */
     static public function forTag($string)
     {
-        return str_replace(array('"', "'"), array('&quot;', '&#039;'), $string);
+        return str_replace(array('"',"'"), array('&quot;', '&#039;'), $string);
     }
 
     /**
@@ -248,8 +248,7 @@ class Input
      * @return string
     +----------------------------------------------------------
      */
-    static public function makeLink($string)
-    {
+    static public function makeLink($string) {
         $validChars = "a-z0-9\/\-_+=.~!%@?#&;:$\|";
         $patterns = array(
             "/(^|[^]_a-z0-9-=\"'\/])([a-z]+?):\/\/([{$validChars}]+)/ei",
@@ -295,8 +294,7 @@ class Input
      * @return string
     +----------------------------------------------------------
      */
-    static public function nl2Br($string)
-    {
+    static public function nl2Br($string) {
         return preg_replace("/(\015\012)|(\015)|(\012)/", "<br />", $string);
     }
 
@@ -311,8 +309,7 @@ class Input
      * @return string
     +----------------------------------------------------------
      */
-    static public function addSlashes($string)
-    {
+    static public function addSlashes($string) {
         if (!get_magic_quotes_gpc()) {
             $string = addslashes($string);
         }
@@ -346,8 +343,7 @@ class Input
      * @return string
     +----------------------------------------------------------
      */
-    static public function stripSlashes($string)
-    {
+    static public function stripSlashes($string) {
         if (get_magic_quotes_gpc()) {
             $string = stripslashes($string);
         }
@@ -363,10 +359,9 @@ class Input
      * @param string $string 要处理的字符串
      * +----------------------------------------------------------
      * @return string
-    +----------------------------------------------------------
+     +----------------------------------------------------------
      */
-    static function hsc($string)
-    {
+    static function hsc($string) {
         return preg_replace(array("/&amp;/i", "/&nbsp;/i"), array('&', '&amp;nbsp;'), htmlspecialchars($string, ENT_QUOTES));
     }
 
@@ -379,10 +374,9 @@ class Input
      * @param string $text 要处理的字符串
      * +----------------------------------------------------------
      * @return string
-    +----------------------------------------------------------
+     +----------------------------------------------------------
      */
-    static function undoHsc($text)
-    {
+    static function undoHsc($text) {
         return preg_replace(array("/&gt;/i", "/&lt;/i", "/&quot;/i", "/&#039;/i", '/&amp;nbsp;/i'), array(">", "<", "\"", "'", "&nbsp;"), $text);
     }
 
@@ -408,33 +402,31 @@ class Input
         //完全过滤js
         $text = preg_replace('/<script?.*\/script>/', '', $text);
 
-        $text = str_replace('[', '&#091;', $text);
-        $text = str_replace(']', '&#093;', $text);
+        $text = str_replace('[','&#091;', $text);
+        $text = str_replace(']', '&#093;',$text);
         $text = str_replace('|', '&#124;', $text);
         //过滤换行符
         $text = preg_replace('/\r?\n/', '', $text);
         //br
-        $text = preg_replace('/<br(\s\/)?' . '>/i', '[br]', $text);
+        $text =  preg_replace('/<br(\s\/)?' . '>/i', '[br]', $text);
         $text = preg_replace('/(\[br\]\s*){10,}/i', '[br]', $text);
         //过滤危险的属性，如：过滤on事件lang js
         while (preg_match('/(<[^><]+)(lang|on|action|background|codebase|dynsrc|lowsrc)[^><]+/i', $text, $mat)) {
             $text = str_replace($mat[0], $mat[1], $text);
         }
         while (preg_match('/(<[^><]+)(window\.|javascript:|js:|about:|file:|document\.|vbs:|cookie)([^><]*)/i', $text, $mat)) {
-            $text = str_replace($mat[0], $mat[1] . $mat[3], $text);
+            $text = str_replace($mat[0],$mat[1] . $mat[3], $text);
         }
         if (empty($allowTags)) {
-            $allowTags = self::$htmlTags['allow'];
-        }
+            $allowTags = self::$htmlTags['allow']; }
         //允许的HTML标签
         $text = preg_replace('/<(' . $allowTags . ')( [^><\[\]]*)>/i', '[\1\2]', $text);
         //过滤多余html
-        if (empty($banTag)) {
-            $banTag = self::$htmlTags['ban'];
+        if (empty($banTag) ) { $banTag = self::$htmlTags['ban'];
         }
         $text = preg_replace('/<\/?(' . $banTag . ')[^><]*>/i', '', $text);
         //过滤合法的html标签
-        while (preg_match('/<([a-z]+)[^><\[\]]*>[^><]*<\/\1>/i', $text, $mat)) {
+        while (preg_match('/<([a-z]+)[^><\[\]]*>[^><]*<\/\1>/i',$text,$mat)) {
             $text = str_replace($mat[0], str_replace('>', ']', str_replace('<', '[', $mat[0])), $text);
         }
         //转换引号
@@ -445,19 +437,19 @@ class Input
         $text = str_replace('\'\'', '||', $text);
         $text = str_replace('""', '||', $text);
         //过滤错误的单个引号
-        while (preg_match('/\[[^\[\]]*(\"|\')[^\[\]]*\]/i', $text, $mat)) {
+        while (preg_match('/\[[^\[\]]*(\"|\')[^\[\]]*\]/i',$text, $mat)) {
             $text = str_replace($mat[0], str_replace($mat[1], '', $mat[0]), $text);
         }
         //转换其它所有不合法的 < >
-        $text = str_replace('<', '&lt;', $text);
+        $text = str_replace('<','&lt;', $text);
         $text = str_replace('>', '&gt;', $text);
         $text = str_replace('"', '&quot;', $text);
         //反转换
-        $text = str_replace('[', '<', $text);
-        $text = str_replace(']', '>', $text);
-        $text = str_replace('|', '"', $text);
+        $text =  str_replace('[', '<', $text);
+        $text = str_replace(']','>',$text);
+        $text =  str_replace('|', '"', $text);
         //过滤多余空格
-        $text = str_replace('  ', ' ', $text);
+        $text = str_replace('  ',' ',$text);
         return $text;
     }
 
@@ -472,14 +464,13 @@ class Input
      * @return string
     +----------------------------------------------------------
      */
-    static public function deleteHtmlTags($string)
-    {
-        while (strstr($string, '>')) {
+    static public function deleteHtmlTags($string) {
+        while(strstr($string, '>')) {
             $currentBeg = strpos($string, '<');
             $currentEnd = strpos($string, '>');
             $tmpStringBeg = @substr($string, 0, $currentBeg);
             $tmpStringEnd = @substr($string, $currentEnd + 1, strlen($string));
-            $string = $tmpStringBeg . $tmpStringEnd;
+            $string = $tmpStringBeg.$tmpStringEnd;
         }
         return $string;
     }
@@ -495,13 +486,13 @@ class Input
      *        false：去除换行；true：保留原样；string：替换成string
      * +----------------------------------------------------------
      * @return string
-    +----------------------------------------------------------
+     +----------------------------------------------------------
      */
     static public function nl2($string, $br = '<br />')
     {
         if ($br == false) {
             $string = preg_replace("/(\015\012)|(\015)|(\012)/", '', $string);
-        } elseif ($br != true) {
+        } elseif ($br != true){
             $string = preg_replace("/(\015\012)|(\015)|(\012)/", $br, $string);
         }
         return $string;

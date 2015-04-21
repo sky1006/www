@@ -7,7 +7,6 @@
 // | Author: luofei614<www.3g4k.com>
 // +----------------------------------------------------------------------
 defined('THINK_PATH') or exit();
-
 /**
  * 升级短信通知， 如果有ThinkPHP新版升级，或者重要的更新，会发送短信通知你。
  * 需要使用SAE的短信服务。请先找一个SAE的应用开通短信服务。
@@ -21,9 +20,9 @@ defined('THINK_PATH') or exit();
  * </code>
  *
  * 2，将此文件放在项目的Lib/Behavior文件夹下。
- *注：在SAE上面使用时，以上两步可以省略
+ *注：在SAE上面使用时，以上两步可以省略 
  * 3，在config.php中配置：
- *  'UPGRADE_NOTICE_ON'=>true,//开启短信升级提醒功能
+ *  'UPGRADE_NOTICE_ON'=>true,//开启短信升级提醒功能 
  * 'UPGRADE_NOTICE_AKEY'=>'your akey',//SAE应用的AKEY，如果在SAE上使用可以不填
  * 'UPGRADE_NOTICE_SKEY'=>'your skey',//SAE应用的SKEY，如果在SAE上使用可以不填
  *'UPGRADE_NOTICE_MOBILE'=>'136456789',//接受短信的手机号
@@ -118,7 +117,7 @@ class UpgradeNoticeBehavior extends Behavior
         $txt = curl_exec($ch);
         if (curl_errno($ch)) {
             trace(curl_error($ch), '升级通知出错', 'NOTIC', true);
-
+            
             return false;
         }
         curl_close($ch);

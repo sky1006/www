@@ -1,14 +1,14 @@
 <?php
 /**
  * Smarty plugin
- *
+ * 
  * @package Smarty
  * @subpackage Debug
  */
 
 /**
  * Smarty debug_print_var modifier plugin
- *
+ * 
  * Type:     modifier<br>
  * Name:     debug_print_var<br>
  * Purpose:  formats variable contents for display in the console
@@ -17,7 +17,7 @@
  * @param array|object $var variable to be formatted
  * @param integer $depth maximum recursion depth if $var is an array
  * @param integer $length maximum string length if $var is a string
- * @return string
+ * @return string 
  */
 function smarty_modifier_debug_print_var($var, $depth = 0, $length = 40)
 {
@@ -34,7 +34,7 @@ function smarty_modifier_debug_print_var($var, $depth = 0, $length = 40)
                     . '<b>' . strtr($curr_key, $_replace) . '</b> =&gt; '
                     . smarty_modifier_debug_print_var($curr_val, ++$depth, $length);
                 $depth--;
-            }
+            } 
             break;
 
         case 'object' :
@@ -45,7 +45,7 @@ function smarty_modifier_debug_print_var($var, $depth = 0, $length = 40)
                     . '<b> -&gt;' . strtr($curr_key, $_replace) . '</b> = '
                     . smarty_modifier_debug_print_var($curr_val, ++$depth, $length);
                 $depth--;
-            }
+            } 
             break;
 
         case 'boolean' :
@@ -59,13 +59,13 @@ function smarty_modifier_debug_print_var($var, $depth = 0, $length = 40)
                 $results = 'null';
             } else {
                 $results = htmlspecialchars((string)$var);
-            }
+            } 
             $results = '<i>' . $results . '</i>';
             break;
 
         case 'integer' :
         case 'float' :
-            $results = htmlspecialchars((string)$var);
+        $results = htmlspecialchars((string)$var);
             break;
 
         case 'string' :
@@ -85,8 +85,8 @@ function smarty_modifier_debug_print_var($var, $depth = 0, $length = 40)
 
         case 'unknown type' :
         default :
-            $results = strtr((string)$var, $_replace);
-            if (SMARTY_MBSTRING /* ^phpunit */ && empty($_SERVER['SMARTY_PHPUNIT_DISABLE_MBSTRING'])/* phpunit$ */) {
+        $results = strtr((string)$var, $_replace);
+        if (SMARTY_MBSTRING /* ^phpunit */ && empty($_SERVER['SMARTY_PHPUNIT_DISABLE_MBSTRING'])/* phpunit$ */) {
                 if (mb_strlen($results, SMARTY_RESOURCE_CHAR_SET) > $length) {
                     $results = mb_substr($results, 0, $length - 3, SMARTY_RESOURCE_CHAR_SET) . '...';
                 }
@@ -96,10 +96,10 @@ function smarty_modifier_debug_print_var($var, $depth = 0, $length = 40)
                 }
             }
 
-            $results = htmlspecialchars($results);
-    }
+        $results = htmlspecialchars($results);
+    } 
 
     return $results;
-}
+} 
 
 ?>

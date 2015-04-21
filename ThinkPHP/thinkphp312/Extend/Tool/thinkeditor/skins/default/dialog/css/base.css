@@ -58,7 +58,6 @@ input:focus, select:focus, textarea:focus {
 .Lcfb {
     clear: both;
 }
-
 /* font */
 .Lfz10 {
     font-size: 10px;
@@ -83,7 +82,6 @@ input:focus, select:focus, textarea:focus {
 .Lfz20 {
     font-size: 20px;
 }
-
 /* color */
 .Lcf60 {
     color: #F60;
@@ -160,7 +158,6 @@ input:focus, select:focus, textarea:focus {
 .Lffyh {
     font-family: \5FAE\8F6F\96C5\9ED1;
 }
-
 /* indent */
 .Lti5 {
     text-indent: 5px;
@@ -197,7 +194,6 @@ input:focus, select:focus, textarea:focus {
 .Lti1000r {
     text-indent: -1000px;
 }
-
 /* margin */
 .Lmt5 {
     margin-top: 5px;
@@ -326,7 +322,6 @@ input:focus, select:focus, textarea:focus {
 .Lml40 {
     margin-left: 40px;
 }
-
 /* padding */
 .Lpt5 {
     padding-top: 5px;
@@ -455,7 +450,6 @@ input:focus, select:focus, textarea:focus {
 .Lpl40 {
     padding-left: 40px;
 }
-
 /* position */
 .Lposa {
     position: absolute;
@@ -468,7 +462,6 @@ input:focus, select:focus, textarea:focus {
 .Lposf {
     position: fixed;
 }
-
 /* display */
 .Ldb {
     display: block;
@@ -481,7 +474,6 @@ input:focus, select:focus, textarea:focus {
 .Ldib {
     display: inline-block;
 }
-
 /* overflow */
 .Lovh {
     overflow: hidden;
@@ -491,7 +483,6 @@ input:focus, select:focus, textarea:focus {
 .Lovv {
     overflow: visible;
 }
-
 /* background */
 .Lbgcr {
     background-color: Red;
@@ -504,7 +495,6 @@ input:focus, select:focus, textarea:focus {
 .Lbgcb {
     background-color: blue;
 }
-
 /* other */
 .Lon {
     outline: none;

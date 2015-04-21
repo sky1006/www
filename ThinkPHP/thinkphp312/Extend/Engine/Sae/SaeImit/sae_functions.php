@@ -34,7 +34,6 @@ function sae_xhprof_end()
 {
     return true;
 }
-
 //向下兼容函数
 function sae_image_init($ak = '', $sk = '', $image_bin = '')
 {
@@ -96,7 +95,6 @@ function _header_info($header)
     }
     return $hinfo;
 }
-
 //-------------------------------------------------------------------------------------------------
 
 function _get_signature($accesskey, $securekey, &$header_array)
@@ -109,7 +107,6 @@ function _get_signature($accesskey, $securekey, &$header_array)
     $content .= $header_array['AccessKey'];
     return base64_encode(hash_hmac('sha256', $content, $securekey, true));
 }
-
 //-------------------------------------------------------------------------------------------------
 
 function _read_header($ch, $string)
@@ -127,7 +124,6 @@ function _read_header($ch, $string)
     }
     return strlen($string);
 }
-
 //-------------------------------------------------------------------------------------------------
 
 function _read_data($ch, $string)
@@ -136,7 +132,6 @@ function _read_data($ch, $string)
     $rdata .= $string;
     return strlen($string);
 }
-
 //-------------------------------------------------------------------------------------------------
 
 function _fetch_url($url, $accesskey, $securekey, &$header, &$error, $opt = NULL)
@@ -222,7 +217,6 @@ function fetch_url($url, $accesskey, $securekey, &$header, &$error, $opt = NULL)
     }//end if
     return _fetch_url($url, $accesskey, $securekey, $header, $error, $opt);
 }
-
 //-------------------------------------------------------------------------------------------------
 
 
@@ -1159,6 +1153,7 @@ if (!in_array("saekv", stream_get_wrappers()))
     stream_wrapper_register("saekv", "SaeKVWrapper");
 
 /* END *********************  KVDB Wrapper By Elmer Zhang At 12/Dec/2011 12:37 ****************/
+
 
 
 /* START *********************  Supported for AppCookie By Elmer Zhang At 13/Jun/2010 15:49 ****************/

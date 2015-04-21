@@ -10,9 +10,8 @@
 // +----------------------------------------------------------------------
 
 defined('THINK_PATH') or exit();
-
 /**
- * Redis缓存驱动
+ * Redis缓存驱动 
  * 要求安装phpredis扩展：https://github.com/owlient/phpredis
  * @category   Extend
  * @package  Extend

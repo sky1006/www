@@ -188,7 +188,6 @@ class SaeImage extends SaeObject
         }
         return true;
     }
-
     //修复合并时png透明问题
     private function imagecopymerge_alpha($dst_im, $src_im, $dst_x, $dst_y, $src_x, $src_y, $src_w, $src_h, $pct)
     {
@@ -198,7 +197,7 @@ class SaeImage extends SaeObject
         imagecopy($cut, $dst_im, 0, 0, $dst_x, $dst_y, $src_w, $src_h);
         imagecopy($cut, $src_im, 0, 0, $src_x, $src_y, $src_w, $src_h);
         imagecopymerge($dst_im, $cut, $dst_x, $dst_y, $src_x, $src_y, $src_w, $src_h, $pct);
-    }
+    } 
 
     //水平翻转
     public function flipH()
@@ -391,8 +390,7 @@ class SaeImage extends SaeObject
      * "weight" => $font["weight"], "color" => $font["color"]))
      * @param array $args
      */
-    private function _annotate($args)
-    {
+    private function _annotate($args) {
         $font = $args['font'];
         $rgb = $this->toRGB($font['color']);
         $color = imagecolorclosestalpha($this->_image, $rgb['r'], $rgb['g'], $rgb['b'], (1 - $args['opacity']) * 100);
@@ -415,11 +413,11 @@ class SaeImage extends SaeObject
                 break;
             case SAE_West:
                 $x = 0;
-                $y = ($this->_height - $textHeight) / 2;
+                $y = ($this->_height - $textHeight)/2;
                 break;
             case SAE_East:
                 $x = $this->_width - $textWidth;
-                $y = ($this->_height - $textHeight) / 2;
+                $y = ($this->_height - $textHeight)/2;
                 break;
             case SAE_SouthWest:
                 $x = 0;
@@ -435,13 +433,12 @@ class SaeImage extends SaeObject
                 break;
             case SAE_Static:
             default :
-                $x = ($this->_width - $textWidth) / 2;
-                $y = ($this->_height - $textHeight) / 2;
+            $x = ($this->_width - $textWidth) / 2;
+            $y = ($this->_height - $textHeight)/2;
                 break;
         }
         imagettftext($this->_image, $font['size'], 0, $x, $y, $color, $font['name'], $args['txt']);
     }
-
     /**
      *截取图片
      * 参数 array("lx" => $lx, "rx" => $rx, "by" => $by, "ty" => $ty)
@@ -458,7 +455,6 @@ class SaeImage extends SaeObject
             $width, $height, $width, $height);
         $this->_image = $_image;
     }
-
     /**
      *图片放缩
      * 参数：array( "width" => $width, "height" => $height)
@@ -467,11 +463,11 @@ class SaeImage extends SaeObject
     private function _resize($args)
     {
         if ($args['width'] == 0 && $args['heigth'] == 0) return;
-        if ($args['width'] == 0) {
+        if ($args['width'] ==0){
             //高度固定等比例放缩
             $h = $args['heigth'];
             $w = $h / $this->_height * $this->_width;
-        } elseif ($args['heigth'] == 0) {
+        } elseif ($args['heigth'] ==0){
             //宽度固定等比例放缩
             $w = $args['width'];
             $h = $w / $this->_width * $this->_height;
@@ -483,16 +479,14 @@ class SaeImage extends SaeObject
         imagecopyresampled($_image, $this->_image, 0, 0, 0, 0, $w, $h, $this->_width, $this->_height);
         $this->_image = $_image;
     }
-
     /**
      *旋转角度
      * @param array $args
      */
     private function _rotate($args)
     {
-        $this->_image = imagerotate($this->_image, 360 - $args['degree'], 0);
+        $this->_image = imagerotate($this->_image, 360 - $args['degree'],0);
     }
-
     //水平翻转
     private function _flipH($args)
     {
@@ -502,17 +496,13 @@ class SaeImage extends SaeObject
         }
         $this->_image = $_image;
     }
-
     //垂直翻转
-    private function _flipV($args)
-    {
+    private function _flipV($args) {
         $this->_flipH(array());
         $this->_rotate(array('degree' => 180));
     }
-
     //去除噪点
-    private function _improve($args)
-    {
+    private function _improve($args){
         //本地不做任何处理
     }
 

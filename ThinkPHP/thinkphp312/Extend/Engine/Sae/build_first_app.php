@@ -3,7 +3,7 @@ function sae_copy_defaut_app($directory, $to)
 {
     if (!is_dir($to)) {
         mkdir($to);
-    }
+        }
     $handle = opendir($directory);
     while (($file = readdir($handle)) !== false) {
         if ($file != "." && $file != "..") {

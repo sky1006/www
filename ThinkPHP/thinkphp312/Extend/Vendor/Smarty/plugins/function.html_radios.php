@@ -1,14 +1,14 @@
 <?php
 /**
  * Smarty plugin
- *
+ * 
  * @package Smarty
  * @subpackage PluginsFunction
  */
 
 /**
  * Smarty {html_radios} function plugin
- *
+ * 
  * File:       function.html_radios.php<br>
  * Type:       function<br>
  * Name:       html_radios<br>
@@ -31,15 +31,15 @@
  * {html_radios values=$ids name='box' separator='<br>' output=$names}
  * {html_radios values=$ids checked=$checked separator='<br>' output=$names}
  * </pre>
- *
+ * 
  * @link http://smarty.php.net/manual/en/language.function.html.radios.php {html_radios}
  *      (Smarty online manual)
  * @author Christopher Kvarme <christopher.kvarme@flashjab.com>
- * @author credits to Monte Ohrt <monte at ohrt dot com>
+ * @author credits to Monte Ohrt <monte at ohrt dot com> 
  * @version 1.0
  * @param array $params parameters
  * @param Smarty_Internal_Template $template template object
- * @return string
+ * @return string 
  * @uses smarty_function_escape_special_chars()
  */
 function smarty_function_html_radios($params, $template)
@@ -61,7 +61,7 @@ function smarty_function_html_radios($params, $template)
         switch ($_key) {
             case 'name':
             case 'separator':
-                $$_key = (string)$_val;
+            $$_key = (string)$_val;
                 break;
 
             case 'checked':
@@ -76,13 +76,13 @@ function smarty_function_html_radios($params, $template)
                     }
                 } else {
                     $selected = (string)$_val;
-                }
+                } 
                 break;
 
             case 'escape':
             case 'labels':
             case 'label_ids':
-                $$_key = (bool)$_val;
+            $$_key = (bool)$_val;
                 break;
 
             case 'options':
@@ -91,7 +91,7 @@ function smarty_function_html_radios($params, $template)
 
             case 'values':
             case 'output':
-                $$_key = array_values((array)$_val);
+            $$_key = array_values((array)$_val);
                 break;
 
             case 'radios':
@@ -107,10 +107,10 @@ function smarty_function_html_radios($params, $template)
                     $extra .= ' ' . $_key . '="' . smarty_function_escape_special_chars($_val) . '"';
                 } else {
                     trigger_error("html_radios: extra attribute '$_key' cannot be an array", E_USER_NOTICE);
-                }
+                } 
                 break;
         }
-    }
+    } 
 
     if (!isset($options) && !isset($values)) {
         /* raise error here? */
@@ -128,14 +128,14 @@ function smarty_function_html_radios($params, $template)
             $_val = isset($output[$_i]) ? $output[$_i] : '';
             $_html_result[] = smarty_function_html_radios_output($name, $_key, $_val, $selected, $extra, $separator, $labels, $label_ids, $escape);
         }
-    }
+    } 
 
     if (!empty($params['assign'])) {
         $template->assign($params['assign'], $_html_result);
     } else {
         return implode("\n", $_html_result);
     }
-}
+} 
 
 function smarty_function_html_radios_output($name, $value, $output, $selected, $extra, $separator, $labels, $label_ids, $escape)
 {
@@ -169,7 +169,7 @@ function smarty_function_html_radios_output($name, $value, $output, $selected, $
             $_output .= '<label for="' . $_id . '">';
         } else {
             $_output .= '<label>';
-        }
+        } 
     }
 
     $name = smarty_function_escape_special_chars($name);
@@ -195,6 +195,6 @@ function smarty_function_html_radios_output($name, $value, $output, $selected, $
 
     $_output .= $separator;
     return $_output;
-}
+} 
 
 ?>

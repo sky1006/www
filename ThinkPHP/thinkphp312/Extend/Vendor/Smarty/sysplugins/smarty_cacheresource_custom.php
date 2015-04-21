@@ -236,5 +236,4 @@ abstract class Smarty_CacheResource_Custom extends Smarty_CacheResource
         $this->delete($name, null, null, null);
     }
 }
-
 ?>

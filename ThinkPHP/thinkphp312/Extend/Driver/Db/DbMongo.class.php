@@ -10,7 +10,6 @@
 // +----------------------------------------------------------------------
 
 defined('THINK_PATH') or exit();
-
 /**
  * Mongo数据库驱动 必须配合MongoModel使用
  * @category   Extend
@@ -589,7 +588,7 @@ class DbMongo extends Db
                     case 'pop':
                     case 'pull':
                     case 'pullall':
-                        $result['$' . $val[0]][$key] = $val[1];
+                    $result['$' . $val[0]][$key] = $val[1];
                         break;
                     default:
                         $result['$set'][$key] = $val;

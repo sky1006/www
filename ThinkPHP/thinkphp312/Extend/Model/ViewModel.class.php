@@ -10,9 +10,8 @@
 // +----------------------------------------------------------------------
 
 defined('THINK_PATH') or exit();
-
 /**
- * ThinkPHP视图模型扩展
+ * ThinkPHP视图模型扩展 
  * @category   Extend
  * @package  Extend
  * @subpackage  Model

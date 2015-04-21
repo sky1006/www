@@ -10,7 +10,6 @@
 // +----------------------------------------------------------------------
 
 defined('THINK_PATH') or exit();
-
 /**
  * 行为扩展：代理检测
  * @category   Extend
@@ -33,5 +32,4 @@ class AgentCheckBehavior extends Behavior
         }
     }
 }
-
 ?>

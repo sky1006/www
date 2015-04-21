@@ -367,7 +367,6 @@
         //获取DOM层级
         this.core.focus();
     }
-
     //end ThinkEditor
     ThinkEditor.prototype.resize = function (w, h) {
         //最小高度和宽度
@@ -590,7 +589,6 @@
          */
 
     }
-
     //是否为源码模式
     editorCore.prototype.sourceMode = function () {
         return this.$area.is(":visible");
@@ -711,7 +709,6 @@
         }
         return (b << 16) | a;
     }
-
     $.extend({
         teExt: {
             //扩展配置
@@ -726,17 +723,17 @@
                     if (msg.indexOf("::") != -1) {
                         var arr = msg.split("::");
                         eval("console." + arr[0] + "('" + arr[1] + "')");
-                    } else {
+                } else {
                         console.debug(msg);
-                    }
+                }
                 } else {
                     if ($(msg).html() == null) {
                         console.dir(msg); //输出对象或数组
                     } else {
                         console.dirxml($(msg)[0]); //输出dom对象
-                    }
-
                 }
+
+            }
                 //记录trace信息
                 if ($.TE.debug == 2) {
                     console.group("trace 信息:");
@@ -798,10 +795,10 @@
                     newNode.onreadystatechange = function () {
                         //针对ie
                         if ((newNode.readyState == 'loaded' || newNode.readyState == 'complete')) {
-                            $.TE.loadUrl[this.id] = 1;
+                        $.TE.loadUrl[this.id] = 1;
                         }
                     };
-                }
+            }
                 $("head")[0].appendChild(newNode);
             }
         },
@@ -834,11 +831,11 @@
                     if (time >= $.TE.timeOut) {
                         // TODO 细化哪些文件加载失败。
                         $.debug(file, "文件加载失败");
-                    } else {
+                } else {
                         //alert('time:'+time);
                         setTimeout(check, 50);
                         time += 50;
-                    }
+                }
                 }
             };
             check();

@@ -130,7 +130,7 @@ abstract class Action
                 case 'ishead':
                 case 'isdelete':
                 case 'isput':
-                    return strtolower($_SERVER['REQUEST_METHOD']) == strtolower(substr($method, 2));
+                return strtolower($_SERVER['REQUEST_METHOD']) == strtolower(substr($method, 2));
                 // 获取变量 支持过滤和默认值 调用方式 $this->_post($key,$filter,$default);
                 case '_get':
                     $input =& $_GET;

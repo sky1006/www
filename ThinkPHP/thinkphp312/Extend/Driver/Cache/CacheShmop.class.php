@@ -10,9 +10,8 @@
 // +----------------------------------------------------------------------
 
 defined('THINK_PATH') or exit();
-
 /**
- * Shmop缓存驱动
+ * Shmop缓存驱动 
  * @category   Extend
  * @package  Extend
  * @subpackage  Driver.Cache

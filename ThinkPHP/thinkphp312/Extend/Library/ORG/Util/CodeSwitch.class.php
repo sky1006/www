@@ -15,13 +15,11 @@ class CodeSwitch
     static private $error = array();
     // 提示信息
     static private $info = array();
-
     // 记录错误
     static private function error($msg)
     {
         self::$error[] = $msg;
     }
-
     // 记录信息
     static private function info($info)
     {

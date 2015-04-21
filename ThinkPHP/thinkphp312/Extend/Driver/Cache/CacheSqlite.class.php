@@ -10,7 +10,6 @@
 // +----------------------------------------------------------------------
 
 defined('THINK_PATH') or exit();
-
 /**
  * Sqlite缓存驱动
  * @category   Extend
@@ -41,7 +40,7 @@ class CacheSqlite extends Cache
         $this->options['prefix'] = isset($options['prefix']) ? $options['prefix'] : C('DATA_CACHE_PREFIX');
         $this->options['length'] = isset($options['length']) ? $options['length'] : 0;
         $this->options['expire'] = isset($options['expire']) ? $options['expire'] : C('DATA_CACHE_TIME');
-
+        
         $func = $this->options['persistent'] ? 'sqlite_popen' : 'sqlite_open';
         $this->handler = $func($this->options['db']);
     }

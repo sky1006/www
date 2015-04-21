@@ -10,9 +10,8 @@
 // +----------------------------------------------------------------------
 
 defined('THINK_PATH') or exit();
-
 /**
- * PDO数据库驱动
+ * PDO数据库驱动 
  * @category   Extend
  * @package  Extend
  * @subpackage  Driver.Db
@@ -234,7 +233,7 @@ class DbPdo extends Db
             switch ($this->dbType) {
                 case 'MSSQL':
                 case 'SQLSRV':
-                    $sql = "SELECT   column_name as 'Name',   data_type as 'Type',   column_default as 'Default',   is_nullable as 'Null'
+                $sql = "SELECT   column_name as 'Name',   data_type as 'Type',   column_default as 'Default',   is_nullable as 'Null'
         FROM    information_schema.tables AS t
         JOIN    information_schema.columns AS c
         ON  t.table_catalog = c.table_catalog
@@ -247,10 +246,10 @@ class DbPdo extends Db
                     break;
                 case 'ORACLE':
                 case 'OCI':
-                    $sql = "SELECT a.column_name \"Name\",data_type \"Type\",decode(nullable,'Y',0,1) notnull,data_default \"Default\",decode(a.column_name,b.column_name,1,0) \"pk\" "
-                        . "FROM user_tab_columns a,(SELECT column_name FROM user_constraints c,user_cons_columns col "
-                        . "WHERE c.constraint_name=col.constraint_name AND c.constraint_type='P' and c.table_name='" . strtoupper($tableName)
-                        . "') b where table_name='" . strtoupper($tableName) . "' and a.column_name=b.column_name(+)";
+                $sql = "SELECT a.column_name \"Name\",data_type \"Type\",decode(nullable,'Y',0,1) notnull,data_default \"Default\",decode(a.column_name,b.column_name,1,0) \"pk\" "
+                    . "FROM user_tab_columns a,(SELECT column_name FROM user_constraints c,user_cons_columns col "
+                    . "WHERE c.constraint_name=col.constraint_name AND c.constraint_type='P' and c.table_name='" . strtoupper($tableName)
+                    . "') b where table_name='" . strtoupper($tableName) . "' and a.column_name=b.column_name(+)";
                     break;
                 case 'PGSQL':
                     $sql = 'select fields_name as "Name",fields_type as "Type",fields_not_null as "Null",fields_key_name as "Key",fields_default as "Default",fields_default as "Extra" from table_msg(' . $tableName . ');';
@@ -259,7 +258,7 @@ class DbPdo extends Db
                     break;
                 case 'MYSQL':
                 default:
-                    $sql = 'DESCRIBE ' . $tableName;//备注: 驱动类不只针对mysql，不能加``
+                $sql = 'DESCRIBE ' . $tableName;//备注: 驱动类不只针对mysql，不能加``
             }
         }
         $result = $this->query($sql);
@@ -344,11 +343,11 @@ class DbPdo extends Db
             switch ($this->dbType) {
                 case 'PGSQL':
                 case 'SQLITE':
-                    $limit = explode(',', $limit);
-                    if (count($limit) > 1) {
-                        $limitStr .= ' LIMIT ' . $limit[1] . ' OFFSET ' . $limit[0] . ' ';
-                    } else {
-                        $limitStr .= ' LIMIT ' . $limit[0] . ' ';
+                $limit = explode(',', $limit);
+                if (count($limit) > 1) {
+                    $limitStr .= ' LIMIT ' . $limit[1] . ' OFFSET ' . $limit[0] . ' ';
+                } else {
+                    $limitStr .= ' LIMIT ' . $limit[0] . ' ';
                     }
                     break;
                 case 'MSSQL':
@@ -362,7 +361,7 @@ class DbPdo extends Db
                     break;
                 case 'MYSQL':
                 default:
-                    $limitStr .= ' LIMIT ' . $limit . ' ';
+                $limitStr .= ' LIMIT ' . $limit . ' ';
             }
         }
         return $limitStr;
@@ -432,7 +431,7 @@ class DbPdo extends Db
             case 'SQLSRV':
             case 'MYSQL':
                 return addslashes($str);
-            case 'IBASE':
+            case 'IBASE':                
             case 'SQLITE':
             case 'ORACLE':
             case 'OCI':
@@ -459,7 +458,7 @@ class DbPdo extends Db
             case 'OCI':
                 $sequenceName = $this->table;
                 $vo = $this->query("SELECT {$sequenceName}.currval currval FROM dual");
-                return $vo ? $vo[0]["currval"] : 0;
+            return $vo ? $vo[0]["currval"] : 0;
         }
     }
 }

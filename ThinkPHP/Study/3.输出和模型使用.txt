@@ -26,7 +26,35 @@
 	'DB_PWD'=>'',        //设置密码
 	'DB_PORT'=>'3306',   //设置端口号
 	'DB_PREFIX'=>'tp_',  //设置表前缀
+	也可以使用DSN方法进行配置
+	'DB_DSN'=>'mysql://root:@localhost:3306/thinkphp',//使用DSN方式配置数据库信息
+	如果两种方式同时存在，以DSN方式为优先
+
+
+    还有一种简单实用模型的方式
+    	M() 等效为 new Model();
+    	$m=M('User');
+    	$arr=$m->select();
+
+    	使用模型的实例可以对数据进行操作，操作的工作一般就是对数据库进行 增删改查 CURD
+
+    	增 -C Create $m->add()
+    	删 -D Delete $m->delete()
+    	改 -U Update $m->save()
+    	查 -R Read   $m->select()
+
 三、补充                   （了解）
+    a、模板可以遍历数组
+    	<volist name='data' id='vo'>
+    			<{$vo.id}>----<{$vo.username}>-----<{$vo.sex}><br/>
+    		</volist>
+    b、我们可以开启调试功能中的page_trace
+    	1.开启调试功能
+    		//3.开启调试模式
+    		define('APP_DEBUG',true);
+    	2.我们需要设置配置文件，开启页面trace
+    		'SHOW_PAGE_TRACE'=>true,//开启页面Trace
+
 
 'URL_PATHINFO_DEPR'=>'-',//修改URL的分隔符
 'TMPL_L_DELIM'=>'<{', //修改左定界符

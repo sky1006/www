@@ -212,7 +212,6 @@ class Model
             return;
         }
     }
-
     // 回调方法 初始化模型
     protected function _initialize()
     {
@@ -753,7 +752,6 @@ class Model
     {
         return $this->db->getLastSql();
     }
-
     // 鉴于getLastSql比较常用 增加_sql 别名
     public function _sql()
     {

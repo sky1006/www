@@ -20,7 +20,6 @@ class Debug
 {
 
     static private $marker = array();
-
     /**
      * 标记调试位
      * @access public

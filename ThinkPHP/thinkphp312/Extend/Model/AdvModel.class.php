@@ -10,9 +10,8 @@
 // +----------------------------------------------------------------------
 
 defined('THINK_PATH') or exit();
-
 /**
- * 高级模型扩展
+ * 高级模型扩展 
  * @category   Extend
  * @package  Extend
  * @subpackage  Model

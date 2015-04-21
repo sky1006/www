@@ -9,7 +9,6 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 define("BCCOMP_LARGER", 1);
-
 /**
  * Rsa 加密实现类
  * @category   ORG

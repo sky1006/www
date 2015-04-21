@@ -103,7 +103,7 @@ class SaeMysql extends SaeObject
     //设置项目名
     public function setAppname($appname)
     {
-
+        
     }
 
     //设置字符集
@@ -116,7 +116,7 @@ class SaeMysql extends SaeObject
     //设置端口
     public function setPort($port)
     {
-
+        
     }
 
     protected function save_error()

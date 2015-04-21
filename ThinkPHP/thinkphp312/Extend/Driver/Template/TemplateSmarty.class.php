@@ -10,9 +10,8 @@
 // +----------------------------------------------------------------------
 
 defined('THINK_PATH') or exit();
-
 /**
- * Smarty模板引擎驱动
+ * Smarty模板引擎驱动 
  * @category   Extend
  * @package  Extend
  * @subpackage  Driver.Template

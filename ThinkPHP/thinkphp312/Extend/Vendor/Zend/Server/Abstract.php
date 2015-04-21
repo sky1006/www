@@ -90,7 +90,7 @@ abstract class Zend_Server_Abstract implements Zend_Server_Interface
      * Constructor
      *
      * Setup server description
-     *
+     * 
      * @return void
      */
     public function __construct()
@@ -115,7 +115,7 @@ abstract class Zend_Server_Abstract implements Zend_Server_Interface
      * Lowercase a string
      *
      * Lowercase's a string by reference
-     *
+     * 
      * @deprecated
      * @param  string $string value
      * @param  string $key
@@ -130,7 +130,7 @@ abstract class Zend_Server_Abstract implements Zend_Server_Interface
     /**
      * Build callback for method signature
      *
-     * @param  Zend_Server_Reflection_Function_Abstract $reflection
+     * @param  Zend_Server_Reflection_Function_Abstract $reflection 
      * @return Zend_Server_Method_Callback
      */
     protected function _buildCallback(Zend_Server_Reflection_Function_Abstract $reflection)
@@ -150,7 +150,7 @@ abstract class Zend_Server_Abstract implements Zend_Server_Interface
     /**
      * Build a method signature
      *
-     * @param  Zend_Server_Reflection_Function_Abstract $reflection
+     * @param  Zend_Server_Reflection_Function_Abstract $reflection 
      * @param  null|string|object $class
      * @return Zend_Server_Method_Definition
      * @throws Zend_Server_Exception on duplicate entry
@@ -199,7 +199,7 @@ abstract class Zend_Server_Abstract implements Zend_Server_Interface
      * Dispatch method
      *
      * @param  Zend_Server_Method_Definition $invocable
-     * @param  array $params
+     * @param  array $params 
      * @return mixed
      */
     protected function _dispatch(Zend_Server_Method_Definition $invocable, array $params)
@@ -235,7 +235,7 @@ abstract class Zend_Server_Abstract implements Zend_Server_Interface
     /**
      * Map PHP type to protocol type
      *
-     * @param  string $type
+     * @param  string $type 
      * @return string
      */
     abstract protected function _fixType($type);

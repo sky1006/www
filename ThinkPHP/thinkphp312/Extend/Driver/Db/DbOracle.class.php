@@ -10,7 +10,6 @@
 // +----------------------------------------------------------------------
 
 defined('THINK_PATH') or exit();
-
 /**
  * Oracle数据库驱动
  * @category   Extend
@@ -327,12 +326,12 @@ class DbOracle extends Db
      */
     public function insertLastId()
     {
-        if (empty($this->table)) {
+        if(empty($this->table)) {
             return 0;
         }
         $sequenceName = $this->table;
         $vo = $this->query("SELECT {$sequenceName}.currval currval FROM dual");
-        return $vo ? $vo[0]["currval"] : 0;
+        return $vo?$vo[0]["currval"]:0;
     }
 
     /**
@@ -346,10 +345,10 @@ class DbOracle extends Db
         if (!empty($limit)) {
             $limit = explode(',', $limit);
             if (count($limit) > 1)
-                $limitStr = "(numrow>" . $limit[0] . ") AND (numrow<=" . ($limit[0] + $limit[1]) . ")";
+                $limitStr = "(numrow>" . $limit[0] . ") AND (numrow<=" . ($limit[0]+$limit[1]) . ")";
             else
                 $limitStr = "(numrow>0 AND numrow<=" . $limit[0] . ")";
         }
-        return $limitStr ? ' WHERE ' . $limitStr : '';
+        return $limitStr?' WHERE '.$limitStr:'';
     }
 }

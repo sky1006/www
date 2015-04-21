@@ -32,7 +32,7 @@
  * $f->setMethod('post');
  * $f->setPostData( array('name'=> 'easychen' , 'email' => 'easychen@gmail.com' , 'file' => '文件的二进制内容') );
  * $ret = $f->fetch('http://photo.sinaapp.com/save.php');
- *
+ * 
  * //抓取失败时输出错误码和错误信息
  * if ($ret === false)
  *        var_dump($f->errno(), $f->errmsg());

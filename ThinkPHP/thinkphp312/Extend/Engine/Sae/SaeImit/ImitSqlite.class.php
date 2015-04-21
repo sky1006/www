@@ -11,7 +11,6 @@ class ImitSqlite extends SQLite3
     {
         $this->open(dirname(__FILE__) . '/sae.db');
     }
-
     //获得数据，返回数组
     public function getData($sql)
     {
@@ -27,7 +26,6 @@ class ImitSqlite extends SQLite3
         return $data;
 
     }
-
     //返回第一条数据
     public function getLine($sql)
     {
@@ -49,7 +47,6 @@ class ImitSqlite extends SQLite3
             return false;
         }
     }
-
     //运行sql语句
     public function runSql($sql)
     {

@@ -157,7 +157,7 @@ final class Zend_Amf_Parse_TypeLoader
     /**
      * Set loader for resource type handlers
      *
-     * @param Zend_Loader_PluginLoader_Interface $loader
+     * @param Zend_Loader_PluginLoader_Interface $loader  
      */
     public static function setResourceLoader(Zend_Loader_PluginLoader_Interface $loader)
     {
@@ -179,7 +179,7 @@ final class Zend_Amf_Parse_TypeLoader
 
     /**
      * Get plugin class that handles this resource
-     *
+     * 
      * @param resource $resource Resource type
      * @return string Class name
      */
@@ -195,7 +195,7 @@ final class Zend_Amf_Parse_TypeLoader
 
     /**
      * Convert resource to a serializable object
-     *
+     * 
      * @param resource $resource
      * @return mixed
      */

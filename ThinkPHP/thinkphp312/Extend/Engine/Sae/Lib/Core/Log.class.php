@@ -101,7 +101,6 @@ class Log
         self::sae_set_display_errors(true);
         //clearstatcache();
     }
-
     //[sae] 增加错误信息显示控制，弥补SAE平台字段的sae_set_display_errors的不足。
     static function sae_set_display_errors($bool)
     {

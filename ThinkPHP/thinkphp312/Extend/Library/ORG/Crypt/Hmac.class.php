@@ -42,7 +42,7 @@ class Hmac
                         ($key ^ $ipad) . $str
                     )
                 )
-            )
+                    )
         );
         return $hmac;
     }

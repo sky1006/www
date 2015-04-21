@@ -24,7 +24,7 @@ return array(
         'Db' => MODE_PATH . 'Cli/Db.class.php',
         'Cache' => CORE_PATH . 'Core/Cache.class.php',
         'Debug' => CORE_PATH . 'Util/Debug.class.php',
-    ),
+    ), 
 
     // 系统行为定义文件 [必须 支持数组直接定义或者文件名定义 ]
     'extends' => array(),

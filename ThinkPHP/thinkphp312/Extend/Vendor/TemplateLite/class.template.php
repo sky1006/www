@@ -767,5 +767,4 @@ class Template_Lite
         trigger_error('TPL: [in ' . $this->_file . ' line ' . $this->_linenum . "]: syntax error: $error_msg$info", $error_type);
     }
 }
-
 ?>

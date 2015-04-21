@@ -17,7 +17,7 @@ $.TE.plugin("bold", {
     event: "click mouseover mouseout",
     mouseover: function (e) {
         this.$btn.css("color", "red");
-
+	
     },
     mouseout: function (e) {
         this.$btn.css("color", "#000")

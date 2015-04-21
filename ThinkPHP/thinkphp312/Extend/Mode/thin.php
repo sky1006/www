@@ -23,7 +23,7 @@ return array(
     'alias' => array(
         'Model' => MODE_PATH . 'Thin/Model.class.php',
         'Db' => MODE_PATH . 'Thin/Db.class.php',
-    ),
+    ), 
 
     // 系统行为定义文件 [必须 支持数组直接定义或者文件名定义 ]
     'extends' => array(),

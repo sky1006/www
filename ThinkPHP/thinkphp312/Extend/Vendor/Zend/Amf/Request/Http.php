@@ -70,7 +70,7 @@ class Zend_Amf_Request_Http extends Zend_Amf_Request
 
     /**
      * Retrieve raw AMF Request
-     *
+     * 
      * @return string
      */
     public function getRawRequest()

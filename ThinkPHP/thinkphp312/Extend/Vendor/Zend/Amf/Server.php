@@ -45,7 +45,6 @@ require_once 'Zend/Amf/Parse/TypeLoader.php';
 
 /** Zend_Auth */
 require_once 'Zend/Auth.php';
-
 /**
  * An AMF gateway server implementation to allow the connection of the Adobe Flash Player to
  * Zend Framework
@@ -66,7 +65,7 @@ class Zend_Amf_Server implements Zend_Server_Interface
 
     /**
      * Array of classes that can be called without being explicitly loaded
-     *
+     * 
      * Keys are class names.
      *
      * @var array
@@ -122,17 +121,16 @@ class Zend_Amf_Server implements Zend_Server_Interface
 
     /**
      * Authentication handler object
-     *
+     * 
      * @var Zend_Amf_Auth_Abstract
      */
     protected $_auth;
     /**
      * ACL handler object
-     *
+     * 
      * @var Zend_Acl
      */
     protected $_acl;
-
     /**
      * The server constructor
      */
@@ -230,7 +228,7 @@ class Zend_Amf_Server implements Zend_Server_Interface
 
     /**
      * Check if the ACL allows accessing the function or method
-     *
+     * 
      * @param string|object $object Object or class being accessed
      * @param string $function Function or method being acessed
      * @return unknown_type
@@ -305,7 +303,7 @@ class Zend_Amf_Server implements Zend_Server_Interface
             }
         }
         $qualifiedName = empty($source) ? $method : $source . "." . $method;
-
+        
         if (!isset($this->_table[$qualifiedName])) {
             // if source is null a method that was not defined was called.
             if ($source) {
@@ -414,7 +412,7 @@ class Zend_Amf_Server implements Zend_Server_Interface
 
     /**
      * Create appropriate error message
-     *
+     * 
      * @param int $objectEncoding Current AMF encoding
      * @param string $message Message that was being processed when error happened
      * @param string $description Error description
@@ -472,7 +470,7 @@ class Zend_Amf_Server implements Zend_Server_Interface
                 "Authentication failed: " . join("\n",
                     $result->getMessages()), $result->getCode());
         }
-
+	        
     }
 
     /**
@@ -506,7 +504,7 @@ class Zend_Amf_Server implements Zend_Server_Interface
                 $handleAuth = true;
             }
         }
-
+        
         // Iterate through each of the service calls in the AMF request
         foreach ($responseBody as $body) {
             try {
@@ -526,7 +524,7 @@ class Zend_Amf_Server implements Zend_Server_Interface
                         $handleAuth = false;
                     }
                 }
-
+                
                 if ($objectEncoding == Zend_Amf_Constants::AMF0_OBJECT_ENCODING) {
                     // AMF0 Object Encoding
                     $targetURI = $body->getTargetURI();
@@ -592,7 +590,7 @@ class Zend_Amf_Server implements Zend_Server_Interface
                     }
                 }
             }
-
+           
             // create a new AMF message header with the session id as a variable.
             $sessionValue = $joint . $this->_sessionName . "=" . $currentID;
             $sessionHeader = new Zend_Amf_Value_MessageHeader(Zend_Amf_Constants::URL_APPEND_HEADER, false, $sessionValue);
@@ -798,7 +796,7 @@ class Zend_Amf_Server implements Zend_Server_Interface
     /**
      * Creates an array of directories in which services can reside.
      * TODO: add support for prefixes?
-     *
+     * 
      * @param string $dir
      */
     public function addDirectory($dir)

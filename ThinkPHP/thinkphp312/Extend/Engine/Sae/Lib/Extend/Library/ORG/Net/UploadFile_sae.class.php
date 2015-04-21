@@ -81,8 +81,7 @@ class UploadFile
         }
     }
 
-    public function __isset($name)
-    {
+    public function __isset($name){
         return isset($this->config[$name]);
     }
 
@@ -96,7 +95,7 @@ class UploadFile
     public function __construct($config = array())
     {
         if (is_array($config)) {
-            $this->config = array_merge($this->config, $config);
+            $this->config = array_merge($this->config,$config);
         }
     }
 
@@ -114,8 +113,7 @@ class UploadFile
      * @throws ThinkExecption
     +----------------------------------------------------------
      */
-    private function save($file)
-    {
+    private function save($file) {
         $filename = $file['savepath'] . $file['savename'];
         $s = Think::instance('SaeStorage');
         if (!$this->uploadReplace && $s->fileExists($this->domain, $filename)) {
@@ -129,10 +127,10 @@ class UploadFile
             return false;
         }
         $attr = array();
-        $attrs = array('expires', 'encoding', 'type', 'private');
+        $attrs = array('expires', 'encoding','type','private');
         foreach ($attrs as $key => $value)
             if (!empty($this->config[$key])) $attr[$key] = $value;
-        if ($this->compress) $attr['encoding'] = 'gzip';
+        if ($this->compress) $attr['encoding']='gzip';
         //[sae] 上传文件
         if (!$this->thumbRemoveOrigin && !$s->upload($this->domain, $filename, $file['tmp_name'], $attr, $compress)) {
             $this->error = '文件上传失败' . $s->errmsg();
@@ -173,14 +171,14 @@ class UploadFile
                     } else {
                         $prefix = isset($thumbPrefix[$i]) ? $thumbPrefix[$i] : $thumbPrefix[0];
                         $suffix = isset($thumbSuffix[$i]) ? $thumbSuffix[$i] : $thumbSuffix[0];
-                        $thumbname = $prefix . basename($filename, '.' . $thumbExt) . $suffix;
+                        $thumbname = $prefix . basename($filename, '.'.$thumbExt).$suffix;
                     }
 
                     $img->setData(file_get_contents($file['tmp_name']));
                     $img->resize($width, $height);
                     $new_data = $img->exec();
                     if (!$s->write($domain, $thumbPath . $thumbname . '.' . $thumbExt, $new_data)) {
-                        $this->error = '生成缩略图失败！' . $this->errmsg();
+                        $this->error = '生成缩略图失败！'.$this->errmsg();
                         return false;
                     }
                 }
@@ -193,8 +191,7 @@ class UploadFile
     }
 
     //[sae]获得domain，改变path
-    private function getDomain($filePath)
-    {
+    private function getDomain($filePath) {
         $arr = explode('/', ltrim($filePath, './'));
         $domain = array_shift($arr);
         $filePath = implode('/', $arr);
@@ -214,8 +211,7 @@ class UploadFile
      * @throws ThinkExecption
     +----------------------------------------------------------
      */
-    public function upload($savePath = '')
-    {
+    public function upload($savePath ='') {
         //如果不指定保存文件名，则由系统默认
         if (empty($savePath))
             $savePath = $this->savePath;
@@ -234,7 +230,7 @@ class UploadFile
             //过滤无效的上传
             if (!empty($file['name'])) {
                 //登记上传文件的扩展信息
-                if (!isset($file['key'])) $file['key'] = $key;
+                if (!isset($file['key']))   $file['key']    =   $key;
                 $file['extension'] = $this->getExt($file['name']);
                 $file['savepath'] = $savePath;
                 $file['savename'] = $this->getSaveName($file);
@@ -280,8 +276,7 @@ class UploadFile
      * @throws ThinkExecption
     +----------------------------------------------------------
      */
-    public function uploadOne($file, $savePath = '')
-    {
+    public function uploadOne($file, $savePath='') {
         //如果不指定保存文件名，则由系统默认
         if (empty($savePath))
             $savePath = $this->savePath;
@@ -352,15 +347,15 @@ class UploadFile
             if (is_array($file['name'])) {
                 $keys = array_keys($file);
                 $count = count($file['name']);
-                for ($i = 0; $i < $count; $i++) {
+                for ($i=0; $i<$count; $i++) {
                     $fileArray[$n]['key'] = $key;
-                    foreach ($keys as $_key) {
+                    foreach ($keys as $_key){
                         $fileArray[$n][$_key] = $file[$_key][$i];
                     }
                     $n++;
                 }
-            } else {
-                $fileArray[$key] = $file;
+            } else{
+               $fileArray[$key] = $file;
             }
         }
         return $fileArray;
@@ -379,8 +374,7 @@ class UploadFile
      * @throws ThinkExecption
     +----------------------------------------------------------
      */
-    protected function error($errorNo)
-    {
+    protected function error($errorNo) {
         switch ($errorNo) {
             case 1:
                 $this->error = '上传的文件超过了 php.ini 中 upload_max_filesize 选项限制的值';
@@ -417,8 +411,7 @@ class UploadFile
      * @return string
     +----------------------------------------------------------
      */
-    private function getSaveName($filename)
-    {
+    private function getSaveName($filename) {
         $rule = $this->saveRule;
         if (empty($rule)) {//没有定义命名规则，则保持文件名不变
             $saveName = $filename['name'];
@@ -446,7 +439,7 @@ class UploadFile
      * @access private
      * +----------------------------------------------------------
      * @param array $file 上传的文件信息
-     * +----------------------------------------------------------
+      * +----------------------------------------------------------
      * @return string
     +----------------------------------------------------------
      */
@@ -454,7 +447,7 @@ class UploadFile
     {
         switch ($this->subType) {
             case 'date':
-                $dir = date($this->dateFormat, time()) . '/';
+                $dir = date($this->dateFormat, time()).'/';
                 break;
             case 'hash':
             default:
@@ -473,18 +466,17 @@ class UploadFile
     }
 
     /**
-     * +----------------------------------------------------------
+      * +----------------------------------------------------------
      * 检查上传的文件
      * +----------------------------------------------------------
      * @access private
-     * +----------------------------------------------------------
+      * +----------------------------------------------------------
      * @param array $file 文件信息
-     * +----------------------------------------------------------
+      * +----------------------------------------------------------
      * @return boolean
     +----------------------------------------------------------
      */
-    private function check($file)
-    {
+    private function check($file) {
         if ($file['error'] !== 0) {
             //文件上传失败
             //捕获错误代码
@@ -518,8 +510,7 @@ class UploadFile
     }
 
     // 自动转换字符集 支持数组转换
-    private function autoCharset($fContents, $from = 'gbk', $to = 'utf-8')
-    {
+    private function autoCharset($fContents, $from='gbk', $to='utf-8') {
         $from = strtoupper($from) == 'UTF8' ? 'utf-8' : $from;
         $to = strtoupper($to) == 'UTF8' ? 'utf-8' : $to;
         if (strtoupper($from) === strtoupper($to) || empty($fContents) || (is_scalar($fContents) && !is_string($fContents))) {
@@ -536,18 +527,17 @@ class UploadFile
     }
 
     /**
-     * +----------------------------------------------------------
+      * +----------------------------------------------------------
      * 检查上传的文件类型是否合法
-     * +----------------------------------------------------------
+      * +----------------------------------------------------------
      * @access private
-     * +----------------------------------------------------------
+      * +----------------------------------------------------------
      * @param string $type 数据
-     * +----------------------------------------------------------
+      * +----------------------------------------------------------
      * @return boolean
     +----------------------------------------------------------
      */
-    private function checkType($type)
-    {
+    private function checkType($type) {
         if (!empty($this->allowTypes))
             return in_array(strtolower($type), $this->allowTypes);
         return true;
@@ -558,14 +548,13 @@ class UploadFile
      * 检查上传的文件后缀是否合法
      * +----------------------------------------------------------
      * @access private
-     * +----------------------------------------------------------
+      * +----------------------------------------------------------
      * @param string $ext 后缀名
      * +----------------------------------------------------------
      * @return boolean
     +----------------------------------------------------------
      */
-    private function checkExt($ext)
-    {
+    private function checkExt($ext) {
         if (!empty($this->allowExts))
             return in_array(strtolower($ext), $this->allowExts, true);
         return true;
@@ -612,7 +601,7 @@ class UploadFile
      * @param string $filename 文件名
      * +----------------------------------------------------------
      * @return boolean
-    +----------------------------------------------------------
+      +----------------------------------------------------------
      */
     private function getExt($filename)
     {
@@ -627,10 +616,9 @@ class UploadFile
      * @access public
      * +----------------------------------------------------------
      * @return array
-    +----------------------------------------------------------
+      +----------------------------------------------------------
      */
-    public function getUploadFileInfo()
-    {
+    public function getUploadFileInfo() {
         return $this->uploadFileInfo;
     }
 
@@ -641,10 +629,9 @@ class UploadFile
      * @access public
      * +----------------------------------------------------------
      * @return string
-    +----------------------------------------------------------
+      +----------------------------------------------------------
      */
-    public function getErrorMsg()
-    {
+    public function getErrorMsg() {
         return $this->error;
     }
 

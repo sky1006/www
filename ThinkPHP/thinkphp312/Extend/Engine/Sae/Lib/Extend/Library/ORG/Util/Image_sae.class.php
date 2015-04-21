@@ -22,8 +22,7 @@
  * @version   $Id: Image_sae.class.php 1090 2012-08-23 08:33:46Z luofei614@126.com $
  * +------------------------------------------------------------------------------
  */
-class Image
-{
+class Image {
 
     /**
      * +----------------------------------------------------------
@@ -38,8 +37,7 @@ class Image
      * @return mixed
     +----------------------------------------------------------
      */
-    static function getImageInfo($img)
-    {
+    static function getImageInfo($img) {
         $imageInfo = getimagesize($img);
         if ($imageInfo !== false) {
             $imageType = strtolower(substr(image_type_to_extension($imageInfo[2]), 1));
@@ -64,7 +62,7 @@ class Image
      * @static public
      * +----------------------------------------------------------
      * @param string $source 原文件名
-     * @param string $water 水印图片
+     * @param string $water  水印图片
      * @param string $$savename  添加水印后的图片名
      * @param string $alpha 水印的透明度
      * +----------------------------------------------------------
@@ -74,8 +72,7 @@ class Image
     +----------------------------------------------------------
      */
     //[sae] 水印，使用saeimage实现
-    static public function water($source, $water, $savename = null, $alpha = 80)
-    {
+    static public function water($source, $water, $savename=null, $alpha=80) {
         //检查文件是否存在
         $arr = explode('/', ltrim($source, './'));
         $domain = array_shift($arr);
@@ -114,8 +111,7 @@ class Image
         $s->write($domain, $savename, $data);
     }
 
-    function showImg($imgFile, $text = '', $x = '10', $y = '10', $alpha = '50')
-    {
+    function showImg($imgFile, $text = '', $x = '10', $y='10', $alpha='50') {
         //获取图像文件信息
         //2007/6/26 增加图片水印输出，$text为图片的完整路径即可
         $info = Image::getImageInfo($imgFile);
@@ -175,19 +171,18 @@ class Image
      * @static
      * @access public
      * +----------------------------------------------------------
-     * @param string $image 原图
+     * @param string $image  原图
      * @param string $type 图像格式
      * @param string $thumbname 缩略图文件名
      * @param string $maxWidth 宽度
-     * @param string $maxHeight 高度
+     * @param string $maxHeight  高度
      * @param string $position 缩略图保存目录
      * @param boolean $interlace 启用隔行扫描
      * +----------------------------------------------------------
      * @return void
     +----------------------------------------------------------
      */
-    static function thumb($image, $thumbname, $type = '', $maxWidth = 200, $maxHeight = 50, $interlace = true)
-    {
+    static function thumb($image, $thumbname, $type = '', $maxWidth = 200, $maxHeight=50, $interlace=true) {
         // 获取原图信息
         $info = Image::getImageInfo($image);
         if ($info !== false) {
@@ -205,7 +200,7 @@ class Image
             } else {
                 // 缩略图尺寸
                 $width = (int)($srcWidth * $scale);
-                $height = (int)($srcHeight * $scale);
+                $height = (int) ($srcHeight * $scale);
             }
 
             // 载入原图
@@ -221,10 +216,10 @@ class Image
             else
                 $thumbImg = imagecreate($width, $height);
             //png和gif的透明处理 by luofei614
-            if ('png' == $type) {
+            if('png'==$type){
                 imagealphablending($thumbImg, false);//取消默认的混色模式（为解决阴影为绿色的问题）
                 imagesavealpha($thumbImg, true);//设定保存完整的 alpha 通道信息（为解决阴影为绿色的问题）
-            } elseif ('gif' == $type) {
+            }elseif('gif'==$type){
                 $trnprt_indx = imagecolortransparent($srcImg);
                 if ($trnprt_indx >= 0) {
                     //its transparent
@@ -232,7 +227,7 @@ class Image
                     $trnprt_indx = imagecolorallocate($thumbImg, $trnprt_color['red'], $trnprt_color['green'], $trnprt_color['blue']);
                     imagefill($thumbImg, 0, 0, $trnprt_indx);
                     imagecolortransparent($thumbImg, $trnprt_indx);
-                }
+              }
             }
             // 复制图片
             if (function_exists("ImageCopyResampled"))
@@ -271,8 +266,7 @@ class Image
      * @return string
     +----------------------------------------------------------
      */
-    static function buildString($string, $rgb = array(), $filename = '', $type = 'png', $disturb = 1, $border = true)
-    {
+    static function buildString($string, $rgb = array(), $filename = '', $type='png', $disturb=1, $border=true) {
         if (is_string($size))
             $size = explode(',', $size);
         $width = $size[0];
@@ -323,7 +317,7 @@ class Image
      * @static
      * @access public
      * +----------------------------------------------------------
-     * @param string $length 位数
+     * @param string $length  位数
      * @param string $mode 类型
      * @param string $type 图像格式
      * @param string $width 宽度
@@ -333,8 +327,7 @@ class Image
     +----------------------------------------------------------
      */
     //[sae]使用saevcode实现
-    static function buildImageVerify($length = 4, $mode = 1, $type = 'png', $width = 48, $height = 22, $verifyName = 'verify')
-    {
+    static function buildImageVerify($length = 4, $mode = 1, $type = 'png', $width=48, $height=22, $verifyName='verify') {
         $vcode = Think::instance('SaeVcode');
         session($verifyName, md5($vcode->answer()));
         $question = $vcode->question();
@@ -342,8 +335,7 @@ class Image
     }
 
     // 中文验证码
-    static function GBVerify($length = 4, $type = 'png', $width = 180, $height = 50, $fontface = 'simhei.ttf', $verifyName = 'verify')
-    {
+    static function GBVerify($length = 4, $type = 'png', $width = 180, $height = 50, $fontface='simhei.ttf', $verifyName='verify') {
         import('ORG.Util.String');
         $code = String::randString($length, 4);
         $width = ($length * 45) > $width ? $length * 45 : $width;
@@ -386,8 +378,7 @@ class Image
      * @return string
     +----------------------------------------------------------
      */
-    static function showASCIIImg($image, $string = '', $type = '')
-    {
+    static function showASCIIImg($image, $string='', $type='') {
         $info = Image::getImageInfo($image);
         if ($info !== false) {
             $type = empty($type) ? $info['type'] : $type;
@@ -431,12 +422,11 @@ class Image
      * @return string
     +----------------------------------------------------------
      */
-    static function UPCA($code, $type = 'png', $lw = 2, $hi = 100)
-    {
+    static function UPCA($code, $type='png', $lw=2, $hi=100) {
         static $Lencode = array('0001101', '0011001', '0010011', '0111101', '0100011',
-            '0110001', '0101111', '0111011', '0110111', '0001011');
+    '0110001', '0101111', '0111011', '0110111', '0001011');
         static $Rencode = array('1110010', '1100110', '1101100', '1000010', '1011100',
-            '1001110', '1010000', '1000100', '1001000', '1110100');
+    '1001110', '1010000', '1000100', '1001000', '1110100');
         $ends = '101';
         $center = '01010';
         /* UPC-A Must be 11 digits, we compute the checksum. */
@@ -454,18 +444,18 @@ class Image
                 $even += $ncode[$x];
             }
         }
-        $code .= (10 - (($odd * 3 + $even) % 10)) % 10;
+        $code.= ( 10 - (($odd * 3 + $even) % 10)) % 10;
         /* Create the bar encoding using a binary string */
         $bars = $ends;
         $bars .= $Lencode[$code[0]];
         for ($x = 1; $x < 6; $x++) {
-            $bars .= $Lencode[$code[$x]];
+            $bars.=$Lencode[$code[$x]];
         }
         $bars .= $center;
         for ($x = 6; $x < 12; $x++) {
-            $bars .= $Rencode[$code[$x]];
+            $bars.=$Rencode[$code[$x]];
         }
-        $bars .= $ends;
+        $bars.=$ends;
         /* Generate the Barcode Image */
         if ($type != 'gif' && function_exists('imagecreatetruecolor')) {
             $im = imagecreatetruecolor($lw * 95 + 30, $hi + 30);
@@ -500,8 +490,7 @@ class Image
         Image::output($im, $type);
     }
 
-    static function output($im, $type = 'png', $filename = '')
-    {
+    static function output($im, $type='png', $filename='') {
         header("Content-type: image/" . $type);
         $ImageFun = 'image' . $type;
         if (empty($filename)) {

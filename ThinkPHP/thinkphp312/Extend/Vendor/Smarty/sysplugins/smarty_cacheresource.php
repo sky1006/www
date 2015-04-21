@@ -380,5 +380,4 @@ class Smarty_Template_Cached
     }
 
 }
-
 ?>

@@ -15,5 +15,5 @@ return array(
     'storage_url' => trim(dirname($_SERVER['SCRIPT_NAME']), '/\\') . '/',
     'storage_dir' => './',
     'debug_file' => APP_PATH . 'Runtime/Logs/sae_debug.log'
-
+     
 );

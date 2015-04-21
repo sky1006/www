@@ -108,5 +108,4 @@ function compile_section_start($arguments, &$object)
 
     return $output;
 }
-
 ?>

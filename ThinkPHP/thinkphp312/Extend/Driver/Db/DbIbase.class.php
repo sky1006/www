@@ -10,7 +10,6 @@
 // +----------------------------------------------------------------------
 
 defined('THINK_PATH') or exit();
-
 /**
  * Firebird数据库驱动
  * @category   Extend
@@ -22,7 +21,6 @@ class DbIbase extends Db
 {
 
     protected $selectSql = 'SELECT %LIMIT% %DISTINCT% %FIELD% FROM %TABLE%%JOIN%%WHERE%%GROUP%%HAVING%%ORDER%';
-
     /**
      * 架构函数 读取数据库配置信息
      * @access public
@@ -231,7 +229,7 @@ class DbIbase extends Db
                     if (!empty($row[$field])) $result[$i][$field] = $this->BlobDecode($row[$field]);
                 }
                 $i++;
-            }
+        }
         }
         return $result;
     }

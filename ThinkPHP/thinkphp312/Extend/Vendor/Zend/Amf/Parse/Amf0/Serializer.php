@@ -62,7 +62,7 @@ class Zend_Amf_Parse_Amf0_Serializer extends Zend_Amf_Parse_Serializer
         if (null !== $markerType) {
             //try to refrence the given object
             if (!$this->writeObjectReference($data, $markerType)) {
-
+            
                 // Write the Type Marker to denote the following action script data type
                 $this->_stream->writeByte($markerType);
                 switch ($markerType) {
@@ -151,7 +151,7 @@ class Zend_Amf_Parse_Amf0_Serializer extends Zend_Amf_Parse_Serializer
                         // check if it contains non-integer keys
                         if (!is_numeric($key) || intval($key) != $key) {
                             $markerType = Zend_Amf_Constants::AMF0_OBJECT;
-                            break;
+                            break; 
                             // check if it is a sparse indexed array
                         } else if ($key != $i) {
                             $markerType = Zend_Amf_Constants::AMF0_MIXEDARRAY;
@@ -178,7 +178,7 @@ class Zend_Amf_Parse_Amf0_Serializer extends Zend_Amf_Parse_Serializer
     /**
      * Check if the given object is in the reference table, write the reference if it exists,
      * otherwise add the object to the reference table
-     *
+     * 
      * @param mixed $object object to check for reference
      * @param $markerType AMF type of the object to write
      * @return Boolean true, if the reference was written, false otherwise

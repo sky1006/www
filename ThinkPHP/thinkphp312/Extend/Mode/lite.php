@@ -29,7 +29,7 @@ return array(
         'Debug' => CORE_PATH . 'Util/Debug.class.php',
         'Session' => CORE_PATH . 'Util/Session.class.php',
         'TagLibCx' => CORE_PATH . 'Driver/TagLib/TagLibCx.class.php',
-    ),
+    ), 
 
     // 系统行为定义文件 [必须 支持数组直接定义或者文件名定义 ]
     'extends' => MODE_PATH . 'Lite/tags.php',

@@ -20,14 +20,14 @@
  */
 
 /**
- * The following constants are used throughout serialization and
+ * The following constants are used throughout serialization and 
  * deserialization to detect the AMF marker and encoding types.
  *
  * @package    Zend_Amf
  * @copyright  Copyright (c) 2005-2009 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
-final class Zend_Amf_Constants
+final class Zend_Amf_Constants 
 {
     const AMF0_NUMBER = 0x00;
     const AMF0_BOOLEAN = 0x01;
@@ -72,7 +72,7 @@ final class Zend_Amf_Constants
     const FMS_OBJECT_ENCODING = 0x01;
 
     /**
-     * Special content length value that indicates "unknown" content length
+     * Special content length value that indicates "unknown" content length 
      * per AMF Specification
      */
     const UNKNOWN_CONTENT_LENGTH = -1;

@@ -10,7 +10,6 @@
 // +----------------------------------------------------------------------
 
 define('CLIENT_MULTI_RESULTS', 131072);
-
 /**
  * ThinkPHP 精简模式数据库中间层实现类 只支持Mysql
  */
@@ -48,7 +47,6 @@ class Db
     protected $comparison = array('eq' => '=', 'neq' => '!=', 'gt' => '>', 'egt' => '>=', 'lt' => '<', 'elt' => '<=', 'notlike' => 'NOT LIKE', 'like' => 'LIKE');
     // 查询表达式
     protected $selectSql = 'SELECT%DISTINCT% %FIELDS% FROM %TABLE%%JOIN%%WHERE%%GROUP%%HAVING%%ORDER%%LIMIT%';
-
     /**
      * 架构函数
      * @access public

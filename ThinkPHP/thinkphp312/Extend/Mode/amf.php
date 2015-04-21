@@ -22,7 +22,7 @@ return array(
     'alias' => array(
         'Model' => MODE_PATH . 'Amf/Model.class.php',
         'Db' => MODE_PATH . 'Amf/Db.class.php',
-    ),
+    ), 
     // 系统行为定义文件 [必须 支持数组直接定义或者文件名定义 ]
     'extends' => array(),
 

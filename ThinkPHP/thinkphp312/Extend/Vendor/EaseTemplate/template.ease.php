@@ -41,5 +41,4 @@ Class template extends ETCore
     }
 
 }
-
 ?>

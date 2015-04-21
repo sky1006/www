@@ -85,7 +85,6 @@ class Smarty_Internal_Data
 
         return $this;
     }
-
     /**
      * assigns values to template variables by reference
      *

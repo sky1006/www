@@ -176,7 +176,7 @@ class String
             $rand[] = self::randString($length, $mode);
         }
         $rand = array_slice(array_unique($rand), 0, $number);
-        return $rand;
+            return $rand;
     }
 
     /**

@@ -1,14 +1,14 @@
 <?php
 /**
  * Smarty plugin
- *
+ * 
  * @package Smarty
  * @subpackage PluginsModifier
  */
 
 /**
  * Smarty date_format modifier plugin
- *
+ * 
  * Type:     modifier<br>
  * Name:     date_format<br>
  * Purpose:  format datestamps via strftime<br>
@@ -16,7 +16,7 @@
  *          - string: input date string
  *          - format: strftime format for output
  *          - default_date: default date if $string is empty
- *
+ * 
  * @link http://www.smarty.net/manual/en/language.modifier.date.format.php date_format (Smarty online manual)
  * @author Monte Ohrt <monte at ohrt dot com>
  * @param string $string input date string
@@ -46,17 +46,17 @@ function smarty_modifier_date_format($string, $format = SMARTY_RESOURCE_DATE_FOR
             if (strpos($format, '%e') !== false) {
                 $_win_from[] = '%e';
                 $_win_to[] = sprintf('%\' 2d', date('j', $timestamp));
-            }
+            } 
             if (strpos($format, '%l') !== false) {
                 $_win_from[] = '%l';
                 $_win_to[] = sprintf('%\' 2d', date('h', $timestamp));
-            }
+            } 
             $format = str_replace($_win_from, $_win_to, $format);
-        }
+        } 
         return strftime($format, $timestamp);
     } else {
         return date($format, $timestamp);
     }
-}
+} 
 
 ?>

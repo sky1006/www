@@ -21,8 +21,7 @@
  * @version   $Id: Cookie.class.php 2702 2012-02-02 12:35:01Z liu21st $
  * +------------------------------------------------------------------------------
  */
-class Cookie
-{
+class Cookie {
     // 判断Cookie是否存在
     static function is_set($name)
     {
@@ -63,8 +62,7 @@ class Cookie
     }
 
     // 清空Cookie值
-    static function clear()
-    {
+    static function clear() {
         unset($_COOKIE);
     }
 }

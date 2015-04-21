@@ -104,7 +104,7 @@ class UploadFile
             $info = getimagesize($file['tmp_name']);
             if (false === $info || ('gif' == strtolower($file['extension']) && empty($info['bits']))) {
                 $this->error = '非法图像文件';
-                return false;
+                return false;                
             }
         }
         if (!move_uploaded_file($file['tmp_name'], $this->autoCharset($filename, 'utf-8', 'gbk'))) {
@@ -390,10 +390,10 @@ class UploadFile
                 break;
             case 'hash':
             default:
-                $name = md5($file['savename']);
-                $dir = '';
-                for ($i = 0; $i < $this->hashLevel; $i++) {
-                    $dir .= $name{$i} . '/';
+            $name = md5($file['savename']);
+            $dir = '';
+            for ($i = 0; $i < $this->hashLevel; $i++) {
+                $dir .= $name{$i} . '/';
                 }
                 break;
         }

@@ -14,16 +14,16 @@ define("ET3!", TRUE);
 
 class ETCore
 {
-    var $ThisFile = ''; //当前文件
-    var $IncFile = ''; //引入文件
-    var $ThisValue = array(); //当前数值
-    var $FileList = array(); //载入文件列表
-    var $IncList = array(); //引入文件列表
-    var $ImgDir = array('images'); //图片地址目录
-    var $HtmDir = 'cache_htm/'; //静态存放的目录
-    var $HtmID = ''; //静态文件ID
-    var $HtmTime = '180'; //秒为单位，默认三分钟
-    var $AutoImage = 1; //自动解析图片目录开关默认值
+    var $ThisFile = '';                //当前文件
+    var $IncFile = '';                //引入文件
+    var $ThisValue = array();            //当前数值
+    var $FileList = array();            //载入文件列表
+    var $IncList = array();            //引入文件列表
+    var $ImgDir = array('images');    //图片地址目录
+    var $HtmDir = 'cache_htm/';        //静态存放的目录
+    var $HtmID = '';                //静态文件ID
+    var $HtmTime = '180';            //秒为单位，默认三分钟
+    var $AutoImage = 1;                //自动解析图片目录开关默认值
     var $Hacker = "<?php if(!defined('ET3!')){die('You are Hacker!<br>Power by Ease Template!');}";
     var $Compile = array();
     var $Analysis = array();
@@ -34,15 +34,15 @@ class ETCore
      */
     function ETCoreStart(
         $set = array(
-            'ID' => '1', //缓存ID
-            'TplType' => 'htm', //模板格式
-            'CacheDir' => 'cache', //缓存目录
-            'TemplateDir' => 'template', //模板存放目录
-            'AutoImage' => 'on', //自动解析图片目录开关 on表示开放 off表示关闭
-            'LangDir' => 'language', //语言文件存放的目录
-            'Language' => 'default', //语言的默认文件
-            'Copyright' => 'off', //版权保护
-            'MemCache' => '', //Memcache服务器地址例如:127.0.0.1:11211
+            'ID' => '1',                    //缓存ID
+            'TplType' => 'htm',                //模板格式
+            'CacheDir' => 'cache',                //缓存目录
+            'TemplateDir' => 'template',            //模板存放目录
+            'AutoImage' => 'on',                //自动解析图片目录开关 on表示开放 off表示关闭
+            'LangDir' => 'language',            //语言文件存放的目录
+            'Language' => 'default',            //语言的默认文件
+            'Copyright' => 'off',                //版权保护
+            'MemCache' => '',                    //Memcache服务器地址例如:127.0.0.1:11211
         )
     )
     {
@@ -313,10 +313,10 @@ class ETCore
                 //语言文件过大时采取建立新文件
                 if (strlen($docs) > 400) {
                     $this->writer($this->LangDir . $this->Language . '.' . $id . '.php', '<? $etl = "' . $str . '";?>');
-                    $docs = substr($str, 0, 40); //简要说明
+                    $docs = substr($str, 0, 40);        //简要说明
                     $docs = str_replace('\"', '"', $docs);
                     $docs = str_replace('\\\\', '\\', $docs);
-                    $str = 'o(O_O)o.ET Lang.o(*_*)o'; //语言新文件
+                    $str = 'o(O_O)o.ET Lang.o(*_*)o';    //语言新文件
                 } else {
                     $docs = str_replace('\"', '"', $str);
                     $docs = str_replace('\\\\', '\\', $docs);
@@ -418,7 +418,7 @@ class ETCore
                 $Ease_name = 'Ease Template!';
                 $Ease_base = "<title>$Ease_name</title><a href='http://www.systn.com'>$Ease_name</a>";
                 $this->writer($this->CacheDir . 'index.htm', $Ease_base);
-                $this->writer($this->CacheDir . 'a.html', $Ease_base);
+                $this->writer($this->CacheDir . 'index.html', $Ease_base);
                 $this->writer($this->CacheDir . 'default.htm', $Ease_base);
             }
 
@@ -426,7 +426,7 @@ class ETCore
             //编译记录
             $content = str_replace("\\", "\\\\", $content);
             $content = str_replace("'", "\'", $content);
-            $content = str_replace('echo"";', "", $content); //替换多余数据
+            $content = str_replace('echo"";', "", $content);        //替换多余数据
 
             $wfile = ($cachename) ? $cachename : $this->ThisFile;
             $this->writer($this->FileName($wfile, $this->TplID), $this->Hacker . '$EaseTemplate3_Cache = \'' . $content . '\';');
@@ -719,7 +719,7 @@ class ETCore
         if ($w_dir && $w_filename && $w_content) {
             //目录检测数量
             $w_dir_ex = explode('/', $w_dir);
-            $w_new_dir = ''; //处理后的写入目录
+            $w_new_dir = '';    //处理后的写入目录
             unset($dvs, $fdk, $fdv, $w_dir_len);
             foreach ((array)$w_dir_ex AS $dvs) {
                 if (trim($dvs) && $dvs != '..') {

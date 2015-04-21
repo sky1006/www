@@ -21,25 +21,23 @@
  * @version   $Id: Sms.class.php 1275 2012-12-04 03:13:00Z luofei614@126.com $
  * +------------------------------------------------------------------------------
  */
-class Sms
-{
+class Sms {
     // 日志级别 从上到下，由低到高
     const ERR = 'ERR'; // 一般错误: 一般性错误
     const NOTICE = 'NOTIC'; // 通知: 程序可以运行但是还不够完美的错误
     const MYSQL_ERROR = 'MYSQL_ERROR'; //mysql错误
 
-    static public function send($msg, $detail, $level = self::NOTIC, $mobile = null)
-    {
+    static public function send($msg, $detail, $level = self::NOTIC, $mobile = null) {
         //判断是否定义需要发送短信
         if (!in_array($level, explode(',', C('SMS_ALERT_LEVEL'))))
             return;
         //判断发送频率
-        $mc = memcache_init();
+            $mc = memcache_init();
         $is_send = $mc->get('think_sms_send');
         //如果已经发送，则不发送
         if ($is_send === 'true') {
             $status = 'not send';
-        } else {
+            } else {
             $sms = apibus::init('sms');
             if (is_null($mobile)) $mobile = C('SMS_ALERT_MOBILE');
             $mc = memcache_init();
@@ -50,14 +48,13 @@ class Sms
                 $status = 'success';
                 $mc->set('think_sms_send', 'true', 0, C('SMS_ALERT_INTERVAL'));
             }
-
-        }
+                
+            }
         //记录日志
         if (C('LOG_RECORD'))
-            trace($msg . '；detail：' . $detail . '【status:' . $status . '】', '短信发送', 'SAE', true);
+            trace($msg . '；detail：' . $detail . '【status:' . $status . '】', '短信发送', 'SAE',true);
         else
             Log::write($msg . '；detail：' . $detail . '【status:' . $status . '】', 'SEND_SMS');
     }
 }
-
 ?>

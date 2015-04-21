@@ -44,5 +44,4 @@ function compile_include($arguments, &$object)
     }
     return $output;
 }
-
 ?>

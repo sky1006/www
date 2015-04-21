@@ -103,7 +103,7 @@ class Zend_Amf_Parse_Amf3_Deserializer extends Zend_Amf_Parse_Deserializer
                 return $this->readObject();
             case Zend_Amf_Constants::AMF3_XML:
             case Zend_Amf_Constants::AMF3_XMLSTRING:
-                return $this->readXmlString();
+            return $this->readXmlString();
             case Zend_Amf_Constants::AMF3_BYTEARRAY:
                 return $this->readString();
             default:
@@ -401,7 +401,7 @@ class Zend_Amf_Parse_Amf3_Deserializer extends Zend_Amf_Parse_Deserializer
                 $returnObject = get_object_vars($returnObject);
             }
         }
-
+	   
         return $returnObject;
     }
 

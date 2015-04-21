@@ -41,21 +41,21 @@ class Zend_Amf_Adobe_Auth extends Zend_Amf_Auth_Abstract
 
     /**
      * ACL for authorization
-     *
+     * 
      * @var Zend_Acl
      */
     protected $_acl;
 
     /**
      * Username/password array
-     *
+     * 
      * @var array
      */
     protected $_users = array();
 
     /**
      * Create auth adapter
-     *
+     * 
      * @param string $rolefile File containing XML with users and roles
      */
     public function __construct($rolefile)
@@ -84,7 +84,7 @@ class Zend_Amf_Adobe_Auth extends Zend_Amf_Auth_Abstract
 
     /**
      * Get ACL with roles from XML file
-     *
+     * 
      * @return Zend_Acl
      */
     public function getAcl()
@@ -94,7 +94,7 @@ class Zend_Amf_Adobe_Auth extends Zend_Amf_Auth_Abstract
 
     /**
      * Perform authentication
-     *
+     * 
      * @throws Zend_Auth_Adapter_Exception
      * @return Zend_Auth_Result
      * @see Zend_Auth_Adapter_Interface#authenticate()

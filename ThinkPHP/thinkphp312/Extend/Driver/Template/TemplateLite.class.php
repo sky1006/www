@@ -10,9 +10,8 @@
 // +----------------------------------------------------------------------
 
 defined('THINK_PATH') or exit();
-
 /**
- * TemplateLite模板引擎驱动
+ * TemplateLite模板引擎驱动 
  * @category   Extend
  * @package  Extend
  * @subpackage  Driver.Template

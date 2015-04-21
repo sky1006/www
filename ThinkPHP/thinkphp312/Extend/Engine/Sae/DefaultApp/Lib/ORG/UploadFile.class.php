@@ -383,10 +383,10 @@ class UploadFile
                 break;
             case 'hash':
             default:
-                $name = md5($file['savename']);
-                $dir = '';
-                for ($i = 0; $i < $this->hashLevel; $i++) {
-                    $dir .= $name{$i} . '/';
+            $name = md5($file['savename']);
+            $dir = '';
+            for ($i = 0; $i < $this->hashLevel; $i++) {
+                $dir .= $name{$i} . '/';
                 }
                 break;
         }

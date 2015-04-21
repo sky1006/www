@@ -30,7 +30,7 @@
  * </code>
  * @param string $start 开始标签
  * @param string $end 结束标签
- * @param integer|string $dec 小数位或者m
+ * @param integer|string $dec 小数位或者m 
  * @return mixed
  */
 function G($start, $end = '', $dec = 4)
@@ -62,7 +62,7 @@ function G($start, $end = '', $dec = 4)
  * N('read',1); // 记录读取次数
  * echo N('db'); // 获取当前页面数据库的所有操作次数
  * echo N('read'); // 获取当前页面读取次数
- * </code>
+ * </code> 
  * @param string $key 标识位置
  * @param integer $step 步进值
  * @return mixed
@@ -234,7 +234,7 @@ function load($name, $baseUrl = '', $ext = '.php')
  * 快速导入第三方框架类库 所有第三方框架的类库文件统一放到 系统的Vendor目录下面
  * @param string $class 类库
  * @param string $baseUrl 基础目录
- * @param string $ext 类库后缀
+ * @param string $ext 类库后缀 
  * @return boolean
  */
 function vendor($class, $baseUrl = '', $ext = '.php')
@@ -351,7 +351,7 @@ function A($name, $layer = '', $common = false)
 /**
  * 远程调用模块的操作方法 URL 参数格式 [项目://][分组/]模块/操作
  * @param string $url 调用地址
- * @param string|array $vars 调用参数 支持字符串和数组
+ * @param string|array $vars 调用参数 支持字符串和数组 
  * @param string $layer 要调用的控制层名称
  * @return mixed
  */
@@ -487,7 +487,7 @@ function tag($tag, &$params = NULL)
  * 动态添加行为扩展到某个标签
  * @param string $tag 标签名称
  * @param string $behavior 行为名称
- * @param string $path 行为路径
+ * @param string $path 行为路径 
  * @return void
  */
 function add_tag_behavior($tag, $behavior, $path = '')
@@ -523,6 +523,7 @@ function B($name, &$params = NULL)
         trace('Run ' . $name . ' Behavior [ RunTime:' . G('behaviorStart', 'behaviorEnd', 6) . 's ]', '', 'INFO');
     }
 }
+
 
 
 /**
@@ -615,14 +616,13 @@ function array_define($array, $check = true)
     }
     return $content;
 }
-
 //[/RUNTIME]
 
 /**
  * 添加和获取页面Trace记录
  * @param string $value 变量
  * @param string $label 标签
- * @param string $level 日志级别
+ * @param string $level 日志级别 
  * @param boolean $record 是否记录日志
  * @return void
  */

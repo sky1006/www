@@ -128,7 +128,7 @@ abstract class Action
      * @param string $templateFile 指定要调用的模板文件
      * 默认为空 由系统自动定位模板文件
      * @param string $content 模板输出内容
-     * @param string $prefix 模板缓存前缀*
+     * @param string $prefix 模板缓存前缀* 
      * @return string
      */
     protected function fetch($templateFile = '', $content = '', $prefix = '')
@@ -184,7 +184,7 @@ abstract class Action
             $this->tVar = array_merge($this->tVar, $name);
         } else {
             $this->tVar[$name] = $value;
-        }
+        }        
     }
 
     public function __set($name, $value)
@@ -252,7 +252,7 @@ abstract class Action
                 case 'ishead'   :
                 case 'isdelete' :
                 case 'isput'    :
-                    return strtolower($_SERVER['REQUEST_METHOD']) == strtolower(substr($method, 2));
+                return strtolower($_SERVER['REQUEST_METHOD']) == strtolower(substr($method, 2));
                 // 获取变量 支持过滤和默认值 调用方式 $this->_post($key,$filter,$default);
                 case '_get'     :
                     $input =& $_GET;
@@ -380,7 +380,7 @@ abstract class Action
             case 'EVAL' :
                 // 返回可执行的js脚本
                 header('Content-Type:text/html; charset=utf-8');
-                exit($data);
+                exit($data);            
             default     :
                 // 用于扩展其他返回格式数据
                 tag('ajax_return', $data);

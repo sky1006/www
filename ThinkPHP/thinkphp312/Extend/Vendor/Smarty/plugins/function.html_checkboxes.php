@@ -62,13 +62,13 @@ function smarty_function_html_checkboxes($params, $template)
         switch ($_key) {
             case 'name':
             case 'separator':
-                $$_key = (string)$_val;
+            $$_key = (string)$_val;
                 break;
 
             case 'escape':
             case 'labels':
             case 'label_ids':
-                $$_key = (bool)$_val;
+            $$_key = (bool)$_val;
                 break;
 
             case 'options':
@@ -77,7 +77,7 @@ function smarty_function_html_checkboxes($params, $template)
 
             case 'values':
             case 'output':
-                $$_key = array_values((array)$_val);
+            $$_key = array_values((array)$_val);
                 break;
 
             case 'checked':
@@ -182,7 +182,7 @@ function smarty_function_html_checkboxes_output($name, $value, $output, $selecte
             $_output .= '<label for="' . $_id . '">';
         } else {
             $_output .= '<label>';
-        }
+        } 
     }
 
     $name = smarty_function_escape_special_chars($name);
