@@ -40,5 +40,42 @@ class UserAction extends Action
 
         $this->display();
     }
+/*
+ * 显示修改页面
+ */
+    public function update(){
+        $m=M('Users');
+        $data['id']=$_POST['id'];
+        $data['username']=$_POST['username'];
+        $data['sex']=$_POST['sex'];
+        $data['age']=$_POST['age'];
+        $data['email']=$_POST['email'];
+        $count=$m->save($data);
+        if($count>0){
+            $this->success('数据修改成功！','index');
+        }else{
+            $this->error('数据修改失败！');
+        }
+    }
+    /*
+     * 添加用户页面
+     */
+    public function add(){
+        $this->display();
+    }
 
+    public function create(){
+        $m=M('Users');
+        $m->username=$_POST['username'];
+        $m->sex=$_POST['sex'];
+        $m->age=$_POST['age'];
+        $m->email=$_POST['email'];
+
+        $idNum=$m->add();
+        if($idNum>0){
+            $this->success('数据添加成功','index');
+        }else{
+            $this->error('数据添加失败');
+        }
+    }
 } 

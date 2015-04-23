@@ -1,0 +1,18 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>add</title>
+</head>
+<body>
+<!--<form action="/thinkphp/index.php/User/create" method="post">-->
+<form action="__URL__/create" method="post">
+    姓名：<input type="text" name="username" /><br>
+    性别：男<input type="radio" name="sex" value="1"/>
+         女<input type="radio" name="sex" value="0"/><br>
+    年龄：<input type="text" name="age"><br>
+    邮箱：<input type="text" name="email"><br>
+    <input type="submit" name="" value="添加新用户"/>
+</form>
+</body>
+</html>
