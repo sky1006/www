@@ -1,0 +1,46 @@
+#
+# ThinkPHP 3.1.2 连贯操作
+#
+
+本节课大纲：
+一、常用连贯操作  （重点）
+二、补充          （了解）
+
+
+====================================================
+一、常用连贯操作
+	1.where
+		帮助我们设置查询条件
+	2.order	
+		对结果进行排序
+		$arr=$m->order('id desc')->select();
+		$arr=$m->order(array('id'=>'desc','sex'=>'asc'))->select();
+	3.limit	
+		限制结果
+		limit(2,5)
+		limit('2,5')
+		limit(10)//limit(0,10)
+	4.field	
+		设置查询字段
+		field('username as name,id')
+		field(array('username'=>'name','id')
+		field('id',true) //获取除了id以外的所有字段
+	5.table	
+	6.group	
+	7.having
+二、补充  
+			alias 用于给当前数据表定义别名 字符串 
+			page 用于查询分页（内部会转换成limit） 字符串和数字 
+			join* 用于对查询的join支持 字符串和数组 
+			union* 用于对查询的union支持 字符串、数组和对象 
+			distinct 用于查询的distinct支持 布尔值 
+			lock 用于数据库的锁机制 布尔值 
+			cache 用于查询缓存 支持多个参数（以后在缓存部分再详细描述） 
+			relation 用于关联查询（需要关联模型扩展支持） 字符串 
+			validate 用于数据自动验证 数组 
+			auto 用于数据自动完成 数组 
+			filter 用于数据过滤 字符串 
+			scope* 用于命名范围 字符串、数组 
+
+			补充部分会在以后在详细探讨
+	

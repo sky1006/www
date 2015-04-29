@@ -1,0 +1,100 @@
+#
+# ThinkPHP 3.1.2 查询方式
+#
+讲师：赵桐正
+微博：http://weibo.com/zhaotongzheng
+
+
+本节课大纲：
+一、普通查询方式
+	a、字符串
+		$arr=$m->where("sex=0 and username='gege'")->find();
+	b、数组
+		$data['sex']=0;
+		$data['username']='gege';
+		$arr=$m->where($data)->find();
+		注意：这种方式默认是and的关系，如果使用or关系，需要添加数组值
+		$data['sex']=0;
+		$data['username']='gege';
+		$data['_logic']='or';
+二、表达式查询方式
+		$data['id']=array('lt',6);
+		$arr=$m->where($data)->select();
+		EQ 等于
+		NEQ不等于
+		GT 大于
+		EGT大于等于
+		LT 小于
+		ELT小于等于
+		LIKE 模糊查询
+			$data['username']=array('like','%ge');
+			$arr=$m->where($data)->select();
+		NOTLIKE
+			$data['username']=array('notlike','%ge%'); //notlike中间没有空格
+		    $arr=$m->where($data)->select();
+
+			注意：如果一个字段要匹配多个通配符
+			$data['username']=array('like',array('%ge%','%2%','%五%'),'and');//如果没有第三个值，默认关系是or关系
+			$arr=$m->where($data)->select();
+
+		BETWEEN
+			$data['id']=array('between',array(5,7));
+			$arr=$m->where($data)->select();
+			//SELECT * FROM `tp_user` WHERE ( (`id` BETWEEN 5 AND 7 ) )
+			$data['id']=array('not between',array(5,7));//注意，not 和 between中间一定要有空格
+			$arr=$m->where($data)->select();
+		IN
+			$data['id']=array('in',array(4,6,7));
+			$arr=$m->where($data)->select();
+			//SELECT * FROM `tp_user` WHERE ( `id` IN (4,6,7) )
+
+			$data['id']=array('not in',array(4,6,7));
+			$arr=$m->where($data)->select();
+			//SELECT * FROM `tp_user` WHERE ( `id` NOT IN (4,6,7) )
+
+三、区间查询
+		$data['id']=array(array('gt',4),array('lt',10));//默认关系是 and 的关系
+		//SELECT * FROM `tp_user` WHERE ( (`id` > 4) AND (`id` < 10) )
+
+		$data['id']=array(array('gt',4),array('lt',10),'or') //关系就是or的关系
+
+		$data['name']=array(array('like','%2%'),array('like','%五%'),'gege','or');
+
+四、统计查询
+		count //获取个数
+		max   //获取最大数
+		min   //获取最小数
+		avg   //获取平均数
+		sum   //获取总和
+
+五、SQL直接查询
+	a、query 主要数处理读取数据的
+		成功返回数据的结果集
+		失败返回boolean false
+		$m=M();
+		$result=$m->query("select *  from t_user where id >50");
+		var_dump($result);
+	b、execute 用于更新个写入操作
+		成功返回影响行数
+		失败返回boolean false
+		$m=M();
+		$result=$m->execute("insert into t_user(`username`) values('ztz3')");
+		var_dump($result);
+
+
+'URL_PATHINFO_DEPR' => '-' //配置Pathinfo模式访问的分割符
+'URL_PATHINFO_DEPR'=>'-',//修改URL的分隔符
+'TMPL_L_DELIM'=>'<{', //修改左定界符
+'TMPL_R_DELIM'=>'}>', //修改右定界符
+'DB_TYPE'=>'mysql',   //设置数据库类型
+'DB_HOST'=>'localhost',//设置主机
+'DB_NAME'=>'thinkphp',//设置数据库名
+'DB_USER'=>'root',    //设置用户名
+'DB_PWD'=>'',        //设置密码
+'DB_PORT'=>'3306',   //设置端口号
+'DB_PREFIX'=>'tp_',  //设置表前缀
+'DB_DSN'=>'mysql://root:@localhost:3306/thinkphp',//使用DSN方式配置数据库信息
+'SHOW_PAGE_TRACE'=>true,//开启页面Trace
+'DB_LIKE_FIELDS'=>'title|content' //查询语句中条件自动变为模糊查询%%
+
+
