@@ -1,0 +1,88 @@
+#
+# ThinkPHP 3.1.2 视图
+#
+讲师：赵桐正
+微博：http://weibo.com/zhaotongzheng
+
+本节课大纲：
+一、模板的使用        （重点）
+	a、规则
+		模板文件夹下[TPL]/[分组文件夹/][模板主题文件夹/]和模块名同名的文件夹[Index]/和方法名同名的文件[index].html（.tpl）
+		更换模板文件的后缀名（修改配置文件）
+		'TMPL_TEMPLATE_SUFFIX'=>'.html',//更改模板文件后缀名
+	b、修改模板文件目录层次
+		'TMPL_FILE_DEPR'=>'_',//修改模板文件目录层次
+	c、模板主题
+		'DEFAULT_THEME'=>'your',//设置默认模板主题
+		需要在TPL下面新建一个your文件夹作为模板主题文件夹
+		如何动态修改模板主题？
+		1、在后台准备一个功能，修改config.php文件中的默认模板项
+		2、通过url传递 t=主题 参数可以修改不同的模板
+			'DEFAULT_THEME'=>'your',//设置默认模板主题
+			'TMPL_DETECT_THEME'=>true,//自动侦测模板主题
+			'THEME_LIST'=>'your,my',//支持的模板主题列表
+		
+二、输出模板内容      （重点）
+	a、display
+		1.display中没有参数
+			$this->display();
+		2.可以带参数
+			$this->display(本模块文件夹下的其他模板文件);
+			$this->display('index2');
+
+			$this->display(其他文件夹下的模板文件);
+			$this->display('Public:error');//注意，仅仅需要在Tpl下有Public文件夹以及其中的error.html即可，不需要一定有Public模块
+
+			$this->display(其他主题下的 文件夹下的 模板文件);//需要开启主题支持
+			$this->display('my:Index:index');
+
+			$this->display(一个url路径);
+            $this->display('./Public/error.html');
+
+            $this->display('./Public/error.html','utf-8','text/xml');
+
+            $this->show($content);
+        3.fetch方法
+            获得模板文件中的内容，以字符串形式返回
+            $content=$this->fetch('Public:error');
+        4.show方法
+            不需要模板文件，可以直接输出模板内容
+            $content=$this->fetch('Public:error');
+            dump($content);
+            $content=str_replace('h1','i',$content);
+            $this->show($content);
+
+三、模板中的赋值      （重点）
+            //$this->assign('name','赵桐正');
+            $this->name='赵桐正2';
+            $this->display();
+四、模板替换          （重点）
+__PUBLIC__：会被替换成当前网站的公共目录 通常是 /Public/
+__ROOT__： 会替换成当前网站的地址（不含域名）
+__APP__： 会替换成当前项目的URL地址 （不含域名）
+__GROUP__：会替换成当前分组的URL地址 （不含域名）
+__URL__： 会替换成当前模块的URL地址（不含域名）
+__ACTION__：会替换成当前操作的URL地址 （不含域名）
+__SELF__： 会替换成当前的页面URL
+
+            更换模板变量规则，修改配置项
+            'TMPL_PARSE_STRING'=>array(           //添加自己的模板变量规则
+            '__CSS__'=>__ROOT__.'/Public/Css',
+            '__JS__'=>__ROOT__.'/Public/Js',
+            ),
+
+
+'URL_PATHINFO_DEPR'=>'-',//修改URL的分隔符
+'TMPL_L_DELIM'=>'<{', //修改左定界符
+'TMPL_R_DELIM'=>'}>', //修改右定界符
+'DB_TYPE'=>'mysql',   //设置数据库类型
+'DB_HOST'=>'localhost',//设置主机
+'DB_NAME'=>'thinkphp',//设置数据库名
+'DB_USER'=>'root',    //设置用户名
+'DB_PWD'=>'',        //设置密码
+'DB_PORT'=>'3306',   //设置端口号
+'DB_PREFIX'=>'tp_',  //设置表前缀
+'DB_DSN'=>'mysql://root:@localhost:3306/thinkphp',//使用DSN方式配置数据库信息
+'SHOW_PAGE_TRACE'=>true,//开启页面Trace
+'TMPL_TEMPLATE_SUFFIX'=>'.html',//更改模板文件后缀名
+'TMPL_FILE_DEPR'=>'_',//修改模板文件目录层次

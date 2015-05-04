@@ -19,6 +19,7 @@ class Model {
 
     function where($_where){
         $this->where=$_where;
+        return $this;
     }
 
     function select(){
@@ -40,8 +41,8 @@ class Model {
 }
 
 $m=new Model('Users');
-$m->where('id>1030');
-$arr=$m->select();
+//$m->where('id>1030');
+$arr=$m->where('id>1030')->select();
 var_dump($arr);
 echo "<br>";
 echo $m->getSql();

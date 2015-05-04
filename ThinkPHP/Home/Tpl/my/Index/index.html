@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>Index</title>
+</head>
+<body>
+<volist name="myname" id="vo">
+    <{$vo.id}>---<{$vo.username}>---<{$vo.passwd}>---<{$vo.age}>---<{$vo.sex}>---<{$vo.email}><br>
+</volist>
+
+<div>
+    <h1>不修改定界符的结果</h1>
+    <ul>
+        <li>用【{】和【}】输出英文变量</li>
+        <li>{$data1}</li>
+        <li>{$data2}</li>
+    </ul>
+    <ul>
+        <li>用【<{】和【}>】输出英文变量</li>
+        <li><{$data1}></li>
+        <li><{$data2}></li>
+    </ul>
+    <ul>
+        <li>用【{】和【}】输出中文变量</li>
+        <li>{$中国}</li>
+        <li>{$美国}</li>
+    </ul>
+    <ul>
+        <li>用【<{】和【}>】输出中文变量</li>
+        <li><{$中国}></li>
+        <li><{$美国}></li>
+    </ul>
+</div>
+</body>
+</html>

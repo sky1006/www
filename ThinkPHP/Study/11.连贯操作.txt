@@ -23,7 +23,7 @@
 	4.field	
 		设置查询字段
 		field('username as name,id')
-		field(array('username'=>'name','id')
+		field(array('username'=>'name','id'))
 		field('id',true) //获取除了id以外的所有字段
 	5.table	
 	6.group	
