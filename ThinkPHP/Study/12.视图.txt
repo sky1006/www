@@ -86,3 +86,9 @@ __SELF__： 会替换成当前的页面URL
 'SHOW_PAGE_TRACE'=>true,//开启页面Trace
 'TMPL_TEMPLATE_SUFFIX'=>'.html',//更改模板文件后缀名
 'TMPL_FILE_DEPR'=>'_',//修改模板文件目录层次
+'TMPL_DETECT_THEME'=>true,//自动侦测模板主题
+'THEME_LIST'=>'your,my',//支持的模板主题列表
+'TMPL_PARSE_STRING'=>array(           //添加自己的模板变量规则
+	'__CSS__'=>__ROOT__.'/Public/Css',
+	'__JS__'=>__ROOT__.'/Public/Js',
+),
