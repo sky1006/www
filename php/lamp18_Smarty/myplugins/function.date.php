@@ -32,11 +32,11 @@ function smarty_function_date($args, $smarty)
     $str = '';
     if ($loadjs || !defined('CALENDAR_INIT')) {
         define('CALENDAR_INIT', 1);
-        $str .= '<script src="./js/date/js/jscal2.js"></script>
-<script src="./js/date/js/lang/cn.js"></script>
-<link rel="stylesheet" type="text/css" href="./js/date/css/jscal2.css" />
-<link rel="stylesheet" type="text/css" href="./js/date/css/border-radius.css" />
-<link rel="stylesheet" type="text/css" href="./js/date/css/steel/steel.css" />
+        $str .= '<script src="./css/date/css/jscal2.css"></script>
+<script src="./css/date/css/lang/cn.css"></script>
+<link rel="stylesheet" type="text/css" href="./css/date/css/jscal2.css" />
+<link rel="stylesheet" type="text/css" href="./css/date/css/border-radius.css" />
+<link rel="stylesheet" type="text/css" href="./css/date/css/steel/steel.css" />
 ';
     }
     $str .= '<input type="text" name="' . $name . '" id="' . $id . '" value="' . $value . '" size="' . $size . '" class="date" readonly>&nbsp;';

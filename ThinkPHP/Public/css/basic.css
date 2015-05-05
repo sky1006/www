@@ -1,0 +1,15 @@
+p {
+    background: green;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    /*border: 1px solid gray;*/
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 50px;
+}

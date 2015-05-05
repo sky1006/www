@@ -41,7 +41,7 @@ class TagLibCx extends TagLib
         'notpresent' => array('attr' => 'name', 'level' => 3),
         'defined' => array('attr' => 'name', 'level' => 3),
         'notdefined' => array('attr' => 'name', 'level' => 3),
-        'import' => array('attr' => 'file,href,type,value,basepath', 'close' => 0, 'alias' => 'load,css,js'),
+        'import' => array('attr' => 'file,href,type,value,basepath', 'close' => 0, 'alias' => 'load,css,css'),
         'assign' => array('attr' => 'name,value', 'close' => 0),
         'define' => array('attr' => 'name,value', 'close' => 0),
         'for' => array('attr' => 'start,end,name,comparison,step', 'level' => 3),
@@ -537,7 +537,7 @@ class TagLibCx extends TagLib
                     $type = $reset = strtolower(substr(strrchr($val, '.'), 1));
                 }
                 switch ($type) {
-                    case 'js':
+                    case 'css':
                         $parseStr .= '<script type="text/javascript" src="' . $val . '"></script>';
                         break;
                     case 'css':
@@ -550,15 +550,15 @@ class TagLibCx extends TagLib
             }
         } else {
             // 命名空间导入模式 默认是js
-            $type = $type ? $type : (!empty($tag['type']) ? strtolower($tag['type']) : 'js');
+            $type = $type ? $type : (!empty($tag['type']) ? strtolower($tag['type']) : 'css');
             $basepath = !empty($tag['basepath']) ? $tag['basepath'] : __ROOT__ . '/Public';
             // 命名空间方式导入外部文件
             $array = explode(',', $file);
             foreach ($array as $val) {
                 list($val, $version) = explode('?', $val);
                 switch ($type) {
-                    case 'js':
-                        $parseStr .= '<script type="text/javascript" src="' . $basepath . '/' . str_replace(array('.', '#'), array('/', '.'), $val) . '.js' . ($version ? '?' . $version : '') . '"></script>';
+                    case 'css':
+                        $parseStr .= '<script type="text/javascript" src="' . $basepath . '/' . str_replace(array('.', '#'), array('/', '.'), $val) . '.css' . ($version ? '?' . $version : '') . '"></script>';
                         break;
                     case 'css':
                         $parseStr .= '<link rel="stylesheet" type="text/css" href="' . $basepath . '/' . str_replace(array('.', '#'), array('/', '.'), $val) . '.css' . ($version ? '?' . $version : '') . '" />';
@@ -572,7 +572,7 @@ class TagLibCx extends TagLib
         return $parseStr . $endStr;
     }
 
-    // import别名 采用文件方式加载(要使用命名空间必须用import) 例如 <load file="__PUBLIC__/Js/Base.js" />
+    // import别名 采用文件方式加载(要使用命名空间必须用import) 例如 <load file="__PUBLIC__/Js/Base.css" />
     public function _load($attr, $content)
     {
         return $this->_import($attr, $content, true);
@@ -584,10 +584,10 @@ class TagLibCx extends TagLib
         return $this->_import($attr, $content, true, 'css');
     }
 
-    // import别名使用 导入js文件 <js file="__PUBLIC__/Js/Base.js" />
+    // import别名使用 导入js文件 <css file="__PUBLIC__/Js/Base.css" />
     public function _js($attr, $content)
     {
-        return $this->_import($attr, $content, true, 'js');
+        return $this->_import($attr, $content, true, 'css');
     }
 
     /**

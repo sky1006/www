@@ -75,4 +75,10 @@ class IndexAction extends Action
         $this->assign('美国', 'Amercian');
         $this->display();
     }
+
+    public function ass(){
+        $this->assign('name','小燕子');
+
+        $this->display();
+    }
 }

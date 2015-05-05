@@ -31,15 +31,15 @@ function smarty_function_laydate($args, $smarty)
     $str = '';*/
     /*if (!defined('CALENDAR_INIT')) {
         define('CALENDAR_INIT', 1);
-        $str .= '<script src="./js/laydate/laydate.js"></script>
-<link rel="stylesheet" type="text/css" href="./js/laydate/need/laydate.css" />
-<link rel="stylesheet" type="text/css" href="./js/laydate/skins/dahong/laydate.css" />
-<link rel="stylesheet" type="text/css" href="./js/laydate/skins/danlan/laydate.css" />
-<link rel="stylesheet" type="text/css" href="./js/laydate/skins/default/laydate.css" />
-<link rel="stylesheet" type="text/css" href="./js/laydate/skins/molv/laydate.css" />
-<link rel="stylesheet" type="text/css" href="./js/laydate/skins/qianhuang/laydate.css" />
-<link rel="stylesheet" type="text/css" href="./js/laydate/skins/yahui/laydate.css" />
-<link rel="stylesheet" type="text/css" href="./js/laydate/skins/yalan/laydate.css" />';
+        $str .= '<script src="./css/laydate/laydate.css"></script>
+<link rel="stylesheet" type="text/css" href="./css/laydate/need/laydate.css" />
+<link rel="stylesheet" type="text/css" href="./css/laydate/skins/dahong/laydate.css" />
+<link rel="stylesheet" type="text/css" href="./css/laydate/skins/danlan/laydate.css" />
+<link rel="stylesheet" type="text/css" href="./css/laydate/skins/default/laydate.css" />
+<link rel="stylesheet" type="text/css" href="./css/laydate/skins/molv/laydate.css" />
+<link rel="stylesheet" type="text/css" href="./css/laydate/skins/qianhuang/laydate.css" />
+<link rel="stylesheet" type="text/css" href="./css/laydate/skins/yahui/laydate.css" />
+<link rel="stylesheet" type="text/css" href="./css/laydate/skins/yalan/laydate.css" />';
     }
     $str .= '<input type="text" name="' . $name . '" id="' . $id . '" value="' . $value . '" size="' . $size . '" class="date" readonly>&nbsp;';
     $str .= '<script type="text/javascript">

@@ -8,7 +8,7 @@
 include "conn.inc.php";
 //如果没有登录就去登录页面
 if (!(isset($_SESSION['isLogin']) && $_SESSION['isLogin'] === 1)) {
-    header("Location:login.php");
+    header("Location:Login.php");
 }
 
 echo "你好：" . $_SESSION['username'] . "<a href='logout.php'>退出</a><br>";

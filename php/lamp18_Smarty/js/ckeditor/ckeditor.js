@@ -265,7 +265,7 @@
                 delete CKEDITOR.loadFullCore;
                 var a = document.createElement("script");
                 a.type = "text/javascript";
-                a.src = CKEDITOR.basePath + "ckeditor.js";
+                a.src = CKEDITOR.basePath + "ckeditor.css";
                 document.getElementsByTagName("head")[0].appendChild(a)
             }
         };
@@ -3623,7 +3623,7 @@
     CKEDITOR.ENTER_BR = 2;
     CKEDITOR.ENTER_DIV = 3;
     CKEDITOR.config = {
-        customConfig: "config.js",
+        customConfig: "config.css",
         autoUpdateElement: !0,
         language: "",
         defaultLanguage: "en",
@@ -4595,7 +4595,7 @@
                     c[a].dir = c.rtl[a] ? "rtl" : "ltr";
                     b(a, c[a])
                 };
-                this[a] ? f() : CKEDITOR.scriptLoader.load(CKEDITOR.getUrl("lang/" + a + ".js"), f, this)
+                this[a] ? f() : CKEDITOR.scriptLoader.load(CKEDITOR.getUrl("lang/" + a + ".css"), f, this)
             }, detect: function (a, f) {
                 var b = this.languages, f = f || navigator.userLanguage || navigator.language || a, c = f.toLowerCase().match(/([a-z]+)(?:-([a-z]+))?/), e = c[1], c = c[2];
                 b[e + "-" + c] ? e = e + "-" + c : b[e] || (e = null);
@@ -4705,7 +4705,7 @@
             return CKEDITOR.getUrl(f && f.dir || this.basePath + a + "/")
         }, getFilePath: function (a) {
             var f = this.externals[a];
-            return CKEDITOR.getUrl(this.getPath(a) + (f ? f.file : this.fileName + ".js"))
+            return CKEDITOR.getUrl(this.getPath(a) + (f ? f.file : this.fileName + ".css"))
         }, addExternal: function (a, f, b) {
             for (var a = a.split(","), c = 0; c < a.length; c++) {
                 var e = a[c];
@@ -4713,7 +4713,7 @@
                     b = a;
                     return ""
                 }));
-                this.externals[e] = {dir: f, file: b || this.fileName + ".js"}
+                this.externals[e] = {dir: f, file: b || this.fileName + ".css"}
             }
         }, load: function (a, f, b) {
             CKEDITOR.tools.isArray(a) || (a = a ? [a] : []);
@@ -4971,7 +4971,7 @@
                             o = a.langCode.replace(/-.*/, "");
                             o = o != a.langCode && CKEDITOR.tools.indexOf(g, o) >= 0 ? o : CKEDITOR.tools.indexOf(g, "en") >= 0 ? "en" : g[0]
                         }
-                        if (!h.langEntries || !h.langEntries[o])f.push(CKEDITOR.getUrl(h.path + "lang/" + o + ".js")); else {
+                        if (!h.langEntries || !h.langEntries[o])f.push(CKEDITOR.getUrl(h.path + "lang/" + o + ".css")); else {
                             a.lang[i] = h.langEntries[o];
                             o = null
                         }
@@ -9036,7 +9036,7 @@
                 } else {
                     b || (b = "default");
                     var b = b.split(":"), c = b[0];
-                    CKEDITOR.stylesSet.addExternal(c, b[1] ? b.slice(1).join(":") : CKEDITOR.getUrl("styles.js"), "");
+                    CKEDITOR.stylesSet.addExternal(c, b[1] ? b.slice(1).join(":") : CKEDITOR.getUrl("styles.css"), "");
                     CKEDITOR.stylesSet.load(c, function (b) {
                         f._.stylesDefinitions = b[c];
                         a(f._.stylesDefinitions)
@@ -9296,7 +9296,7 @@
         var d = {};
         CKEDITOR.skin = {
             path: a, loadPart: function (c, d) {
-                CKEDITOR.skin.name != CKEDITOR.skinName.split(",")[0] ? CKEDITOR.scriptLoader.load(CKEDITOR.getUrl(a() + "skin.js"), function () {
+                CKEDITOR.skin.name != CKEDITOR.skinName.split(",")[0] ? CKEDITOR.scriptLoader.load(CKEDITOR.getUrl(a() + "skin.css"), function () {
                     b(c, d)
                 }) : b(c, d)
             }, getPath: function (a) {
@@ -11065,7 +11065,7 @@
             b.canUndo = !1;
             b.readOnly = 1;
             a.ui.addButton && a.ui.addButton("About", {label: a.lang.about.title, command: "about", toolbar: "about"});
-            CKEDITOR.dialog.add("about", this.path + "dialogs/about.js")
+            CKEDITOR.dialog.add("about", this.path + "dialogs/about.css")
         }
     });
     (function () {
@@ -11136,14 +11136,14 @@
                     exec: function () {
                         var a = b.langCode, a = c.availableLangs[a] ? a :
                             c.availableLangs[a.replace(/-.*/, "")] ? a.replace(/-.*/, "") : "en";
-                        CKEDITOR.scriptLoader.load(CKEDITOR.getUrl(c.path + "dialogs/lang/" + a + ".js"), function () {
+                        CKEDITOR.scriptLoader.load(CKEDITOR.getUrl(c.path + "dialogs/lang/" + a + ".css"), function () {
                             b.lang.a11yhelp = c.langEntries[a];
                             b.openDialog("a11yHelp")
                         })
                     }, modes: {wysiwyg: 1, source: 1}, readOnly: 1, canUndo: !1
                 });
                 b.setKeystroke(CKEDITOR.ALT + 48, "a11yHelp");
-                CKEDITOR.dialog.add("a11yHelp", this.path + "dialogs/a11yhelp.js");
+                CKEDITOR.dialog.add("a11yHelp", this.path + "dialogs/a11yhelp.css");
                 b.on("ariaEditorHelpLabel", function (a) {
                     a.data.label = b.lang.common.editorHelp
                 })
@@ -11920,7 +11920,7 @@
                 var a;
                 v(b);
                 CKEDITOR.dialog.add("paste",
-                    CKEDITOR.getUrl(this.path + "dialogs/paste.js"));
+                    CKEDITOR.getUrl(this.path + "dialogs/paste.css"));
                 b.on("paste", function (a) {
                     var b = a.data.dataValue, g = CKEDITOR.dtd.$block;
                     -1 < b.indexOf("Apple-") && (b = b.replace(/<span class="Apple-converted-space">&nbsp;<\/span>/gi, " "), "html" != a.data.type && (b = b.replace(/<span class="Apple-tab-span"[^>]*>([^<]*)<\/span>/gi, function (a, b) {
@@ -12593,7 +12593,7 @@
             var c = new CKEDITOR.dialogCommand("colordialog");
             c.editorFocus = !1;
             b.addCommand("colordialog", c);
-            CKEDITOR.dialog.add("colordialog", this.path + "dialogs/colordialog.js");
+            CKEDITOR.dialog.add("colordialog", this.path + "dialogs/colordialog.css");
             b.getColorFromDialog = function (c, f) {
                 var d = function (a) {
                     this.removeListener("ok", d);
@@ -12626,7 +12626,7 @@
     (function () {
         CKEDITOR.plugins.add("templates", {
             requires: "dialog", init: function (a) {
-                CKEDITOR.dialog.add("templates", CKEDITOR.getUrl(this.path + "dialogs/templates.js"));
+                CKEDITOR.dialog.add("templates", CKEDITOR.getUrl(this.path + "dialogs/templates.css"));
                 a.addCommand("templates", new CKEDITOR.dialogCommand("templates"));
                 a.ui.addButton && a.ui.addButton("Templates", {
                     label: a.lang.templates.button,
@@ -12648,7 +12648,7 @@
             e.length ? CKEDITOR.scriptLoader.load(e, d) : setTimeout(d, 0)
         }
     })();
-    CKEDITOR.config.templates_files = [CKEDITOR.getUrl("plugins/templates/templates/default.js")];
+    CKEDITOR.config.templates_files = [CKEDITOR.getUrl("plugins/templates/templates/default.css")];
     CKEDITOR.config.templates_replaceContent = !0;
     CKEDITOR.plugins.add("menu", {
         requires: "floatpanel", beforeInit: function (g) {
@@ -12955,8 +12955,8 @@
                         } : null
                     }));
                     CKEDITOR.dialog.add("creatediv", this.path +
-                    "dialogs/div.js");
-                    CKEDITOR.dialog.add("editdiv", this.path + "dialogs/div.js")
+                    "dialogs/div.css");
+                    CKEDITOR.dialog.add("editdiv", this.path + "dialogs/div.css")
                 }
             }
         });
@@ -13669,9 +13669,9 @@
                 command: "find",
                 toolbar: "find,10"
             }), a.ui.addButton("Replace", {label: a.lang.find.replace, command: "replace", toolbar: "find,20"}));
-            CKEDITOR.dialog.add("find", this.path + "dialogs/find.js");
+            CKEDITOR.dialog.add("find", this.path + "dialogs/find.css");
             CKEDITOR.dialog.add("replace", this.path +
-            "dialogs/find.js")
+            "dialogs/find.css")
         }
     });
     CKEDITOR.config.find_highlight = {element: "span", styles: {"background-color": "#004", color: "#fff"}};
@@ -13775,7 +13775,7 @@
                 }));
                 a.ui.addButton && a.ui.addButton("Flash",
                     {label: a.lang.common.flash, command: "flash", toolbar: "insert,20"});
-                CKEDITOR.dialog.add("flash", this.path + "dialogs/flash.js");
+                CKEDITOR.dialog.add("flash", this.path + "dialogs/flash.css");
                 a.addMenuItems && a.addMenuItems({
                     flash: {
                         label: a.lang.flash.properties,
@@ -14346,17 +14346,17 @@
                 });
                 CKEDITOR.dialog.add(c, e)
             }, f = this.path + "dialogs/";
-            !a.blockless && e("Form", "form", f + "form.js");
-            e("Checkbox", "checkbox", f + "checkbox.js");
-            e("Radio", "radio", f + "radio.js");
+            !a.blockless && e("Form", "form", f + "form.css");
+            e("Checkbox", "checkbox", f + "checkbox.css");
+            e("Radio", "radio", f + "radio.css");
             e("TextField", "textfield",
-                f + "textfield.js");
-            e("Textarea", "textarea", f + "textarea.js");
-            e("Select", "select", f + "select.js");
-            e("Button", "button", f + "button.js");
+                f + "textfield.css");
+            e("Textarea", "textarea", f + "textarea.css");
+            e("Select", "select", f + "select.css");
+            e("Button", "button", f + "button.css");
             var i = a.plugins.image;
-            i && !a.plugins.image2 && e("ImageButton", "imagebutton", CKEDITOR.plugins.getPath("image") + "dialogs/image.js");
-            e("HiddenField", "hiddenfield", f + "hiddenfield.js");
+            i && !a.plugins.image2 && e("ImageButton", "imagebutton", CKEDITOR.plugins.getPath("image") + "dialogs/image.css");
+            e("HiddenField", "hiddenfield", f + "hiddenfield.css");
             a.addMenuItems && (e = {
                 checkbox: {label: b.forms.checkboxAndRadio.checkboxTitle, command: "checkbox", group: "checkbox"},
                 radio: {label: b.forms.checkboxAndRadio.radioTitle, command: "radio", group: "radio"},
@@ -14612,7 +14612,7 @@
                     id: 1,
                     classes: 1, styles: 1
                 }));
-                CKEDITOR.dialog.add("iframe", this.path + "dialogs/iframe.js");
+                CKEDITOR.dialog.add("iframe", this.path + "dialogs/iframe.css");
                 a.addCommand("iframe", new CKEDITOR.dialogCommand("iframe", {
                     allowedContent: c,
                     requiredContent: "iframe"
@@ -14895,7 +14895,7 @@
         CKEDITOR.plugins.add("image", {
             requires: "dialog", init: function (b) {
                 if (!b.plugins.image2) {
-                    CKEDITOR.dialog.add("image", this.path + "dialogs/image.js");
+                    CKEDITOR.dialog.add("image", this.path + "dialogs/image.css");
                     var a = "img[alt,!src]{border-style,border-width,float,height,margin,margin-bottom,margin-left,margin-right,margin-top,width}";
                     CKEDITOR.dialog.isTabEnabled(b, "image", "advanced") && (a = "img[alt,dir,id,lang,longdesc,!src,title]{*}(*)");
                     b.addCommand("image", new CKEDITOR.dialogCommand("image", {
@@ -15259,7 +15259,7 @@
                 command: "smiley",
                 toolbar: "insert,50"
             });
-            CKEDITOR.dialog.add("smiley", this.path + "dialogs/smiley.js")
+            CKEDITOR.dialog.add("smiley", this.path + "dialogs/smiley.css")
         }
     });
     CKEDITOR.config.smiley_images = "regular_smile.png sad_smile.png wink_smile.png teeth_smile.png confused_smile.png tongue_smile.png embarrassed_smile.png omg_smile.png whatchutalkingabout_smile.png angry_smile.png angel_smile.png shades_smile.png devil_smile.png cry_smile.png lightbulb.png thumbs_down.png thumbs_up.png heart.png broken_heart.png kiss.png envelope.png".split(" ");
@@ -15550,8 +15550,8 @@
                     command: "anchor",
                     toolbar: "links,30"
                 }));
-                CKEDITOR.dialog.add("link", this.path + "dialogs/link.js");
-                CKEDITOR.dialog.add("anchor", this.path + "dialogs/anchor.js");
+                CKEDITOR.dialog.add("link", this.path + "dialogs/link.css");
+                CKEDITOR.dialog.add("anchor", this.path + "dialogs/anchor.css");
                 c.on("doubleclick", function (a) {
                     var b = CKEDITOR.plugins.link.getSelectedLink(c) || a.data.element;
                     if (!b.isReadOnly())if (b.is("a")) {
@@ -16148,14 +16148,14 @@
                     });
                     b = a.addCommand("numberedListStyle", b);
                     a.addFeature(b);
-                    CKEDITOR.dialog.add("numberedListStyle", this.path + "dialogs/liststyle.js");
+                    CKEDITOR.dialog.add("numberedListStyle", this.path + "dialogs/liststyle.css");
                     b = new CKEDITOR.dialogCommand("bulletedListStyle", {
                         requiredContent: "ul",
                         allowedContent: "ul{list-style-type}"
                     });
                     b = a.addCommand("bulletedListStyle", b);
                     a.addFeature(b);
-                    CKEDITOR.dialog.add("bulletedListStyle", this.path + "dialogs/liststyle.js");
+                    CKEDITOR.dialog.add("bulletedListStyle", this.path + "dialogs/liststyle.css");
                     a.addMenuGroup("list", 108);
                     a.addMenuItems({
                         numberedlist: {
@@ -16934,7 +16934,7 @@
     (function () {
         function h(a, d, f) {
             var b = CKEDITOR.cleanWord;
-            b ? f() : (a = CKEDITOR.getUrl(a.config.pasteFromWordCleanupFile || d + "filter/default.js"), CKEDITOR.scriptLoader.load(a, f, null, !0));
+            b ? f() : (a = CKEDITOR.getUrl(a.config.pasteFromWordCleanupFile || d + "filter/default.css"), CKEDITOR.scriptLoader.load(a, f, null, !0));
             return !b
         }
 
@@ -17379,12 +17379,12 @@
             "zh-cn": 1
         }, requires: "dialog", init: function (a) {
             var c = this;
-            CKEDITOR.dialog.add("specialchar", this.path + "dialogs/specialchar.js");
+            CKEDITOR.dialog.add("specialchar", this.path + "dialogs/specialchar.css");
             a.addCommand("specialchar", {
                 exec: function () {
                     var b = a.langCode, b = c.availableLangs[b] ?
                         b : c.availableLangs[b.replace(/-.*/, "")] ? b.replace(/-.*/, "") : "en";
-                    CKEDITOR.scriptLoader.load(CKEDITOR.getUrl(c.path + "dialogs/lang/" + b + ".js"), function () {
+                    CKEDITOR.scriptLoader.load(CKEDITOR.getUrl(c.path + "dialogs/lang/" + b + ".css"), function () {
                         CKEDITOR.tools.extend(a.lang.specialchar, c.langEntries[b]);
                         a.openDialog("specialchar")
                     })
@@ -17404,7 +17404,7 @@
             this.bindEvents(a);
             this.parseConfig(a);
             this.addRule(a);
-            CKEDITOR.dialog.add(this.dialogName, CKEDITOR.getUrl(this.path + "dialogs/options.js"));
+            CKEDITOR.dialog.add(this.dialogName, CKEDITOR.getUrl(this.path + "dialogs/options.css"));
             this.addMenuItems(a);
             var b = a.lang.scayt, e = CKEDITOR.env;
             a.ui.add("Scayt", CKEDITOR.UI_MENUBUTTON, {
@@ -17608,7 +17608,7 @@
             a.config.scayt_moreSuggestions || (a.config.scayt_moreSuggestions = "on");
             "string" !== typeof a.config.scayt_customerId && (a.config.scayt_customerId = "1:WvF0D4-UtPqN1-43nkD4-NKvUm2-daQqk3-LmNiI-z7Ysb4-mwry24-T8YrS3-Q2tpq2");
             "string" !== typeof a.config.scayt_srcUrl && (c = document.location.protocol,
-                c = -1 != c.search(/https?:/) ? c : "http:", a.config.scayt_srcUrl = c + "//svc.webspellchecker.net/spellcheck31/lf/scayt3/ckscayt/ckscayt.js");
+                c = -1 != c.search(/https?:/) ? c : "http:", a.config.scayt_srcUrl = c + "//svc.webspellchecker.net/spellcheck31/lf/scayt3/ckscayt/ckscayt.css");
             "boolean" !== typeof CKEDITOR.config.scayt_handleCheckDirty && (CKEDITOR.config.scayt_handleCheckDirty = !0);
             "boolean" !== typeof CKEDITOR.config.scayt_handleUndoRedo && (CKEDITOR.config.scayt_handleUndoRedo = !0);
             if (a.config.scayt_disableOptionsStorage) {
@@ -18105,8 +18105,8 @@
                     }
                 }));
                 a.ui.addButton && a.ui.addButton("Table", {label: c.toolbar, command: "table", toolbar: "insert,30"});
-                CKEDITOR.dialog.add("table", this.path + "dialogs/table.js");
-                CKEDITOR.dialog.add("tableProperties", this.path + "dialogs/table.js");
+                CKEDITOR.dialog.add("table", this.path + "dialogs/table.css");
+                CKEDITOR.dialog.add("tableProperties", this.path + "dialogs/table.css");
                 a.addMenuItems && a.addMenuItems({
                     table: {
                         label: c.menu,
@@ -18368,7 +18368,7 @@
                     allowedContent: "td th{width,height,border-color,background-color,white-space,vertical-align,text-align}[colspan,rowspan]",
                     requiredContent: "table"
                 })));
-                CKEDITOR.dialog.add("cellProperties", this.path + "dialogs/tableCell.js");
+                CKEDITOR.dialog.add("cellProperties", this.path + "dialogs/tableCell.css");
                 b("rowDelete", d({
                     requiredContent: "table", exec: function (a) {
                         a = a.getSelection();
@@ -18935,7 +18935,7 @@
                 },
                 toolbar: "spellchecker,10"
             });
-            CKEDITOR.dialog.add("checkspell", this.path + (CKEDITOR.env.ie && 7 >= CKEDITOR.env.version ? "dialogs/wsc_ie.js" : window.postMessage ? "dialogs/wsc.js" : "dialogs/wsc_ie.js"))
+            CKEDITOR.dialog.add("checkspell", this.path + (CKEDITOR.env.ie && 7 >= CKEDITOR.env.version ? "dialogs/wsc_ie.css" : window.postMessage ? "dialogs/wsc.css" : "dialogs/wsc_ie.css"))
         }
     });
     CKEDITOR.config.plugins = 'dialogui,dialog,about,a11yhelp,dialogadvtab,basicstyles,bidi,blockquote,clipboard,button,panelbutton,panel,floatpanel,colorbutton,colordialog,templates,menu,contextmenu,div,resize,toolbar,elementspath,enterkey,entities,popup,filebrowser,find,fakeobjects,flash,floatingspace,listblock,richcombo,font,forms,format,horizontalrule,htmlwriter,iframe,wysiwygarea,image,indent,indentblock,indentlist,smiley,justify,menubutton,language,link,list,liststyle,magicline,maximize,newpage,pagebreak,pastetext,pastefromword,preview,print,removeformat,save,selectall,showblocks,showborders,sourcearea,specialchar,scayt,stylescombo,tab,table,tabletools,undo,wsc';

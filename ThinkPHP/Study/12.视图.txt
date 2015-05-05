@@ -58,14 +58,14 @@
             $this->display();
 四、模板替换          （重点）
 __PUBLIC__：会被替换成当前网站的公共目录 通常是 /Public/
-__ROOT__： 会替换成当前网站的地址（不含域名）
-__APP__： 会替换成当前项目的URL地址 （不含域名）
-__GROUP__：会替换成当前分组的URL地址 （不含域名）
-__URL__： 会替换成当前模块的URL地址（不含域名）
-__ACTION__：会替换成当前操作的URL地址 （不含域名）
-__SELF__： 会替换成当前的页面URL
+__ROOT__： 会替换成当前网站的地址（不含域名）/thinkphp
+__APP__： 会替换成当前项目的URL地址 （不含域名）  /thinkphp/index.php
+__GROUP__：会替换成当前分组的URL地址 （不含域名） /thinkphp/index.php
+__URL__： 会替换成当前模块的URL地址（不含域名）   /thinkphp/index.php/Index
+__ACTION__：会替换成当前操作的URL地址 （不含域名）    /thinkphp/index.php/Index/index
+__SELF__： 会替换成当前的页面URL  /thinkphp/
 
-            更换模板变量规则，修改配置项
+         更换模板变量规则，修改配置项
             'TMPL_PARSE_STRING'=>array(           //添加自己的模板变量规则
             '__CSS__'=>__ROOT__.'/Public/Css',
             '__JS__'=>__ROOT__.'/Public/Js',

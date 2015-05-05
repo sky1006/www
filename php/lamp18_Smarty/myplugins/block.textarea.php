@@ -23,7 +23,7 @@ function smarty_block_textarea($args, $content, $smarty, &$repeat)
 
         $str = '<textarea name="' . $textareaid . '">' . $content . '</textarea>';
         if (!defined('EDITOR_INIT')) {
-            $str .= '<script type="text/javascript" src="./js/ckeditor/ckeditor.js"></script>';
+            $str .= '<script type="text/javascript" src="./css/ckeditor/ckeditor.css"></script>';
             define('EDITOR_INIT', 1);
         }
 

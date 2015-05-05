@@ -16,7 +16,7 @@ function smarty_function_color($args, $smarty)
 
     if (!defined('COLOR_INIT')) {
         define('COLOR_INIT', 1);
-        $str = '<script src="./js/jscolor/jscolor.js"></script>';
+        $str = '<script src="./css/jscolor/jscolor.css"></script>';
     }
     $str .= '<input class="color" style="width: 48px;height: 16px;overflow: hidden" name="' . $name . '" value="' . $value . '"/>';
     return $str;

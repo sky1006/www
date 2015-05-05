@@ -17,7 +17,7 @@ return array(
 //    'DB_USER' => 'yinq',    //设置用户名
 //    'DB_PWD' => 'xin123@#$',        //设置密码
 //    'DB_PORT' => '3306',   //设置端口号
-    'DB_PREFIX' => 'tb_',  //设置表前缀
+    'DB_PREFIX' => 'tp_',  //设置表前缀
     'DB_DSN' => 'mysql://yinq:xin123@#$@115.28.100.155:3306/xsphp',//使用DSN方式配置数据库信息
 
     'SHOW_PAGE_TRACE' => true,  //开启页面Trace
@@ -27,5 +27,9 @@ return array(
 //    'TMPL_DETECT_THEME'=>true,  //自动侦测模板主题
 //    'THEME_LIST'=>'your,my',    //支持的模板主题列表
 
+    'TMPL_PARSE_STRING'=>array(           //添加自己的模板变量规则
+        '__CSS__'=>__ROOT__.'/Public/css',
+        '__JS__'=>__ROOT__.'/Public/js',
+    ),
 );
 ?>

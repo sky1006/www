@@ -156,7 +156,7 @@
         },
         systemPlugins: ['system', 'upload_interface'], //系统自带插件
         basePath: function () {
-            var jsFile = "ThinkEditor.js";
+            var jsFile = "ThinkEditor.css";
             var src = $("script[src$='" + jsFile + "']").attr("src");
             return src.substr(0, src.length - jsFile.length);
         }
@@ -177,7 +177,7 @@
             //载入皮肤
             var skins = v.skins || $.TE.defaults.skins; //获得皮肤参数
             var skinsDir = $.TE.basePath() + "skins/" + skins + "/",
-                jsFile = "@" + skinsDir + "config.js",
+                jsFile = "@" + skinsDir + "config.css",
                 cssFile = "@" + skinsDir + "style.css";
 
             var _self = this;
@@ -189,7 +189,7 @@
                 var files = $.TE.systemPlugins;
             }
             $.each(files, function (i, v) {
-                files[i] = v + ".js";
+                files[i] = v + ".css";
             })
 
             files.push(jsFile, cssFile);

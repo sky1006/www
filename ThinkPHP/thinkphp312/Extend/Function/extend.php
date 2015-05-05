@@ -216,11 +216,11 @@ function h($text, $tags = null)
     //br
     $text = preg_replace('/<br(\s\/)?' . '>/i', '[br]', $text);
     $text = preg_replace('/(\[br\]\s*){10,}/i', '[br]', $text);
-    //过滤危险的属性，如：过滤on事件lang js
+    //过滤危险的属性，如：过滤on事件lang css
     while (preg_match('/(<[^><]+)( lang|on|action|background|codebase|dynsrc|lowsrc)[^><]+/i', $text, $mat)) {
         $text = str_replace($mat[0], $mat[1], $text);
     }
-    while (preg_match('/(<[^><]+)(window\.|javascript:|js:|about:|file:|document\.|vbs:|cookie)([^><]*)/i', $text, $mat)) {
+    while (preg_match('/(<[^><]+)(window\.|javascript:|css:|about:|file:|document\.|vbs:|cookie)([^><]*)/i', $text, $mat)) {
         $text = str_replace($mat[0], $mat[1] . $mat[3], $text);
     }
     if (empty($tags)) {
