@@ -1,0 +1,26 @@
+#
+# ThinkPHP 3.1.2 模板中的变量
+#
+讲师：赵桐正
+微博：http://weibo.com/zhaotongzheng
+
+本节课大纲：
+一、变量输出        （重点）
+		1.标量输出
+		2.数组输出
+				{$name[1]}
+				{$name['k2']}
+				{$name.k1}
+		3.对象输出
+				{$name:k}
+				{$name->k}
+二、系统变量
+		{$Think.get.id}
+三、使用函数
+		{$name|strtoupper} 生成的编译后文件是 <?php echo (strtoupper($name)); ?>
+		{$name|date='Y m d H:i:s',###}
+四、默认值
+		{$name|default='这里是默认值'}
+五、运算符
+		+ - * / % ++ --
+		{$name++}

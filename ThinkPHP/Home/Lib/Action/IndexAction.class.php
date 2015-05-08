@@ -76,9 +76,20 @@ class IndexAction extends Action
         $this->display();
     }
 
-    public function ass(){
-        $this->assign('name','小燕子');
+    public function ass()
+    {
+        $this->assign('name', '小燕子');
 
+        $this->display();
+    }
+
+    public function moban()
+    {
+//        $arr=array('k1'=>'燕子','k2'=>'小燕子');
+//        $this->assign('name',$arr);
+        import('ORG.My.Test');
+        $obj = new Test;
+        $this->assign('name', $obj);
         $this->display();
     }
 }

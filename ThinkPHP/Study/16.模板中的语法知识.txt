@@ -1,0 +1,53 @@
+#
+# ThinkPHP 3.1.2 模板中的基本语法
+#
+讲师：赵桐正
+微博：http://weibo.com/zhaotongzheng
+
+本节课大纲：
+一、导入CSS和JS文件       
+	1、css link
+	   js  scr
+		<link rel='stylesheet' type='text/css' href='__PUBLIC__/Css/test.css'/>
+		<script src='__PUBLIC__/Js/test.js'></script>
+	2.import
+		<import type='js' file='Js.test' /> //导入Public文件夹下面的Js目录中的test.js文件，import标签可以省略type属性，默认就是js的
+		<import type='css' file='Css.test' />
+		//可以更改默认文件夹 设置basepath属性
+		<import type='js' file='Js.my' basepath='./Other'/>
+	3.load
+		//方法可以自动检测导入的文件类型
+		<load href='__PUBLIC__/Js/test.js' />
+二、分支结构
+	1、if	
+		<if condition='$sex eq "男"'>
+			男人是泥巴做的
+			<else />
+			女人是水做的
+		</if>
+
+		<if condition='$age lt 18'>
+			未成年
+			<elseif  condition='$age eq 18'/>
+			青春年少
+			<else />
+			成年
+		</if>
+		>  gt
+		<  lt
+		== eq
+		<= elt
+		>= egt
+		!= neq
+		=== heq
+		!== nheq
+
+		<switch name='number'>
+			<case value='1'>一个和尚挑水吃</case>
+			<case value='2'>两个和尚台水吃</case>
+			<case value='3'>三个和尚没水吃</case>
+			<default/> 这里是默认值
+		</switch>
+三、循环结构
+四、特殊标签
+五、其他标签使用		
