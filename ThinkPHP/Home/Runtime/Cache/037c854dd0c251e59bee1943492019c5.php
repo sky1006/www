@@ -1,13 +1,16 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>Index</title>
+
+    <script type="text/javascript" src="/thinkphp/Public/Js/test.js"></script>
+    <link rel="stylesheet" type="text/css" href="/thinkphp/Public/css/test.css" />
 </head>
 <body>
 
 
-<?php echo ($name->k); ?><br/>
+<p><?php echo ($name->k); ?><br/></p>
 <?php echo ($name->k); ?>
 
 </body>

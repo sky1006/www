@@ -557,8 +557,8 @@ class TagLibCx extends TagLib
             foreach ($array as $val) {
                 list($val, $version) = explode('?', $val);
                 switch ($type) {
-                    case 'css':
-                        $parseStr .= '<script type="text/javascript" src="' . $basepath . '/' . str_replace(array('.', '#'), array('/', '.'), $val) . '.css' . ($version ? '?' . $version : '') . '"></script>';
+                    case 'js':
+                        $parseStr .= '<script type="text/javascript" src="' . $basepath . '/' . str_replace(array('.', '#'), array('/', '.'), $val) . '.js' . ($version ? '?' . $version : '') . '"></script>';
                         break;
                     case 'css':
                         $parseStr .= '<link rel="stylesheet" type="text/css" href="' . $basepath . '/' . str_replace(array('.', '#'), array('/', '.'), $val) . '.css' . ($version ? '?' . $version : '') . '" />';

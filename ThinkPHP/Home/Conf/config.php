@@ -29,7 +29,7 @@ return array(
 
     'TMPL_PARSE_STRING'=>array(           //添加自己的模板变量规则
         '__CSS__'=>__ROOT__.'/Public/css',
-        '__JS__'=>__ROOT__.'/Public/js',
+        '__JS__'=>__ROOT__.'/Public/Js',
     ),
 );
 ?>
